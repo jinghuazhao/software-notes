@@ -10,9 +10,7 @@ The following is a potential list of applications.
 
 * PLINK2
 
-* common
-* exome
-* rare
+common, exome, rare
 
 ## Finemapping
 
@@ -32,7 +30,4 @@ The following is a potential list of applications.
 * MetaXcan / S-PrediXcan
 * SMR
 
-* eQTL
-* single cell sequencing
-* epigenome-wide association study (EWAS)
-* therapeutic targets
+eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
