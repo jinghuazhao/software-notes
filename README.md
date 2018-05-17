@@ -12,6 +12,8 @@ Topics for [] wide association studies.
 
 ## Pathway analysis
 
+* PASCAL
+
 ## Medelian randomiszation
 
 ## Polygenic prediction
