@@ -8,6 +8,8 @@ The following is a potential list of applications.
 
 ## Single variant analysis
 
+* PLINK2
+
 * common
 * exome
 * rare
@@ -28,7 +30,7 @@ The following is a potential list of applications.
 
 * FUSION
 * MetaXcan / S-PrediXcan
-* SMR1
+* SMR
 
 * eQTL
 * single cell sequencing
