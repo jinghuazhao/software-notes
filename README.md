@@ -20,6 +20,10 @@ Topics for [] wide association studies.
 
 ## Transcriptome-wide association analysis (TWAS)
 
+* FUSION
+* MetaXcan / S-PrediXcan
+* SMR1
+
 * eQTL
 * single cell sequencing
 * epigenome-wide association study (EWAS)
