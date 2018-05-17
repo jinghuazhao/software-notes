@@ -2,15 +2,15 @@
 
 Logs for [any] wide association studies.
 
-This repository contains notes on various software issues and ways to get around.
+This repository contains notes on various software issues and their ways out.
 
-The following is a potential list of applications.
+The following is a extensible list of applications.
 
 ## Single variant analysis
 
 * PLINK2
 
-common, exome, rare
+common, exome, rare, models, plots
 
 ## Finemapping
 
