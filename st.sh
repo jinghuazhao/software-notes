@@ -8,6 +8,8 @@ git add PASCAL
 git commit -m "PASCAL"
 git add MetaXcan
 git commit -m "MetaXcan"
+git add PLINK2
+git commit -m "PLINK2"
 git add st.sh
 git commit -m "st.sh"
 git push
