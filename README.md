@@ -26,8 +26,6 @@ common, exome, rare
 
 ## Transcriptome-wide association analysis (TWAS)
 
-* FUSION
 * MetaXcan / S-PrediXcan
-* SMR
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
