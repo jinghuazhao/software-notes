@@ -1,8 +1,8 @@
 # _WAS
 
-Topics for [] wide association studies.
+Logs for [any] wide association studies.
 
-In this repository, I will keep notes on various software issues and ways to get around.
+This repository contains notes on various software issues and ways to get around.
 
 The following is a potential list of applications.
 
