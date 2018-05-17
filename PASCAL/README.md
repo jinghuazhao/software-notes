@@ -1,4 +1,4 @@
-## Iusses with OpenBLAS
+## Issues with OpenBLAS
 
 When there is issue with xianyi-OpenBLAS-v0.2.12-0-g7e4e195.zip shipped with PASCAL.zip, it is recommended to use version from GitHub,
 ```{bash}
