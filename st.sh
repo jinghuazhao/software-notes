@@ -2,6 +2,8 @@
 
 git add README.md
 git commit -m "README"
+git add PASCAL
+git commit -m "PASCAL"
 git add MetaXcan
 git commit -m "MetaXcan"
 git add st.sh
