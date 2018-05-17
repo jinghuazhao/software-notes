@@ -2,6 +2,9 @@
 
 Topics for [] wide association studies.
 
+
+In this repository, I will keep notes on various software issues and notes to apply them.
+
 ## Single variant analysis
 
 * common
