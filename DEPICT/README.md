@@ -12,6 +12,7 @@ git clone https://github.com/perslab/depict
 cd depict
 mv data data.sav
 ln -s $CWD/DEPICT/data
+ln -s src/python/depict.py $HOME/bin/depict.py
 ```
 where the package is unpacked into the DEPICT/ directory which contains data/ subdirectory. We then create a symbolic link to data/ from the GitHub version, which does not contain data (to save space on GitHub) while allowing for cutoff_type to be p-values in network analysis for instance.
 
