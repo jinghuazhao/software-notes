@@ -29,3 +29,7 @@ where the package is unpacked into the DEPICT/ directory which contains data/ su
 ## template.cfg
 
 This is from src/python rather than .cfg from example.
+
+## Additional notes
+
+You can examine my [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) repository on other changes I have made.
