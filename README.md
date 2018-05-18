@@ -1,8 +1,6 @@
 # _WAS
 
-Logs for [any] wide association studies.
-
-This repository contains notes on various software issues and their ways out.
+Logs for [any] wide association studies - software issues and solutions.
 
 # An extensible list of applications
 
