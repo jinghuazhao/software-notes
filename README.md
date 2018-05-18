@@ -4,7 +4,7 @@ Logs for [any] wide association studies.
 
 This repository contains notes on various software issues and their ways out.
 
-The following is a extensible list of applications.
+# An extensible list of applications
 
 ## Single variant analysis
 
