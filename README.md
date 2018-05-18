@@ -7,6 +7,7 @@ Logs for [any] wide association studies - software issues and solutions.
 ## Single variant analysis
 
 * PLINK2
+* PyLMM
 
 common, exome, rare, models, plots
 
