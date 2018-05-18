@@ -6,8 +6,8 @@ Logs for [any] wide association studies - software issues and solutions.
 
 ## Single variant analysis
 
-* PLINK2
-* PyLMM
+* [PLINK2](PLINK2)
+* [PyLMM](PyLMM)
 
 common, exome, rare, models, plots
 
@@ -15,8 +15,8 @@ common, exome, rare, models, plots
 
 ## Pathway analysis
 
-* DEPICT
-* PASCAL
+* [DEPICT](DEPICT)
+* [PASCAL](PASCAL)
 
 ## Medelian randomiszation
 
@@ -26,6 +26,6 @@ common, exome, rare, models, plots
 
 ## Transcriptome-wide association analysis (TWAS)
 
-* MetaXcan / S-PrediXcan
+* [MetaXcan](MetaXcan) / S-PrediXcan
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
