@@ -1,4 +1,4 @@
-# 17-5-2018 JHZ
+# 18-5-2018 JHZ
 
 git add README.md
 git commit -m "README"
@@ -10,6 +10,8 @@ git add MetaXcan
 git commit -m "MetaXcan"
 git add PLINK2
 git commit -m "PLINK2"
+git add PyLMM
+git commit -m "PyLMM"
 git add st.sh
 git commit -m "st.sh"
 git push
