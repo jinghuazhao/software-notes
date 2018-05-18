@@ -2,6 +2,8 @@
 
 Logs for [any] wide association studies - software issues and solutions.
 
+The repository contains extensive information which is complementary to a number of pipelines I have created.
+
 # An extensible list of applications
 
 ## Single variant analysis
@@ -12,6 +14,8 @@ Logs for [any] wide association studies - software issues and solutions.
 common, exome, rare, models, plots
 
 ## Finemapping
+
+* [JAM](JAM)
 
 ## Pathway analysis
 
