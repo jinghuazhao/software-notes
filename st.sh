@@ -4,6 +4,8 @@ git add README.md
 git commit -m "README"
 git add DEPICT
 git commit -m "DEPICT"
+git add JAM
+git commit -m "JAM"
 git add PASCAL
 git commit -m "PASCAL"
 git add MetaXcan
