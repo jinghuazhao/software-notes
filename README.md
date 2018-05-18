@@ -14,6 +14,7 @@ common, exome, rare, models, plots
 
 ## Pathway analysis
 
+* DEPICT
 * PASCAL
 
 ## Medelian randomiszation
