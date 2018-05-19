@@ -96,3 +96,9 @@ Ran 5 tests in 2.776s
 
 FAILED (errors=5)
 ```
+We can have a test of GxE analysis as this,
+```{bash}
+sudo python setup.py install
+cd pylmm
+python pylmm_GXE.py
+```
