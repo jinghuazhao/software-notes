@@ -2,9 +2,9 @@
 
 Any [_] Wide Association Studies - software issues and solutions.
 
-The repository also contains extensive information which is complementary but not exclusive to a number of pipelines on GitHub.
-
 # An extensible list of applications
+
+The repository also contains extensive information complementary but not exclusive to a number of pipelines on the GitHub.
 
 ## Single variant analysis
 
