@@ -13,7 +13,9 @@ export R_LIBS=/usr/local/lib/R/site-library/
 ```
 Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
-## MendelianRandomization
+## R packages
+
+### MendelianRandomization
 
 The following are necessary to enable its installation,
 ```{bash}
