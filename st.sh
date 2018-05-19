@@ -14,6 +14,8 @@ git add PLINK2
 git commit -m "PLINK2"
 git add PyLMM
 git commit -m "PyLMM"
+git add R
+git commit -m "R"
 git add st.sh
 git commit -m "st.sh"
 git push
