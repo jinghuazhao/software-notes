@@ -102,3 +102,5 @@ sudo python setup.py install
 cd pylmm
 python pylmm_GXE.py
 ```
+In general, we can see options for GxE analysis from command `pylmmGWAS.py` under bash.
+
