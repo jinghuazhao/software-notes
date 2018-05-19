@@ -2,7 +2,7 @@
 
 Logs for [any] wide association studies - software issues and solutions.
 
-The repository contains extensive information which is complementary to a number of pipelines I have created.
+The repository also contains extensive information which is complementary to a number of pipelines I have created.
 
 # An extensible list of applications
 
