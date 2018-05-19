@@ -1,8 +1,8 @@
 # _WAS
 
-Logs for [any] wide association studies - software issues and solutions.
+Any [_] Wide Association Studies - software issues and solutions.
 
-The repository also contains extensive information which is complementary to a number of pipelines I have created.
+The repository also contains extensive information which is complementary but not exclusive to a number of pipelines on GitHub.
 
 # An extensible list of applications
 
