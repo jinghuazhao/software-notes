@@ -11,6 +11,7 @@ and R_LIBS is set from .bashrc
 ```{bash}
 export R_LIBS=/usr/local/lib/R/site-library/
 ```
+Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
 ## MendelianRandomization
 
@@ -25,3 +26,4 @@ and then we have
 ```{r}
 install.packages("MendelianRandomization")
 ```
+The vignette (.R, .Rmd, .pdf) can be seen from /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.*
