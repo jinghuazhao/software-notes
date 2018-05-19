@@ -24,7 +24,7 @@ common, exome, rare, models, plots
 
 ## Medelian randomiszation
 
-* [R][R]
+* [R](R)
 
 ## Polygenic prediction
 
