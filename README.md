@@ -4,7 +4,7 @@ Any [_] Wide Association Studies - software issues and solutions.
 
 ## System setup
 
-It is relevant to have knowledge in GNU parallel and sge. A broad coverage is also available from GWAS-2017 repository, i.e., [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) now with the [GDCT repository](https://github.com/jinghuazhao/GDCT).
+It is relevant to have knowledge in GNU parallel and sge. A broad coverage is also available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) of the removed GWAS-2017 repository now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
 ## An extensible list of applications
 
