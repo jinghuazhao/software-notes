@@ -1,6 +1,6 @@
 ## Prerequisite
 
-We assume to use Ubuntu 18.04.
+We assume that Ubuntu 18.04 is used.
 
 R can be installed with
 ```{bash}
