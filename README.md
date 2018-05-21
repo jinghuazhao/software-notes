@@ -38,6 +38,9 @@ common, exome, rare, models, plots
 
 ### PheWAS
 
+* [PheWAS information](PheWAS)
+* [R-packages](R-packages)
+
 ### Transcriptome-wide association analysis (TWAS)
 
 * [MetaXcan](MetaXcan) / S-PrediXcan
