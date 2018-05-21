@@ -17,7 +17,7 @@ Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instea
 
 2. RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
 ```{bash}
-./install-dependencies-debian
+./install-dependencies-debian --exclude-qt-sdk
 ```
 and then the following steps,
 ```{bash}
