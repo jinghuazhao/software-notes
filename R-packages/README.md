@@ -19,3 +19,7 @@ We can now call with
 ```{bash}
 rstudio /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.R &
 ```
+
+## BLR
+
+An extensive use is reported in the JSS paper from the [physalia](https://github.com/jinghuazhao/physalia) repository.
