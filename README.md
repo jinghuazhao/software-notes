@@ -6,6 +6,8 @@ Any [_] Wide Association Studies - software issues and solutions.
 
 It is relevant to have knowledge in GNU parallel and sge. A broad coverage is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
+A section is dedicated to [R and RStudio](R).
+
 ## An extensible list of applications
 
 The repository also contains extensive information complementary but not exclusive to a number of pipelines on the GitHub.
@@ -28,7 +30,7 @@ common, exome, rare, models, plots
 
 ### Medelian randomiszation
 
-* [R](R)
+* [R-packages](R-packages)
 
 ### Polygenic prediction
 
