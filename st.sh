@@ -1,4 +1,4 @@
-# 18-5-2018 JHZ
+# 21-5-2018 JHZ
 
 git add README.md
 git commit -m "README"
@@ -16,6 +16,8 @@ git add PyLMM
 git commit -m "PyLMM"
 git add R
 git commit -m "R"
+git add R-packages
+git commit -m "R-packages"
 git add st.sh
 git commit -m "st.sh"
 git push
