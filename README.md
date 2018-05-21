@@ -34,6 +34,8 @@ common, exome, rare, models, plots
 
 ### Polygenic prediction
 
+* [R-packages](R-packages)
+
 ### PheWAS
 
 ### Transcriptome-wide association analysis (TWAS)
