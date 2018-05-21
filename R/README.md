@@ -2,9 +2,9 @@
 
 A note about Windows -- the --arch x84 is very useful for using all available RAM.
 
-We assume that Ubuntu 18.04 is used.
+We assume below that Ubuntu 18.04 is used.
 
-R can be installed with
+1. R can be installed with
 ```{bash}
 sudo apt install r-base-core
 sudo apt install r-base-dev
@@ -15,7 +15,7 @@ export R_LIBS=/usr/local/lib/R/site-library/
 ```
 Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
-RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
+2. RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
 ```{bash}
 ./install-dependencies-debian
 ```
