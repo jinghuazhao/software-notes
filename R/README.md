@@ -33,6 +33,7 @@ sudo apt-get install oracle-java8-installer
 sudo apt-get install oracle-java8-set-default
 java -version
 ```
+However, there is still persistent error -- when dropping the option `--exclude-qt-sdk` above the compile goes through but unloadable. It is therefore recommended to get around with RStudio daily builds, https://dailies.rstudio.com/.
 
 ## R packages
 
