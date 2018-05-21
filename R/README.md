@@ -15,7 +15,11 @@ export R_LIBS=/usr/local/lib/R/site-library/
 ```
 Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
-RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under dependencies, the following steps,
+RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under dependencies, 
+```{bash}
+./install-dependencies-debian
+```
+and then the following steps,
 ```{bash}
 mkdir build
 cd build
