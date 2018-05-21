@@ -18,7 +18,8 @@ git add R
 git commit -m "R"
 git add R-packages
 git commit -m "R-packages"
+git add PheWAS
+git commit -m "PheWAS"
 git add st.sh
 git commit -m "st.sh"
 git push
-
