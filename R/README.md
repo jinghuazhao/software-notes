@@ -1,10 +1,13 @@
-## Prerequisite
+# R
 
-A note about Windows -- the --arch x84 is very useful for using all available RAM.
+## Windows
 
-We assume below that Ubuntu 18.04 is used.
+The --arch x84 is very useful for using all available RAM.
 
-1. R can be installed with
+## Ubuntu 18.04
+
+### R installation
+
 ```{bash}
 sudo apt install r-base-core
 sudo apt install r-base-dev
@@ -15,7 +18,9 @@ export R_LIBS=/usr/local/lib/R/site-library/
 ```
 Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
-2. RStudio distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
+### RStudio
+
+The distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
 ```{bash}
 ./install-dependencies-debian --exclude-qt-sdk
 ```
@@ -33,21 +38,6 @@ sudo apt-get install oracle-java8-installer
 sudo apt-get install oracle-java8-set-default
 java -version
 ```
-However, there is still persistent error -- when dropping the option `--exclude-qt-sdk` above the compile goes through but unloadable. It is therefore recommended to get around with RStudio daily builds, https://dailies.rstudio.com/.
+However, compile error is still persistent except when dropping the option `--exclude-qt-sdk` but unloadable.
 
-## R packages
-
-### MendelianRandomization
-
-The following are necessary to enable its installation,
-```{bash}
-sudo apt install curl
-sudo apt install libcurl4-openssl-dev
-sudo apt install libssl-dev
-sudo apt install libgmp-dev
-```
-and then we have
-```{r}
-install.packages("MendelianRandomization")
-```
-The vignette (.R, .Rmd, .pdf) can be seen from /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.*
+It is therefore recommended to get around with RStudio daily builds, https://dailies.rstudio.com/.
