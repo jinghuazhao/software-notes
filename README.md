@@ -4,9 +4,9 @@ Any [_] Wide Association Studies - software issues and solutions.
 
 ## System setup
 
-It is relevant to have knowledge in GNU parallel and sge. A broad coverage is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
-
-A section is dedicated to [R and RStudio](R).
+1. It is relevant to have knowledge in GNU parallel and sge; see descriptions in other pipelines here.
+2. Here is a section dedicated to [R and RStudio](R).
+3. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
 ## An extensible list of applications
 
