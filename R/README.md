@@ -1,5 +1,7 @@
 ## Prerequisite
 
+A note about Windows -- the --arch x84 is very useful for using all available RAM.
+
 We assume that Ubuntu 18.04 is used.
 
 R can be installed with
