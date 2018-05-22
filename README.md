@@ -1,6 +1,6 @@
 # _WAS
 
-Any [_] Wide Association Studies - software issues and solutions.
+**Any [_] Wide Association Studies - software issues and solutions**
 
 ## Setup
 
