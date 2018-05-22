@@ -4,7 +4,7 @@ Any [_] Wide Association Studies - software issues and solutions.
 
 ## Setup
 
-[setup](setup)
+* [setup](setup)
 
 ## An extensible list of applications
 
