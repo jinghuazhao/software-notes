@@ -20,8 +20,8 @@ git add R-packages
 git commit -m "R-packages"
 git add PheWAS
 git commit -m "PheWAS"
-git add systems
-git commit -m "systems"
+git add setup
+git commit -m "setup"
 git add st.sh
 git commit -m "st.sh"
 git push
