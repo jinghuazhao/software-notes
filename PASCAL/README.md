@@ -1,6 +1,6 @@
 ## Issues with OpenBLAS
 
-When there is issue with xianyi-OpenBLAS-v0.2.12-0-g7e4e195.zip shipped with PASCAL.zip, it is recommended to use version from GitHub,
+When there is issue with xianyi-OpenBLAS-v0.2.12-0-g7e4e195.zip shipped with [PASCAL.zip](http://www2.unil.ch/cbg/images/3/3d/PASCAL.zip), it is recommended to use the [GitHub version](https://github.com/dlampart/Pascal),
 as described in [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) or
 ```{bash}
 git clone https://github.com/xianyi/OpenBLAS
