@@ -2,9 +2,9 @@
 
 Any [_] Wide Association Studies - software issues and solutions.
 
-## System setup
+## Setup
 
-[systems](systems)
+[setup](setup)
 
 ## An extensible list of applications
 
