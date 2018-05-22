@@ -1,6 +1,6 @@
 ## Issues with more recent version of Python 2.7
 
-The issue was raised to the MetaXcan GitHub repository for
+The issue was raised to the [MetaXcan GitHub repository](https://github.com/hakyimlab/MetaXcan) for
 
 * Ubuntu 18.04 and Python 2.7.15r1
 * Fedora 27 and Python 2.7.15
