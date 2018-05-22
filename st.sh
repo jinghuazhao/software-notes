@@ -1,4 +1,4 @@
-# 21-5-2018 JHZ
+# 22-5-2018 JHZ
 
 git add README.md
 git commit -m "README"
@@ -20,6 +20,8 @@ git add R-packages
 git commit -m "R-packages"
 git add PheWAS
 git commit -m "PheWAS"
+git add systems
+git commit -m "systems"
 git add st.sh
 git commit -m "st.sh"
 git push
