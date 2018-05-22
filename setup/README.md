@@ -15,6 +15,8 @@ Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
 ## Imputation
 
+Sanger Imputation Service, https://imputation.sanger.ac.uk/
+
 The Michigan imputation server, https://imputationserver.sph.umich.edu/start.html
 
 Code for 1000Genomes populations, http://www.internationalgenome.org/category/population/
