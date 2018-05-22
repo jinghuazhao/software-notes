@@ -6,7 +6,8 @@
 ```{bash}
 sudo apt install parallel
 ```
-see also descriptions in other pipelines here. Informatin on slurm can be seen from https://github.com/statgen/SLURM-examples, for instance.
+see also descriptions in other pipelines here. It is perhaps more demanding with sge, see https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
+Informatin on slurm can be seen from https://github.com/statgen/SLURM-examples, for instance.
 
 2. Here is a section dedicated to [R and RStudio](../R).
 
