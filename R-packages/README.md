@@ -24,6 +24,10 @@ rstudio /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.R &
 
 An extensive use is reported in the JSS paper from the [physalia](https://github.com/jinghuazhao/physalia) repository.
 
-### PheWAS
+## PheWAS
 
 See https://github.com/PheWAS/
+
+## coloc
+
+There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with help.start().
