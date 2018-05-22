@@ -42,5 +42,6 @@ common, exome, rare, models, plots
 ### Transcriptome-wide association analysis (TWAS)
 
 * [MetaXcan](MetaXcan) / S-PrediXcan
+* [R-packages](R-packages)
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
