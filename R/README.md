@@ -2,7 +2,7 @@
 
 ## Windows
 
-The --arch x84 is very useful for using all available RAM.
+It seems the --arch x84 option is very useful for using all available RAM; to make sure use call such as `D:\Program Files\R\R-3.5.0\bin\x64\R.exe"`.
 
 ## Ubuntu 18.04
 
