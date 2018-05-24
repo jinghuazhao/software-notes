@@ -42,7 +42,7 @@ There is complaint about calling vignette() from Ubuntu; however it is otherwise
 
 ## garfield
 
-Again it can be installed with `biocLite("garfield")` and the examination of vignette be done similarly as `coloc`.
+Again it can be installed with `biocLite("garfield")` and vignette be seen similarly to `coloc`.
 
 > GWAS analysis of regulatory or functional information enrichment with LD correction. Briefly, it is a method that leverages GWAS findings with regulatory or 
 > functional annotations (primarily from ENCODE and Roadmap epigenomics data) to find features relevant to a phenotype of interest. It performs greedy pruning of 
