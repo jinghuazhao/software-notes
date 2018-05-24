@@ -1,5 +1,11 @@
 # R packages
 
+Package installation can be done with `install.packages()` from CRAN and
+```r
+source("https://bioconductor.org/biocLite.R")
+```
+from Bioconductor.
+
 ## MendelianRandomization
 
 The following are necessary to enable its installation,
@@ -30,4 +36,10 @@ See https://github.com/PheWAS/
 
 ## coloc
 
+It requires `snpStats` that can be installed with biocLite().
+
 There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with help.start().
+
+## garfield
+
+Again it can be installed with `biocLite("garfield")` and the examination of vignette be done similarly as `coloc`.
