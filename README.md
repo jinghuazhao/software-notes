@@ -21,6 +21,10 @@ common, exome, rare, models, plots
 
 * [JAM](JAM)
 
+### Functional annotation
+
+* [R-packages](R-packages)
+
 ### Pathway analysis
 
 * [DEPICT](DEPICT)
@@ -45,3 +49,4 @@ common, exome, rare, models, plots
 * [R-packages](R-packages)
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
+
