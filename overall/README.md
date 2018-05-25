@@ -1,4 +1,4 @@
-# Setup
+# Overall
 
 ## Parallel computing, R, and other software
 
