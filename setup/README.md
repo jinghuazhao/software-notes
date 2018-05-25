@@ -20,3 +20,11 @@ Sanger Imputation Service, https://imputation.sanger.ac.uk/
 The Michigan imputation server, https://imputationserver.sph.umich.edu/start.html
 
 Code for 1000Genomes populations, http://www.internationalgenome.org/category/population/
+
+## Resources
+
+https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
+
+http://www.ukbiobank.ac.uk/
+
+https://www.astrazeneca.com/
