@@ -4,6 +4,8 @@
 
 It seems the --arch x84 option is very useful for using all available RAM; to make sure use call such as `D:\Program Files\R\R-3.5.0\bin\x64\R.exe"`.
 
+When this fails, remove large objects in your code and start R with `--vanilla` option.
+
 ## Ubuntu 18.04
 
 ### R installation
