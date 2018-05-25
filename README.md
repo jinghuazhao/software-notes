@@ -2,9 +2,9 @@
 
 **Any [_] Wide Association Studies - software issues and solutions**
 
-## Overall
+## Overall setup
 
-* [overall](overall)
+* [Overall](overall)
 
 ## An extensible list of applications
 
