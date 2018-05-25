@@ -2,9 +2,7 @@
 
 **Any [_] Wide Association Studies - software issues and solutions**
 
-## [Overall setup](overall)
-
-## An extensible list of applications
+## [Overall setup](overall) and an extensible list of applications
 
 Here are extensive information complementary but not exclusive to a number of pipelines on the GitHub.
 
