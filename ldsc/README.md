@@ -44,7 +44,7 @@ python ldsc.py --h2 BMI.sumstats.gz\
         --out BMI_CNS\
         --print-coefficients
 ```
-NB it is assumed that [all the required data](https://data.broadinstitute.org/alkesgroup/LDSCORE/) have been available.
+NB it is assumed that [all the required data](https://data.broadinstitute.org/alkesgroup/LDSCORE/) have been made available.
 
 ## Test
 
