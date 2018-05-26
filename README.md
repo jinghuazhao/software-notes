@@ -30,7 +30,7 @@ common, exome, rare, models, plots
 
 * [R-packages](R-packages)
 
-### Polygenic prediction
+### Polygenic modeling
 
 * [ldsc](ldsc)
 * [R-packages](R-packages)
