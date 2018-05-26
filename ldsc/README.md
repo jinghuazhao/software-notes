@@ -18,7 +18,7 @@ setup()
   python munge_sumstats.py --sumstats $GIANT_BMI --merge-alleles w_hm3.snplist --out BMI --a1-inc
 }
 
-# P as Z to trick it going
+# somehow munge_sumstats.py fails under my Windwos 10 and Ubuntu 18.04, so I trick going with P as Z
 awk 'NR>1' $GIANT_BMI > 1
 awk 'BEGIN{print "SNP","A1","A2","Z","N"}' > BMI.sumstats
 awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk >> BMI.sumstats
