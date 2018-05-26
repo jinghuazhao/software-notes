@@ -32,6 +32,7 @@ common, exome, rare, models, plots
 
 ### Polygenic prediction
 
+* [ldsc](ldsc)
 * [R-packages](R-packages)
 
 ### PheWAS
