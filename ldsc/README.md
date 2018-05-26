@@ -18,12 +18,20 @@ setup()
   python munge_sumstats.py --sumstats $GIANT_BMI --merge-alleles w_hm3.snplist --out BMI --a1-inc
 }
 
-# somehow munge_sumstats.py fails under my Windwos 10 and Ubuntu 18.04, so I trick going with P as Z
+# It failed to munge so we do it the hard way. See also
+# https://stackoverflow.com/questions/27830995/inverse-cumulative-distribution-function-in-c
+# https://stackoverflow.com/questions/22834998/what-reference-should-i-use-to-use-erf-erfc-function
+export GIANT_BMI=GIANT_BMI_Speliotes2010_publicrelease_HapMapCeuFreq.txt
 awk 'NR>1' $GIANT_BMI > 1
-awk 'BEGIN{print "SNP","A1","A2","Z","N"}' > BMI.sumstats
-awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk >> BMI.sumstats
-gzip -f BMI.sumstats
-rm 1
+awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk > BMI.sumstats
+R --vanilla -q <<END
+BMI <- read.table("BMI.sumstats",col.names=c("SNP","A1","A2","Z","N"))
+BMI <- within(BMI, {Z=sign(Z)*qnorm(abs(Z)/2)})
+z <- gzfile("BMI.sumstats.gz","w")
+write.table(BMI,file=z,quote=FALSE,row.names=FALSE)
+close(z)
+END
+rm 1 BMI.sumstats
 ```
 where we use [CLEAN_ZSCORES.awk](CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
 
