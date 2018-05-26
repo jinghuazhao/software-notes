@@ -45,3 +45,10 @@ python ldsc.py --h2 BMI.sumstats.gz\
         --print-coefficients
 ```
 NB it is assumed that [all the required data](https://data.broadinstitute.org/alkesgroup/LDSCORE/) have been available.
+
+## Test
+
+The mysterious commands shown in the wiki documentation are actually realised after this,
+```
+sudo apt install python-nose
+```
