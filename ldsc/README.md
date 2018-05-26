@@ -25,7 +25,7 @@ awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk 
 gzip -f BMI.sumstats
 rm 1
 ```
-where we use [CLEAN_ZSCORES.awk][CLEAN_ZSCORES.awk] to align SNPs between sumstats and reference.
+where we use [CLEAN_ZSCORES.awk](CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
 
 Now the partition heritability and cell-type group analysis proceed as follows,
 ```bash
