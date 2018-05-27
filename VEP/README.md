@@ -17,3 +17,5 @@ cd $HOME
 ln -s /genetics/bin/.vep
 ```
 for instance.
+
+It is slow to get those databases, so one may prefer to get from ftp://ftp.ensembl.org/pub/release-92/variation/VEP/ straightaway.
