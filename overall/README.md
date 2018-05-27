@@ -20,6 +20,27 @@ for instance, as used in [VEP](../VEP).
 
 4. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
+5. Notes on VirtualBox
+
+To enforce sharedclipboard for bidirectional copy between Linux and Windows,
+```bash
+# shared folders
+sudo mount -t vboxsf -o uid=jhz22 C /home/jhz22/C
+sudo mount -t vboxsf -o uid=jhz22 D /home/jhz22/D
+# shared clipboard
+killall VBoxClient
+sudo VBoxClient-all
+```
+Here are the steps, quoting http://www.netreliant.com/news/8/17/Compacting-VirtualBox-Disk-Images-Linux-Guests.html, for compressing large .vdi:
+```bash
+# Linux
+dd if=/dev/zero of=zerofillfile bs=1M
+
+# Windows
+path D:\Program Files\Oracle\VirtualBox
+VBoxManage modifyhd --compact "ubuntu18.04.vdi"
+```
+
 ## Imputation
 
 Sanger Imputation Service, https://imputation.sanger.ac.uk/
