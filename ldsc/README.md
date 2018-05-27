@@ -33,7 +33,6 @@ z <- gzfile("BMI.sumstats.gz","w")
 write.table(BMI,file=z,quote=FALSE,row.names=FALSE)
 close(z)
 END
-rm 1 BMI.sumstats
 ```
 where we use [CLEAN_ZSCORES.awk](CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
 
