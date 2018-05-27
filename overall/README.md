@@ -11,7 +11,14 @@ Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
 2. Here is a section dedicated to [R and RStudio](../R).
 
-3. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
+3. This is an example for installing DBI for Perl,
+```bash
+sudo perl -MCPAN -e shell
+install DBI
+```
+for instance, as used in [VEP](../VEP).
+
+4. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
 ## Imputation
 
