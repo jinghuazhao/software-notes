@@ -4,24 +4,26 @@
 
 The [wiki documentation](https://github.com/bulik/ldsc/wiki/Partitioned-Heritability) script really should be as follows,
 ```bash
-# https://github.com/bulik/ldsc
-# only keep HapMap3 SNPs
 
 export GIANT_BMI=GIANT_BMI_Speliotes2010_publicrelease_HapMapCeuFreq.txt
 
 setup()
 {
-  if [ -f w_hm3.snplist ]; then
+  if [ ! -f $GIANT_BMI ]; then
+     wget http://portals.broadinstitute.org/collaboration/giant/images/b/b7/$GIANT_BMI.gz
+     gunzip $GIANT_BMI.gz
+  fi
+  if [ ! -f w_hm3.snplist ]; then
      wget https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2
      bzip2 -d w_hm3.snplist.bz2
   fi
   python munge_sumstats.py --sumstats $GIANT_BMI --merge-alleles w_hm3.snplist --out BMI --a1-inc
 }
 
-# It failed to munge so we do it the hard way. See also
+# It fails to munge, so we use brute-force. For P-to-Z implementation in C/C++, see
 # https://stackoverflow.com/questions/27830995/inverse-cumulative-distribution-function-in-c
 # https://stackoverflow.com/questions/22834998/what-reference-should-i-use-to-use-erf-erfc-function
-export GIANT_BMI=GIANT_BMI_Speliotes2010_publicrelease_HapMapCeuFreq.txt
+
 awk 'NR>1' $GIANT_BMI > 1
 awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk > BMI.sumstats
 R --vanilla -q <<END
