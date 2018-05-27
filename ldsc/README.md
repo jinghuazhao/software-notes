@@ -46,7 +46,7 @@ python ldsc.py --h2 BMI.sumstats.gz\
 
 python ldsc.py --h2 BMI.sumstats.gz\
         --w-ld-chr 1000G_Phase3_weights_hm3_no_MHC/weights.hm3_noMHC.\
-        --ref-ld-chr 1000G_Phase3_cell_type_groups/cell_type_group.3.\
+        --ref-ld-chr 1000G_Phase3_cell_type_groups/cell_type_group.3.,baseline_v1.1/baseline.\
         --overlap-annot\
         --frqfile-chr 1000G_Phase3_frq/1000G.EUR.QC.\
         --out BMI_CNS\
