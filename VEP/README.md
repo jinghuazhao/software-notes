@@ -14,7 +14,7 @@ The last line requires modules DBI, Build as described in [Overall](../overall).
 Lastly, VEP requires .vep directory at $HOME which can be derived from a centrally-installed VEP under Linux,
 ```bash
 cd $HOME
-ln -s /genetics/bin/.vep
+ln -s /genetics/ensembl-vep/.vep
 ```
 for instance.
 
