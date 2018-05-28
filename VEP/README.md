@@ -18,4 +18,4 @@ ln -s /genetics/ensembl-vep/.vep
 ```
 for instance.
 
-It is slow to get those databases, so one may prefer to get from ftp://ftp.ensembl.org/pub/release-92/variation/VEP/ straightaway.
+It is slow to get those databases, so one may prefer to get them directly from ftp://ftp.ensembl.org/pub/release-92/variation/VEP/ and unpack into the .vep directory.
