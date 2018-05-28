@@ -30,7 +30,7 @@ followed by `conda install intervaltree`.
 
 All the available packages can be seen with `conda list`.
 
-## [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
+## [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT).
 
 ## Notes on VirtualBox
 
