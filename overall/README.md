@@ -36,7 +36,7 @@ for instance, as used in [VEP](../VEP).
 
 ## Anaconda for Windows
 
-conda is in D:/ProgramData/Anaconda2/Library/bin. To install intervaltree as required by depict,
+Note that conda is in D:/ProgramData/Anaconda2/Library/bin. To install intervaltree as required by depict,
 ```
 conda config --add channels defaults
 conda config --add channels conda-forge
