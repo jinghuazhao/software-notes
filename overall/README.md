@@ -9,9 +9,9 @@ sudo apt install parallel
 see also descriptions in other pipelines here. It is perhaps more demanding with sge, e.g., https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
 Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
-### Here is a section dedicated to [R and RStudio](../R).
+### A section dedicated to [R and RStudio](../R).
 
-### This is an example for installing DBI for Perl,
+### An example for installing DBI for Perl,
 ```bash
 sudo perl -MCPAN -e shell
 install DBI
