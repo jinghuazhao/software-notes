@@ -1,5 +1,21 @@
 # Overall setup
 
+## Resources
+
+https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
+
+http://www.ukbiobank.ac.uk/
+
+https://www.astrazeneca.com/
+
+## Imputation
+
+Sanger Imputation Service, https://imputation.sanger.ac.uk/
+
+The Michigan imputation server, https://imputationserver.sph.umich.edu/start.html
+
+Code for 1000Genomes populations, http://www.internationalgenome.org/category/population/
+
 ## Parallel computing
 
 It is relevant to have knowledge about GNU parallel and sge. Under Ubuntu, parallel is easily installed as follows,
@@ -52,19 +68,3 @@ dd if=/dev/zero of=zerofillfile bs=1M
 path D:\Program Files\Oracle\VirtualBox
 VBoxManage modifyhd --compact "ubuntu18.04.vdi"
 ```
-
-## Imputation
-
-Sanger Imputation Service, https://imputation.sanger.ac.uk/
-
-The Michigan imputation server, https://imputationserver.sph.umich.edu/start.html
-
-Code for 1000Genomes populations, http://www.internationalgenome.org/category/population/
-
-## Resources
-
-https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
-
-http://www.ukbiobank.ac.uk/
-
-https://www.astrazeneca.com/
