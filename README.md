@@ -4,8 +4,6 @@
 
 ## [Overall setup](overall) + an extensible list of applications
 
-They are complementary but not exclusive to other pipelines on the GitHub.
-
 ### Single variant analysis
 
 * [PLINK2](PLINK2)
