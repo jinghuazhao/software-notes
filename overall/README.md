@@ -18,9 +18,21 @@ install DBI
 ```
 for instance, as used in [VEP](../VEP).
 
-4. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
+4. Anaconda for Windows
 
-5. Notes on VirtualBox
+conda is in D:/ProgramData/Anaconda2/Library/bin. To install intervaltree as required by depict,
+```
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+followed by `conda install intervaltree`.
+
+All the available packages can be seen with `conda list`.
+
+5. A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
+
+6. Notes on VirtualBox
 
 To enforce sharedclipboard for bidirectional copy between Linux and Windows,
 ```bash
