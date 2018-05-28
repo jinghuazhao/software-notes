@@ -2,9 +2,9 @@
 
 **Any [_] Wide Association Studies - software issues and solutions**
 
-## [Overall setup](overall) as with an extensible list of applications
+## [Overall setup](overall) + an extensible list of applications
 
-They are complementary but not exclusive to a number of pipelines on the GitHub.
+They are complementary but not exclusive to other pipelines on the GitHub.
 
 ### Single variant analysis
 
