@@ -1,24 +1,24 @@
 # Overall setup
 
-## Parallel computing, R, and other software
+## Parallel computing
 
-###. It is relevant to have knowledge about GNU parallel and sge. Under Ubuntu, parallel is easily installed as follows,
+It is relevant to have knowledge about GNU parallel and sge. Under Ubuntu, parallel is easily installed as follows,
 ```{bash}
 sudo apt install parallel
 ```
 see also descriptions in other pipelines here. It is perhaps more demanding with sge, e.g., https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
 Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
-### A section dedicated to [R and RStudio](../R).
+## [R and RStudio](../R).
 
-### An example for installing DBI for Perl,
+## Perl
 ```bash
 sudo perl -MCPAN -e shell
 install DBI
 ```
 for instance, as used in [VEP](../VEP).
 
-### Anaconda for Windows
+## Anaconda for Windows
 
 conda is in D:/ProgramData/Anaconda2/Library/bin. To install intervaltree as required by depict,
 ```
@@ -30,9 +30,9 @@ followed by `conda install intervaltree`.
 
 All the available packages can be seen with `conda list`.
 
-### A broad coverage on genomewide association studies is available from [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
+## [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as part of the removed GWAS-2017 repository and now listed in [GDCT repository](https://github.com/jinghuazhao/GDCT).
 
-### Notes on VirtualBox
+## Notes on VirtualBox
 
 To enforce sharedclipboard for bidirectional copy between Linux and Windows,
 ```bash
