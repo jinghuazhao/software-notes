@@ -13,9 +13,14 @@ The last line requires modules DBI, Build as described in [Overall](../overall).
 
 Lastly, VEP requires .vep directory at $HOME which can be derived from a centrally-installed VEP under Linux,
 ```bash
-cd $HOME
-ln -s /genetics/ensembl-vep/.vep
+ln -s /genetics/ensembl-vep/.vep $HOME/.vep
+ln -s /genetics/ensembl-vep/vep $HOME/bin/vep
 ```
-for instance.
+assuming /genetics/ensembl-vep contains the software.
 
 It is slow to get those databases, so one may prefer to get them directly from ftp://ftp.ensembl.org/pub/release-92/variation/VEP/ and unpack into the .vep directory.
+
+We can now execute an example,
+```bash
+vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
+```
