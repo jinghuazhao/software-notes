@@ -1,4 +1,4 @@
-## Issues with DEPICT at GitHub
+## Issues with DEPICT
 
 ## Setup
 
