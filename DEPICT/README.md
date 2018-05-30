@@ -19,6 +19,17 @@ depict.py ldl_teslovich_nature2010.cfg
 ```
 where the package is unpacked into the DEPICT/ directory which contains data/ subdirectory. We then create a symbolic link to data/ from the GitHub version, which does not contain data (to save space on GitHub) while allowing for cutoff_type to be p-values in network analysis for instance.
 
+Note that the documentation example does not give the full results; in order to do so change the following section,
+```
+# The reconstituted gene set files used by DEPICT
+reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_example.txt
+```
+to
+```
+# The reconstituted gene set files used by DEPICT
+reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
+```
+
 ## PLINK
 
 [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used -- [PLINK2](https://www.cog-genomics.org/plink/2.0/) drops the --clump option.
