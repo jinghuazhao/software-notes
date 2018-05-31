@@ -13,6 +13,7 @@ common, exome, rare, models, plots
 
 ### Finemapping
 
+* [CAVIAR/eCAVIAR](caviar)
 * [JAM](JAM)
 
 ### Functional annotation
