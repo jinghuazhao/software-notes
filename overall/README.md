@@ -50,7 +50,7 @@ All the available packages can be seen with `conda list`. Note that conda under 
 
 ## Oracle VirtualBox
 
-To enforce sharedclipboard for bidirectional copy between Linux and Windows,
+To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
 ```bash
 # shared folders
 sudo mount -t vboxsf -o uid=jhz22 C /home/jhz22/C
