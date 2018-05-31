@@ -13,6 +13,7 @@ sudo apt install libgsl-dev
 Once this is done, one can proceed with the compiling,
 ```bash
 cd caviar
+cd CAVIAR-C++
 make
 ```
 
