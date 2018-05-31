@@ -34,9 +34,9 @@ install DBI
 ```
 for instance, as used in [VEP](../VEP).
 
-## Anaconda for Windows
+## Anaconda
 
-Note that conda is in D:/ProgramData/Anaconda2/Library/bin. To install intervaltree as required by depict,
+To install intervaltree as required by depict,
 ```
 conda config --add channels defaults
 conda config --add channels conda-forge
@@ -44,7 +44,7 @@ conda config --add channels bioconda
 ```
 followed by `conda install intervaltree`.
 
-All the available packages can be seen with `conda list`.
+All the available packages can be seen with `conda list`. Note that conda under WIndows is in typically D:/ProgramData/Anaconda2/Library/bin.
 
 ## [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
 
