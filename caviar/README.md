@@ -1,4 +1,4 @@
-## seutp
+## Setup
 
 Installation is made from GitHub in the usual way,
 ```bash
