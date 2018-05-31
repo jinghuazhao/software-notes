@@ -2,7 +2,7 @@
 
 **Any [_] Wide Association Studies - software issues and solutions**
 
-This repository collects **[overall setup](overall)** and specific information on software below.
+This repository collects information on **[overall setup](overall)** and specific aspects for software.
 
 ### Single variant analysis
 
