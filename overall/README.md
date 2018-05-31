@@ -1,5 +1,7 @@
 # Overall setup
 
+Contents in this section are generic, therefore worthwhile to note and maintain for a variety of applications.
+
 ## Resources
 
 https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
