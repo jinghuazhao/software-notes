@@ -48,8 +48,6 @@ followed by `conda install intervaltree`.
 
 All the available packages can be seen with `conda list`. Note that conda under WIndows is in typically D:/ProgramData/Anaconda2/Library/bin.
 
-## [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
-
 ## Oracle VirtualBox
 
 To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
@@ -70,3 +68,5 @@ dd if=/dev/zero of=zerofillfile bs=1M
 path D:\Program Files\Oracle\VirtualBox
 VBoxManage modifyhd --compact "ubuntu18.04.vdi"
 ```
+
+[vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
