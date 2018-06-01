@@ -30,7 +30,10 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
-Under Windows, `gzip.exe` is also required at the working directory.
+Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
+```
+python depict.py BMI.cfg
+```
 
 ## PLINK
 
@@ -50,3 +53,21 @@ This is from src/python rather than .cfg from example.
 ## Additional notes
 
 You can examine my [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) repository on other changes I have made.
+
+## Example
+
+We illustrate with the latest GIANT+Biiobank data on BMI,
+
+```bash
+wget https://portals.broadinstitute.org/collaboration/giant/images/0/0f/Meta-analysis_Locke_et_al%2BUKBiobank_2018.txt.gz
+gunzip -c Meta-analysis_Locke_et_al+UKBiobank_2018.txt.gz | awk '
+{
+   FS=OFS="\t"
+   if(NR==1) print "SNP","Chr","Pos","P"
+   else print $3,$1,$2,$9
+}' | gzip -f > BMI.txt.gz
+
+```
+where we opt to customise the header rather than the DEPICT configuration file.
+
+Once we started, we had complaint that`data/backgrounds/nloci723_nperm500_kb500_rsq0.1_mhc25000000-35000000_colld0.5-collection-1000genomespilot-depict-150429/`do not have enough information; follow instruction and remove the directory. It is very slow-going, probably ~20 hours on our Linux note; surprisingly it only takes half that time under my Windows 10. What I did was to zip the directory and unzip it under Linux and run`depict.py`there.
