@@ -30,7 +30,7 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
-Under Windows, `gzip.exe` is also required.
+Under Windows, `gzip.exe` is also required at the working directory.
 
 ## PLINK
 
