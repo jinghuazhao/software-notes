@@ -75,6 +75,10 @@ gunzip -c Meta-analysis_Locke_et_al+UKBiobank_2018.txt.gz | awk '
 ```
 where we opt to customise the header rather than the DEPICT configuration file.
 
-Once started, we had complaint that`data/backgrounds/nloci723_nperm500_kb500_rsq0.1_mhc25000000-35000000_colld0.5-collection-1000genomespilot-depict-150429/`do not have enough information; follow instruction and remove the directory. It is very slow-going, probably ~20 hours on our Linux note; surprisingly it only takes half that time under my Windows 10. What I did was to zip the directory and unzip it under Linux and run`depict.py`there.
+Once started, we had complaint that
+> Retrieving background loci
+> Exiting.. To few background files in data/backgrounds/nloci723_nperm500_kb500_rsq0.1_mhc25000000-35000000_colld0.5-collection-1000genomespilot-depict-150429/. Please remove the folder, rerun DEPICT and contact tunepers@broadinstitute.org if the error prevails.
 
-We can then generate [BMI.xlsx](BMI.xlsx) as in [PW-pipelne](https://github.com/jinghuazhao/PW-pipeline). While there are 849 genesets with FDR<0.05, tissue enrichment shows compelingly an overwhelming role of the nervous system.
+Follow instruction and remove the directory. It is very slow-going, ~20 hours on our Linux note but surprisingly half that time under my Windows 10 whose directory zipped and then unzipped under Linux and run`depict.py`there.
+
+We then generate [BMI.xlsx](BMI.xlsx) as in [PW-pipelne](https://github.com/jinghuazhao/PW-pipeline). While there are 849 genesets with FDR<0.05, tissue enrichment shows compelingly an overwhelming role of the nervous system.
