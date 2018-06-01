@@ -30,16 +30,18 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
+Under Windows, `gzip.exe` is also required.
+
 ## PLINK
 
 [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used -- [PLINK2](https://www.cog-genomics.org/plink/2.0/) drops the --clump option.
 
-## Python
+## Python 2.7.*
 
-* call to .sort() should have been .sort_values() in network_plot.py and depict_library.py .
+For install, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py .
 
-* Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
- [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) for how to set up.
+Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
+[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
 
 ## template.cfg
 
