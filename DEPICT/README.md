@@ -35,6 +35,11 @@ Under Windows, `gzip.exe` is also required at the working directory or %path%. W
 python depict.py BMI.cfg
 ```
 
+For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from ImageMagick) to obtain .png files to be incorporated into Excel workbook. For network plot, the python package scikit-learn is required.
+```bash
+sudo pip install scikit-learn
+```
+
 ## PLINK
 
 [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used -- [PLINK2](https://www.cog-genomics.org/plink/2.0/) drops the --clump option.
