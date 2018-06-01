@@ -77,4 +77,4 @@ where we opt to customise the header rather than the DEPICT configuration file.
 
 Once we started, we had complaint that`data/backgrounds/nloci723_nperm500_kb500_rsq0.1_mhc25000000-35000000_colld0.5-collection-1000genomespilot-depict-150429/`do not have enough information; follow instruction and remove the directory. It is very slow-going, probably ~20 hours on our Linux note; surprisingly it only takes half that time under my Windows 10. What I did was to zip the directory and unzip it under Linux and run`depict.py`there.
 
-We can then generate [an Excel workbook](BMI.xlsx) as in PW-pipelne.
+We can then generate [BMI.xlsx](BMI.xlsx) as in [PW-pipelne](https://github.com/jinghuazhao/PW-pipeline).
