@@ -17,7 +17,7 @@ cd example
 # editing ldl_teslovich_nature2010.cfg
 depict.py ldl_teslovich_nature2010.cfg
 ```
-where the package is unpacked into the DEPICT/ directory which contains data/ subdirectory. We then create a symbolic link to data/ from the GitHub version, which does not contain data (to save space on GitHub) while allowing for cutoff_type to be p-values in network analysis for instance.
+where the package is unpacked into the DEPICT/ directory which contains data/ subdirectory. We then create a symbolic link to data/ from the GitHub version, which does not contain data (to save space on GitHub) while allowing for cutoff_type to be p-values in network analysis for instance. The data/ directory also contains additional background files which can be merged with v1_rel194, see below.
 
 Note that the documentation example does not give the full results; in order to do so change the following section,
 ```
