@@ -46,7 +46,10 @@ conda config --add channels bioconda
 ```
 followed by `conda install intervaltree`.
 
-All the available packages can be seen with `conda list`. Note that conda under WIndows is in typically D:/ProgramData/Anaconda2/Library/bin.
+All the available packages can be seen with `conda list`. Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
+```
+set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
+```
 
 ## Oracle VirtualBox
 
@@ -70,3 +73,5 @@ VBoxManage modifyhd --compact "ubuntu18.04.vdi"
 ```
 
 [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
+
+Since one may allocate only part of RAM to VirtualBox, it is often necessary to run program under MS-DOS, e.g., sections on DEPICT.
