@@ -30,7 +30,7 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
-template.cfg is from src/python rather than .cfg from example.
+NB template.cfg is from src/python rather than .cfg from example.
 
 Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
 ```
