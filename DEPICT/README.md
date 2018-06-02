@@ -52,7 +52,7 @@ sudo pip install scikit-learn
 
 ## Additional notes
 
-You can examine my [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) repository on other changes.
+[PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) puts together many changes and is streamlined with other software.
 
 ## Example
 
