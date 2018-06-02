@@ -30,6 +30,8 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
+template.cfg is from src/python rather than .cfg from example.
+
 Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
 ```
 python depict.py BMI.cfg
@@ -39,10 +41,6 @@ For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from Im
 ```bash
 sudo pip install scikit-learn
 ```
-
-## template.cfg
-
-This is from src/python rather than .cfg from example.
 
 ## PLINK
 
