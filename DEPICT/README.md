@@ -64,7 +64,7 @@ gunzip -c Meta-analysis_Locke_et_al+UKBiobank_2018.txt.gz | awk '
 {
    FS=OFS="\t"
    if(NR==1) print "SNP","Chr","Pos","P"
-   else print $3,$1,$2,$9
+   else if($9<=5e-8) print $3,$1,$2,$9
 }' | gzip -f > BMI.txt.gz
 
 ```
