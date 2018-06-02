@@ -40,9 +40,13 @@ For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from Im
 sudo pip install scikit-learn
 ```
 
+## template.cfg
+
+This is from src/python rather than .cfg from example.
+
 ## PLINK
 
-[PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used -- [PLINK2](https://www.cog-genomics.org/plink/2.0/) drops the --clump option.
+[PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used rather than [PLINK2](https://www.cog-genomics.org/plink/2.0/) since itdrops the --clump option.
 
 ## Python 2.7.*
 
@@ -51,13 +55,9 @@ For install, the following change is needed: from .sort() to .sort_values() in n
 Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
 [SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
 
-## template.cfg
-
-This is from src/python rather than .cfg from example.
-
 ## Additional notes
 
-You can examine my [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) repository on other changes I have made.
+You can examine my [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) repository on other changes.
 
 ## Example
 
