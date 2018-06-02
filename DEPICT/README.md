@@ -35,7 +35,7 @@ reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_
 
 * NB template.cfg is from src/python rather than .cfg from example.
 
-* Python 2.7.*. After installatopm, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py.
+* Python 2.7.*. After installation, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py.
 
 * Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
 [SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
