@@ -4,6 +4,7 @@
 
 * Information on download and usage is here, https://data.broadinstitute.org/mpg/depict/documentation.html, which has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz).
 It contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
+
 * It is preferable to use the source package from GitHub while linking the data directory packaged with DEPICT_v1_rel194.tar.gz above. For instance, 
 ```{bash}
 tar xvfz DEPICT_v1_rel194.tar.gz
@@ -30,28 +31,24 @@ to
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
 ```
 
-NB template.cfg is from src/python rather than .cfg from example.
+* PLINK. [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used rather than [PLINK2](https://www.cog-genomics.org/plink/2.0/) since itdrops the --clump option.
 
-Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
+* NB template.cfg is from src/python rather than .cfg from example.
+
+* Python 2.7.*. For install, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py.
+
+* Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
+[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
+
+* Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
 ```
 python depict.py BMI.cfg
 ```
 
-For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from ImageMagick) to obtain .png files to be incorporated into Excel workbook. For network plot, the python package scikit-learn is required.
+* For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from ImageMagick) to obtain .png files to be incorporated into Excel workbook. For network plot, the python package scikit-learn is required.
 ```bash
 sudo pip install scikit-learn
 ```
-
-## PLINK
-
-[PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used rather than [PLINK2](https://www.cog-genomics.org/plink/2.0/) since itdrops the --clump option.
-
-## Python 2.7.*
-
-For install, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py .
-
-Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
-[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
 
 ## Additional notes
 
