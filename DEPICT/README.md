@@ -82,7 +82,7 @@ Follow instruction and remove the directory. It is very slow-going, ~20 hours on
 
 We then generate [BMI.xlsx](BMI.xlsx) as in [PW-pipelne](https://github.com/jinghuazhao/PW-pipeline/wiki). While there are 859 genesets with FDR<0.05, tissue enrichment shows compelingly an overwhelming role of the nervous system.
 
-### References
+## References
 
 Yengo L, et al. Meta-analysis of genome-wide association studies for height and body mass index in ~700,000 individuals of European ancestry. BioRxiv,
 https://www.biorxiv.org/content/early/2018/03/02/274654
