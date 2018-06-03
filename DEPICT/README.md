@@ -11,7 +11,7 @@ export CWD=$(pwd)
 ```
 where the package is unpacked into the DEPICT/ directory containing the data/ subdirectory. We also note down current working directory with `CWD`.
 
-* The the source package from GitHub has more features such as cutoff_type to be p-values in network analysis, which is downloaded
+* We work with the source package from GitHub has more features such as cutoff_type to be p-values in network analysis,
 ```{bash}
 git clone https://github.com/perslab/depict
 cd depict
