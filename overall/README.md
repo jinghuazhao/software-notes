@@ -46,7 +46,11 @@ conda config --add channels bioconda
 ```
 followed by `conda install intervaltree`.
 
-All the available packages can be seen with `conda list`. Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
+All the available packages can be seen with `conda list`. To install java, run following command
+```
+conda install -c anaconda openjdk
+```
+Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
 ```
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
