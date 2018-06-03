@@ -20,7 +20,7 @@ mv ld0.5* data/collections
 sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' example/ldl_teslovich_nature2010.cfg > test.cfg
 src/python/depict.py test.cfg
 ```
-so we run a toy example which has a test_ prefix -- everything is in place except`ld0.5_collection_1000genomespilot_depict_150429.txt.gz`which we download it from the Broad.
+so we run a toy example which has a test_ prefix -- everything is in place except `ld0.5_collection_1000genomespilot_depict_150429.txt.gz` which we download it from the Broad.
 
 * Note that the documentation example does not give the full results -- to remedy this we can link the data directory packaged with DEPICT_v1_rel194.tar.gz above,
 ```bash
