@@ -43,7 +43,7 @@ src/python/depict.py test.cfg
 * Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
 [SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
 
-* Under Windows, `gzip.exe` is also required at the working directory or %path%. We can then execute
+* Under Windows, `gzip.exe` is also required at the working directory or %path% plus some changes over directory specifications. We can then execute
 ```
 python depict.py BMI.cfg
 ```
