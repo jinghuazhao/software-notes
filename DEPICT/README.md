@@ -1,4 +1,4 @@
-## Issues with DEPICT
+## DEPICT
 
 ## Setup
 
