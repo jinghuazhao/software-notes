@@ -38,7 +38,7 @@ src/python/depict.py test.cfg
 
 * NB template.cfg is from src/python rather than .cfg from example.
 
-* Python 2.7.*. After installation, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py.
+* Python 2.7.*. After installation, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py. It is necessary to download [additional files](https://data.broadinstitute.org/mpg/depict/depict_download/) for network analysis.
 
 * Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
 [SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
