@@ -22,7 +22,7 @@ common, exome, rare, models, plots
 
 ### Pathway analysis
 
-* [DEPICT](DEPICT) The latest GIANT+Biobank BMI analysis is here ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
+* [DEPICT](DEPICT) Setup and the latest GIANT+Biobank BMI analysis are here ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
 * [PASCAL](PASCAL)
 
 ### Medelian randomiszation
