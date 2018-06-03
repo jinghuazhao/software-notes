@@ -17,10 +17,8 @@ cd depict
 mkdir -p data/collections
 wget https://data.broadinstitute.org/mpg/depict/depict_download/collections/ld0.5_collection_1000genomespilot_depict_150429.txt.gz
 mv ld0.5* data/collections
-cd example
-# editing ldl_teslovich_nature2010.cfg
-sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' ldl_teslovich_nature2010.cfg > test.cfg
-depict.py test.cfg
+sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' example/ldl_teslovich_nature2010.cfg > test.cfg
+src/python/depict.py test.cfg
 ```
 so we run a toy example which has a test_ prefix -- everything is in place except`ld0.5_collection_1000genomespilot_depict_150429.txt.gz`which we download it from the Broad.
 
