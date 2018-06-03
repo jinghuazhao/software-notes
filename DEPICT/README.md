@@ -31,15 +31,10 @@ ln -s src/python/depict.py $HOME/bin/depict.py
 Where a symbolic link is created to replace data/ from the GitHub version with that from v1_rel194.
 
 Now to use the full list of reconstituted genesets, make the following change to`test.cfg`:
+```bash
+sed -i 's|data/reconstituted_genesets/reconstituted_genesets_example.txt|data/reconstituted_genesets/reconstituted_genesets_150901.binary|g' test.cfg
 ```
-# The reconstituted gene set files used by DEPICT
-reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_example.txt
-```
-to
-```
-# The reconstituted gene set files used by DEPICT
-reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_150901.binary
-```
+and re-run `src/python/depict.py test.cfg`
 
 * PLINK. [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used rather than [PLINK2](https://www.cog-genomics.org/plink/2.0/) since itdrops the --clump option.
 
