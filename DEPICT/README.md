@@ -1,6 +1,6 @@
 ## DEPICT
 
-## Setup
+## Installation and documentation example
 
 * Information on download and usage is here, https://data.broadinstitute.org/mpg/depict/documentation.html, which has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz).
 It contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
@@ -10,7 +10,7 @@ export CWD=$(pwd)
 ```
 where the package is unpacked into the DEPICT/ directory which contains data/ subdirectory.
 
-* It is preferable to use the source package from GitHub while linking the data directory packaged with DEPICT_v1_rel194.tar.gz above. For instance, 
+* It is preferable to use the source package from GitHub, with its addition such as cutoff_type to be p-values in network analysis for instance,
 ```{bash}
 git clone https://github.com/perslab/depict
 cd depict
@@ -22,20 +22,17 @@ cd example
 sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' ldl_teslovich_nature2010.cfg > test.cfg
 depict.py test.cfg
 ```
-so we run a toy example which has a test_ prefix. Everything is in place except`ld0.5_collection_1000genomespilot_depict_150429.txt.gz`which we download it from the Broad.
+so we run a toy example which has a test_ prefix -- everything is in place except`ld0.5_collection_1000genomespilot_depict_150429.txt.gz`which we download it from the Broad.
 
-* Note that the documentation example does not give the full results. One can mask the data directory and use those from v1_rel194 instead,
-```
+* Note that the documentation example does not give the full results -- to remedy this we can link the data directory packaged with DEPICT_v1_rel194.tar.gz above,
+```bash
 mv data data.sav
 ln -s $CWD/DEPICT/data
 ln -s src/python/depict.py $HOME/bin/depict.py
 ```
-We then create a symbolic link to data/ from the GitHub version, which does not contain all data 
-while allowing for cutoff_type to be p-values in network analysis for 
-instance. The data/ directory also contains additional background files which can be merged with v1_rel194;
-otherwise they can be regenerated on the fly (often necessary), see below.
+Where a symbolic link is created to replace data/ from the GitHub version with that from v1_rel194.
 
-To use the full list of reconstituted genesets, make the following change to`test.cfg`:
+Now to use the full list of reconstituted genesets, make the following change to`test.cfg`:
 ```
 # The reconstituted gene set files used by DEPICT
 reconstituted_genesets_file: data/reconstituted_genesets/reconstituted_genesets_example.txt
