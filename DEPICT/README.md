@@ -8,7 +8,7 @@ It contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](
 tar xvfz DEPICT_v1_rel194.tar.gz
 export CWD=$(pwd)
 ```
-where the package is unpacked into the DEPICT/ directory containing the data/ subdirectory.
+where the package is unpacked into the DEPICT/ directory containing the data/ subdirectory. We also note down current working directory with `CWD`.
 
 * It is preferable to use the source package from GitHub, with its addition such as cutoff_type to be p-values in network analysis for instance,
 ```{bash}
