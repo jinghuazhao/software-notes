@@ -2,8 +2,8 @@
 
 ## Installation and documentation example
 
-* The official site, https://data.broadinstitute.org/mpg/depict/documentation.html has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz).
-It contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
+* The official site, https://data.broadinstitute.org/mpg/depict/documentation.html has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz),
+which contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
 ```bash
 tar xvfz DEPICT_v1_rel194.tar.gz
 export CWD=$(pwd)
