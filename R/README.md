@@ -20,6 +20,24 @@ export R_LIBS=/usr/local/lib/R/site-library/
 ```
 Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
+### R-devel
+
+Under Fedora 28, the following are necessary,
+```bash
+sudo dnf install gcc-c++
+sudo dnf install readline-devel
+sudo dnf install compat-gcc-34-g77
+sudo dnf install bzip2-devel
+sudo dnf install xz-devel
+sudo dnf install pcre-devel
+sudo dnf install libcurl-devel
+sudo dnf install texlive-collection-latex
+sudo dnf install texlive-collection-fontsextra
+sudo dnf install texinfo
+sudo dnf install libX11 libX11-devel libXt libXt-devel
+./configure
+```
+
 ### RStudio
 
 The distribution has problem loading or creating R script, so it is tempting to install from https://github.com/rstudio/rstudio/. This involves running scripts under directory dependencies/, 
