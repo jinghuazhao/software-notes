@@ -62,7 +62,7 @@ sudo apt install parallel
 see also descriptions in other pipelines here. It is perhaps more demanding with sge, e.g., https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
 Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
-## [R and RStudio](../R).
+## [R and RStudio](../R)
 
 ## Perl
 ```bash
