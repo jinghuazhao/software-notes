@@ -36,6 +36,7 @@ Under Fedora 28, the following are necessary,
 sudo dnf install gcc-c++
 sudo dnf install gcc-gfortran
 sudo dnf install compat-gcc-34-g77
+sudo dnf install java-openjdk-devel
 sudo dnf install pcre-devel
 sudo dnf install readline-devel
 sudo dnf install libcurl-devel
