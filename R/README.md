@@ -1,5 +1,22 @@
 # R
 
+## The old `tidy.R`
+
+It works as follows,
+```bash
+function tidy()
+{
+  export input=$1
+R --vanilla <<END
+  options(keep.source = FALSE)
+  input <- Sys.getenv("input")
+  source(input)
+  dump(ls(all = TRUE), file = paste0(input,"_out"))
+END
+}
+tidy myfile.R
+```
+
 ## Windows
 
 It seems the --arch x84 option is very useful for using all available RAM; to make sure use call such as `D:\Program Files\R\R-3.5.0\bin\x64\R.exe"`.
@@ -14,24 +31,7 @@ sudo dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
 cd /run/media/jhz22/VBox_GAs_5.2.12/
 sudo ./VBoxLinuxAdditions.run
 ```
-
-## Ubuntu 18.04
-
-### R installation
-
-```{bash}
-sudo apt install r-base-core
-sudo apt install r-base-dev
-```
-and R_LIBS is set from .bashrc
-```{bash}
-export R_LIBS=/usr/local/lib/R/site-library/
-```
-Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
-
-### R-devel
-
-Under Fedora 28, the following are necessary,
+Under Fedora 28, the following are necessary to build [R-devel](https://stat.ethz.ch/R/daily/R-devel.tar.gz),
 ```bash
 sudo dnf install gcc-c++
 sudo dnf install gcc-gfortran
@@ -48,6 +48,25 @@ sudo dnf install texlive-collection-fontsextra
 sudo dnf install texinfo-tex
 ./configure
 ```
+This is necessary since gcc 8 is available and required for CRAN package submission, e.g.,
+```bash
+ln -s /home/jhz22/R/R-devel/bin/R /home/jhz22/bin/R-devel
+R-devel CMD check --as-can gap_1.1-22.tar.gz
+```
+
+## Ubuntu 18.04
+
+### R installation
+
+```{bash}
+sudo apt install r-base-core
+sudo apt install r-base-dev
+```
+and R_LIBS is set from .bashrc
+```{bash}
+export R_LIBS=/usr/local/lib/R/site-library/
+```
+Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instead, see below example in `MendelianRandomization`.
 
 ### RStudio
 
