@@ -34,6 +34,7 @@ Note that in fact `html.start()` in R points to /usr/local/lib/R/library/ instea
 Under Fedora 28, the following are necessary,
 ```bash
 sudo dnf install gcc-c++
+sudo dnf install gcc-gfortran
 sudo dnf install compat-gcc-34-g77
 sudo dnf install pcre-devel
 sudo dnf install readline-devel
@@ -46,7 +47,6 @@ sudo dnf install texlive-collection-fontsextra
 sudo dnf install texinfo
 ./configure
 ```
-Nevertheless there remains issue with LAPACK.
 
 ### RStudio
 
