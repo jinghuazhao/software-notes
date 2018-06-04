@@ -45,7 +45,7 @@ sudo dnf install bzip2-devel
 sudo dnf install xz-devel
 sudo dnf install texlive-collection-latex
 sudo dnf install texlive-collection-fontsextra
-sudo dnf install texinfo
+sudo dnf install texinfo-tex
 ./configure
 ```
 
