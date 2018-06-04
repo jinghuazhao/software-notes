@@ -15,8 +15,8 @@ where the package is unpacked into the DEPICT/ directory containing the data/ su
 ```{bash}
 git clone https://github.com/perslab/depict
 cd depict
-mkdir -p data/collections
 wget https://data.broadinstitute.org/mpg/depict/depict_download/collections/ld0.5_collection_1000genomespilot_depict_150429.txt.gz
+mkdir -p data/collections
 mv ld0.5* data/collections
 sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' example/ldl_teslovich_nature2010.cfg > test.cfg
 src/python/depict.py test.cfg
