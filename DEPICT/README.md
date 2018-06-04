@@ -40,8 +40,8 @@ src/python/depict.py test.cfg
 
 * Python 2.7.*. After installation, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py. It is necessary to download [additional files](https://data.broadinstitute.org/mpg/depict/depict_download/) for network analysis -- in my case, downloads via Firefox do not work and I used `wget` instead.
 
-* Is it possible to replicate the Supplementary Figure 9 of the Scott paper? The number of significant pathways seemed to fall short of the FDR<=0.05 criterion. See
-[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for how to set up.
+* To explore possibility to replicate the Supplementary Figure 9 of the Scott paper -- the number of significant pathways seemed to fall short of the FDR<=0.05 criterion, see
+[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for setup.
 
 * Under Windows, `gzip.exe` is also required at the working directory or %path% plus some changes over directory specifications. We can then execute
 ```
