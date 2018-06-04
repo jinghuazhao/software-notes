@@ -11,7 +11,7 @@ export CWD=$(pwd)
 ```
 where the package is unpacked into the DEPICT/ directory containing the data/ subdirectory. We also note down current working directory with `CWD`.
 
-* The source package from GitHub, adding `ld0.5_collection_1000genomespilot_depict_150429.txt.gz`, has more features such as cutoff_type to be p-values in network analysis,
+* The source package from GitHub with `ld0.5_collection_1000genomespilot_depict_150429.txt.gz` has more features such as cutoff_type to be p-values in network analysis; the code
 ```{bash}
 git clone https://github.com/perslab/depict
 cd depict
@@ -21,14 +21,14 @@ mv ld0.5* data/collections
 sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' example/ldl_teslovich_nature2010.cfg > test.cfg
 src/python/depict.py test.cfg
 ```
-runs the toy example producing results prefixed with `test_`.
+produces results prefixed with `test_` using the LDL data.
 
-* Note that the documentation example above does not give the full results -- a remedy is to link the data directory packaged with DEPICT_v1_rel194.tar.gz above,
+* Since the documentation example above does not give the full results, data directory packaged with DEPICT_v1_rel194.tar.gz above is called to remedy,
 ```bash
 mv data data.sav
 ln -s $CWD/DEPICT/data
 ```
-Where a symbolic link to data from v1_rel194 replaces that from GitHub. Given the full list of reconstituted genesets, a minor change is made to`test.cfg` for a re-run.
+with a minor change to `test.cfg` for a re-run.
 ```bash
 sed -i 's|data/reconstituted_genesets/reconstituted_genesets_example.txt|data/reconstituted_genesets/reconstituted_genesets_150901.binary|g' test.cfg
 src/python/depict.py test.cfg
