@@ -6,6 +6,15 @@ It seems the --arch x84 option is very useful for using all available RAM; to ma
 
 When this fails, remove large objects in your code and start R with `--vanilla` option.
 
+## Fedora 28
+
+The guest additions is furnished with
+```bash
+sudo dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
+cd /run/media/jhz22/VBox_GAs_5.2.12/
+sudo ./VBoxLinuxAdditions.run
+```
+
 ## Ubuntu 18.04
 
 ### R installation
@@ -28,13 +37,13 @@ sudo dnf install gcc-c++
 sudo dnf install compat-gcc-34-g77
 sudo dnf install pcre-devel
 sudo dnf install readline-devel
-sudo dnf install texlive-collection-latex
-sudo dnf install texlive-collection-fontsextra
-sudo dnf install texinfo
 sudo dnf install libcurl-devel
 sudo dnf install libX11 libX11-devel libXt libXt-devel
 sudo dnf install bzip2-devel
 sudo dnf install xz-devel
+sudo dnf install texlive-collection-latex
+sudo dnf install texlive-collection-fontsextra
+sudo dnf install texinfo
 ./configure
 ```
 
