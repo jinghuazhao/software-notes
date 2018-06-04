@@ -46,6 +46,7 @@ sudo dnf install texlive-collection-fontsextra
 sudo dnf install texinfo
 ./configure
 ```
+Nevertheless there remains issue with LAPACK.
 
 ### RStudio
 
