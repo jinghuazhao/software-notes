@@ -23,12 +23,12 @@ src/python/depict.py test.cfg
 ```
 adds `ld0.5_collection_1000genomespilot_depict_150429.txt.gz` and produces results prefixed with `test_` using the LDL data.
 
-* Since the documentation example above does not give the full results, data directory packaged with DEPICT_v1_rel194.tar.gz above is called to remedy,
+* Since the documentation example above does not give the full results, data directory packaged with DEPICT_v1_rel194.tar.gz above is called to remedy with a minor change,
 ```bash
 mv data data.sav
 ln -s $CWD/DEPICT/data
 ```
-with a minor change to `test.cfg` for a re-run.
+to `test.cfg` for a re-run.
 ```bash
 sed -i 's|data/reconstituted_genesets/reconstituted_genesets_example.txt|data/reconstituted_genesets/reconstituted_genesets_150901.binary|g' test.cfg
 src/python/depict.py test.cfg
