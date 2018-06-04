@@ -31,7 +31,12 @@ sudo dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
 cd /run/media/jhz22/VBox_GAs_5.2.12/
 sudo ./VBoxLinuxAdditions.run
 ```
-Under Fedora 28, the following are necessary to build [R-devel](https://stat.ethz.ch/R/daily/R-devel.tar.gz),
+The R-release is built as follows,
+```bash
+sudo dnf install R
+sudo dnf install R-devel
+```
+The following are necessary to build [R-devel](https://stat.ethz.ch/R/daily/R-devel.tar.gz),
 ```bash
 sudo dnf install gcc-c++
 sudo dnf install gcc-gfortran
@@ -46,10 +51,15 @@ sudo dnf install xz-devel
 sudo dnf install texlive-collection-latex
 sudo dnf install texlive-collection-fontsextra
 sudo dnf install texinfo-tex
+sudo dnf install texlive-collection-fontsrecommended
+sudo dnf install texlive-collection-latexrecommended
 ./configure
 ```
 This is necessary since gcc 8 is available and required for CRAN package submission, e.g.,
 ```bash
+# R-release to build
+R CMD build gap
+# R-devel to check
 ln -s /home/jhz22/R/R-devel/bin/R /home/jhz22/bin/R-devel
 R-devel CMD check --as-can gap_1.1-22.tar.gz
 ```
