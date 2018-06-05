@@ -96,7 +96,8 @@ set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
 
 ## JAGS-4.3.0
-
+```bash
 sudo dnf install automake
 sudo dnf install mercurial
 sudo dnf install lapack-devel
+```
