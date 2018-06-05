@@ -94,3 +94,9 @@ Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/b
 ```
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
+
+## JAGS-4.3.0
+
+sudo dnf install automake
+sudo dnf install mercurial
+sudo dnf install lapack-devel
