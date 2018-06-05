@@ -49,3 +49,15 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 > GWAS SNPs (LD r2 > 0.1) and then annotates them based on functional information overlap. Next, it quantifies Fold Enrichment (FE) at various GWAS significance 
 > cutoffs and assesses them by permutation testing, while matching for minor allele frequency, distance to nearest transcription start site and number of LD 
 > proxies (r2 > 0.8).
+
+## rjags
+
+The currently preferred way to set up is via pkg-config, e.g.,
+
+```bash
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+pkg-config --moderversion jags
+
+R-devel CMD INSTALL --configure-args='--enable-rpath' rjags
+```
+where `rjags` contains files for the package. Once this is done one can proceed with `install.packages("R2jags")`, etc.
