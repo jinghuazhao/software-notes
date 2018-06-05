@@ -52,8 +52,11 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 
 ## rjags
 
-The currently preferred way to set up is via pkg-config, e.g.,
-
+The legacy way to install is 
+```bash
+R-devel CMD INSTALL --configure-args="--with-jags-prefix=/usr/local --with-jags-libdir=/usr/local/lib --with-jags-includedir=/usr/local/include" rjags
+```
+but it might not work and the currently preferred way to set up is via pkg-config, e.g.,
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 pkg-config --moderversion jags
