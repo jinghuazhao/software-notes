@@ -78,6 +78,7 @@ so it is suggested to download directly from https://netbeans.org/downloads/. To
 ```bash
 sudo ./netbeans-8.2-linux.sh --javahome /usr/lib/jvm/java-8-oracale
 ```
+or start with `netbeans --jdkhome /usr/lib/jvm/java-8-oracle` or change `/etc/netbeans.conf` for option `netbeans_jdkhome="/usr/lib/jvm/java-8-oracale"`.
 
 ## Anaconda
 
