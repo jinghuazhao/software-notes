@@ -74,11 +74,11 @@ for instance, as used in [VEP](../VEP).
 ## Java
 
 The IDE of choice is NetBeans (e.g., DEPICT and JAM); however 8.1 from `apt install` under Ubuntu 18.04 crashes
-so it is suggested to download directly from https://netbeans.org/downloads/. To enable JDK it is helpful to specify `--jdkhome` option.
+so it is suggested to download directly from https://netbeans.org/downloads/. To enable JDK it is helpful to specify `--javahome` option.
 ```bash
 sudo ./netbeans-8.2-linux.sh --javahome /usr/lib/jvm/java-8-oracale
 ```
-or start with `netbeans --javahome /usr/lib/jvm/java-8-oracle` (more convenient to set alias netbeans='netbeans --javahome /usr/lib/jvm/java-8-oracle' at .bashrc).
+or start with `netbeans --javahome /usr/lib/jvm/java-8-oracle` (more convenient to set `alias netbeans='netbeans --javahome /usr/lib/jvm/java-8-oracle'` at `.bashrc`).
 
 ## Anaconda
 
