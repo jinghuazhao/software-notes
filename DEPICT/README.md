@@ -55,7 +55,7 @@ sudo pip install scikit-learn
 
 ## Recompile
 
-This may be necessary for large collection of significant variants, e.g., GIANT+UKB height summary statistics (BMI_loci.txt has 2183 lines excluding header).
+This may be necessary for large collection of significant variants, e.g., GIANT+UKB height summary statistics (height_loci.txt has 2,184 lines including header).
 
 Start netbeans and open project from depict/src/java, fixing links to colt.jar, commons-math-2.0.jar, Jama-1.0.2.jar, jsci-core.jar, JSciCore.jar, jsc.jar from lib/.
 
