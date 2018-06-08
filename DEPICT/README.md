@@ -53,6 +53,12 @@ python depict.py BMI.cfg
 sudo pip install scikit-learn
 ```
 
+## Recompile
+
+This may be necessary for large collection of significant variants, e.g., GIANT+UKB height summary statistics.
+
+Start netbeans and open project from depict/src/java, fixing links to colt.jar, commons-math-2.0.jar, Jama-1.0.2.jar, jsci-core.jar, JSciCore.jar, jsc.jar from lib/.
+
 ## Additional notes
 
 [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) puts together many changes and is streamlined with other software.
