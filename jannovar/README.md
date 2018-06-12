@@ -16,5 +16,9 @@ It is handy to use symbolic link, i.e.,
 ```bash
 ln -s /home/jhz22/D/genetics/jannovar/jannovar-cli/target/jannovar-cli-0.24.jar $HOME/bin/Jannovar.jar
 java -jar $HOME/bin/Jannovar.jar db-list
-java -jar Jannovar.jar download -d hg19/refseq
+java -jar $HOME/bin/Jannovar.jar download -d hg19/refseq
+```
+We may need to set memory size, e.g., 
+```bash
+java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
 ```
