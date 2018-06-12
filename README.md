@@ -31,6 +31,10 @@ This repository collects information on **[overall setup](overall)** and specifi
 
 * [R-packages](R-packages)
 
+### NGS
+
+* [varscan](varscan)
+
 ### Polygenic modeling
 
 * [ldsc](ldsc)
