@@ -8,6 +8,6 @@ The installation then proceeds as follows,
 ```bash
 git clone https://github.com/charite/jannovar
 cd jannovar
-mvn compile
-mvn test
+mvn package
 ```
+Other tasks such as compile, test, etc. are also possible.
