@@ -11,3 +11,9 @@ cd jannovar
 mvn package
 ```
 Other tasks such as compile, test, etc. are also possible.
+
+It is handy to use symbolic link, i.e.,
+```bash
+ln -s /home/jhz22/D/genetics/jannovar/jannovar-cli/target/jannovar-cli-0.24.jar Jannovar.jar
+java -jar Jannovar.jar db-list
+```
