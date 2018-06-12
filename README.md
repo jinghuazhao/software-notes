@@ -9,7 +9,9 @@ This repository collects information on **[overall setup](overall)** and specifi
 * [PLINK2](PLINK2)
 * [PyLMM](PyLMM)
 
-common, exome, rare, models, plots
+### common, exome, rare, models, plots
+
+* [Jannovar](jannovar)
 
 ### Finemapping
 
@@ -45,4 +47,3 @@ common, exome, rare, models, plots
 * [R-packages](R-packages)
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
-
