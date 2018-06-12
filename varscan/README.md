@@ -2,5 +2,5 @@
 
 It is relatively simple to get going,
 ```bash
-https://github.com/dkoboldt/varscan
+git clone https://github.com/dkoboldt/varscan
 ```
