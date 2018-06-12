@@ -9,7 +9,7 @@ This repository collects information on **[overall setup](overall)** and specifi
 * [PLINK2](PLINK2)
 * [PyLMM](PyLMM)
 
-### common, exome, rare, models, plots
+### exome and rare variants
 
 * [Jannovar](jannovar)
 
