@@ -36,7 +36,7 @@ Here are the steps, quoting http://www.netreliant.com/news/8/17/Compacting-Virtu
 # Linux
 dd if=/dev/zero of=zerofillfile bs=1M
 
-# Windows
+rem Windows
 path D:\Program Files\Oracle\VirtualBox
 VBoxManage modifyhd --compact "ubuntu18.04.vdi"
 ```
@@ -47,7 +47,7 @@ Since one may allocate only part of RAM to VirtualBox, it is often necessary to 
 
 ## Visual Studio Code
 
-There is a pointer from https://github.com/Microsoft/vscode to https://code.visualstudio.com/Download. Once download, it can be installed with
+There is a pointer from https://github.com/Microsoft/vscode to https://code.visualstudio.com/Download. Once downloaded, it can be installed with
 ```bash
 sudo dpkg -i code_1.23.1-1525968403_amd64.deb
 ```
@@ -106,4 +106,9 @@ These are required at least,
 sudo dnf install automake
 sudo dnf install lapack-devel
 sudo dnf install mercurial
+```
+
+## Miscellaneous notes
+```bash
+sudo apt-get install libcanberra-gtk3-module
 ```
