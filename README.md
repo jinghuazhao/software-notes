@@ -11,6 +11,7 @@ This repository collects information on **[overall setup](overall)** and specifi
 
 ### Exome and rare variants
 
+* [GATK](GATK)
 * [Jannovar](jannovar)
 
 ### Finemapping
