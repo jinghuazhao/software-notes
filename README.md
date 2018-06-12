@@ -11,7 +11,6 @@ This repository collects information on **[overall setup](overall)** and specifi
 
 ### Exome and rare variants
 
-* [GATK](GATK)
 * [Jannovar](jannovar)
 
 ### Finemapping
@@ -34,6 +33,7 @@ This repository collects information on **[overall setup](overall)** and specifi
 
 ### NGS
 
+* [GATK](GATK)
 * [VarScan](VarScan)
 
 ### Polygenic modeling
