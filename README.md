@@ -34,7 +34,7 @@ This repository collects information on **[overall setup](overall)** and specifi
 ### NGS
 
 * [GATK](GATK)
-* [IGV][IGV]
+* [IGV](IGV)
 * [VarScan](VarScan)
 
 ### Polygenic modeling
