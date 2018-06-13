@@ -6,6 +6,8 @@ Contents in this section are generic, therefore worthwhile to note and maintain 
 
 https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
 
+http://human-phenotype-ontology.github.io/about.html
+
 http://www.ukbiobank.ac.uk/
 
 https://www.astrazeneca.com/
