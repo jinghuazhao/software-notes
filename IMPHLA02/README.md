@@ -14,4 +14,6 @@ followed by
 ```perl
 install GD
 install Alien::wxWidgets
+install Moose
+install List::MoreUtils
 ```
