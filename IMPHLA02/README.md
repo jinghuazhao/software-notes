@@ -1,5 +1,7 @@
 # HLA*IMP:02
 
+Download source from https://oxfordhla.well.ox.ac.uk/hla/tool/main
+
 ```bash
 sudo apt install libgd
 sudo apt install libgtk-3*
