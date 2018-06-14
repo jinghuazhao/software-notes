@@ -9,6 +9,10 @@ This repository collects information on **[overall setup](overall)** and specifi
 * [PLINK2](PLINK2)
 * [PyLMM](PyLMM)
 
+### HLA imputation
+
+* [IMP*HLA](IMPHLA02)
+
 ### Exome and rare variants
 
 * [Jannovar](jannovar)
