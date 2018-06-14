@@ -16,4 +16,6 @@ install GD
 install Alien::wxWidgets
 install Moose
 install List::MoreUtils
+install Wx::Mini
+install Wx::Perl::Packager
 ```
