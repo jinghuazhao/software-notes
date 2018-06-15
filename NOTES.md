@@ -17,4 +17,8 @@ brew tap brewsci/bio
 brew tap brewsci/science
 brew install hisat2
 hisat2-build
+brew install sambamba
+brew install picard-tools
+brew install stringtie
 ```
+See https://www.springer.com/us/book/9781493978335, Chapter 15.
