@@ -2,7 +2,8 @@
 
 **Software notes for [_]Wide Association Studies**
 
-This repository collects information on **[overall setup](overall)** and specific aspects for software. It is envisaged that the site could eventually be enriched by many practitioners.
+This repository collects information on **[overall setup](overall)** and specific aspects for software. It evolves over time; additional information is also kept in 
+[NOTES](NOTES.md). It is envisaged that the site could eventually be enriched by many practitioners.
 
 ### Single variant analysis
 
