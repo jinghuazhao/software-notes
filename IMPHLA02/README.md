@@ -19,3 +19,4 @@ install List::MoreUtils
 install Wx::Mini
 install Wx::Perl::Packager
 ```
+We can also use cpan, but the installation fails under Ubuntu 18.04.
