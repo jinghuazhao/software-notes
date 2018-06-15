@@ -1,7 +1,9 @@
-# 14-6-2018 JHZ
+# 15-6-2018 JHZ
 
 git add README.md
 git commit -m "README"
+git add NOTES.md
+git commit -m "NOTES"
 for d in DEPICT caviar GATK IGV IMPHLA02 JAM jannovar ldsc PASCAL MetaXcan PLINK2 PyLMM R R-packages PheWAS overall VEP VarScan st.sh
 do
    git add $d
