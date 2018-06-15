@@ -1,4 +1,4 @@
-# brew
+# Linuxbrew
 
 Follow http://linuxbrew.sh/ and possibly https://docs.brew.sh
 ```bash
