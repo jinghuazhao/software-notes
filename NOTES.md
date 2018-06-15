@@ -10,7 +10,7 @@ echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.pr
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 ```
 
-# hisat2
+# hisat2, sambamba, picard-tools, StringTie
 
 ```bash
 brew tap brewsci/bio
