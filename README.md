@@ -29,7 +29,7 @@ This repository collects information on **[overall setup](overall)** and specifi
 
 ### Pathway analysis
 
-* [DEPICT](DEPICT) (see the latest [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
+* [DEPICT](DEPICT) (see the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
 * [PASCAL](PASCAL)
 
 ### Medelian randomiszation
