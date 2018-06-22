@@ -6,6 +6,8 @@ This repository collects information dynamically on software in the expectation 
 
 ## 1. [Overall setup](overall)
 
+Contents in this section are generic, therefore worthwhile to note and maintain for a variety of applications.
+
 ## 2. Specific setup
 
 ### Single variant analysis
