@@ -82,6 +82,14 @@ sudo ./netbeans-8.2-linux.sh --javahome /usr/lib/jvm/java-8-oracale
 ```
 or start with `netbeans --javahome /usr/lib/jvm/java-8-oracle` (more convenient to set `alias netbeans='netbeans --javahome /usr/lib/jvm/java-8-oracle'` at `.bashrc`).
 
+## Python
+
+To install a particular version of package, e.g.,
+```bash
+sudo -H pip install pandas==0.20.1
+```
+which is required by DEPICT's `munge_sumstats.py`. Other pip options include `uninstall`.
+
 ## Anaconda
 
 To install intervaltree as required by depict,
