@@ -23,6 +23,7 @@ setup()
 # It fails to munge, so we use brute-force. For P-to-Z implementation in C/C++, see
 # https://stackoverflow.com/questions/27830995/inverse-cumulative-distribution-function-in-c
 # https://stackoverflow.com/questions/22834998/what-reference-should-i-use-to-use-erf-erfc-function
+# It turned out that an older version of pandas is required here, see the GIANT+UKB BMI example
 
 awk 'NR>1' $GIANT_BMI > 1
 awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk > BMI.sumstats
