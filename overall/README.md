@@ -1,7 +1,5 @@
 # Overall setup
 
-Contents in this section are generic, therefore worthwhile to note and maintain for a variety of applications.
-
 ## Oracle VirtualBox
 
 To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
