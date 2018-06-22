@@ -2,8 +2,11 @@
 
 **Software notes for [_]Wide Association Studies**
 
-This repository collects information on **[overall setup](overall)** and specific aspects for software. It evolves over time; additional information is also kept in 
-[NOTES](NOTES.md). It is envisaged that the site could eventually be enriched by many practitioners.
+This repository collects information dynamically on software in the expectation that the site could eventually be enriched by many practitioners. Please let me know if you would like to join in.
+
+## [Overall setup](overall)
+
+## Specific aspects
 
 ### Single variant analysis
 
@@ -58,3 +61,6 @@ This repository collects information on **[overall setup](overall)** and specifi
 * [R-packages](R-packages)
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
+
+## [Additional notes](NOTES.md).
+
