@@ -2,26 +2,6 @@
 
 Contents in this section are generic, therefore worthwhile to note and maintain for a variety of applications.
 
-## Resources
-
-https://www.genomicsengland.co.uk/ and [centres](https://www.genomicsengland.co.uk/taking-part/genomic-medicine-centres/)
-
-http://human-phenotype-ontology.github.io/about.html
-
-http://www.ukbiobank.ac.uk/
-
-https://www.astrazeneca.com/
-
-https://opensource.microsoft.com/
-
-## Imputation
-
-Sanger Imputation Service, https://imputation.sanger.ac.uk/
-
-The Michigan imputation server, https://imputationserver.sph.umich.edu/start.html
-
-Code for 1000Genomes populations, http://www.internationalgenome.org/category/population/
-
 ## Oracle VirtualBox
 
 To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
