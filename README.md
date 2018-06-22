@@ -4,9 +4,9 @@
 
 This repository collects information dynamically on software in the expectation that the site could eventually be enriched by many practitioners. Please let me know if you would like to join in.
 
-## [Overall setup](overall)
+## --- [Overall setup](overall) ---
 
-## Specific aspects
+## --- Specific aspects ---
 
 ### Single variant analysis
 
@@ -62,5 +62,4 @@ This repository collects information dynamically on software in the expectation 
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
 
-## [Additional notes](NOTES.md).
-
+## --- [Additional notes](NOTES.md) ---
