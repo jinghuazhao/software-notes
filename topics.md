@@ -53,5 +53,3 @@
 * [R-packages](R-packages)
 
 eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
-
-## 3. [Additional notes](NOTES.md)
