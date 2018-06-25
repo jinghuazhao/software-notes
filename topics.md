@@ -1,4 +1,4 @@
-## Specific setup
+## setup by topic
 
 ### Single variant analysis
 
