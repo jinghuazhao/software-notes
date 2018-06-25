@@ -2,66 +2,23 @@
 
 **Software notes for [_]Wide Association Studies**
 
-This repository collects information dynamically on software in the expectation that the site could eventually be enriched by many practitioners. Please let me know if you would like to join in.
+This repository collects information dynamically on software
 
 ## 1. [Overall setup](overall)
 
-Contents in this section are potentially applicable to a variety of applications.
-
-## 2. Specific setup
-
-### Single variant analysis
-
-* [PLINK2](PLINK2)
-* [PyLMM](PyLMM)
-
-### HLA imputation
-
-* [IMP*HLA](IMPHLA02)
-
-### Exome and rare variants
-
-* [Jannovar](jannovar)
-
-### Finemapping
-
-* [CAVIAR/eCAVIAR](caviar)
-* [JAM](JAM)
-
-### Functional annotation
-
-* [R-packages](R-packages)
-
-### Pathway analysis
-
-* [DEPICT](DEPICT) (see the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
-* [PASCAL](PASCAL)
-
-### Medelian randomiszation
-
-* [R-packages](R-packages)
-
-### NGS
-
-* [GATK](GATK)
-* [IGV](IGV)
-* [VarScan](VarScan)
-
-### Polygenic modeling
-
-* [ldsc](ldsc)
-* [R-packages](R-packages)
-
-### PheWAS
-
-* [Information](PheWAS)
-* [R-packages](R-packages)
-
-### Transcriptome-wide association analysis (TWAS)
-
-* [MetaXcan](MetaXcan) / S-PrediXcan
-* [R-packages](R-packages)
-
-eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
+## 2. [setup by topic](topics.md)
 
 ## 3. [Additional notes](NOTES.md)
+
+It is expected that the site could eventually be enriched by many practitioners.
+
+## How to Contribute
+
+1. Make sure you have a GitHub account.
+2. Fork the repository.
+3. Create a new branch on which to make your change, e.g. 
+`git checkout -b my_code_contribution`
+4. Commit your change. Include a commit message describing the correction. Please note that if your commit message is not clear, the correction will not be accepted.
+5. Submit a pull request.
+
+Thank you for your contribution!
