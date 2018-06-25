@@ -6,7 +6,7 @@ This repository collects information dynamically on software
 
 ## 1. [Overall setup](overall)
 
-## 2. [setup by topic](topics.md)
+## 2. [Setup by topic](topics.md)
 
 ## 3. [Additional notes](NOTES.md)
 
