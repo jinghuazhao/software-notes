@@ -60,25 +60,13 @@ sudo ./netbeans-8.2-linux.sh --javahome /usr/lib/jvm/java-8-oracale
 ```
 or start with `netbeans --javahome /usr/lib/jvm/java-8-oracle` (more convenient to set `alias netbeans='netbeans --javahome /usr/lib/jvm/java-8-oracle'` at `.bashrc`).
 
-## Python and tensorflow
+## Python
 
 To install a particular version of package, e.g.,
 ```bash
 sudo -H pip install pandas==0.20.1
 ```
 which is required by DEPICT's `munge_sumstats.py`. Other pip options include `uninstall`.
-
-The tensorflow repository is here, https://github.com/tensorflow/tensorflow, and it is relatively easy to install via pip,
-```bash
-pip install tensorflow
-python <<END
-import tensorflow as tf
-hello = tf.constant('Hello, TensorFlow!')
-sess = tf.Session()
-print(sess.run(hello))
-END
-```
-Follow https://github.com/aymericdamien/TensorFlow-Examples for readily-adapted examples.
 
 ## Anaconda
 
