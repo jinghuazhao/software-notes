@@ -33,6 +33,36 @@ This is standard and furnished as follows,
 library(devtools)
 install_github('MRCIEU/TwoSampleMR')
 ```
+The following is adapted from Dimou NL, Tsilidis KK (2018). A Primer in Mendelian Randomization Methodology with a Focus on Utilizing Published Summary Association Data in Evangelou E (ed) Genetic Epidemiology-Methods and Protocols. Springer, Chapter 13, pp211-230.
+```r
+# BMI and lung cancer.
+
+library(TwoSampleMR)
+ao <- available_outcomes()
+subset(ao,id%in%c(2,966))
+exposure_dat <- extract_instruments(ao$id[2])
+outcome_dat <- extract_outcome_data(exposure_dat$SNP, 966, proxies = 1, rsq = 0.8, align_alleles = 1, palindromes = 1, maf_threshold = 0.3)
+dat <- harmonise_data(exposure_dat, outcome_dat, action = 2)
+mr_results <- mr(dat)
+mr_heterogeneity <- mr_heterogeneity(dat)
+mr_pleiotropy_test <- mr_pleiotropy_test(dat)
+res_single <- mr_singlesnp(dat)
+res_loo <- mr_leaveoneout(dat)
+p1 <- mr_scatter_plot(mr_results, dat)
+p2 <- mr_forest_plot(res_single)
+p3 <- mr_leaveoneout_plot(res_loo)
+p4 <- mr_funnel_plot(res_single)
+
+library(MendelianRandomization)
+MRInputObject <- with(dat, mr_input(bx = beta.exposure, bxse = se.exposure, by = beta.outcome, byse = se.outcome, 
+                                    exposure = "Body mass index", outcome = "Lung cancer", snps = SNP))
+IVW <- mr_ivw(MRInputObject, model = "default", robust = FALSE, penalized = FALSE, weights = "simple", distribution = "normal", alpha = 0.05)
+Egger <- mr_egger(MRInputObject, robust = FALSE, penalized = FALSE, distribution = "normal", alpha = 0.05)
+MaxLik <- mr_maxlik(MRInputObject, model = "default", distribution = "normal", alpha = 0.05)
+Median <- mr_median(MRInputObject, weighting = "weighted", distribution = "normal", alpha = 0.05, iterations = 10000, seed = 314159265)
+MR_all <- mr_allmethods(MRInputObject, method = "all")
+p <- mr_plot(MRInputObject, error = TRUE, orientate = FALSE, interactive = TRUE, labels = TRUE, line = "ivw")
+```
 
 ## BLR
 
