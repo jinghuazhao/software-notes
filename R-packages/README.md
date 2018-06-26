@@ -26,6 +26,14 @@ We can now call with
 rstudio /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.R &
 ```
 
+# TwoSampleMR
+
+This is standard and furnished as follows,
+```r
+library(devtools)
+install_github('MRCIEU/TwoSampleMR')
+```
+
 ## BLR
 
 An extensive use is reported in the JSS paper from the [physalia](https://github.com/jinghuazhao/physalia) repository.
