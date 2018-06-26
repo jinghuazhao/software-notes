@@ -17,6 +17,14 @@ END
 tidy myfile.R
 ```
 
+## install.packages and install_github
+
+```r
+install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
+install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
+```
+both install package to the dedicated location.
+
 ## Windows
 
 It seems the --arch x84 option is very useful for using all available RAM; to make sure use call such as `D:\Program Files\R\R-3.5.0\bin\x64\R.exe"`.
