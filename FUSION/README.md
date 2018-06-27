@@ -26,7 +26,7 @@ install.packages(c('optparse','RColorBrewer'),INSTALL_opts="--library /usr/local
 # for weight generation
 # install.packages('glmnet',INSTALL_opts="--library /usr/local/lib/R/site-library/")
 ```
-The documentation example for association test is then furnished with
+The documentation example for association test, its main use, is then furnished with
 ```bash
 wget https://data.broadinstitute.org/alkesgroup/FUSION/SUM/PGC2.SCZ.sumstats
 
