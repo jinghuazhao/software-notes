@@ -8,6 +8,8 @@ cd fusion_twas
 # LD reference
 wget -qO- https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2 | tar xjvf -
 # Gene expression / splicing weights; GTEx weights can be obtained similarly
+mkdir WEIGHTS
+cd WEIGHTS
 for wgt in NTR.BLOOD.RNAARR YFS.BLOOD.RNAARR METSIM.ADIPOSE.RNASEQ CMC.BRAIN.RNASEQ CMC.BRAIN.RNASEQ_SPLICING
 do
   wget -qO- https://data.broadinstitute.org/alkesgroup/FUSION/WGT/$wgt.tar.bz2 | tar xfj -
