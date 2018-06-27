@@ -33,7 +33,7 @@ wget https://data.broadinstitute.org/alkesgroup/FUSION/SUM/PGC2.SCZ.sumstats
 
 Rscript FUSION.assoc_test.R \
 --sumstats PGC2.SCZ.sumstats \
---weights ./WEIGHTS/GTEx.Whole_Blood.pos \
+--weights ./WEIGHTS/NTR.BLOOD.RNAARR.pos \
 --weights_dir ./WEIGHTS/ \
 --ref_ld_chr ./LDREF/1000G.EUR. \
 --chr 22 \
