@@ -10,7 +10,7 @@ This repository collects information dynamically on software
 
 It is expected that the site could eventually be enriched by many practitioners.
 
-## How to Contribute (adapted from APress)
+## How to Contribute (adapted from Apress)
 
 1. Make sure you have a GitHub account.
 2. Fork the repository.
