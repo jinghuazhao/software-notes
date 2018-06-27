@@ -1,6 +1,6 @@
 # FUSION
 
-This section is similar to description at http://gusevlab.org/projects/fusion/ but is likely simpler. To install we do,
+This section follows http://gusevlab.org/projects/fusion/ is more compact. To install we do,
 ```bash
 # Software
 git clone https://github.com/gusevlab/fusion_twas
@@ -14,11 +14,11 @@ for wgt in NTR.BLOOD.RNAARR YFS.BLOOD.RNAARR METSIM.ADIPOSE.RNASEQ CMC.BRAIN.RNA
 do
   wget -qO- https://data.broadinstitute.org/alkesgroup/FUSION/WGT/$wgt.tar.bz2 | tar xfj -
 done
-# for weight generation only with complaints about libgfortran.so.3
+# for weight generation only assuming availability of libgfortran.so.3
 # wget -qO- https://github.com/genetics-statistics/GEMMA/releases/download/v0.96/gemma.linux.gz | gunzip -c > $HOME/bin/gemma
 # ln -s ./ output
 ```
-as well as the R packages,
+and add R packages,
 ```r
 library(devtools)
 install_github("gabraham/plink2R/plink2R",args="--library=/usr/local/lib/R/site-library/")
@@ -26,7 +26,6 @@ install.packages(c('optparse','RColorBrewer'),INSTALL_opts="--library /usr/local
 # for weight generation
 # install.packages('glmnet',INSTALL_opts="--library /usr/local/lib/R/site-library/")
 ```
-
 The documentation example for association test is then furnished with
 ```bash
 wget https://data.broadinstitute.org/alkesgroup/FUSION/SUM/PGC2.SCZ.sumstats
