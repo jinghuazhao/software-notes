@@ -26,3 +26,16 @@ install.packages(c('optparse','RColorBrewer'),INSTALL_opts="--library /usr/local
 # for weight generation
 # install.packages('glmnet',INSTALL_opts="--library /usr/local/lib/R/site-library/")
 ```
+
+The documentation example for association test is then furnished with
+```bash
+wget https://data.broadinstitute.org/alkesgroup/FUSION/SUM/PGC2.SCZ.sumstats
+
+Rscript FUSION.assoc_test.R \
+--sumstats PGC2.SCZ.sumstats \
+--weights ./WEIGHTS/GTEx.Whole_Blood.pos \
+--weights_dir ./WEIGHTS/ \
+--ref_ld_chr ./LDREF/1000G.EUR. \
+--chr 22 \
+--out PGC2.SCZ.22.dat
+```
