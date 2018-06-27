@@ -1,6 +1,6 @@
 # FUSION
 
-This section is similar to http://gusevlab.org/projects/fusion/ but relatively simple. To install we do,
+This section is similar to description at http://gusevlab.org/projects/fusion/ but is likely simpler. To install we do,
 ```bash
 # Software
 git clone https://github.com/gusevlab/fusion_twas
