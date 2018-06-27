@@ -25,6 +25,10 @@ install_github("gabraham/plink2R/plink2R",args="--library=/usr/local/lib/R/site-
 install.packages(c('optparse','RColorBrewer'),INSTALL_opts="--library /usr/local/lib/R/site-library/")
 # for weight generation
 # install.packages('glmnet',INSTALL_opts="--library /usr/local/lib/R/site-library/")
+# for joint likelihood mapping
+# install_github("cotsapaslab/jlim/jlimR",args="/usr/local/lib/R/site-library/")
+# for colocalisation
+# install.packages("coloc",INSTALL_opts="/usr/local/lib/R/site-library/")
 ```
 The documentation example for association test, its main use, is then furnished with
 ```bash
