@@ -42,3 +42,11 @@ Rscript FUSION.assoc_test.R \
 --chr 22 \
 --out PGC2.SCZ.22.dat
 ```
+
+### A useful utility
+
+```bash
+Rscript utils/make_score.R WEIGHTS/CMC.BRAIN.RNASEQ/CMC.MC4R.wgt.RDat > CMC.MC4R.score
+plink --bfile genotype-file --score CMC.MC4R.score 1 2 4
+```
+See additional information from the FUSION documentation.
