@@ -37,7 +37,7 @@ python validate.py --vgf=../test_data/LDpred_data_p0.001_test_0 \
 where
 ```
  --gf=PLINK_LD_REF_GENOTYPE_FILE,
- --vgf= PLINK_VAL_GENOTYPE_FILE,
+ --vgf=PLINK_VAL_GENOTYPE_FILE,
  --ssf=SUM_STATS_FILE,
  --NSS_SAMPLE_SIZE, the approximate number of individuals used for calculating the GWAS summary statistics,
  --ld_radiud=LD_RADIUS, the number of SNPs on each side of the focal SNP for which LD should be adjusted,
