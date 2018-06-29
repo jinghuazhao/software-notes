@@ -40,6 +40,7 @@
 ### Polygenic modeling
 
 * [ldsc](ldsc)
+* [LDpred](ldpred)
 * [R-packages](R-packages)
 
 ### PheWAS
