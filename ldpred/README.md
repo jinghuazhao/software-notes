@@ -34,3 +34,11 @@ python validate.py --vgf=../test_data/LDpred_data_p0.001_test_0 \
                    --rf=$test \
                    --out=$test
 ```
+where
+> --gf=PLINK_LD_REF_GENOTYPE_FILE,
+> --vgf= PLINK_VAL_GENOTYPE_FILE,
+> --ssf=SUM_STATS_FILE,
+> --NSS_SAMPLE_SIZE, the approximate number of individuals used for calculating the GWAS summary statistics,
+> --ld_radiud=LD_RADIUS, the number of SNPs on each side of the focal SNP for which LD should be adjusted,
+> --PS=FRACTION_CAUSAL, A list of comma separated (without space) values between 1 and 0, excluding 0. 1 corresponds to the infinitesimal model and will yield results similar to LDpred-inf. Default is --PS=1,0.3,0.1,0.03,0.01,0.003,0.001,0.0003,0.0001,
+> --rf=RESULT_FILE_PREFIX: SNP weights file
