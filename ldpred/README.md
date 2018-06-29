@@ -15,7 +15,7 @@ cd ldpred
 cd ldpred
 python test.py
 ```
-rather than a Bash version from scratch which is now possible,
+rather than a Bash version from scratch which is also possible,
 ```bash
 cd ldpred
 export test=ZDNCEO
