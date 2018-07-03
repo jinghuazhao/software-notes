@@ -46,5 +46,10 @@ https://github.com/apress/pro-deep-learning-w-tensorflow
 These are very straightforward under Ubuntu, e.g.,
 ```bash
 sudo apt install sra-toolkit
-sudo apt install samtools
+prefetch -v SRR3534842
+fastq-dump --split-files --gzip SRR3534842
 ```
+the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is split into
+`SRR3534842_1.fastq.gz`, `SRR3534842_2.fastq.gz` at the current directory.
+
+See https://www.biostars.org/p/111040/.
