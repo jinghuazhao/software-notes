@@ -40,3 +40,11 @@ Follow https://github.com/aymericdamien/TensorFlow-Examples for readily adaptibl
 Also
 
 https://github.com/apress/pro-deep-learning-w-tensorflow
+
+# sra-toolkit, samtools, bamtools, bcftools vcftools
+
+These are very straightforward under Ubuntu, e.g.,
+```bash
+sudo apt install sra-toolkit
+sudo apt install samtools
+```
