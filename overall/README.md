@@ -60,6 +60,10 @@ sudo ./netbeans-8.2-linux.sh --javahome /usr/lib/jvm/java-8-oracale
 ```
 or start with `netbeans --javahome /usr/lib/jvm/java-8-oracle` (more convenient to set `alias netbeans='netbeans --javahome /usr/lib/jvm/java-8-oracle'` at `.bashrc`).
 
+For software such as `cutadapt` cython is required,
+```bash
+sudo apt install cython
+```
 ## Python
 
 To install a particular version of package, e.g.,
