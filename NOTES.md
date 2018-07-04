@@ -53,3 +53,32 @@ the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is s
 `SRR3534842_1.fastq.gz`, `SRR3534842_2.fastq.gz` at the current directory.
 
 See https://www.biostars.org/p/111040/.
+
+# cuadapt, TrimGalore
+
+A prerequesite is to install cython.
+```bash
+git clone https://github.com/marcelm/cutadapt
+cd cutadapt
+sudo python setup.py install
+git clone https://github.com/FelixKrueger/TrimGalore
+```
+
+A textbook benchmark,
+```bash
+wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
+tar -zxvf chromFa.tar.gz
+cat *.fa > hg19.fa
+samtools faidx hg19.fa
+bowtie2-build hg19.fa hg19
+# GSE78059
+for srr in 008/SRR3177718/SRR3177718 009/SRR3177719/SRR3177719 000/SRR3177720/SRR3177720 001/SRR3177721/SRR3177721 002/SRR3177722/SRR3177722 003/SRR3177723/SRR3177723
+do
+   wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR317/$srr.fastq.gz
+done
+trim_galore -A TCAGTCACTTCCAGC -length 18 *.fastq.gz
+bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz > SRR3177718.bam
+samtools sort < SRR3177718.bam > SRR3177718.sort.bam
+samtools index SRR3177718.sort.bam
+```
+see more from https://github.com/ncrnalab/agotron_detector.
