@@ -35,6 +35,7 @@
 
 * [GATK](GATK)
 * [IGV](IGV)
+* [pindel](pindel)
 * [VarScan](VarScan)
 
 ### Polygenic modeling
