@@ -1,6 +1,6 @@
 # software-notes
 
-**Software notes for [_]Wide Association Studies**
+**Software notes for association studies**
 
 This repository collects information dynamically on software
 
