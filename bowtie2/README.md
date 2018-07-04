@@ -20,3 +20,4 @@ samtools sort eg2.bam -o eg2.sorted.bam
 samtools mpileup -uf $BT2_HOME/example/reference/lambda_virus.fa eg2.sorted.bam | bcftools view -Ov - > eg2.raw.bcf
 bcftools view eg2.raw.bcf
 ```
+Like samtools, etc. it is possible to involve `sudo apt install bowtie2`.
