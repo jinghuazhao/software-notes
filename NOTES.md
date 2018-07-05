@@ -54,7 +54,7 @@ the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is s
 
 See https://www.biostars.org/p/111040/.
 
-# cuadapt, TrimGalore
+# cutadapt, TrimGalore
 
 A prerequesite is to install cython.
 ```bash
