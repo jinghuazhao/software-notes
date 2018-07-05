@@ -64,7 +64,7 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
 
-A textbook benchmark, Hansen TB (2018). Detecting Agotrons in Ago CLIPseq Data. in Vang Ørom UA (ed) miRNA-Methods and Protocols, Chapter 17, 221-232. Springer.
+A textbook benchmark, Hansen TB (2018). Detecting Agotrons in Ago CLIPseq Data. in Vang Ørom UA (ed) miRNA Biogenesis-Methods and Protocols, Chapter 17, 221-232. Springer.
 ```bash
 wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
 tar -zxvf chromFa.tar.gz
