@@ -80,5 +80,6 @@ trim_galore -A TCAGTCACTTCCAGC -length 18 *.fastq.gz
 bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz > SRR3177718.bam
 samtools sort < SRR3177718.bam > SRR3177718.sort.bam
 samtools index SRR3177718.sort.bam
+python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annotater.R
 ```
 see more from https://github.com/ncrnalab/agotron_detector.
