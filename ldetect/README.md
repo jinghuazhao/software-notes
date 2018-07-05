@@ -11,7 +11,7 @@ cd ldetect
 sudo python3 setup.py install
 git clone https://bitbucket.org/nygcresearch/ldetect-data
 ```
-A much simplified version of the documentation example is as follows,
+A much condensed version of the documentation example is as follows,
 ```bash
 python3 P00_00_partition_chromosome.py example_data/chr2.interpolated_genetic_map.gz 379 example_data/cov_matrix/scripts/chr2_partitions
 tabix -h ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/ALL.chr2.phase1_release_v3.20101123.snps_indels_svs.genotypes.vcf.gz 2:39967768-40067768 | python3 P00_01_calc_covariance.py example_data/chr2.interpolated_genetic_map.gz example_data/eurinds.txt 11418 1e-7 example_data/cov_matrix/chr2/chr2.39967768.40067768.gz
