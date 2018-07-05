@@ -72,6 +72,12 @@ sudo -H pip install pandas==0.20.1
 ```
 which is required by DEPICT's `munge_sumstats.py`. Other pip options include `uninstall`.
 
+The python programs in [agotron_detector](https://github.com/ncrnalab/agotron_detector) requires MySQL and can be installed as follows,
+```bash
+sudo apt-get install python-dev libmysqlclient-dev
+sudo pip install MySQL-python
+```
+
 ## Anaconda
 
 To install intervaltree as required by depict,
