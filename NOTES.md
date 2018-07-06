@@ -77,6 +77,13 @@ do
    wget ftp.sra.ebi.ac.uk/vol1/fastq/SRR317/$srr.fastq.gz
 done
 trim_galore -A TCAGTCACTTCCAGC -length 18 *.fastq.gz
+for i in *_trimmed.fq.gz
+do
+    echo $i
+    bowtie2 -q --local -x hg19 -U $i | samtools sort - > $i.sort.bam    
+    samtools index $i.sort.bam
+    
+done
 # bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz | samtools sort - > SRR3177718.sort.bam
 bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz > SRR3177718.bam
 samtools sort < SRR3177718.bam > SRR3177718.sort.bam
