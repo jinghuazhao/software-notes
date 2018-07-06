@@ -84,10 +84,6 @@ do
     samtools index $i.sort.bam
     
 done
-# bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz | samtools sort - > SRR3177718.sort.bam
-bowtie2 -q --local -x hg19 -U SRR3177718_trimmed.fq.gz > SRR3177718.bam
-samtools sort < SRR3177718.bam > SRR3177718.sort.bam
-samtools index SRR3177718.sort.bam
 # https://github.com/ncrnalab/agotron_detector
 python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annotater.R
 ```
