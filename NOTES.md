@@ -64,7 +64,9 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
 
-A textbook benchmark, 
+# A textbook benchmark
+
+The following is according to https://github.com/ncrnalab/agotron_detector as described in
 > Hansen TB (2018). Detecting Agotrons in Ago CLIPseq Data. in Vang Ørom UA (ed) miRNA Biogenesis-Methods and Protocols, Chapter 17, 221-232. Springer.
 ```bash
 wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
@@ -85,7 +87,6 @@ do
     samtools index $i.sort.bam
     
 done
-# https://github.com/ncrnalab/agotron_detector
 python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annotater.R
 ```
 See also
