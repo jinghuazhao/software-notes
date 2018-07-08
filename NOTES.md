@@ -41,7 +41,7 @@ Also
 
 https://github.com/apress/pro-deep-learning-w-tensorflow
 
-# sra-toolkit, samtools, bamtools, bcftools vcftools
+# sra-toolkit, samtools, bamtools, bcftools, vcftools, blast (ncbi-blast+)
 
 These are very straightforward under Ubuntu, e.g.,
 ```bash
