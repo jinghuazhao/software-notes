@@ -94,4 +94,4 @@ See also
 
 > Morin PA, Foote AD, Hill CM, Simon-Bouhet B, Lang AR, Louis M (2018). SNP Discovery from Single and Multiplex Genome Assemblies of Non-model Organisms, in Steven R. Head et al. (eds.), Next Generation Sequencing: Methods and Protocols, Chapter 9, 113-144, Springer.
 
-> Raghavachari N, Garcia-Reyero N (eds.), Gene Expression Analysis-Methods and Protocols, Springer.
+> Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
