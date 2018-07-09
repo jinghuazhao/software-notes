@@ -93,3 +93,5 @@ See also
 > Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
 
 > Morin PA, Foote AD, Hill CM, Simon-Bouhet B, Lang AR, Louis M (2018). SNP Discovery from Single and Multiplex Genome Assemblies of Non-model Organisms, in Steven R. Head et al. (eds.), Next Generation Sequencing: Methods and Protocols, Chapter 9, 113-144, Springer.
+
+> Reddy RRS, Ramanujam MV (2018). High Throughput Sequencing-Based Approaches for Gene Expression Analysis, in Raghavachari N, Garcia-Reyero N (eds.), Gene Expression Analysis-Methods and Protocols, Chapter 15, 299-323, Springer.
