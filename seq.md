@@ -1,6 +1,6 @@
 # fastx_toolkit
 
-It is now available from https://github.com/agordon/fastx_toolkit along with https://github.com/agordon/fastx_toolkit, which do away with the notorious automake-1.14 problem associated with sources at http://hannonlab.cshl.edu/fastx_toolkit/download.html.
+It is now available from https://github.com/agordon/fastx_toolkit along with https://github.com/agordon/libgtextutils, and do away with the notorious automake-1.14 problem associated with sources at http://hannonlab.cshl.edu/fastx_toolkit/download.html.
 
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section.
 
