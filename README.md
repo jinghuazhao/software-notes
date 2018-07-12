@@ -6,7 +6,8 @@ This repository collects information dynamically on software
 
 1. [Overall setup](overall)
 2. [Setup by topic/software](topics.md)
-3. [Additional notes](NOTES.md)
+3. [Sequence analysis](seq.md)
+4. [AI](AI.md)
 
 It is expected that the site could eventually be enriched by many practitioners.
 
