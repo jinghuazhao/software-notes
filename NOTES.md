@@ -57,6 +57,14 @@ the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is s
 
 See https://www.biostars.org/p/111040/.
 
+To run ```top```, see https://ccb.jhu.edu/software/tophat/tutorial.shtml
+```bash
+wget https://ccb.jhu.edu/software/tophat/downloads/test_data.tar.gz
+tar xvfz test_data.tar.gz
+cd test_data
+tophat -r 20 test_ref reads_1.fq reads_2.fq
+```
+
 # cutadapt, TrimGalore
 
 A prerequesite is to install cython.
