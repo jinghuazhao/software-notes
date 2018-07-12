@@ -70,7 +70,7 @@ do
 done
 python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annotater.R
 ```
-See also
+Note that it is easier to implement with ```prefetch``` as above. See also
 > Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
 
 > Morin PA, Foote AD, Hill CM, Simon-Bouhet B, Lang AR, Louis M (2018). SNP Discovery from Single and Multiplex Genome Assemblies of Non-model Organisms, in Steven R. Head et al. (eds.), Next Generation Sequencing: Methods and Protocols, Chapter 9, 113-144, Springer.
