@@ -21,7 +21,7 @@ brew install sambamba
 brew install picard-tools
 brew install stringtie
 ```
-See
+It could be useful with ``brew reinstall```. See
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, https://www.springer.com/us/book/9781493978335, Chapter 15, Springer.
 
 Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
