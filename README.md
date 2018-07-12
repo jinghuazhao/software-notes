@@ -9,7 +9,7 @@ This repository collects information dynamically on software
 3. [Sequence analysis](seq.md)
 4. [Machine learning](ML.md)
 5. [AI](AI.md)
-6. [Miscellaneous software][misc.md]
+6. [Miscellaneous software](misc.md)
 
 It is expected that the site could eventually be enriched by many practitioners.
 
