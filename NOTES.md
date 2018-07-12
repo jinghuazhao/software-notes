@@ -21,7 +21,10 @@ brew install sambamba
 brew install picard-tools
 brew install stringtie
 ```
-See https://www.springer.com/us/book/9781493978335, Chapter 15.
+See
+> Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, https://www.springer.com/us/book/9781493978335, Chapter 15, Springer.
+
+Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
 
 # tensorflow
 
@@ -41,7 +44,7 @@ Also
 
 https://github.com/apress/pro-deep-learning-w-tensorflow
 
-# sra-toolkit, samtools, bamtools, bcftools, vcftools, blast (ncbi-blast+)
+# sra-toolkit, samtools, bamtools, bcftools, tophat, vcftools, blast (ncbi-blast+)
 
 These are very straightforward under Ubuntu, e.g.,
 ```bash
