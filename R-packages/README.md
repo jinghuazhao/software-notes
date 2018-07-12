@@ -109,4 +109,8 @@ where `rjags` contains files for the package. Once this is done one can proceed 
 The package contains function ```ComBat.R``` from https://www.bu.edu/jlab/wp-assets/ComBat/Download.html as described in the following paper.
 
 > Johnson, WE, Rabinovic, A, and Li, C (2007). Adjusting batch effects in microarray expression data using Empirical Bayes methods. Biostatistics 8(1):118-127
-
+```r
+source("https://bioconductor.org/biocLite.R")
+biocLite("sva")
+browseVignettes("sva")
+```
