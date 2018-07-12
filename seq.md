@@ -1,3 +1,9 @@
+# fastx_toolkit
+
+It is now available from https://github.com/agordon/fastx_toolkit along with https://github.com/agordon/fastx_toolkit, which does away with the notorious automake-1.14 problem.
+
+However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section.
+
 # sra-toolkit, samtools, bamtools, bcftools, tophat, vcftools, blast (ncbi-blast+)
 
 These are very straightforward under Ubuntu, e.g.,
