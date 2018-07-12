@@ -106,6 +106,18 @@ sudo dnf install lapack-devel
 sudo dnf install mercurial
 ```
 
+# Linuxbrew
+
+Follow http://linuxbrew.sh/ and possibly https://docs.brew.sh
+```bash
+sudo apt-get install build-essential
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.profile
+echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
+echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+```
+
 ## Miscellaneous notes
 ```bash
 sudo apt-get install libcanberra-gtk3-module
