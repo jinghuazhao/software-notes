@@ -73,7 +73,7 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## bamtools, bcftools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
+## bamtools, bcftools, bedtools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
 
 Install with ```sudo apt install```.
 
