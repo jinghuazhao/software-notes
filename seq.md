@@ -97,7 +97,7 @@ It is also available from https://github.com/agordon/fastx_toolkit along with ht
 
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section. More oever, usage() is a void function so its own `exit(0)` is unnecessary.
 
-The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/.
+The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/. It is also recommended that the Bioconductor package EBSeq be installed.
 
 ## hisat2, sambamba, picard-tools, StringTie
 
