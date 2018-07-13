@@ -75,7 +75,9 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## bamtools, bcftools, bedtools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
+## Ubuntu repostory
+
+These refer to bamtools, bcftools, bedtools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools.
 
 Install with ```sudo apt install```.
 
@@ -91,11 +93,13 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
 
-## fastx_toolkit
+## fastx_toolkit, RSEM
 
 It is also available from https://github.com/agordon/fastx_toolkit along with https://github.com/agordon/libgtextutils, and do away with the notorious automake-1.14 problem associated with sources at http://hannonlab.cshl.edu/fastx_toolkit/download.html.
 
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section. More oever, usage() is a void function so its own `exit(0)` is unnecessary.
+
+The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/.
 
 ## hisat2, sambamba, picard-tools, StringTie
 
