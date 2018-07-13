@@ -30,7 +30,7 @@ Note that it is easier to implement with ```prefetch``` as shown below. See also
 
 # angsd
 
-After
+ANGSD is a software for analyzing next generation sequencing data, http://www.popgen.dk/angsd/index.php/ANGSD. It is relatively straightforward with GitHub; after
 ```bash
 git clone https://github.com/ANGSD/angsd
 cd angsd
