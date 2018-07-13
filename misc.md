@@ -2,6 +2,10 @@
 
 Bayesian MCMC phylogenetic inference, available from ```sudo apt install```.
 
+## eigensoft
+
+The PCA software for genomewide data, through ```sudo apt install```. The executables are eigenstrat, eigenstratQTL, smarteigenstrat, smartpca, pca, etc.
+
 ## fastlink, fastlink-doc
 
 It is the old merry fastlink 4.1P and could be installed with ```sudo apt install```.
