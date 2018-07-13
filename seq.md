@@ -30,7 +30,7 @@ Note that it is easier to implement with ```prefetch``` as shown below. See also
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
-# bamtools, bcftools, blast (ncbi-blast+), fastqc, fastx-toolkit, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
+# bamtools, bcftools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
 
 Install with ```sudo apt install```.
 
@@ -84,7 +84,7 @@ ln -sf /home/jhz22/D/work/ncbi
 ```
 where D is actually a shared folder at Windows.
 
-To run ```top```, see https://ccb.jhu.edu/software/tophat/tutorial.shtml
+To run ```tophat```, see https://ccb.jhu.edu/software/tophat/tutorial.shtml
 ```bash
 wget https://ccb.jhu.edu/software/tophat/downloads/test_data.tar.gz
 tar xvfz test_data.tar.gz
