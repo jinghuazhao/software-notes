@@ -1,6 +1,6 @@
-# fastqc
+# fastqc, blast (ncbi-blast+), seqtk
 
-Install with ```sudo apt install fastqc```.
+Install with ```sudo apt install```.
 
 # fastx_toolkit
 
@@ -8,7 +8,7 @@ It is available from ```apt install fastx-toolkit``` and also https://github.com
 
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section.
 
-# sra-toolkit, samtools, bamtools, bcftools, tophat, vcftools, blast (ncbi-blast+)
+# sra-toolkit, samtools, bamtools, bcftools, tophat, vcftools
 
 These are very straightforward under Ubuntu, e.g.,
 ```bash
