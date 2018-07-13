@@ -30,6 +30,16 @@ Note that it is easier to implement with ```prefetch``` as shown below. See also
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
+# angsd
+
+After
+```bash
+git clone https://github.com/ANGSD/angsd
+cd angsd
+make
+```
+but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
+
 # bamtools, bcftools, blast (ncbi-blast+), fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools
 
 Install with ```sudo apt install```.
