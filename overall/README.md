@@ -97,6 +97,13 @@ Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/b
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
 
+## hg
+
+It is the executable file for Mercurial source code management system,
+```bash
+sudo apt install mercurial
+```
+
 ## JAGS-4.3.0
 
 These are required at least,
@@ -116,13 +123,6 @@ echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.profile
 echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
 echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-```
-
-## hg
-
-It is the executable file for Mercurial source code management system,
-```bash
-sudo apt install mercurial
 ```
 
 ## Ubuntu lists
