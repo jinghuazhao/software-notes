@@ -25,10 +25,7 @@ do
 done
 python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annotater.R
 ```
-Note that it is easier to implement with ```prefetch``` as shown below. See also
-> Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
-
-> Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
+Note that it is easier to implement with ```prefetch``` as shown below.
 
 ## SNP discovery
 
@@ -37,6 +34,11 @@ The following reference discribes several pipelines for SNP discovery.
 > Morin PA, Foote AD, Hill CM, Simon-Bouhet B, Lang AR, Louis M (2018). SNP Discovery from Single and Multiplex Genome Assemblies of Non-model Organisms, in Head SR, et al. (eds.), Next Generation Sequencing: Methods and Protocols, Chapter 9, 113-144, Springer.
 
 whose scripts are available from https://github.com/PAMorin/SNPdiscovery/.
+
+See also
+> Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
+
+> Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
 ## sra-toolkit, tophat
 
