@@ -118,5 +118,4 @@ Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
 
 ## fastq-splitter
 
-To divide a large FASTQ file into a set of smaller equally sized files, http://kirill-kryukov.com/study/tools/fastq-splitter/.
-
+The scripts divides a large FASTQ file into a set of smaller equally sized files, http://kirill-kryukov.com/study/tools/fastq-splitter/.
