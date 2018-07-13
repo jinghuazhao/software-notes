@@ -12,10 +12,13 @@ sudo apt install sra-toolkit
 prefetch -v SRR3534842
 fastq-dump --split-files --gzip SRR3534842
 ```
-the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is split into
-`SRR3534842_1.fastq.gz`, `SRR3534842_2.fastq.gz` at the current directory.
-
-See https://www.biostars.org/p/111040/.
+the SRR3534842.sra from prefetch is actually at $HOME/ncbi/public/sra which is split into `SRR3534842_1.fastq.gz`, `SRR3534842_2.fastq.gz` at the current directory. See https://www.biostars.org/p/111040/. However, the location may not desirable since it may create a huge .vdi files with VirtualBox -- to get around we do this
+```bash
+cd $HOME
+mkdir -p /home/jhz22/D/work/ncbi/public/sra
+ln -sf /home/jhz22/D/work/ncbi
+```
+where D is actually a shared folder at Windows.
 
 To run ```top```, see https://ccb.jhu.edu/software/tophat/tutorial.shtml
 ```bash
