@@ -28,7 +28,7 @@ Note that it is easier to implement with ```prefetch``` as shown below. See also
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
-# angsd
+# ANGSD
 
 ANGSD is a software for analyzing next generation sequencing data, http://www.popgen.dk/angsd/index.php/ANGSD. It is relatively straightforward with GitHub; after
 ```bash
