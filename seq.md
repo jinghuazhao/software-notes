@@ -69,7 +69,7 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
 
-# srat-tools, tophat
+# sra-toolkit, tophat
 
 These are very straightforward, e.g.,
 ```bash
