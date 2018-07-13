@@ -114,3 +114,7 @@ source("https://bioconductor.org/biocLite.R")
 biocLite("sva")
 browseVignettes("sva")
 ```
+
+## EBSeq
+
+The Bioconductor page is here, http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html.
