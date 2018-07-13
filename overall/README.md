@@ -118,6 +118,13 @@ echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.pr
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 ```
 
+## hg
+
+It is the executable file for Mercurial source code management system,
+```bash
+sudo apt install mercurial
+```
+
 ## Ubuntu lists
 
 It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others.
