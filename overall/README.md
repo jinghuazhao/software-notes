@@ -106,7 +106,7 @@ sudo dnf install lapack-devel
 sudo dnf install mercurial
 ```
 
-# Linuxbrew
+## Linuxbrew
 
 Follow http://linuxbrew.sh/ and possibly https://docs.brew.sh
 ```bash
@@ -117,6 +117,11 @@ echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profi
 echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 ```
+
+## Ubuntu lists
+
+It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others.
+
 
 ## Miscellaneous notes
 ```bash
