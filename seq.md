@@ -129,8 +129,10 @@ unzip snpEff_latest_core
 cd snpEff
 java -jar snpEff.jar databases
 java -jar snpEff.jar download GRCh38.76
+wget http://sourceforge.net/projects/snpeff/files/databases/test_cases.tgz
+tar fvxz test_cases.tgz
 ```
-lists all the databases and download a particular one.
+lists all the databases and download a particular one. Later, the test files are also downloaded and extracted.
 
 The following steps compile from source instead.
 ```bash
