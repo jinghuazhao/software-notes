@@ -1,4 +1,4 @@
-# 12-7-2018 JHZ
+# 14-7-2018 JHZ
 
 git add README.md
 git commit -m "README"
@@ -12,7 +12,7 @@ git add seq.md
 git commit -m "Sequencing analysis"
 git add misc.md
 git commit -m "Miscellaneour programs"
-for d in DEPICT bowtie2 caviar GATK IGV IMPHLA02 JAM jannovar ldetect ldsc ldpred PASCAL MetaXcan FUSION PLINK2 PyLMM R R-packages PheWAS pindel overall VEP VarScan st.sh
+for d in DEPICT caviar IMPHLA02 JAM ldetect ldsc ldpred PASCAL MetaXcan FUSION PLINK2 PyLMM R R-packages PheWAS overall VEP st.sh
 do
    git add $d
    git commit -m "$d"
