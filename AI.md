@@ -1,4 +1,6 @@
-# tensorflow
+# AI
+
+## tensorflow
 
 The tensorflow repository is here, https://github.com/tensorflow/tensorflow, and it is relatively easy to install via pip,
 ```bash
@@ -15,3 +17,8 @@ Follow https://github.com/aymericdamien/TensorFlow-Examples for readily adaptibl
 Also
 
 https://github.com/apress/pro-deep-learning-w-tensorflow
+
+## pytorch
+
+* https://pytorch.github.com
+* https://pytorch.github.io
