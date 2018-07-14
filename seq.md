@@ -119,3 +119,41 @@ It could be useful with ``brew reinstall```. See
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, https://www.springer.com/us/book/9781493978335, Chapter 15, Springer.
 
 Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
+
+## SnpEff, SnpSift
+
+```bash
+git clone https://github.com/pcingola/SnpEff.git
+cd SnpEff
+mvn package
+export VERSION=4.3
+mvn install:install-file \
+	-Dfile=target/SnpEff-$VERSION.jar \
+	-DgroupId=org.snpeff \
+	-DartifactId=SnpEff \
+	-Dversion=$VERSION \
+	-Dpackaging=jar \
+	-DgeneratePom=true \
+	--quiet
+cd - 
+```
+which gives `target/SnpEff-4.3.jar` and
+```bash
+java -jar snpEff-4.3.jar databases
+java -jar snpEff.jar download GRCh38.76
+```
+lists all the databases and download a particular one.
+
+It is more difficult with snpSift, which requires antlr4
+```bash
+git clone https://github.com/antlr/antlr4
+cd antlr4
+mvn package
+cd -
+# deposit to maven repository as above
+git clone https://github.com/pcingola/SnpSift.git
+cd SnpSift
+mvn package
+```
+
+Nevertheless it is straightforward with the compiled version from sourceforge, http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip.
