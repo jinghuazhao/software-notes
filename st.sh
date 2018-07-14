@@ -12,7 +12,7 @@ git add seq.md
 git commit -m "Sequencing analysis"
 git add misc.md
 git commit -m "Miscellaneour programs"
-for d in DEPICT caviar JAM ldetect ldsc ldpred PASCAL MetaXcan FUSION PyLMM R R-packages PheWAS overall VEP st.sh
+for d in DEPICT caviar JAM ldetect ldsc ldpred PASCAL MetaXcan FUSION PyLMM R R-packages overall VEP st.sh
 do
    git add $d
    git commit -m "$d"
