@@ -86,12 +86,14 @@ PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 ## [R and RStudio](../R)
 
-## Perl
+## JAGS-4.3.0
+
+These are required at least,
 ```bash
-sudo perl -MCPAN -e shell
-install DBI
+sudo dnf install automake
+sudo dnf install lapack-devel
+sudo dnf install mercurial
 ```
-for instance, as used in [VEP](../VEP).
 
 ## Java
 
@@ -106,6 +108,14 @@ For software such as `cutadapt` cython is required,
 ```bash
 sudo apt install cython
 ```
+
+## Perl
+```bash
+sudo perl -MCPAN -e shell
+install DBI
+```
+for instance, as used in [VEP](../VEP).
+
 ## Python
 
 To install a particular version of package, e.g.,
@@ -118,15 +128,6 @@ The python programs in [agotron_detector](https://github.com/ncrnalab/agotron_de
 ```bash
 sudo apt-get install python-dev libmysqlclient-dev
 sudo pip install MySQL-python
-```
-
-## JAGS-4.3.0
-
-These are required at least,
-```bash
-sudo dnf install automake
-sudo dnf install lapack-devel
-sudo dnf install mercurial
 ```
 
 ## Miscellaneous notes
