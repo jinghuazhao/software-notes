@@ -166,8 +166,10 @@ See wiki resources section of Omics-analysis as well as implementations in [R-pa
 
 ## --- Transcriptome-wide association analysis (TWAS) ---
 
-* [MetaXcan](MetaXcan) / S-PrediXcan
-* [FUSION](FUSION)
-* [R-packages](R-packages)
+### [MetaXcan](MetaXcan) / S-PrediXcan
+
+### [FUSION](FUSION)
+
+### [R-packages](R-packages)
 
 eQTL, epigenome-wide association study (EWAS).
