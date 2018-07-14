@@ -25,6 +25,10 @@ VBoxManage modifyhd --compact "ubuntu18.04.vdi"
 
 Since one may allocate only part of RAM to VirtualBox, it is often necessary to run program under MS-DOS, e.g., sections on DEPICT.
 
+## Ubuntu archive
+
+It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others.
+
 ## Visual Studio Code
 
 There is a pointer from https://github.com/Microsoft/vscode to https://code.visualstudio.com/Download. Once downloaded, it can be installed with
@@ -41,6 +45,44 @@ sudo apt install parallel
 ```
 see also descriptions in other pipelines here. It is perhaps more demanding with sge, e.g., https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
 Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
+
+## Anaconda
+
+To install intervaltree as required by depict,
+```
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+followed by `conda install intervaltree`.
+
+All the available packages can be seen with `conda list`. To install java, run following command
+```
+conda install -c anaconda openjdk
+```
+Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
+```
+set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
+```
+
+## hg
+
+It is the executable file for Mercurial source code management system,
+```bash
+sudo apt install mercurial
+```
+
+## Linuxbrew
+
+Follow http://linuxbrew.sh/ and possibly https://docs.brew.sh
+```bash
+sudo apt-get install build-essential
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.profile
+echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
+echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+```
 
 ## [R and RStudio](../R)
 
@@ -78,32 +120,6 @@ sudo apt-get install python-dev libmysqlclient-dev
 sudo pip install MySQL-python
 ```
 
-## Anaconda
-
-To install intervaltree as required by depict,
-```
-conda config --add channels defaults
-conda config --add channels conda-forge
-conda config --add channels bioconda
-```
-followed by `conda install intervaltree`.
-
-All the available packages can be seen with `conda list`. To install java, run following command
-```
-conda install -c anaconda openjdk
-```
-Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
-```
-set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
-```
-
-## hg
-
-It is the executable file for Mercurial source code management system,
-```bash
-sudo apt install mercurial
-```
-
 ## JAGS-4.3.0
 
 These are required at least,
@@ -112,23 +128,6 @@ sudo dnf install automake
 sudo dnf install lapack-devel
 sudo dnf install mercurial
 ```
-
-## Linuxbrew
-
-Follow http://linuxbrew.sh/ and possibly https://docs.brew.sh
-```bash
-sudo apt-get install build-essential
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >>~/.profile
-echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profile
-echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
-PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-```
-
-## Ubuntu lists
-
-It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others.
-
 
 ## Miscellaneous notes
 ```bash
