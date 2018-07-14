@@ -11,6 +11,8 @@ This repository collects information dynamically on software
 5. [AI](AI.md)
 6. [Miscellaneous software](misc.md)
 
+when it becomes lengthy the notes will be kept in specific directories.
+
 It is expected that the site could eventually be enriched by many practitioners.
 
 ## How to Contribute (adapted from [Apress](https://github.com/apress))
