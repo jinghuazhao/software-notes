@@ -5,7 +5,7 @@
 This repository collects information dynamically on software
 
 1. [Overall setup](overall)
-2. [Setup by topic/software](topics.md)
+2. [Association analysis](association.md)
 3. [Sequence analysis](seq.md)
 4. [Machine learning](ML.md)
 5. [AI](AI.md)
