@@ -1,6 +1,6 @@
 # Association analysis
 
-## Single variant analysis
+## --- Single variant analysis ---
 
 ### PLINK2
 
@@ -13,7 +13,7 @@ Note also the way to use individual's IDs in PLINK2.
 
 ### [PyLMM](PyLMM)
 
-## HLA imputation
+## --- HLA imputation ---
 
 ### HLA*IMP:02
 
@@ -71,9 +71,9 @@ Hormozdiari F, van de Bunt M, Segrè AV, Li X, Joo JWJ, Bilow M, Sul JH, Sankara
 
 Both are available from https://github.com/fhormoz/caviar.
 
-## [JAM](JAM)
+### [JAM](JAM)
 
-## Functional annotation
+## --- Functional annotation ---
 
 ### VEP
 
@@ -104,7 +104,7 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 [R-packages](R-packages)
 
-## Pathway analysis
+## --- Pathway analysis ---
 
 ### [DEPICT](DEPICT) (see the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
 
@@ -128,11 +128,11 @@ Pascal --pval=BMI.pval
 
 ```
 
-## Medelian randomiszation
+## --- Mendelian randomiszation ---
 
-* [R-packages](R-packages)
+### [R-packages](R-packages)
 
-## Polygenic modeling
+## --- Polygenic modeling ---
 
 ### [ldsc](ldsc)
 
@@ -160,14 +160,14 @@ python3 P03_extract_bpoints.py --name=chr2 --dataset_path=example_data/cov_matri
 
 ### [R-packages](R-packages)
 
-## PheWAS
+## --- PheWAS ---
 
 See wiki resources section of Omics-analysis as well as implementations in [R-packages](R-packages).
 
-## Transcriptome-wide association analysis (TWAS)
+## --- Transcriptome-wide association analysis (TWAS) ---
 
 * [MetaXcan](MetaXcan) / S-PrediXcan
 * [FUSION](FUSION)
 * [R-packages](R-packages)
 
-eQTL, single cell sequencing, epigenome-wide association study (EWAS), therapeutic targets
+eQTL, epigenome-wide association study (EWAS).
