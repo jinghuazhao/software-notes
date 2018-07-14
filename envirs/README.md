@@ -84,6 +84,8 @@ sudo dpkg -i code_1.23.1-1525968403_amd64.deb
 ```
 but it requires `libgconf-2-4`; when failed to install use `sudo apt --fix-broken install`.
 
+---
+
 ## JAGS-4.3.0
 
 These are required at least,
