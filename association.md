@@ -64,11 +64,7 @@ We can also use cpan, but the installation fails under Ubuntu 18.04.
 
 ## PheWAS
 
-PheWAS catalog, https://phewascatalog.org/
-
-UK BioBank PheWAS, http://www.ukbiobank.ac.uk/tag/phewas/
-
-See implementations in [R-packages](R-packages).
+See wiki resources section of Omics-analysis as well as implementations in [R-packages](R-packages).
 
 ## Transcriptome-wide association analysis (TWAS)
 
