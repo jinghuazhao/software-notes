@@ -99,6 +99,10 @@ However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```u
 
 The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/. It is also recommended that the Bioconductor package EBSeq be installed.
 
+## fastq-splitter
+
+The scripts divides a large FASTQ file into a set of smaller equally sized files, http://kirill-kryukov.com/study/tools/fastq-splitter/.
+
 ## hisat2, sambamba, picard-tools, StringTie
 
 This may somewhat be overlapped with ```apt install``` above,
@@ -115,7 +119,3 @@ It could be useful with ``brew reinstall```. See
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, https://www.springer.com/us/book/9781493978335, Chapter 15, Springer.
 
 Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
-
-## fastq-splitter
-
-The scripts divides a large FASTQ file into a set of smaller equally sized files, http://kirill-kryukov.com/study/tools/fastq-splitter/.
