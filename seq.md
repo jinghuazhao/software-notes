@@ -105,7 +105,7 @@ The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://dewey
 
 ## hisat2, sambamba, picard-tools, StringTie
 
-This may somewhat be overlapped with ```apt install``` above,
+Except StringTie, this is overlapped with ```apt install``` above,
 ```bash
 brew tap brewsci/bio
 brew tap brewsci/science
