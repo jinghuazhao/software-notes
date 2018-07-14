@@ -81,6 +81,30 @@ Install with ```sudo apt install```.
 
 See also https://github.com/lh3/seqtk.
 
+# bowtie2
+
+The project home is https://sourceforge.net/projects/bowtie-bio, whereby
+```bash
+wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.1/bowtie2-2.3.4.1-linux-x86_64.zip
+wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.1/bowtie2-2.3.4.1-source.zip
+unzip bowtie2-2.3.4.1-linux-x86_64.zip
+cd bowtie2-2.3.4.1-linux-x86_64/
+```
+The test is then self-contained,
+```bash
+export BT2_HOME=/home/jhz22/D/genetics/bowtie2-2.3.4.1-linux-x86_64
+
+$BT2_HOME/bowtie2-build $BT2_HOME/example/reference/lambda_virus.fa lambda_virus
+$BT2_HOME/bowtie2 -x lambda_virus -U $BT2_HOME/example/reads/reads_1.fq -S eg1.sam
+$BT2_HOME/bowtie2 -x $BT2_HOME/example/index/lambda_virus -1 $BT2_HOME/example/reads/reads_1.fq -2 $BT2_HOME/example/reads/reads_2.fq -S eg2.sam
+
+samtools view -bS eg2.sam > eg2.bam
+samtools sort eg2.bam -o eg2.sorted.bam
+samtools mpileup -uf $BT2_HOME/example/reference/lambda_virus.fa eg2.sorted.bam | bcftools view -Ov - > eg2.raw.bcf
+bcftools view eg2.raw.bcf
+```
+Like samtools, etc. it is possible to involve `sudo apt install bowtie2`.
+
 ## cutadapt, TrimGalore
 
 A prerequesite is to install cython.
@@ -103,6 +127,15 @@ However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```u
 
 The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/. It is also recommended that the Bioconductor package EBSeq be installed.
 
+## GATK
+
+The source is available from https://github.com/broadinstitute/gatk/ but it is more convenient to use https://github.com/broadinstitute/gatk/releases/.
+```bash
+ln -s `pwd`/gatk $HOME/bin/gatk
+gatk --help
+gatk --list
+```
+
 ## hisat2, sambamba, picard-tools, StringTie
 
 Except StringTie, this is overlapped with ```apt install``` above,
@@ -119,6 +152,60 @@ It could be useful with ``brew reinstall```. See
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, https://www.springer.com/us/book/9781493978335, Chapter 15, Springer.
 
 Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
+
+## IGV
+
+The download can be seeded from http://data.broadinstitute.org/igv, e.g., http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip.
+
+Again the source code is from GitHub, https://github.com/igvteam/igv/. For developers, [igv.js](https://github.com/igvteam/igv.js) is very appealing.
+
+## Jannovar
+
+From the GitHub repository, it is seen to use `project object model` (POM), an XML representation of a Maven project held in a file named `pom.xml`. We therefore install `maven` first,
+```bash
+sudo apt install maven
+```
+The installation then proceeds as follows,
+```bash
+git clone https://github.com/charite/jannovar
+cd jannovar
+mvn package
+```
+Other tasks such as compile, test, etc. are also possible.
+
+It is handy to use symbolic link, i.e.,
+```bash
+ln -s /home/jhz22/D/genetics/jannovar/jannovar-cli/target/jannovar-cli-0.24.jar $HOME/bin/Jannovar.jar
+java -jar $HOME/bin/Jannovar.jar db-list
+java -jar $HOME/bin/Jannovar.jar download -d hg19/refseq
+```
+We may need to set memory size, e.g., 
+```bash
+java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
+```
+
+# pindel
+
+The software can be obtained from https://github.com/genome/pindel.
+
+After htslib is installed, the canonical instruction is to issue
+```bash
+git clone https://github.com/samtools/htslib
+cd htslib
+make
+sudo make install
+cd -
+git clone https://github.com/genome/pindel
+cd pindel
+./INSTALL ../htslib
+```
+It is `standard' to have complaints about pindel.cpp, bddate.cpp and genotyping.cpp,
+for `abs()` rather than `fabs()` from the header file `cmath` have been used. The
+issue goes away when `abs` is replaced with `fabs` and in the case of bddata.cpp,
+it is also necessary to invoke the header, i.e.,
+```cpp
+#include <cmath>
+```
 
 ## SnpEff, SnpSift, clinEff
 
@@ -176,3 +263,13 @@ mvn install
 which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`, respectively.
 
 Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4.
+
+# VarScan
+
+It is relatively simple to get going, after
+```bash
+git clone https://github.com/dkoboldt/varscan
+```
+the .jar files are ready to use.
+
+See http://varscan.sourceforge.net/ for further information.
