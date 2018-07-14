@@ -84,8 +84,6 @@ echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.pr
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 ```
 
-## [R and RStudio](../R)
-
 ## JAGS-4.3.0
 
 These are required at least,
@@ -134,3 +132,5 @@ sudo pip install MySQL-python
 ```bash
 sudo apt-get install libcanberra-gtk3-module
 ```
+
+## [R and RStudio](../R)
