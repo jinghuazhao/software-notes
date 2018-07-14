@@ -120,9 +120,19 @@ It could be useful with ``brew reinstall```. See
 
 Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
 
-## SnpEff, SnpSift
+## SnpEff, SnpSift, clinEff
 
-It is straightforward with the compiled version from sourceforge, http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip. However, we could compile from source,
+It is straightforward with the compiled version from sourceforge, which also includes clinEff.
+```bash
+wget http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip
+unzip snpEff_latest_core
+cd snpEff
+java -jar snpEff.jar databases
+java -jar snpEff.jar download GRCh38.76
+```
+lists all the databases and download a particular one.
+
+The following steps compile from source instead.
 ```bash
 git clone https://github.com/pcingola/SnpEff.git
 cd SnpEff
@@ -159,12 +169,8 @@ cd -
 git clone https://github.com/pcingola/SnpSift.git
 cd SnpSift
 mvn package
+mvn install
 ```
-which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`
-```bash
-java -jar snpEff-4.3.jar databases
-java -jar snpEff.jar download GRCh38.76
-```
-lists all the databases and download a particular one.
+which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`, respectively.
 
 Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4.
