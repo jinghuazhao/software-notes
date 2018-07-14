@@ -2,7 +2,7 @@
 
 git add README.md
 git commit -m "README"
-git add topics.md
+git add association.md
 git commit -m "Specific topics"
 git add ML.md
 git commit -m "Machine learning"
