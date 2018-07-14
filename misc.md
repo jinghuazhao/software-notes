@@ -24,5 +24,4 @@ See usr/share/doc/loki-doc/ for documentation.
 
 ## GEMMA
 
-To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places, with OpenBLAS, /opt/OpenBLAS/.
-
+To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places with OpenBLAS, /opt/OpenBLAS/.
