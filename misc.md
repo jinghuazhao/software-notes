@@ -21,3 +21,8 @@ It is the old merry fastlink 4.1P..
 It implements MCMC method for linkage analysis.
 
 See usr/share/doc/loki-doc/ for documentation.
+
+## GEMMA
+
+To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places, with OpenBLAS, /opt/OpenBLAS/.
+
