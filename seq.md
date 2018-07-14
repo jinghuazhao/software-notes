@@ -122,38 +122,49 @@ Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
 
 ## SnpEff, SnpSift
 
+It is straightforward with the compiled version from sourceforge, http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip. However, we could compile from source,
 ```bash
 git clone https://github.com/pcingola/SnpEff.git
 cd SnpEff
 mvn package
-export VERSION=4.3
+mvn install
+cd lib
+# Antlr
 mvn install:install-file \
-	-Dfile=target/SnpEff-$VERSION.jar \
-	-DgroupId=org.snpeff \
-	-DartifactId=SnpEff \
-	-Dversion=$VERSION \
-	-Dpackaging=jar \
-	-DgeneratePom=true \
-	--quiet
-cd - 
+	-Dfile=antlr-4.5.1-complete.jar \
+	-DgroupId=org.antlr \
+	-DartifactId=antlr \
+	-Dversion=4.5.1 \
+	-Dpackaging=jar
+
+# BioJava core
+mvn install:install-file \
+	-Dfile=biojava3-core-3.0.7.jar \
+	-DgroupId=org.biojava \
+	-DartifactId=biojava3-core \
+	-Dversion=3.0.7 \
+	-Dpackaging=jar
+
+# BioJava structure
+mvn install:install-file \
+	-Dfile=biojava3-structure-3.0.7.jar \
+	-DgroupId=org.biojava \
+	-DartifactId=biojava3-structure \
+	-Dversion=3.0.7 \
+	-Dpackaging=jar
+
+cd -
+
+# SnpSift
+git clone https://github.com/pcingola/SnpSift.git
+cd SnpSift
+mvn package
 ```
-which gives `target/SnpEff-4.3.jar` and
+which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`
 ```bash
 java -jar snpEff-4.3.jar databases
 java -jar snpEff.jar download GRCh38.76
 ```
 lists all the databases and download a particular one.
 
-It is more difficult with snpSift, which requires antlr4
-```bash
-git clone https://github.com/antlr/antlr4
-cd antlr4
-mvn package
-cd -
-# deposit to maven repository as above
-git clone https://github.com/pcingola/SnpSift.git
-cd SnpSift
-mvn package
-```
-
-Nevertheless it is straightforward with the compiled version from sourceforge, http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip.
+Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4.
