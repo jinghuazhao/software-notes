@@ -102,7 +102,7 @@ We can now execute an example,
 vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 ```
 
-[R-packages](R-packages)
+### [R-packages](R-packages)
 
 ## --- Pathway analysis ---
 
