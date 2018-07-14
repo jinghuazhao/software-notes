@@ -1,4 +1,4 @@
-# AI
+# Artificial intelligence
 
 ## tensorflow
 
@@ -20,5 +20,4 @@ https://github.com/apress/pro-deep-learning-w-tensorflow
 
 ## pytorch
 
-* https://pytorch.github.com
-* https://pytorch.github.io
+The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.
