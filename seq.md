@@ -63,6 +63,10 @@ cd test_data
 tophat -r 20 test_ref reads_1.fq reads_2.fq
 ```
 
+## RNA-seq pipeline
+
+See https://github.com/sanger-pathogens/Bio-RNASeq.
+
 # Software
 
 ## ANGSD
@@ -114,6 +118,15 @@ cd cutadapt
 sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
+
+## Exomiser
+
+```bash
+git clone https://github.com/exomiser/Exomiser
+cd Exomiser
+mvn package
+```
+See also https://github.com/exomiser/exomiser-demo.
 
 ## fastq-splitter
 
@@ -262,7 +275,7 @@ mvn install
 ```
 which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`, respectively.
 
-Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4.
+Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also https://github.com/sanger-pathogens/SnpEffWrapper.
 
 # VarScan
 
