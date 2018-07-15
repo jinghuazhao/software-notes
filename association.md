@@ -108,7 +108,7 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 ### [DEPICT](DEPICT) (see the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
 
-### [PASCAL](PASCAL)
+### PASCAL
 
 When there is issue with xianyi-OpenBLAS-v0.2.12-0-g7e4e195.zip shipped with [PASCAL.zip](http://www2.unil.ch/cbg/images/3/3d/PASCAL.zip), 
 as described in [vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) or
