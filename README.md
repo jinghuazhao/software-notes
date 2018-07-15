@@ -2,7 +2,7 @@
 
 **Software notes for association studies**
 
-This repository collects information dynamically on software
+This repository collects information dynamically on software on the following categories,
 
 1. [System environments](envirs)
 2. [Association analysis](association.md)
