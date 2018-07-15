@@ -1,4 +1,4 @@
-# Benchmarks
+# Benchmarks and pipelines
 
 ## Agotron detection
 
