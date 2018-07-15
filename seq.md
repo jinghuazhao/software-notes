@@ -63,9 +63,9 @@ cd test_data
 tophat -r 20 test_ref reads_1.fq reads_2.fq
 ```
 
-## RNA-seq pipeline
+## RNA-seq and SNP pipelines
 
-See https://github.com/sanger-pathogens/Bio-RNASeq.
+See https://github.com/sanger-pathogens/Bio-RNASeq and https://github.com/sanger-pathogens/snp-sites.
 
 # Software
 
