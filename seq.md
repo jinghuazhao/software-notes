@@ -35,10 +35,15 @@ The following reference discribes several pipelines for SNP discovery.
 
 whose scripts are available from https://github.com/PAMorin/SNPdiscovery/.
 
-See also
+See also https://github.com/sanger-pathogens/snp-sites and
+
 > Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
+
+## RNA-seq pipeline
+
+See https://github.com/sanger-pathogens/Bio-RNASeq.
 
 ## sra-toolkit, tophat
 
@@ -62,10 +67,6 @@ tar xvfz test_data.tar.gz
 cd test_data
 tophat -r 20 test_ref reads_1.fq reads_2.fq
 ```
-
-## RNA-seq and SNP pipelines
-
-See https://github.com/sanger-pathogens/Bio-RNASeq and https://github.com/sanger-pathogens/snp-sites.
 
 # Software
 
