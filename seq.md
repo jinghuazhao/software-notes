@@ -279,10 +279,11 @@ Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also htt
 
 # VarScan
 
-It is relatively simple to get going, after
+Hosted at https://github.com/dkoboldt/varscan, the .jar files are ready to use with
+
 ```bash
 git clone https://github.com/dkoboldt/varscan
 ```
-the .jar files are ready to use.
+or from the repository releases.
 
 See http://varscan.sourceforge.net/ for further information.
