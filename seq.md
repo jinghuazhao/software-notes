@@ -35,7 +35,7 @@ The following reference discribes several pipelines for SNP discovery.
 
 whose scripts are available from https://github.com/PAMorin/SNPdiscovery/.
 
-See also https://github.com/sanger-pathogens/snp-sites and
+See also https://github.com/sanger-pathogens/snp-sites and the following references,
 
 > Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
 
