@@ -6,7 +6,7 @@ This repository collects information dynamically on software on the following ca
 
 1. [System environments](envirs)
 2. [Association analysis](association.md)
-3. [Sequence analysis](seq.md)
+3. [Next-generation sequence analysis](NGS.md)
 4. [Miscellaneous software](misc.md)
 5. [Machine learning](ML.md)
 6. [Artificial intelligence](AI.md)
