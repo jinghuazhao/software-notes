@@ -269,7 +269,7 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 See the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 
-** Installation and documentation example **
+**Installation and documentation example**
 
 * The official site, https://data.broadinstitute.org/mpg/depict/documentation.html has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz),
 which contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
@@ -322,13 +322,13 @@ python depict.py BMI.cfg
 sudo pip install scikit-learn
 ```
 
-** Recompile **
+**Recompile**
 
 This may be necessary for large collection of significant variants, e.g., GIANT+UKB height summary statistics (height_loci.txt has 2,184 lines including header).
 
 Start netbeans and open project from depict/src/java, fixing links to colt.jar, commons-math-2.0.jar, Jama-1.0.2.jar, jsci-core.jar, JSciCore.jar, jsc.jar from lib/.
 
-** Additional notes **
+**Additional notes**
 
 [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) puts together many changes and is streamlined with other software.
 
@@ -430,7 +430,7 @@ where
 
 ### ldsc
 
-** Partitioned heritability **
+**Partitioned heritability**
 
 The [wiki documentation](https://github.com/bulik/ldsc/wiki/Partitioned-Heritability) script really should be as follows,
 ```bash
@@ -503,7 +503,7 @@ See wiki resources section of Omics-analysis as well as implementations in [R-pa
 
 ### MetaXcan / S-PrediXcan
 
-** Issues with more recent version of Python 2.7 **
+**Issues with more recent version of Python 2.7**
 
 The issue was raised to the [MetaXcan GitHub repository](https://github.com/hakyimlab/MetaXcan) for
 
@@ -518,7 +518,7 @@ myLogging in M03_betas.py, M04_zscores.py and MetaXcan.py, etc.
 It looks the recent version of Python is stricter, which is somewhat expected as with most other compilers. Similar issues were raised while maintaining R packages
 for complaints from g++ 8.xx (to be shipped with Fedora 28) which is otherwise OK with g++ 7.x.x.
 
-** Use of the latest databases **
+**Use of the latest databases**
 
 While it is possible to use the web interface, https://cloud.hakyimlab.org/user_main, to achieve greater flexibility, the latest databases can be downloaded locally
 from [PredictDB Data Repository](http://predictdb.org/).
@@ -559,7 +559,7 @@ as follows,
 --output_file results/V7.csv
 ```
 
-** Examining weights and related information **
+**Examining weights and related information**
 
 [PredictDB FAQs](http://predictdb.org/FAQ.html) point to [a utility in PrediXcan](https://github.com/hakyimlab/PrediXcan/blob/master/Software/query-db.Rmd) for
 query, however it is handy to use sqlite3 directory as has been demonstrated in my [TWAS-pipeline](https://github.com/jinghuazhao/TWAS-pipeline). In this case,
