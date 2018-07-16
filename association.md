@@ -14,7 +14,7 @@ Note also the way to use individual's IDs in PLINK2.
 
 The software is rare with its setup for GEI studies accounting for polygenic effects.
 
-** pylmm **
+**pylmm**
 
 It is necessary to do the following steps to get it going,
 
@@ -29,7 +29,7 @@ It is necessary to do the following steps to get it going,
 pylmmGWAS.py -v --bfile data/snps.132k.clean.noX --kfile data/snps.132k.clean.noX.pylmm.kin --phenofile data/snps.132k.clean.noX.fake.phenos out.foo
 ```
 
-** pylmm_zarlab **
+**pylmm_zarlab**
 
 Make the following changes to lmm and lmmGWAS similar to pylmm, and then issue `bash run_tests.sh`.
 
@@ -55,7 +55,7 @@ Traceback (most recent call last):
   File "scripts/pylmmKinship.py", line 127, in <module>
     K_G = lmm.calculateKinshipIncremental(IN, numSNPs=options.numSNPs,
 AttributeError: 'module' object has no attribute 'calculateKinshipIncremental'
-E
+
 ======================================================================
 ERROR: test_GWAS (tests.test_lmm.test_lmm)
 ----------------------------------------------------------------------
@@ -175,7 +175,7 @@ Both are available from https://github.com/fhormoz/caviar.
 
 ### [JAM](JAM)
 
-** Setup **
+**Setup**
 
 The package is available from https://github.com/pjnewcombe/R2BGLiMS.
 
@@ -188,7 +188,7 @@ git clone https://github.com/pjnewcombe/R2BGLiMS
 R CMD INSTALL R2BGLiMS
 ```
 
-** Compiling **
+**Compiling**
 
 The information is unavailable from the documentation, but at least can be achieved this with [netbeans](https://netbeans.org/).
 
@@ -486,7 +486,7 @@ python ldsc.py --h2 BMI.sumstats.gz\
 ```
 NB it is assumed that [all the required data](https://data.broadinstitute.org/alkesgroup/LDSCORE/) have been made available.
 
-** Test **
+**Test**
 
 The mysterious commands shown in the wiki documentation are actually realised after this,
 ```
@@ -625,7 +625,7 @@ Rscript FUSION.assoc_test.R \
 --out PGC2.SCZ.22.dat
 ```
 
-** A useful utility **
+**A useful utility**
 
 ```bash
 Rscript utils/make_score.R WEIGHTS/CMC.BRAIN.RNASEQ/CMC.MC4R.wgt.RDat > CMC.MC4R.score
