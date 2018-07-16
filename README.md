@@ -7,9 +7,9 @@ This repository collects information dynamically on software on the following ca
 1. [System environments](envirs)
 2. [Association analysis](association.md)
 3. [Sequence analysis](seq.md)
-4. [Machine learning](ML.md)
-5. [Artificial intelligence](AI.md)
-6. [Miscellaneous software](misc.md)
+4. [Miscellaneous software](misc.md)
+5. [Machine learning](ML.md)
+6. [Artificial intelligence](AI.md)
 
 when it becomes lengthy the notes will be kept in specific directories.
 
