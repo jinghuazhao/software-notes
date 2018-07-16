@@ -1,6 +1,6 @@
 # software-notes
 
-**Setup information for software in several categories**
+**Setup of software in several categories**
 
 1. [System environments](envirs)
 2. [Association analysis](association.md)
