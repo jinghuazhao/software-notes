@@ -165,7 +165,7 @@ The references are
 
 Both are available from https://github.com/fhormoz/caviar.
 
-### [JAM](JAM)
+### JAM
 
 **Setup**
 
@@ -182,11 +182,9 @@ R CMD INSTALL R2BGLiMS
 
 **Compiling**
 
-The information is unavailable from the documentation, but at least can be achieved this with [netbeans](https://netbeans.org/).
-
-## Old notes
+The information is unavailable from the documentation, but can be achieved this with [netbeans](https://netbeans.org/) or in steps.
 ```bash
-21-7-2017 MRC-Epid JHZ
+# 21-7-2017 MRC-Epid JHZ
 
 export BGLiMS=/genetics/bin/BGLiMS
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-0.b11.el6_9.x86_64
