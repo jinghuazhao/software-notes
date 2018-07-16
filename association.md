@@ -729,9 +729,9 @@ See https://github.com/PheWAS/
 
 It requires `snpStats` that can be installed with biocLite().
 
-There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with help.start().
+There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with `help.start()`.
 
-**arfield**
+**garfield**
 
 Again it can be installed with `biocLite("garfield")` and vignette be seen similarly to `coloc`.
 
