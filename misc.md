@@ -8,10 +8,6 @@ The source code is also available from the archive, e.g., http://archive.ubuntu.
 
 It is Bayesian MCMC phylogenetic inference.
 
-## eigensoft
-
-The PCA software for genomewide data; The executables are eigenstrat, eigenstratQTL, smarteigenstrat, smartpca, pca, etc.
-
 ## fastlink, fastlink-doc
 
 It is the old merry fastlink 4.1P..
