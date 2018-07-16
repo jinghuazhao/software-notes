@@ -595,7 +595,7 @@ sqlite3 gtex_v7_Brain_Amygdala_imputed_europeans_tw_0.5_signif.db < query-db.sql
 ```
 and the weights and extra information are available from files weights.txt and extra.txt, respectively.
 
-### [FUSION](FUSION)
+### FUSION
 
 This section follows http://gusevlab.org/projects/fusion/ and is more compact. To install we do,
 ```bash
