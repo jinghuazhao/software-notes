@@ -4,8 +4,8 @@ git add README.md
 git commit -m "README"
 git add association.md
 git commit -m "Specific topics"
-git add ML.md
-git commit -m "Machine learning"
+git add SL.md
+git commit -m "Statistical learning"
 git add AI.md
 git commit -m "AI"
 git add NGS.md
