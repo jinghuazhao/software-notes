@@ -253,7 +253,7 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 ### R-packages
 
-See R-packages section below.
+See R-packages section.
 
 ## --- Pathway analysis ---
 
