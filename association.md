@@ -648,6 +648,8 @@ plink --bfile genotype-file --score CMC.MC4R.score 1 2 4
 ```
 See additional information from the FUSION documentation.
 
+---
+
 ### R-packages
 
 Package installation can be done with `install.packages()` from CRAN and
