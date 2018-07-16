@@ -10,8 +10,110 @@ Nevertheless there is no such problem with its --make-grm-list which allows for 
 
 Note also the way to use individual's IDs in PLINK2.
 
+### PyLMM
 
-### [PyLMM](PyLMM)
+The software is rare with its setup for GEI studies accounting for polygenic effects.
+
+** pylmm **
+
+It is necessary to do the following steps to get it going,
+
+1. git clone https://github.com/nickFurlotte/pylmm
+2. make the following changes,
+  * build/scripts-2.7/pylmmGWAS.py, line 207, from `keep = True - v` to `keep = True ^ v`
+  * pylmm/lmm.py, line 189, from `if X0 == None:` to `if X0.all == None:`; line 193, from `x = True - np.isnan(Y)` to `x = True ^ np.isnan(Y)`; line 272, from `if X == None: X = self.X0t` to `if X.all == None: X = self.X0t`.
+  * build/scripts-2.7/input.py, line 190, from `x = True ^ np.isnan(G)` to `x = True ^ np.isnan(G)`.
+3. python setup.py install
+4. use the documentation call,
+```{bash}
+pylmmGWAS.py -v --bfile data/snps.132k.clean.noX --kfile data/snps.132k.clean.noX.pylmm.kin --phenofile data/snps.132k.clean.noX.fake.phenos out.foo
+```
+
+** pylmm_zarlab **
+
+Make the following changes to lmm and lmmGWAS similar to pylmm, and then issue `bash run_tests.sh`.
+
+```
+EReading SNP input...
+Read 1219 individuals from data/snps.132k.clean.noX.fam
+Reading kinship...
+Read the 1219 x 1219 kinship matrix in 1.139s 
+1 number of phenotypes read
+Traceback (most recent call last):
+  File "scripts/pylmmGWAS.py", line 308, in <module>
+    keep = True - v
+TypeError: numpy boolean subtract, the `-` operator, is deprecated, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+EReading PLINK input...
+Read 1219 individuals from data/snps.132k.clean.noX.fam
+Traceback (most recent call last):
+  File "scripts/pylmmKinship.py", line 127, in <module>
+    K_G = lmm.calculateKinshipIncremental(IN, numSNPs=options.numSNPs,
+AttributeError: 'module' object has no attribute 'calculateKinshipIncremental'
+EReading PLINK input...
+Read 1219 individuals from data/snps.132k.clean.noX.fam
+Traceback (most recent call last):
+  File "scripts/pylmmKinship.py", line 127, in <module>
+    K_G = lmm.calculateKinshipIncremental(IN, numSNPs=options.numSNPs,
+AttributeError: 'module' object has no attribute 'calculateKinshipIncremental'
+E
+======================================================================
+ERROR: test_GWAS (tests.test_lmm.test_lmm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/tests/test_lmm.py", line 41, in test_GWAS
+    TS,PS = lmm.GWAS(Y,snps,K,REML=True,refit=True)
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/pylmm/lmm.py", line 192, in GWAS
+    L = LMM(Y, K, Kva, Kve, X0)
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/pylmm/lmm.py", line 301, in __init__
+    x = True - np.isnan(Y)
+TypeError: numpy boolean subtract, the `-` operator, is deprecated, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+
+======================================================================
+ERROR: test_calculateKinship (tests.test_lmm.test_lmm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/tests/test_lmm.py", line 25, in test_calculateKinship
+    K = lmm.calculateKinship(snps)
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/pylmm/lmm.py", line 135, in calculateKinship
+    mn = W[True - np.isnan(W[:, i]), i].mean()
+TypeError: numpy boolean subtract, the `-` operator, is deprecated, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+
+======================================================================
+ERROR: test_pylmmGWASScript (tests.test_pylmmGWAS.test_pylmmGWAS)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/tests/test_pylmmGWAS.py", line 24, in test_pylmmGWASScript
+    with (open(self._outputFile, 'r')) as ansFile:
+IOError: [Errno 2] No such file or directory: 'data/pylmmGWASTestOutput'
+
+======================================================================
+ERROR: test_pylmmKinshipScript1 (tests.test_pylmmKinship.test_pylmmKinship)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/tests/test_pylmmKinship.py", line 24, in test_pylmmKinshipScript1
+    K = np.fromfile(open(self._outputFile, 'r'), sep=" ")
+IOError: [Errno 2] No such file or directory: 'data/pylmmKinshipTestOutput'
+
+======================================================================
+ERROR: test_pylmmKinshipScript2 (tests.test_pylmmKinship.test_pylmmKinship)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jhz22/D/genetics/ucla/pylmm_zarlab/tests/test_pylmmKinship.py", line 38, in test_pylmmKinshipScript2
+    K = np.fromfile(open(self._outputFile, 'r'), sep=" ")
+IOError: [Errno 2] No such file or directory: 'data/pylmmKinshipTestOutput'
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.776s
+
+FAILED (errors=5)
+```
+We can have a test of GxE analysis as this,
+```{bash}
+sudo python setup.py install
+cd pylmm
+python pylmm_GXE.py
+```
+In general, we can see options for GxE analysis from command `pylmmGWAS.py` under bash.
 
 ## --- HLA imputation ---
 
@@ -163,7 +265,73 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 ## --- Pathway analysis ---
 
-### [DEPICT](DEPICT) (see the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+))
+### DEPICT
+
+See the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+
+** Installation and documentation example **
+
+* The official site, https://data.broadinstitute.org/mpg/depict/documentation.html has links on [DEPICT_v1_rel194.tar.gz](https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz),
+which contains 1000Genomes and other data unavailable from [depict_140721.tar.bz2](https://data.broadinstitute.org/mpg/depict/depict_140721.tar.bz2).
+```bash
+wget https://data.broadinstitute.org/mpg/depict/depict_download/bundles/DEPICT_v1_rel194.tar.gz
+tar xvfz DEPICT_v1_rel194.tar.gz
+export CWD=$(pwd)
+```
+where the package is unpacked into the DEPICT/ directory containing the data/ subdirectory. We also note down current working directory with `CWD`.
+
+* The source package from GitHub has more features such as cutoff_type to be p-values in network analysis; the code
+```{bash}
+git clone https://github.com/perslab/depict
+cd depict
+wget https://data.broadinstitute.org/mpg/depict/depict_download/collections/ld0.5_collection_1000genomespilot_depict_150429.txt.gz
+mkdir -p data/collections
+mv ld0.5* data/collections
+sed 's|/cvar/jhlab/tp/DEPICT|/home/jhz22/Downloads/depict|g;s|label_for_output_files: ldl_teslovich_nature2010|label_for_output_files: test|g; s|/cvar/jhlab/tp/tools/plink/plink-1.09-Sep2015-x86_64/plink|/home/jhz22/bin/plink|g' example/ldl_teslovich_nature2010.cfg > test.cfg
+src/python/depict.py test.cfg
+```
+adds `ld0.5_collection_1000genomespilot_depict_150429.txt.gz` and produces results prefixed with `test_` using the LDL data.
+
+* Since the documentation example above does not give the full results, data directory packaged with DEPICT_v1_rel194.tar.gz above is called to remedy with a minor change,
+```bash
+mv data data.sav
+ln -s $CWD/DEPICT/data
+```
+to `test.cfg` for a re-run.
+```bash
+sed -i 's|data/reconstituted_genesets/reconstituted_genesets_example.txt|data/reconstituted_genesets/reconstituted_genesets_150901.binary|g' test.cfg
+src/python/depict.py test.cfg
+```
+
+* PLINK. [PLINK-1.9](https://www.cog-genomics.org/plink2/), with --clump option, has to be used rather than [PLINK2](https://www.cog-genomics.org/plink/2.0/) since itdrops the --clump option.
+
+* NB template.cfg is from src/python rather than .cfg from example.
+
+* Python 2.7.*. After installation, the following change is needed: from .sort() to .sort_values() in network_plot.py and depict_library.py. It is necessary to download [additional files](https://data.broadinstitute.org/mpg/depict/depict_download/) for network analysis -- in my case, downloads via Firefox do not work and I used `wget` instead.
+
+* To explore possibility to replicate the Supplementary Figure 9 of the Scott paper -- the number of significant pathways seemed to fall short of the FDR<=0.05 criterion, see
+[SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) for setup.
+
+* Under Windows, `gzip.exe` is also required at the working directory or %path% plus some changes over directory specifications. We can then execute
+```
+python depict.py BMI.cfg
+```
+
+* For tissue plot, one can use pdftopng from XpdfReader (or convert/magick from ImageMagick) to obtain .png files to be incorporated into Excel workbook. For network plot, the python package scikit-learn is required.
+```bash
+sudo pip install scikit-learn
+```
+
+** Recompile **
+
+This may be necessary for large collection of significant variants, e.g., GIANT+UKB height summary statistics (height_loci.txt has 2,184 lines including header).
+
+Start netbeans and open project from depict/src/java, fixing links to colt.jar, commons-math-2.0.jar, Jama-1.0.2.jar, jsci-core.jar, JSciCore.jar, jsc.jar from lib/.
+
+** Additional notes **
+
+[PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) puts together many changes and is streamlined with other software.
+
 
 ### PASCAL
 
@@ -260,7 +428,70 @@ where
  --rf=RESULT_FILE_PREFIX: SNP weights file
 ```
 
-### [ldsc](ldsc)
+### ldsc
+
+** Partitioned heritability **
+
+The [wiki documentation](https://github.com/bulik/ldsc/wiki/Partitioned-Heritability) script really should be as follows,
+```bash
+
+export GIANT_BMI=GIANT_BMI_Speliotes2010_publicrelease_HapMapCeuFreq.txt
+
+setup()
+{
+  if [ ! -f $GIANT_BMI ]; then
+     wget http://portals.broadinstitute.org/collaboration/giant/images/b/b7/$GIANT_BMI.gz
+     gunzip $GIANT_BMI.gz
+  fi
+  if [ ! -f w_hm3.snplist ]; then
+     wget https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2
+     bzip2 -d w_hm3.snplist.bz2
+  fi
+  python munge_sumstats.py --sumstats $GIANT_BMI --merge-alleles w_hm3.snplist --out BMI --a1-inc
+}
+
+# It fails to munge, so we use brute-force. For P-to-Z implementation in C/C++, see
+# https://stackoverflow.com/questions/27830995/inverse-cumulative-distribution-function-in-c
+# https://stackoverflow.com/questions/22834998/what-reference-should-i-use-to-use-erf-erfc-function
+# It turned out that an older version of pandas is required here, see the GIANT+UKB BMI example
+
+awk 'NR>1' $GIANT_BMI > 1
+awk 'NR>1' w_hm3.snplist | sort -k1,1 | join -j1 1 - | awk -f CLEAN_ZSCORES.awk > BMI.sumstats
+R --vanilla -q <<END
+BMI <- read.table("BMI.sumstats",col.names=c("SNP","A1","A2","Z","N"))
+BMI <- within(BMI, {Z=sign(Z)*qnorm(abs(Z)/2)})
+z <- gzfile("BMI.sumstats.gz","w")
+write.table(BMI,file=z,quote=FALSE,row.names=FALSE)
+close(z)
+END
+```
+where we use [CLEAN_ZSCORES.awk](envirs/CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
+
+Now the partition heritability and cell-type group analysis proceed as follows,
+```bash
+python ldsc.py --h2 BMI.sumstats.gz\
+        --ref-ld-chr baseline_v1.1/baseline.\
+        --w-ld-chr 1000G_Phase3_weights_hm3_no_MHC/weights.hm3_noMHC.\
+        --overlap-annot\
+        --frqfile-chr 1000G_Phase3_frq/1000G.EUR.QC.\
+        --out BMI_baseline
+
+python ldsc.py --h2 BMI.sumstats.gz\
+        --w-ld-chr 1000G_Phase3_weights_hm3_no_MHC/weights.hm3_noMHC.\
+        --ref-ld-chr 1000G_Phase3_cell_type_groups/cell_type_group.3.,baseline_v1.1/baseline.\
+        --overlap-annot\
+        --frqfile-chr 1000G_Phase3_frq/1000G.EUR.QC.\
+        --out BMI_CNS\
+        --print-coefficients
+```
+NB it is assumed that [all the required data](https://data.broadinstitute.org/alkesgroup/LDSCORE/) have been made available.
+
+** Test **
+
+The mysterious commands shown in the wiki documentation are actually realised after this,
+```
+sudo apt install python-nose
+```
 
 ### [R-packages](R-packages)
 
