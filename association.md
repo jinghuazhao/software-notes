@@ -2,6 +2,14 @@
 
 ## --- Single variant analysis ---
 
+### eigensoft
+
+The PCA software for genomewide data is available from https://www.hsph.harvard.edu/alkes-price/software/ as well as Ubuntu.
+```bash
+sudo apt install eigensoft
+```
+The executables are eigenstrat, eigenstratQTL, smarteigenstrat, smartpca, pca, etc.
+
 ### GEMMA
 
 To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places with OpenBLAS, /opt/OpenBLAS/.
