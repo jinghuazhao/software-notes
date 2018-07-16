@@ -8,8 +8,8 @@ git add ML.md
 git commit -m "Machine learning"
 git add AI.md
 git commit -m "AI"
-git add seq.md
-git commit -m "Sequencing analysis"
+git add NGS.md
+git commit -m "Next-generation sequencing analysis"
 git add misc.md
 git commit -m "Miscellaneour programs"
 for d in envirs st.sh
