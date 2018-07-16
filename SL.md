@@ -1,9 +1,11 @@
-# Machine learning
+# Statistcal learning
+
+## Machine learning (as it is called in computer science literature)
 
 * Apress, https://github.com/apress
 * Packt, https://github.com/PacktPublishing
 
-**[ISLR](https://CRAN.R-project.org/package=ISLR)**
+## Statistical learning and [ISLR](https://CRAN.R-project.org/package=ISLR)
 
 > Hastie T, Tibshirani R, Friedman J (2009). [The Elements of Statistical Learning: Data Mining, Inference, and Prediction](https://www.springer.com/gb/book/9780387848570). Springer.
 
