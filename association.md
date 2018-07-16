@@ -2,6 +2,10 @@
 
 ## --- Single variant analysis ---
 
+### GEMMA
+
+To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places with OpenBLAS, /opt/OpenBLAS/.
+
 ### PyLMM
 
 The software is rare with its setup for GEI studies accounting for polygenic effects.
