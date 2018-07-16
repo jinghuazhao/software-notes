@@ -1,6 +1,6 @@
 # software-notes
 
-**Information on software in several categories**
+**Setup information for software in several categories**
 
 1. [System environments](envirs)
 2. [Association analysis](association.md)
@@ -8,8 +8,6 @@
 4. [Miscellaneous software](misc.md)
 5. [Machine learning](ML.md)
 6. [Artificial intelligence](AI.md)
-
-when it becomes lengthy the notes will be kept in specific directories.
 
 It is expected that the site could eventually be enriched by many practitioners.
 
