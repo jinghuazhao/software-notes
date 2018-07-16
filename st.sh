@@ -12,7 +12,7 @@ git add seq.md
 git commit -m "Sequencing analysis"
 git add misc.md
 git commit -m "Miscellaneour programs"
-for d in DEPICT ldsc MetaXcan PyLMM R R-packages envirs st.sh
+for d in MetaXcan R R-packages envirs st.sh
 do
    git add $d
    git commit -m "$d"
