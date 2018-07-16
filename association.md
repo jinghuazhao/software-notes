@@ -107,6 +107,8 @@ python pylmm_GXE.py
 ```
 In general, we can see options for GxE analysis from command `pylmmGWAS.py` under bash.
 
+---
+
 ## --- HLA imputation ---
 
 ### HLA*IMP:02
@@ -131,6 +133,8 @@ install Wx::Mini
 install Wx::Perl::Packager
 ```
 We can also use cpan, but the installation fails under Ubuntu 18.04.
+
+---
 
 ## --- Finemapping ---
 
@@ -222,6 +226,8 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 # $JAVA_HOME/bin/jar cvf BGLiMS.jar bglims.jar MyClassLibrary.jar
 ```
 
+---
+
 ## --- Functional annotation ---
 
 ### VEP
@@ -254,6 +260,8 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 ### R-packages
 
 See R-packages section.
+
+---
 
 ## --- Pathway analysis ---
 
@@ -344,6 +352,8 @@ gunzip -c | cut -f1,7 | awk -vFS="\t" -vOFS="\t" '(NR>1)' > BMI.pval
 Pascal --pval=BMI.pval
 
 ```
+
+---
 
 ## --- Mendelian randomiszation ---
 
@@ -497,9 +507,13 @@ Note also the way to use individual's IDs in PLINK2.
 
 See R-packages section.
 
+---
+
 ## --- PheWAS ---
 
 See wiki resources section of Omics-analysis as well as implementations in R-packages section.
+
+---
 
 ## --- Transcriptome-wide association analysis (TWAS) ---
 
@@ -755,5 +769,6 @@ browseVignettes("sva")
 
 The Bioconductor page is here, http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html.
 
+---
 
 eQTL, epigenome-wide association study (EWAS).
