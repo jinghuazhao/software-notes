@@ -6,7 +6,7 @@
 2. [Association analysis](association.md)
 3. [Next-generation sequence analysis](NGS.md)
 4. [Miscellaneous software](misc.md)
-5. [Machine learning](ML.md)
+5. [Statistical learning](SL.md)
 6. [Artificial intelligence](AI.md)
 
 It is expected that the site could eventually be enriched by many practitioners.
