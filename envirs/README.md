@@ -160,7 +160,11 @@ tidy myfile.R
 install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
 install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
 ```
-both install package to the dedicated location.
+both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
+```bash
+sudo R CMD INSTALL <package_version.tar.gz> -L $R_LIBS
+```
+to install <package_version.tar.gz> into $R_LIBS.
 
 ### Windows
 
