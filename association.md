@@ -385,6 +385,16 @@ git clone https://bitbucket.org/nygcresearch/ldetect
 cd ldetect
 sudo python3 setup.py install
 git clone https://bitbucket.org/nygcresearch/ldetect-data
+cd ldetect-data
+for pop in AFR ASN EUR
+do awk '
+{
+  OFS="\t"
+  if (NR==1) print "#chrom", "Start", "End", "Region"
+  else  print $1, $2, $3, "region" NR-1
+}' $pop/fourier_ls-all.bed > $pop.bed
+done
+cd -
 ```
 A much condensed version of the documentation example is as follows,
 ```bash
