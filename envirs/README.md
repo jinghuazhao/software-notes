@@ -220,6 +220,18 @@ However, compile error is still persistent except when dropping the option `--ex
 
 It is therefore recommended to get around with RStudio daily builds, https://dailies.rstudio.com/.
 
+### install.packages and install_github
+
+```r
+install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
+install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
+```
+both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
+```bash
+sudo R CMD INSTALL <package_version.tar.gz> -L $R_LIBS
+```
+to install <package_version.tar.gz> into $R_LIBS.
+
 ### The old `tidy.R`
 
 It works as follows,
@@ -236,15 +248,3 @@ END
 }
 tidy myfile.R
 ```
-
-### install.packages and install_github
-
-```r
-install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
-install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
-```
-both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
-```bash
-sudo R CMD INSTALL <package_version.tar.gz> -L $R_LIBS
-```
-to install <package_version.tar.gz> into $R_LIBS.
