@@ -137,35 +137,6 @@ sudo apt-get install libcanberra-gtk3-module
 
 ## R and RStudio
 
-### The old `tidy.R`
-
-It works as follows,
-```bash
-function tidy()
-{
-  export input=$1
-R --vanilla <<END
-  options(keep.source = FALSE)
-  input <- Sys.getenv("input")
-  source(input)
-  dump(ls(all = TRUE), file = paste0(input,"_out"))
-END
-}
-tidy myfile.R
-```
-
-### install.packages and install_github
-
-```r
-install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
-install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
-```
-both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
-```bash
-sudo R CMD INSTALL <package_version.tar.gz> -L $R_LIBS
-```
-to install <package_version.tar.gz> into $R_LIBS.
-
 ### Windows
 
 It seems the --arch x84 option is very useful for using all available RAM; to make sure use call such as `D:\Program Files\R\R-3.5.0\bin\x64\R.exe"`.
@@ -248,3 +219,32 @@ java -version
 However, compile error is still persistent except when dropping the option `--exclude-qt-sdk` but unloadable.
 
 It is therefore recommended to get around with RStudio daily builds, https://dailies.rstudio.com/.
+
+### The old `tidy.R`
+
+It works as follows,
+```bash
+function tidy()
+{
+  export input=$1
+R --vanilla <<END
+  options(keep.source = FALSE)
+  input <- Sys.getenv("input")
+  source(input)
+  dump(ls(all = TRUE), file = paste0(input,"_out"))
+END
+}
+tidy myfile.R
+```
+
+### install.packages and install_github
+
+```r
+install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
+install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
+```
+both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
+```bash
+sudo R CMD INSTALL <package_version.tar.gz> -L $R_LIBS
+```
+to install <package_version.tar.gz> into $R_LIBS.
