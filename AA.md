@@ -369,15 +369,19 @@ Pascal --pval=BMI.pval
 
 It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart,
 ```bash
+# driver download
 wget https://vegas2.qimrberghofer.edu.au/vegas2v2
+# test
 wget https://vegas2.qimrberghofer.edu.au/VEGAS2v2example.zip
 unzip -j VEGAS2v2example.zip
-wget https://vegas2.qimrberghofer.edu.au/glist-hg19
-perl vegas2v2 -G -snpandp example.txt -custom example -glist glist-hg19 -genelist example.genelist
+cut -f1 example.bim|uniq|parallel -j2 -C' ' 'plink --bfile example --threads 1 --chr {} --make-bed --out example{}'
+perl vegas2v2 -G -snpandp example.txt -custom example -glist example.glist -genelist example.genelist
+# further setup
 wget https://vegas2.qimrberghofer.edu.au/biosystems20160324.vegas2pathSYM
+wget https://vegas2.qimrberghofer.edu.au/glist-hg19
 wget -qO- https://vegas2.qimrberghofer.edu.au/g1000p3_EUR.tar.gz | tar xvfz -
 ```
-The last line downloads and unpacks the LD reference data for European population.
+The last line downloads and unpacks the LD reference data for EURopean population; other options include AFR, AMR, EAS, SAS.
 
 ---
 
