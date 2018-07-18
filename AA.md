@@ -374,8 +374,7 @@ wget https://vegas2.qimrberghofer.edu.au/vegas2v2
 # test
 wget https://vegas2.qimrberghofer.edu.au/VEGAS2v2example.zip
 unzip -j VEGAS2v2example.zip
-cut -f1 example.bim|uniq|parallel -j2 -C' ' 'plink --bfile example --threads 1 --chr {} --make-bed --out example{}'
-perl vegas2v2 -G -snpandp example.txt -custom example -glist example.glist -genelist example.genelist
+perl vegas2v2 -G -snpandp example.txt -custom $PWD/example -glist example.glist -genelist example.genelist
 # further setup
 wget https://vegas2.qimrberghofer.edu.au/biosystems20160324.vegas2pathSYM
 wget https://vegas2.qimrberghofer.edu.au/glist-hg19
