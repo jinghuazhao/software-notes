@@ -1,13 +1,13 @@
-# 16-7-2018 JHZ
+# 18-7-2018 JHZ
 
 git add README.md
 git commit -m "README"
-git add association.md
+git add AA.md
 git commit -m "Specific topics"
 git add SL.md
 git commit -m "Statistical learning"
 git add AI.md
-git commit -m "AI"
+git commit -m "Artificial intelligence"
 git add NGS.md
 git commit -m "Next-generation sequencing analysis"
 git add misc.md
