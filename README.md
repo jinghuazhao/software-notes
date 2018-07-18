@@ -3,7 +3,7 @@
 **Setup of software in several categories**
 
 1. [System environments](envirs)
-2. [Association analysis](association.md)
+2. [Association analysis](AA.md)
 3. [Next-generation sequence analysis](NGS.md)
 4. [Miscellaneous software](misc.md)
 5. [Statistical learning](SL.md)
