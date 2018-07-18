@@ -371,7 +371,7 @@ It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so
 ```bash
 # driver download
 wget https://vegas2.qimrberghofer.edu.au/vegas2v2
-# test
+# documentation example -- unzip does not accept input from console so we do in two steps
 wget https://vegas2.qimrberghofer.edu.au/VEGAS2v2example.zip
 unzip -j VEGAS2v2example.zip
 # gene-based association
