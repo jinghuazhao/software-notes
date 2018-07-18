@@ -386,7 +386,7 @@ wget -qO- https://vegas2.qimrberghofer.edu.au/g1000p3_EUR.tar.gz | tar xvfz -
 ```
 Somehow the binary files following `-custom` option needs to be absolute path.
 
-The last line downloads and unpacks the LD reference data for EURopean population; other options include AFR, AMR, EAS, SAS.
+The last line downloads and unpacks the LD reference data for European (EUR) population; other options include AFR, AMR, EAS, SAS.
 
 ---
 
