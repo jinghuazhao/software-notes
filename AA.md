@@ -367,7 +367,7 @@ Pascal --pval=BMI.pval
 
 ### VEGAS2
 
-It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart. Make sure `corpcor` and `mvtnorm` packages are available, then proceed
+It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart. Make sure R packages `corpcor` and `mvtnorm` are available, then proceed with
 ```bash
 # driver download
 wget https://vegas2.qimrberghofer.edu.au/vegas2v2
