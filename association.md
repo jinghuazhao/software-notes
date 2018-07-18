@@ -379,6 +379,7 @@ wget https://vegas2.qimrberghofer.edu.au/biosystems20160324.vegas2pathSYM
 wget -qO- https://vegas2.qimrberghofer.edu.au/g1000p3_EUR.tar.gz | tar xvfz -
 ```
 The last line downloads and unpacks the LD reference data for European population.
+
 ---
 
 ## --- Mendelian randomiszation ---
