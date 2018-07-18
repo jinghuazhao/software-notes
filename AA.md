@@ -365,7 +365,7 @@ Pascal --pval=BMI.pval
 
 ```
 
-### VEGAS2v2
+### VEGAS2
 
 It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart,
 ```bash
