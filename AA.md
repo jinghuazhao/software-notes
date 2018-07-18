@@ -367,19 +367,25 @@ Pascal --pval=BMI.pval
 
 ### VEGAS2
 
-It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart,
+It is relatively slow with web interface https://vegas2.qimrberghofer.edu.au, so we would like to try the command-line counterpart. Make sure `corpcor` and `mvtnorm` packages are available, then proceed
 ```bash
 # driver download
 wget https://vegas2.qimrberghofer.edu.au/vegas2v2
 # test
 wget https://vegas2.qimrberghofer.edu.au/VEGAS2v2example.zip
 unzip -j VEGAS2v2example.zip
-perl vegas2v2 -G -snpandp example.txt -custom $PWD/example -glist example.glist -genelist example.genelist
+# gene-based association
+perl vegas2v2 -G -snpandp example.txt -custom $PWD/example -glist example.glist -genelist example.genelist -out example
+# pathway-based association
+awk '(NR>1){OFS="\t";gsub(/"/,"",$0);print $2,$8}' example.out > Example.geneandp
+vegas2v2 -P -geneandp Example.geneandp -glist example.glist -geneandpath Example.vegas2pathSYM -out Example
 # further setup
 wget https://vegas2.qimrberghofer.edu.au/biosystems20160324.vegas2pathSYM
 wget https://vegas2.qimrberghofer.edu.au/glist-hg19
 wget -qO- https://vegas2.qimrberghofer.edu.au/g1000p3_EUR.tar.gz | tar xvfz -
 ```
+Somehow the binary files following `-custom` option needs to be absolute path.
+
 The last line downloads and unpacks the LD reference data for EURopean population; other options include AFR, AMR, EAS, SAS.
 
 ---
