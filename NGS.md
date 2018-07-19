@@ -41,7 +41,7 @@ See also https://github.com/sanger-pathogens/snp-sites and the following referen
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
-## GSNAP, MapSplice, RUM, RNA-seq pipeline
+## GSNAP, MapSplice, RUM, STAR, RNA-seq pipeline
 
 ```bash
 # gsnap
@@ -60,6 +60,10 @@ cd rum
 perl Makefile.PL
 make
 sudo make install
+# STAR
+git clone https://github.com/alexdobin/STAR
+cd STAR/source
+make
 ```
 See https://github.com/sanger-pathogens/Bio-RNASeq.
 
