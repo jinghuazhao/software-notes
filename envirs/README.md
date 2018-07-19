@@ -17,6 +17,9 @@ conda install -c anaconda openjdk
 Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/bin. Altogether we really need to
 ```
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
+
+Other installations include perl, R.
+
 ```
 
 ## hg
