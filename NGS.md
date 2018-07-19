@@ -65,7 +65,7 @@ git clone https://github.com/alexdobin/STAR
 cd STAR/source
 make
 ```
-See https://github.com/sanger-pathogens/Bio-RNASeq.
+See https://github.com/sanger-pathogens/Bio-RNASeq for RNA-seq pipeline.
 
 ## sra-toolkit, tophat
 
