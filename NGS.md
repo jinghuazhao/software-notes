@@ -59,7 +59,7 @@ git clone https://github.com/itmat/rum
 cd rum
 perl Makefile.PL
 make
-make install
+sudo make install
 ```
 See https://github.com/sanger-pathogens/Bio-RNASeq.
 
