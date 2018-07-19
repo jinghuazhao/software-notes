@@ -18,9 +18,8 @@ Note that conda under Windows is in typically D:/ProgramData/Anaconda2/Library/b
 ```
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 
-Other installations include perl, R.
-
 ```
+Other installations include perl, R.
 
 ## hg
 
