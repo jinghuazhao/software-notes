@@ -41,8 +41,26 @@ See also https://github.com/sanger-pathogens/snp-sites and the following referen
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
-## RNA-seq pipeline
+## GSNAP, MapSplice, RUM, RNA-seq pipeline
 
+```bash
+# gsnap
+wget http://research-pub.gene.com/gmap/src/gmap-gsnap-2018-07-04.tar.gz
+tar xfz gmap-gsnap-2018-07-04.tar.gz
+cd gmap-2018-07-04
+./configure
+make
+sudo make install
+# mapsplice, the latest version from http://protocols.netlab.uky.edu/~zeng/MapSplice-v2.2.1.zip has compiling issue
+sudo `which conda` install mapsplice
+mapsplice.py
+# rum
+git clone https://github.com/itmat/rum
+cd rum
+perl Makefile.PL
+make
+make install
+```
 See https://github.com/sanger-pathogens/Bio-RNASeq.
 
 ## sra-toolkit, tophat
