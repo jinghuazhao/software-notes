@@ -2,6 +2,8 @@
 
 ## Anaconda
 
+Miniconda is available from https://conda.io/miniconda.html.
+
 To install intervaltree as required by depict,
 ```
 conda config --add channels defaults
