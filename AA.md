@@ -693,6 +693,20 @@ plink --bfile genotype-file --score CMC.MC4R.score 1 2 4
 ```
 See additional information from the FUSION documentation.
 
+### ExPecto
+
+Software for predicting expression effects of human genome variants ab initio from sequence.
+```bash
+git clone https://github.com/FunctionLab/ExPecto
+cd ExPecto
+sudo pip install -r requirements.txt
+sh download_resources.h
+tar fxz resources.tar.gz
+python chromatin.py example/example.vcf
+python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.bed.sorted.bed.closestgene --snpEffectFilePattern example/example.vcf.shift_SHIFT.diff.h5 --modelList resources/modellist --output output.csv
+python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
+```
+
 ---
 
 ### R-packages
