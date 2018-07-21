@@ -25,3 +25,9 @@ It is the old merry fastlink 4.1P..
 It implements MCMC method for linkage analysis.
 
 See usr/share/doc/loki-doc/ for documentation.
+
+## merlin
+
+```bash
+sudo `which conda` install merlin
+```
