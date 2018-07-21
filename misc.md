@@ -18,7 +18,7 @@ There is a variety of packages in bioconda, https://bioconda.github.io/recipes.h
 
 ## allegro
 
-The Lander-Green linkage analysis software.
+This is according to https://www.decode.com/software/,
 ```bash
 sudo `which conda` install allegro
 ```
