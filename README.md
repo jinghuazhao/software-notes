@@ -9,7 +9,7 @@
 5. [Statistical learning](SL.md)
 6. [Artificial intelligence](AI.md)
 
-Although there are many possibilities e.g., Anaconda and Linuxbrew, to get the pre-built executables up running, the bonus to start from the scratch is that we can always use the latest release as well as the test data. Of course, by doing so we could expand the list of software involved both locally and globally. It is expected that the site could eventually be enriched by many practitioners.
+Although there are many possibilities e.g., Anaconda and Linuxbrew, to get the pre-built executables up running, the bonus to start from the scratch is that we can always use the latest release as well as the test data. Of course, by doing so we could expand the list of software involved both locally and globally. It is therefore expected that the site could eventually be enriched by many practitioners.
 
 ## How to Contribute (adapted from [Apress](https://github.com/apress))
 
