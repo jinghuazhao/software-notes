@@ -2,9 +2,7 @@
 
 The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```. The source code is also available from the archive, e.g., http://archive.ubuntu.com/ubuntu/pool/universe/l/loki/loki_2.4.7.4.orig.tar.gz.
 
-Other packages in bioconda includes amos, bcftools, beagle, bedops, bedtools, blast, bowtie, bowtie2, bwa, chromhmm, circos, himmer, himmer2, hisat2, impute2, mapsplice, nanostat, plink, r-wgcna, samtools, seqkt, sequana, sra-tools, star, tophat, ucsc-blat, ucsc-liftover, vcftools.
-
-See https://bioconda.github.io/recipes.html#.
+Other packages in bioconda, https://bioconda.github.io/recipes.html#, includes amos, bcftools, beagle, bedops, bedtools, blast, bowtie, bowtie2, bwa, chromhmm, circos, himmer, himmer2, hisat2, impute2, mapsplice, nanostat, plink, r-wgcna, samtools, seqkt, sequana, sra-tools, star, tophat, ucsc-blat, ucsc-liftover, vcftools.
 
 ## allegro
 
