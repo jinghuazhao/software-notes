@@ -2,7 +2,7 @@
 
 The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```. The source code is also available from the archive, e.g., http://archive.ubuntu.com/ubuntu/pool/universe/l/loki/loki_2.4.7.4.orig.tar.gz.
 
-There is a varity of packages in bioconda, https://bioconda.github.io/recipes.html#.
+There is a variety of packages in bioconda, https://bioconda.github.io/recipes.html#.
 
 ## allegro
 
