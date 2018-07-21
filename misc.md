@@ -42,7 +42,7 @@ sudo apt install fastlink
 
 ## loki, loki-doc
 
-It implements MCMC method for linkage analysis.
+It implements MCMC method for linkage analysis. available from https://www.stat.washington.edu/thompson/Genepi/Loki.shtml
 ```bash
 sudo apt install loki
 ```
@@ -50,12 +50,14 @@ See usr/share/doc/loki-doc/ for documentation.
 
 ## merlin
 
+This is according to http://csg.sph.umich.edu/abecasis/merlin/index.html,
 ```bash
 sudo `which conda` install merlin
 ```
 
 ## simwalk2
 
+This is according to http://www.genetics.ucla.edu/software/,
 ```bash
 sudo `which conda` install simwalk2
 ```
