@@ -53,3 +53,9 @@ See usr/share/doc/loki-doc/ for documentation.
 ```bash
 sudo `which conda` install merlin
 ```
+
+## simwalk2
+
+```bash
+sudo `which conda` install simwalk2
+```
