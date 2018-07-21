@@ -14,7 +14,7 @@ cd test
 # we are actually fine
 make
 ```
-There is a variety of packages in bioconda, https://bioconda.github.io/recipes.html#.
+There is a variety of packages in bioconda, https://bioconda.github.io/recipes.html# and conda-forge, https://conda-forge.org/feedstocks/.
 
 ## allegro
 
