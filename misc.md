@@ -35,7 +35,7 @@ sudo apt install beast2-mcmc
 
 ## fastlink, fastlink-doc
 
-It is the old merry fastlink 4.1P.
+It is the old merry fastlink 4.1P, https://www.ncbi.nlm.nih.gov/CBBresearch/Schaffer/fastlink.html.
 ```bash
 sudo apt install fastlink
 ```
