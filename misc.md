@@ -17,15 +17,23 @@ https://www.nature.com/articles/ng1005-1015?foxtrotcallback=true
 ## beast2-mcmc, beast2-mcmc-doc
 
 It is Bayesian MCMC phylogenetic inference.
+```bash
+sudo apt install beast2-mcmc
+```
 
 ## fastlink, fastlink-doc
 
-It is the old merry fastlink 4.1P..
+It is the old merry fastlink 4.1P.
+```bash
+sudo apt install fastlink
+```
 
 ## loki, loki-doc
 
 It implements MCMC method for linkage analysis.
-
+```bash
+sudo apt install loki
+```
 See usr/share/doc/loki-doc/ for documentation.
 
 ## merlin
