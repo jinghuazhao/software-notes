@@ -1,7 +1,19 @@
 # Miscellaneous software
 
-The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```. The source code is also available from the archive, e.g., http://archive.ubuntu.com/ubuntu/pool/universe/l/loki/loki_2.4.7.4.orig.tar.gz.
-
+The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```. The source code is also available from the archive. We can trick the test even with compiling errors, e.g., 
+```bash
+sudo apt install loki
+wget -qO- http://archive.ubuntu.com/ubuntu/pool/universe/l/loki/loki_2.4.7.4.orig.tar.gz | tar fvxz -
+cd loki
+./configure
+# there are errors in compilng
+make
+cp /usr/bin/prep presrc
+cp /usr/bin/loki lokisrc
+cd test
+# we are actually fine
+make
+```
 There is a variety of packages in bioconda, https://bioconda.github.io/recipes.html#.
 
 ## allegro
