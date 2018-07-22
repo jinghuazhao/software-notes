@@ -4,7 +4,7 @@ There are multiple routes to install particular software; one may prefer to inst
 
 ## Anaconda
 
-Miniconda is available from https://conda.io/miniconda.html. Once installed, it is customary to make several channels accessible,
+Once installed, it is customary to make several channels accessible,
 
 ```
 conda config --add channels defaults
@@ -25,6 +25,7 @@ Other installations include perl, R. Note that conda under Windows is in typical
 ```
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
+Miniconda is available from https://conda.io/miniconda.html. 
 
 ## hg
 
