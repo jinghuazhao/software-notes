@@ -15,7 +15,7 @@ Package in conda-forge include boost, django, glpk, gnuplot, go, gperf, hdf5, ip
 
 For instance, to install `intervaltree` as required by depict, the following is sufficience,
 ```bash
-sudo `which conda` install intervaltree
+conda install intervaltree
 ```
 All the packages installed can be seen with `conda list`. To install java, run following command
 ```
