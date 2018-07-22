@@ -82,7 +82,7 @@ Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
 ## Ubuntu archive
 
-It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others, which can be installed canonically with ```sudo apt install```.
+It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, eigensoft, plink, plink-1.9, among others, which can be installed canonically with ```sudo apt install```.
 
 ## Visual Studio Code
 
