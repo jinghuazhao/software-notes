@@ -4,7 +4,7 @@ There are multiple routes to install particular software; one may prefer to inst
 
 ## Anaconda
 
-Miniconda is available from https://conda.io/miniconda.html.
+Miniconda is available from https://conda.io/miniconda.html. Once installed, it is customary to make several channels accessible,
 
 ```
 conda config --add channels defaults
