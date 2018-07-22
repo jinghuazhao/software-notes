@@ -2,6 +2,10 @@
 
 There are multiple routes to install particular software; one may prefer to install them as standable but it may also come handy use mini-environments such as Anaconda, Miniconda, Linuxbrew or those already in system (e.g. Ubuntu) archive.
 
+## Ubuntu archive
+
+The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```.
+
 ## Anaconda
 
 Once installed, it is customary to make several channels accessible,
