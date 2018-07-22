@@ -9,6 +9,4 @@
 5. [Statistical learning](SL.md)
 6. [Artificial intelligence](AI.md)
 
-While there are many possibilities (e.g., Linux archive, Anaconda and Linuxbrew) to get the pre-built executables up-running, the bonus to start from the scratch is that we can always download the latest release, make minor changes, and check with the documentation example(s). Of course, by doing so the list of software is also enriched.
-
-It can be seen that software is also evolved.
+While there are many possibilities (e.g., Linux archive, Anaconda and Linuxbrew) to get the pre-built executables up-running, the bonus to start from the scratch is that we can always download the latest release, make minor changes, and test the documentation example(s). Of course, by doing so the list of software is also enriched naturally and hopefully feedback to those sources.
