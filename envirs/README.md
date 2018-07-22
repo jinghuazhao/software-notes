@@ -2,10 +2,6 @@
 
 There are multiple routes to install particular software; one may prefer to install them as standable but it may also come handy use mini-environments such as Anaconda, Miniconda, Linuxbrew or those already in system (e.g. Ubuntu) archive.
 
-## Ubuntu archive
-
-The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```.
-
 ## Anaconda
 
 Once installed, it is customary to make several channels accessible,
@@ -86,7 +82,7 @@ Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
 ## Ubuntu archive
 
-It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others.
+It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, plink, plink-1.9, among others, which can be installed canonically with ```sudo apt install```.
 
 ## Visual Studio Code
 
