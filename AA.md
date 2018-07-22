@@ -778,7 +778,7 @@ p <- mr_plot(MRInputObject, error = TRUE, orientate = FALSE, interactive = TRUE,
 
 **BLR**
 
-An extensive use is reported in the JSS paper from the [physalia](https://github.com/jinghuazhao/physalia) repository.
+An extensive use is reported in the JSS paper from the [Mixed-Models](https://github.com/jinghuazhao/Mixed-Models) repository.
 
 **PheWAS**
 
