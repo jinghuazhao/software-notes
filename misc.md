@@ -1,6 +1,6 @@
 # Miscellaneous software
 
-The Ubuntu archive, http://archive.ubuntu.com/ubuntu/pool/universe, is installed canonically with ```sudo apt install```. The source code is also available from the archive. We can trick the test even with compiling errors, e.g., 
+The source code is also available from the archive. We can trick the test even with compiling errors, e.g., 
 ```bash
 sudo apt install loki
 wget -qO- http://archive.ubuntu.com/ubuntu/pool/universe/l/loki/loki_2.4.7.4.orig.tar.gz | tar fvxz -
