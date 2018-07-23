@@ -800,6 +800,14 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 > cutoffs and assesses them by permutation testing, while matching for minor allele frequency, distance to nearest transcription start site and number of LD 
 > proxies (r2 > 0.8).
 
+**moloc**
+
+moloc: multiple trait co-localization, available from https://github.com/clagiamba/moloc, can be installed with
+```r
+library(devtools)
+install_github("clagiamba/moloc")
+```
+
 **rjags**
 
 The legacy way to install is 
