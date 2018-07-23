@@ -136,6 +136,8 @@ sudo apt-get install libcanberra-gtk3-module
 
 ## R
 
+Information on R and RStudio can be seen here, https://github.com/jinghuazhao/Computational-Statistics.
+
 ### install.packages and install_github
 
 ```r
