@@ -182,6 +182,24 @@ The references are
 
 Both are available from https://github.com/fhormoz/caviar.
 
+### CAVIARBF
+
+```bash
+wget https://bitbucket.org/Wenan/caviarbf/get/7e428645be5e.zip
+unzip 7e428645be5e.zip
+cd Wenan-caviarbf-7e428645be5e
+make
+./install_r_package.sh 
+cd caviarbf-r-package
+sudo R --no-save <<END
+install.packages("glmnet")
+END
+sudo R CMD INSTALL caviarbf_0.2.1.tar.gz 
+./test.sh
+cd -
+./test.sh
+```
+
 ### JAM
 
 **Setup**
