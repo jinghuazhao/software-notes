@@ -157,8 +157,9 @@ Installation is made from GitHub in the usual way,
 git clone https://github.com/fhormoz/caviar.git
 ```
 
-The software requires libgsl which can be installed as follows,
+The software requires libgsl and liblapack which can be installed as follows,
 ```bash
+sudo apt install liblapack-dev
 sudo apt install libgsl-dev
 ```
 
