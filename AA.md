@@ -261,6 +261,17 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 
 ## --- Functional annotation ---
 
+### fgwas
+
+```bash
+git clone https://github.com/joepickrell/fgwas
+cd fgwas
+sed -i 's/1.14/1.15/g' configure
+make
+sudo make install
+git clone https://github.com/joepickrell/1000-genomes-genetic-maps
+```
+
 ### VEP
 
 The description is available from http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html.
