@@ -189,6 +189,8 @@ wget https://bitbucket.org/Wenan/caviarbf/get/7e428645be5e.zip
 unzip 7e428645be5e.zip
 cd Wenan-caviarbf-7e428645be5e
 make
+ln -sf $PWD/caviarbf $HOME/bin/caviarbf
+ln -sf $PWD/model_search $HOME/bin/model_search
 ./install_r_package.sh 
 cd caviarbf-r-package
 sudo R --no-save <<END
