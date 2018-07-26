@@ -277,6 +277,7 @@ cd fgwas
 sed -i 's/1.14/1.15/g' configure
 make
 sudo make install
+git clone https://github.com/joepickrell/1000-genomes
 git clone https://github.com/joepickrell/1000-genomes-genetic-maps
 ```
 
