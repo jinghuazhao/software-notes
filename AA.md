@@ -213,9 +213,12 @@ reflect this, not straightforward with `install_github()` from `devtools` but on
 clone the package, modify the R source code and then install,
 ```
 git clone https://github.com/pjnewcombe/R2BGLiMS
-### change java to java-1.8 in R2BGLiMS/R/R2BGLiMS.R, e.g.,
+### in case you have java-1.6 you will need to change to java-1.8 in R2BGLiMS/R/R2BGLiMS.R
+### and possibly add other options, e.g.,
 ### /usr/lib/jvm/java-8-oracle/bin/java -Xmx4G
+### sed -i 's|\"java|\"/usr/lib/jvm/java-8-oracle/bin/java -Xmx4G||g' R2BGLiMS/R/R2BGLiMS.R
 ### sudo R CMD INSTALL R2BGLiMS -l $R_LIBS
+### if R_LIBS is not set, the default can be used, e.g., $HOME/R
 R CMD INSTALL R2BGLiMS
 ```
 As shown, it might well be necessary to add options to the Java command-line.
