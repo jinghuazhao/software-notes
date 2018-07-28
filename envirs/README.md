@@ -2,6 +2,31 @@
 
 There are multiple routes to install particular software; one may prefer to install them as standable but it may also come handy use mini-environments such as Anaconda, Miniconda, Linuxbrew or those already in system (e.g. Ubuntu) archive.
 
+## Oracle VirtualBox
+
+To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
+```bash
+# shared folders
+sudo mount -t vboxsf -o uid=jhz22 C /home/jhz22/C
+sudo mount -t vboxsf -o uid=jhz22 D /home/jhz22/D
+# shared clipboard
+killall VBoxClient
+sudo VBoxClient-all
+```
+Here are the steps, quoting http://www.netreliant.com/news/8/17/Compacting-VirtualBox-Disk-Images-Linux-Guests.html, for compressing large .vdi:
+```bash
+# Linux
+dd if=/dev/zero of=zerofillfile bs=1M
+
+rem Windows
+path D:\Program Files\Oracle\VirtualBox
+VBoxManage modifyhd --compact "ubuntu18.04.vdi"
+```
+
+[vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
+
+Since one may allocate only part of RAM to VirtualBox, it is often necessary to run program under MS-DOS, e.g., sections on DEPICT.
+
 ## Anaconda
 
 Once installed, it is customary to make several channels accessible,
@@ -45,31 +70,6 @@ echo 'export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"' >>~/.profi
 echo 'export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"' >>~/.profile
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 ```
-
-## Oracle VirtualBox
-
-To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
-```bash
-# shared folders
-sudo mount -t vboxsf -o uid=jhz22 C /home/jhz22/C
-sudo mount -t vboxsf -o uid=jhz22 D /home/jhz22/D
-# shared clipboard
-killall VBoxClient
-sudo VBoxClient-all
-```
-Here are the steps, quoting http://www.netreliant.com/news/8/17/Compacting-VirtualBox-Disk-Images-Linux-Guests.html, for compressing large .vdi:
-```bash
-# Linux
-dd if=/dev/zero of=zerofillfile bs=1M
-
-rem Windows
-path D:\Program Files\Oracle\VirtualBox
-VBoxManage modifyhd --compact "ubuntu18.04.vdi"
-```
-
-[vdi.md](https://github.com/jinghuazhao/GDCT/blob/master/vdi.md) as in GWAS-2017 and now listed in [GDCT](https://github.com/jinghuazhao/GDCT)
-
-Since one may allocate only part of RAM to VirtualBox, it is often necessary to run program under MS-DOS, e.g., sections on DEPICT.
 
 ## Parallel computing
 
