@@ -173,6 +173,7 @@ Try
 ```bash
 git clone --recursive https://github.com/ekg/freebayes
 make
+sudo make install
 ```
 
 ## GATK
