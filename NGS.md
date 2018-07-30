@@ -258,7 +258,7 @@ it is also necessary to invoke the header, i.e.,
 
 ## rtg-tools
 
-It is available from https://www.realtimegenomics.com/ and GitHub,
+It is available from https://www.realtimegenomics.com/products/rtg-tools and GitHub,
 ```bash
 git clone https://github.com/RealTimeGenomics/rtg-tools.git
 ant
