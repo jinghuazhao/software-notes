@@ -27,7 +27,7 @@ python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annota
 ```
 Note that it is easier to implement with ```prefetch``` as shown below.
 
-## Algnment and variant calling tutorial
+## Alignment and variant calling tutorial
 
 See https://github.com/ekg/alignment-and-variant-calling-tutorial.
 
