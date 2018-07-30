@@ -106,7 +106,7 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools (Ubuntu archive)
+## bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftools (Ubuntu archive)
 
 Install with ```sudo apt install```.
 
@@ -166,6 +166,14 @@ It is also available from https://github.com/agordon/fastx_toolkit along with ht
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section. More oever, usage() is a void function so its own `exit(0)` is unnecessary.
 
 The GitHub pages for RSEM are https://github.com/deweylab/RSEM and https://deweylab.github.io/RSEM/. It is also recommended that the Bioconductor package EBSeq be installed.
+
+## freebayes
+
+Try
+```bash
+git clone --recursive https://github.com/ekg/freebayes
+make
+```
 
 ## GATK
 
