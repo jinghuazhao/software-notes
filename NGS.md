@@ -256,6 +256,15 @@ it is also necessary to invoke the header, i.e.,
 #include <cmath>
 ```
 
+## rtg-tools
+
+It is available from https://www.realtimegenomics.com/ and GitHub,
+```bash
+git clone https://github.com/RealTimeGenomics/rtg-tools.git
+ant
+dir dist
+```
+
 ## SnpEff, SnpSift, clinEff
 
 It is straightforward with the compiled version from sourceforge, which also includes clinEff.
