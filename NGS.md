@@ -271,10 +271,13 @@ dir dist
 
 ## sambamba
 
-While the source contains ldc2, it is readily available with Ubuntu archive.
+While the source contains ldc2, it is readily available with Ubuntu archive nevertheless failed to compile, 
+so we proceed with instructions at the GitHub, e.g.,
 ```bash
-sudo apt install ldc
+export PATH=$HOME/ldc2-1.10.0-linux-x86_64/bin:$PATH
+export LIBRARY_PATH=$HOME/ldc2-1.10.0-linux-x86_64/lib
 ```
+for version 1.10.0.
 
 ## SnpEff, SnpSift, clinEff
 
