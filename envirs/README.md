@@ -2,17 +2,6 @@
 
 There are multiple routes to install particular software; one may prefer to install them as standable but it may also come handy use mini-environments such as Anaconda, Miniconda, Linuxbrew or those already in system (e.g. Ubuntu) archive.
 
-## GitHub
-
-To extract code from GitHub markdown, we do this,
-
-```bash
-sudo apt install npm
-sudo npm install -g codedown
-cat README.md | codedown bash
-```
-for code in Bash.
-
 ## Oracle VirtualBox
 
 To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
@@ -62,6 +51,17 @@ Other installations include perl, R. Note that conda under Windows is in typical
 set path=%path%;D:/ProgramData/Anaconda2;D:/ProgramData/Anaconda2/Library/bin
 ```
 Miniconda is available from https://conda.io/miniconda.html. 
+
+## GitHub
+
+To extract code from GitHub markdown, we do this,
+
+```bash
+sudo apt install npm
+sudo npm install -g codedown
+cat README.md | codedown bash
+```
+for code in Bash.
 
 ## hg
 
