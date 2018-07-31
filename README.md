@@ -11,4 +11,6 @@
 
 While there are multiple sources (e.g., Linux archive, Anaconda and Linuxbrew) to get the pre-built executables up-running, the bonus to start from the scratch is that we 
 can always download the latest release, make minor changes, and test the documentation example(s). Of course, by doing so the list of software is also enriched naturally 
-and hopefully feedback to those sources. In many cases, the binaries provided by Ubuntu archive, for instance, work less well compared to those built from the latest source distributions.
+and hopefully feedback to those sources.
+
+In many cases, the binaries provided by Ubuntu archive, for instance, work less well compared to those built from the latest source distributions.
