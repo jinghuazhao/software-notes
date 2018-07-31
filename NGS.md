@@ -29,7 +29,9 @@ Note that it is easier to implement with ```prefetch``` as shown below.
 
 ## Alignment and variant calling tutorial
 
-See https://github.com/ekg/alignment-and-variant-calling-tutorial.
+See https://github.com/ekg/alignment-and-variant-calling-tutorial. Note that E.coli_K12_MG1655.fa is unavailable any more, instead we have to download it directly from NCBI, 
+https://www.ncbi.nlm.nih.gov/nuccore/556503834, choose FASTA (text), to reach https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&log$=seqview&format=text and save
+to a local file, whose empty lines have to be removed, see them with awk '(length($NF)==0){print NR}' E.coli_K12_MG1655.fa.
 
 ## SNP discovery
 
