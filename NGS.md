@@ -33,7 +33,7 @@ See https://github.com/ekg/alignment-and-variant-calling-tutorial. Note that E.c
 https://www.ncbi.nlm.nih.gov/nuccore/556503834, choose FASTA (text), to reach https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&log$=seqview&format=text and save
 to a local file, whose empty lines have to be removed, see them with awk '(length($NF)==0){print NR}' E.coli_K12_MG1655.fa.
 
-The fastq-dump generates .fa files, which need to be compressed with gzip.
+The fastq-dump generates .fa files, which need to be compressed with gzip. As with `hhga`, the contnts of `source_me.sh` need to be pasted to the screen followed by `make`.
 
 ## SNP discovery
 
