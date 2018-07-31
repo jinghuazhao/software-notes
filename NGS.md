@@ -269,6 +269,13 @@ ant
 dir dist
 ```
 
+## sambamba
+
+While the source contains ldc2, it is readily available with Ubuntu archive.
+```bash
+sudo apt install ldc
+```
+
 ## SnpEff, SnpSift, clinEff
 
 It is straightforward with the compiled version from sourceforge, which also includes clinEff.
