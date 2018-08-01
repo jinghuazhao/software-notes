@@ -121,6 +121,10 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 ---
 
+### mtag
+
+https://github.com/omeed-maghzian/mtag
+
 ## --- HLA imputation ---
 
 ### HLA*IMP:02
