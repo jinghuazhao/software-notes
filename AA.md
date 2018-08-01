@@ -750,6 +750,10 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
+### R packages
+
+pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data.
+
 ---
 
 ### R-packages
