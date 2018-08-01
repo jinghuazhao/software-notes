@@ -752,7 +752,7 @@ python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output mo
 
 ### R packages
 
-pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data.
+pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
 
 ---
 
