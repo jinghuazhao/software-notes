@@ -110,7 +110,7 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## Ubuntu archive: bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, subread, tophat, vcftool, vowpal-wabbit
+## Ubuntu archive: bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, subread, tophat, trinity, vcftool, vowpal-wabbit
 
 Install with ```sudo apt install```.
 
