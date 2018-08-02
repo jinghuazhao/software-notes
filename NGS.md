@@ -110,7 +110,7 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, tophat, vcftool, vowpal-wabbit (Ubuntu archive)
+## Ubuntu archive: bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, subread, tophat, vcftool, vowpal-wabbit
 
 Install with ```sudo apt install```.
 
@@ -336,7 +336,11 @@ which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`, respectively.
 
 Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also https://github.com/sanger-pathogens/SnpEffWrapper.
 
-# VarScan
+## subread
+
+It is available from http://subread.sourceforge.net/.
+
+## VarScan
 
 Hosted at https://github.com/dkoboldt/varscan, the .jar files are ready to use with
 
