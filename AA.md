@@ -756,11 +756,20 @@ pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with s
 
 ---
 
-### R-packages
+## R-packages
+
+**Bioconductor**
+
+This includes Biobase, edgeR, limma, Rsubread.
+
+**CRAN**
+
+This includes DCGL.
 
 Package installation can be done with `install.packages()` from CRAN and
 ```r
 source("https://bioconductor.org/biocLite.R")
+biocLite("packagename")
 ```
 from Bioconductor.
 
