@@ -340,6 +340,10 @@ Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also htt
 
 It is available from http://subread.sourceforge.net/.
 
+## Trinity
+
+RNA-Seq De novo Assembly Using Trinity, https://github.com/trinityrnaseq/trinityrnaseq/wiki.
+
 ## VarScan
 
 Hosted at https://github.com/dkoboldt/varscan, the .jar files are ready to use with
