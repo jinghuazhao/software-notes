@@ -35,6 +35,10 @@ to a local file, whose empty lines have to be removed, see them with awk '(lengt
 
 The fastq-dump generates .fa files, which need to be compressed with gzip.
 
+## bowtie-scaling
+
+https://github.com/BenLangmead/bowtie-scaling
+
 ## SNP discovery
 
 The following reference discribes several pipelines for SNP discovery.
