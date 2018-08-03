@@ -340,6 +340,10 @@ Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also htt
 
 It is available from http://subread.sourceforge.net/.
 
+## tagdust
+
+http://sourceforge.net/projects/tagdust/
+
 ## Trinity
 
 RNA-Seq De novo Assembly Using Trinity, https://github.com/trinityrnaseq/trinityrnaseq/wiki.
