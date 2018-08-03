@@ -760,7 +760,7 @@ pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with s
 
 **Bioconductor**
 
-This includes Biobase, edgeR, limma, Rsubread.
+This includes Biobase, BSGenome, edgeR, limma, Rsubread.
 
 **CRAN**
 
