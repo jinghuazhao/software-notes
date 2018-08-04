@@ -177,11 +177,18 @@ sm = pystan.StanModel(model_code=schools_code)
 fit = sm.sampling(data=schools_dat, iter=1000, chains=4)
 
 import matplotlib.pyplot as plt
-f = plt.figure()
-fit.plot()
-plt.show()
-# use the save button or the following command,
-f.savefig("foo.pdf", bbox_inches='tight')
+def plotGraph():
+      fig = fit.plot()
+      # plt.show()
+      # use the save button or the following command,
+      # f.savefig("foo.pdf", bbox_inches='tight')
+      return fig
+
+from matplotlib.backends.backend_pdf import PdfPages
+pp = PdfPages('foo.pdf')
+f = plotGraph()
+pp.savefig(f)
+pp.close()
 ```
 
 ## Miscellaneous notes
