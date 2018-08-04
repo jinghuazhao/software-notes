@@ -53,6 +53,10 @@ See also https://github.com/sanger-pathogens/snp-sites and the following referen
 
 > Raghavachari N, Garcia-Reyero N (eds.) (2018), Gene Expression Analysis-Methods and Protocols, Springer.
 
+## TSS
+
+Mejia-Guerra MK, et al. (2018). Genome-Wide TSS Identification in Maize. Chapter 14, 239-256, in Yamaguchi N (ed.), Plant Transcription Factors-Methods and Protocols, Springer
+
 ## GSNAP, MapSplice, RUM, STAR, RNA-seq pipeline
 
 ```bash
