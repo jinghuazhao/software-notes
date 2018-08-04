@@ -145,7 +145,7 @@ sudo pip install MySQL-python
 PyStan is available with `pip install pystan` which uses matplotlib, https://github.com/matplotlib and Tkinter, established with `sudo apt install python-tk` or `sudo apt install python3-tk`.
 
 ```python
-import python
+import pystan
 
 schools_code = """
 data {
