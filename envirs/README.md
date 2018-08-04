@@ -142,6 +142,8 @@ sudo apt-get install python-dev libmysqlclient-dev
 sudo pip install MySQL-python
 ```
 
+PyStan is available with `pip install pystan` which uses matplotlib, https://github.com/matplotlib and Tkinter, established with `sudo apt install python-tk`.
+
 ## Miscellaneous notes
 ```bash
 sudo apt-get install libcanberra-gtk3-module
