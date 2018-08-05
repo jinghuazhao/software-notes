@@ -198,10 +198,13 @@ sudo apt-get install libcanberra-gtk3-module
 
 ## R
 
-To enable package building it is necessary to do
+To enable R-devel/package building it is necessary to do
 ```bash
+sudo apt-get install texlive
+sudo apt-get install texlive-fonts-extra
 sudo apt-get install texinfo
 sudo apt install texlive-fonts-recommended
+sudo apt install libreadline-dev
 ```
 
 Additional information on R and RStudio can be seen here, https://github.com/jinghuazhao/Computational-Statistics.
