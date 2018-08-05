@@ -2,7 +2,7 @@
 
 **Setup of software in several categories**
 
-* [System environments](envirs)
+* [Software environments](envirs)
 * Genetic analysis
    * [Association analysis](AA.md)
    * [Next-generation sequence analysis](NGS.md)
