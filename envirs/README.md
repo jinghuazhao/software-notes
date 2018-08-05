@@ -198,7 +198,13 @@ sudo apt-get install libcanberra-gtk3-module
 
 ## R
 
-Information on R and RStudio can be seen here, https://github.com/jinghuazhao/Computational-Statistics.
+To enable package building it is necessary to do
+```bash
+sudo apt-get install texinfo
+sudo apt install texlive-fonts-recommended
+```
+
+Additional information on R and RStudio can be seen here, https://github.com/jinghuazhao/Computational-Statistics.
 
 ### install.packages and install_github
 
