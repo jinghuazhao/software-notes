@@ -54,19 +54,23 @@ Miniconda is available from https://conda.io/miniconda.html.
 
 ## GitHub
 
-To extract code from GitHub markdown, we do this,
+**Code extraction**. To extract `bash` code from GitHub markdown, the following is helpful,
 
 ```bash
 sudo apt install npm
 sudo npm install -g codedown
 cat README.md | codedown bash
 ```
-for code in Bash.
 
-**GitKraken** is avaialeble from https://www.gitkraken.com/, e.g., https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz. It can be facilitated with
+**GitKraken** is avaialeble from https://www.gitkraken.com/, e.g.,
 ```bash
 sudo apt install libgnome-keyring-common
 sudo apt install libgnome-keyring-dev
+wget -qO- https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz | tar fvxz -
+cd gitkraken
+ln -s $PWD/gitkraken $HOME/bin/gitkraken
+gitkraken &
+
 ```
 
 **SmartGit** is available from https://www.syntevo.com/smartgit/, e.g., 
@@ -77,7 +81,11 @@ ln -s $PWD/bin/smartgit.sh $HOME/bin/smartgit.sh
 smartgit.sh &
 ```
 
-**Git-Cola**, https://git-cola.github.io/, can be installed with `sudo apt install git-cola`.
+**Git-Cola**, https://git-cola.github.io/, can be installed with 
+```bash
+sudo apt install git-cola
+git-cola &
+```
 
 ## hg
 
