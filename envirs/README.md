@@ -74,6 +74,7 @@ sudo apt install libgnome-keyring-dev
 wget -qO- https://www.syntevo.com/downloads/smartgit/smartgit-linux-18_1_4.tar.gz | tar fvxz -
 cd smartgit
 ln -s $PWD/bin/smartgit.sh $HOME/bin/smartgit.sh
+smartgit.sh &
 ```
 
 **Git-Cola**, https://git-cola.github.io/, can be installed with `sudo apt install git-cola`.
