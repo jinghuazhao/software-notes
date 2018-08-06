@@ -4,6 +4,12 @@ There are multiple routes to install particular software; one may prefer to inst
 
 ## Oracle VirtualBox
 
+The guest additions under Fedora 28 is furnished with
+```bash
+sudo dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
+cd /run/media/jhz22/VBox_GAs_5.2.12/
+sudo ./VBoxLinuxAdditions.run
+
 To set up shared folders and enforce shared clipboard for bidirectional copy between Linux and Windows,
 ```bash
 # shared folders
