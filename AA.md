@@ -773,6 +773,14 @@ biocLite("packagename")
 ```
 from Bioconductor.
 
+**GSMR**
+
+It refers to Generalised Summary-data-based Mendelian Randomisation, http://cnsgenomics.com/software/gsmr/, available both as part of GCTa and R package.
+```r
+install.packages("http://cnsgenomics.com/software/gsmr/static/gsmr_1.0.6.tar.gz",repos=NULL,type="source")
+```
+with test data, http://cnsgenomics.com/software/gsmr/static/test_data.zip.
+
 **MendelianRandomization**
 
 The following are necessary to enable its installation,
