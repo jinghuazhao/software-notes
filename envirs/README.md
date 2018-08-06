@@ -63,6 +63,12 @@ cat README.md | codedown bash
 ```
 for code in Bash.
 
+GitKraken is avaialeble from https://www.gitkraken.com/.
+
+SmartGit is available from https://www.syntevo.com/smartgit/, e.g., https://www.syntevo.com/downloads/smartgit/smartgit-linux-18_1_4.tar.gz.
+
+Git-Cola, https://git-cola.github.io/, can be installed with `sudo apt install git-cola`.
+
 ## hg
 
 It is the executable file for Mercurial source code management system,
