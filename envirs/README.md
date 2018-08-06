@@ -63,7 +63,11 @@ cat README.md | codedown bash
 ```
 for code in Bash.
 
-GitKraken is avaialeble from https://www.gitkraken.com/, e.g., https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz.
+GitKraken is avaialeble from https://www.gitkraken.com/, e.g., https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz. It can be facilitated with
+```bash
+sudo apt install libgnome-keyring-common
+sudo apt install libgnome-keyring-dev
+```
 
 SmartGit is available from https://www.syntevo.com/smartgit/, e.g., https://www.syntevo.com/downloads/smartgit/smartgit-linux-18_1_4.tar.gz.
 
