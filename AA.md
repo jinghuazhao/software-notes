@@ -758,6 +758,8 @@ pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with s
 
 ## R-packages
 
+See https://github.com/jinghuazhao/Computational-Statistics for general information.
+
 **Bioconductor**
 
 This includes Biobase, BSGenome, edgeR, limma, Rsubread.
@@ -765,13 +767,6 @@ This includes Biobase, BSGenome, edgeR, limma, Rsubread.
 **CRAN**
 
 This includes DCGL.
-
-Package installation can be done with `install.packages()` from CRAN and
-```r
-source("https://bioconductor.org/biocLite.R")
-biocLite("packagename")
-```
-from Bioconductor.
 
 **GSMR**
 
