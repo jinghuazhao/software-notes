@@ -84,9 +84,13 @@ sudo apt install parallel
 see also descriptions in other pipelines here. It is perhaps more demanding with sge, e.g., https://peteris.rocks/blog/sun-grid-engine-installation-on-ubuntu-server/.
 Example use of slurm can be seen from https://github.com/statgen/SLURM-examples.
 
-## Ubuntu archive
+## Ubuntu
 
-It grows over time, see http://archive.ubuntu.com/ubuntu/pool/universe, including beagle, eigensoft, plink, plink-1.9, among others, which can be installed canonically with ```sudo apt install```.
+Its archive, http://archive.ubuntu.com/ubuntu/pool/universe, includes beagle, eigensoft, plink, plink-1.9, among others, which can be installed canonically with ```sudo apt install```.
+
+```bash
+sudo apt-get install libcanberra-gtk3-module
+```
 
 ## Visual Studio Code
 
@@ -96,9 +100,9 @@ sudo dpkg -i code_1.23.1-1525968403_amd64.deb
 ```
 but it requires `libgconf-2-4`; when failed to install use `sudo apt --fix-broken install`.
 
----
+## Langudage notes
 
-## Java
+### Java
 
 The IDE of choice is NetBeans (e.g., DEPICT and JAM); however 8.1 from `apt install` under Ubuntu 18.04 crashes
 so it is suggested to download directly from https://netbeans.org/downloads/. To enable JDK it is helpful to specify `--javahome` option.
@@ -114,14 +118,14 @@ For software such as `cutadapt` cython is required,
 sudo apt install cython
 ```
 
-## Perl
+### Perl
 ```bash
 sudo perl -MCPAN -e shell
 install DBI
 ```
 for instance, as used in [VEP](../VEP).
 
-## Python
+### Python
 
 To install a particular version of package, e.g.,
 ```bash
@@ -184,40 +188,6 @@ pp.savefig(f)
 pp.close()
 ```
 
-## Miscellaneous notes
-```bash
-sudo apt-get install libcanberra-gtk3-module
-```
+### R
 
-## R
-
-Information on R and RStudio can be seen here, https://github.com/jinghuazhao/Computational-Statistics.
-
-### install.packages and install_github
-
-```r
-install.packages("ggplot2",INSTALL_opts="--library=/usr/local/lib/R/site-library/")
-install_github("MRCIEU/TwoSampleMR",args="--library=/usr/local/lib/R/site-library",force=TRUE)
-```
-both supposedly install package to the dedicated location; however this is not always the case and an alternative is to use
-```bash
-sudo R CMD INSTALL <package_version.tar.gz> -l $R_LIBS
-```
-to install <package_version.tar.gz> into $R_LIBS.
-
-### The old `tidy.R`
-
-It works as follows,
-```bash
-function tidy()
-{
-  export input=$1
-R --vanilla <<END
-  options(keep.source = FALSE)
-  input <- Sys.getenv("input")
-  source(input)
-  dump(ls(all = TRUE), file = paste0(input,"_out"))
-END
-}
-tidy myfile.R
-```
+Information on R and RStudio can be seen from https://github.com/jinghuazhao/Computational-Statistics.
