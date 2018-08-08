@@ -750,10 +750,6 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
-### Comparison of gene expression pipelines
-
-http://statapps.ugent.be/tools/AppDGE/
-
 ### R packages
 
 pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
