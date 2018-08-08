@@ -57,7 +57,7 @@ See also https://github.com/sanger-pathogens/snp-sites and the following referen
 
 Mejia-Guerra MK, et al. (2018). Genome-Wide TSS Identification in Maize. Chapter 14, 239-256, in Yamaguchi N (ed.), Plant Transcription Factors-Methods and Protocols, Springer
 
-### Comparison of gene expression pipelines on RNA-seq sequencing data.
+## Comparison of gene expression pipelines on RNA-seq sequencing data.
 
 http://statapps.ugent.be/tools/AppDGE/
 
