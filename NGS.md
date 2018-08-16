@@ -1,5 +1,9 @@
 # Benchmarks and pipelines
 
+## Case study
+
+http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
+
 ## Agotron detection
 
 The following is according to https://github.com/ncrnalab/agotron_detector as described in
