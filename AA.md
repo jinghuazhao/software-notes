@@ -762,7 +762,7 @@ See https://github.com/jinghuazhao/Computational-Statistics for general informat
 
 **Bioconductor**
 
-This includes Biobase, BSGenome, edgeR, limma, Rsubread.
+This includes Biobase, BSGenome, edgeR, limma, Rsubread, STRINGdb.
 
 **CRAN**
 
