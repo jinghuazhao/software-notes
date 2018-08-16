@@ -125,6 +125,10 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 https://github.com/omeed-maghzian/mtag
 
+### seqMeta
+
+seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
+
 ## --- HLA imputation ---
 
 ### HLA*IMP:02
