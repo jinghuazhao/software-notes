@@ -2,8 +2,10 @@
 
 ## Case study
 
-Lagana A, et al. (2018). Precision Medicine for Relapsed Multiple Myeloma on the Basis of an Integrative Multiomics Approach. JCO Prec Oncol. Data Suppl, 
+Lagana A, et al. (2018). Precision Medicine for Relapsed Multiple Myeloma on the Basis of an Integrative Multiomics Approach. *JCO Prec Oncol.* Data Suppl, 
 http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
+
+Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehensive real-life workflow for rapid diagnosis of critically ill children. *J Med Genet*, doi:10.1136/jmedgenet-2018-105396
 
 ## Agotron detection
 
