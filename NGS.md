@@ -2,6 +2,7 @@
 
 ## Case study
 
+Lagana A, et al. (2018). Precision Medicine for Relapsed Multiple Myeloma on the Basis of an Integrative Multiomics Approach. JCO Prec Oncol. Data Suppl, 
 http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
 
 ## Agotron detection
