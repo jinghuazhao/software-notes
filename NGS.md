@@ -2,7 +2,7 @@
 
 ## Case studies
 
-Lagana A, et al. (2018). Precision Medicine for Relapsed Multiple Myeloma on the Basis of an Integrative Multiomics Approach. *JCO Prec Oncol.* Data Suppl, 
+Lagana A, et al. (2018). Precision medicine for relapsed multiple myeloma on the basis of an integrative multiomics approach. *JCO Prec Oncol.* Data Suppl, 
 http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
 
 Lu X-M, et al. (2018). Association of breast and ovarian cancers with predisposition genes identified by large-scale sequencing. *JAMA Oncol*, doi:10.1001/jamaoncol.2018.2956.
