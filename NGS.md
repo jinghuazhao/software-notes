@@ -5,6 +5,8 @@
 Lagana A, et al. (2018). Precision Medicine for Relapsed Multiple Myeloma on the Basis of an Integrative Multiomics Approach. *JCO Prec Oncol.* Data Suppl, 
 http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
 
+Lu X-M, et al. (2018). Association of Breast andOvarian Cancers With Predisposition Genes Identified by Large-Scale Sequencing. *JAMA Oncol*, doi:10.1001/jamaoncol.2018.2956.
+
 Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehensive real-life workflow for rapid diagnosis of critically ill children. *J Med Genet*, doi:10.1136/jmedgenet-2018-105396
 
 Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.*Nat Genet*, https://doi.org/10.1038/s41588-018-0192-y.
