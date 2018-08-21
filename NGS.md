@@ -7,6 +7,8 @@ http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
 
 Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehensive real-life workflow for rapid diagnosis of critically ill children. *J Med Genet*, doi:10.1136/jmedgenet-2018-105396
 
+Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.*Nat Genet*, https://doi.org/10.1038/s41588-018-0192-y.
+
 ## Agotron detection
 
 The following is according to https://github.com/ncrnalab/agotron_detector as described in
