@@ -392,6 +392,11 @@ Start netbeans and open project from depict/src/java, fixing links to colt.jar, 
 [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline) puts together many changes and is streamlined with other software.
 
 
+### MAGMA
+
+See https://ctg.cncr.nl/software/magma for files and https://github.com/jinghuazhao/PW-pipeline for setup.
+
+
 ### PASCAL
 
 When there is issue with xianyi-OpenBLAS-v0.2.12-0-g7e4e195.zip shipped with [PASCAL.zip](http://www2.unil.ch/cbg/images/3/3d/PASCAL.zip), 
