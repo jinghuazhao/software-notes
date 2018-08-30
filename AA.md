@@ -394,9 +394,8 @@ Start netbeans and open project from depict/src/java, fixing links to colt.jar, 
 
 ### MAGMA
 
-Section CAD of [Omics-analysis](https://github.com/jinghuazhao/Omics-analysis) provides a much simplified version.
-
-A generic setup is available from [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline).
+A generic setup is available from [PW-pipeline](https://github.com/jinghuazhao/PW-pipeline), while section CAD of the
+[Omics-analysis](https://github.com/jinghuazhao/Omics-analysis) repository provides a much simplified version.
 
 ### PASCAL
 
