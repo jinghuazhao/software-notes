@@ -1,8 +1,8 @@
-# 18-7-2018 JHZ
+# 31-8-2018 JHZ
 
 git add README.md
 git commit -m "README"
-git add AA.md
+git add AA.md AA
 git commit -m "Specific topics"
 git add SL.md
 git commit -m "Statistical learning"
