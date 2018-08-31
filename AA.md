@@ -824,7 +824,8 @@ The following is adapted from
 library(TwoSampleMR)
 ao <- available_outcomes()
 subset(ao,id%in%c(2,966))
-exposure_dat <- extract_instruments(ao$id[2])
+ao2 <- subset(ao,id==2
+exposure_dat <- extract_instruments(ao2$id)
 outcome_dat <- extract_outcome_data(exposure_dat$SNP, 966, proxies = 1, rsq = 0.8, align_alleles = 1, palindromes = 1, maf_threshold = 0.3)
 dat <- harmonise_data(exposure_dat, outcome_dat, action = 2)
 mr_results <- mr(dat)
