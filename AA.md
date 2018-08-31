@@ -847,7 +847,7 @@ MaxLik <- mr_maxlik(MRInputObject, model = "default", distribution = "normal", a
 Median <- mr_median(MRInputObject, weighting = "weighted", distribution = "normal", alpha = 0.05, iterations = 10000, seed = 314159265)
 MR_all <- mr_allmethods(MRInputObject, method = "all")
 p <- mr_plot(MRInputObject, error = TRUE, orientate = FALSE, interactive = TRUE, labels = TRUE, line = "ivw")
-pdf("BMI-T2D,odf")
+pdf("BMI-T2D.pdf")
 p1
 p2
 p3
