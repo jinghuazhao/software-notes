@@ -833,7 +833,6 @@ mr_heterogeneity <- mr_heterogeneity(dat)
 mr_pleiotropy_test <- mr_pleiotropy_test(dat)
 res_single <- mr_singlesnp(dat)
 res_loo <- mr_leaveoneout(dat)
-pdf("BMI-T2D,odf")
 p1 <- mr_scatter_plot(mr_results, dat)
 p2 <- mr_forest_plot(res_single)
 p3 <- mr_leaveoneout_plot(res_loo)
@@ -848,6 +847,12 @@ MaxLik <- mr_maxlik(MRInputObject, model = "default", distribution = "normal", a
 Median <- mr_median(MRInputObject, weighting = "weighted", distribution = "normal", alpha = 0.05, iterations = 10000, seed = 314159265)
 MR_all <- mr_allmethods(MRInputObject, method = "all")
 p <- mr_plot(MRInputObject, error = TRUE, orientate = FALSE, interactive = TRUE, labels = TRUE, line = "ivw")
+pdf("BMI-T2D,odf")
+p1
+p2
+p3
+p4
+p
 dev.off()
 ```
 
