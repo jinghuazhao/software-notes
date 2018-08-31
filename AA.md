@@ -804,6 +804,10 @@ We can now call with
 ```{bash}
 rstudio /usr/local/lib/R/site-library/MendelianRandomization/doc/Vignette_MR.R &
 ```
+We can use the 97 SNPs from GIANT as described in [SUMSTATS](https://github.com/jinghuazhao/SUMSTATS) as two subsets and obtain association 
+informaiton in _PhenoScanner_GWAS.csv using [PhenoScanner](http://www.phenoscanner.medschl.cam.ac.uk/) as well as the `extract.pheno.csv()`
+to build a MR analysis for BMI-T2D, say.
+
 
 **TwoSampleMR**
 
