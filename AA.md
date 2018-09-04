@@ -759,6 +759,11 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
+### INFERNO
+
+Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it is available from https://bitbucket.org/wanglab-upenn/INFERNO 
+and it also has a web interface, http://inferno.lisanwanglab.org/index.php.
+
 ### R packages
 
 pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
