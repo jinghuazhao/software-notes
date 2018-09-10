@@ -304,6 +304,25 @@ export LIBRARY_PATH=$HOME/ldc2-1.10.0-linux-x86_64/lib
 ```
 for version 1.10.0.
 
+## samtools
+
+To build from source, we do these,
+```bash
+git clone https://github.com/samtools/htslib
+cd htslib
+make
+cd -
+git clone https://github.com/samtools/samtools
+cd samtools
+autoheader            # Build config.h.in (this may generate a warning about
+                      # AC_CONFIG_SUBDIRS - please ignore it).
+autoconf -Wno-syntax  # Generate the configure script
+./configure           # Needed for choosing optional functionality
+make
+make install
+```
+Note bgzip and tabix are distributed with htslib.
+
 ## SnpEff, SnpSift, clinEff
 
 It is straightforward with the compiled version from sourceforge, which also includes clinEff.
