@@ -11,6 +11,8 @@ Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehen
 
 Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.*Nat Genet*, https://doi.org/10.1038/s41588-018-0192-y.
 
+Wood DE, et al. (2018). A machine learning approach for somatic mutation discovery. Sci. Transl. Med. 10, eaar7939 (2018) DOI: 10.1126/scitranslmed.aar7939
+
 ## Agotron detection
 
 The following is according to https://github.com/ncrnalab/agotron_detector as described in
