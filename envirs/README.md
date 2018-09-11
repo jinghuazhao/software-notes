@@ -145,6 +145,8 @@ sudo apt-get install python-dev libmysqlclient-dev
 sudo pip install MySQL-python
 ```
 
+It is necessary to use --user option without super-user privilege.
+
 PyStan is available with `pip install pystan` which uses matplotlib, https://github.com/matplotlib and Tkinter, established with `sudo apt install python-tk` or `sudo apt install python3-tk`.
 
 ```python
