@@ -177,6 +177,7 @@ cd caviar
 cd CAVIAR-C++
 make
 ```
+It may be necessary to alter Makefile to point to appropriate -I -L for lapack, for instance.
 
 The references are
 
