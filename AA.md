@@ -202,10 +202,10 @@ ln -sf $PWD/caviarbf $HOME/bin/caviarbf
 ln -sf $PWD/model_search $HOME/bin/model_search
 ./install_r_package.sh 
 cd caviarbf-r-package
-sudo R --no-save <<END
+R --no-save <<END
 install.packages("glmnet")
 END
-sudo R CMD INSTALL caviarbf_0.2.1.tar.gz 
+R CMD INSTALL caviarbf_0.2.1.tar.gz 
 ./test.sh
 cd -
 ./test.sh
