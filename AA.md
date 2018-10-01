@@ -16,6 +16,7 @@ module load gcc/4.7.2
 ./waf install
 
 ```
+See https://bitbucket.org/gavinband/bgen/overview.
 
 ## --- Single variant analysis ---
 
