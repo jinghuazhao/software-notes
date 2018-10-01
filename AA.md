@@ -1,6 +1,6 @@
 # Association analysis
 
-## data management
+## --- Data management ---
 
 ### bgenix
 
