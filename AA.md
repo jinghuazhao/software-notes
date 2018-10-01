@@ -1,5 +1,22 @@
 # Association analysis
 
+## data management
+
+### bgenix
+
+As documented, the current version requires gcc 4.7* so we proceed as follows,
+```bash
+hg clone https://gavinband@bitbucket.org/gavinband/bgen -u master
+cd bgen
+
+module load gcc/4.7.2
+
+./waf configure --prefix=/scratch/jhz22
+./waf
+./waf install
+
+```
+
 ## --- Single variant analysis ---
 
 ### eigensoft
