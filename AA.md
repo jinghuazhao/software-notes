@@ -139,7 +139,7 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 ### METAL
 
-Note that at least cmake 3.1 is required
+Note that at least cmake 3.1 is required for the latest from GitHub
 
 ```bash
 wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
@@ -179,7 +179,6 @@ LABEL N as N
 # TRACKPOSITIONS ON
 
 ```
-
 ---
 
 ### mtag
