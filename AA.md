@@ -179,6 +179,9 @@ LABEL N as N
 # TRACKPOSITIONS ON
 
 ```
+Nevertheless the CHR and POS thus retained are sums of individual studies involved for particular positions so their real values
+can be recovered from these divided by the number of - and + from the Direction column. In the case of N, the sum is just what
+we want.
 ---
 
 ### mtag
