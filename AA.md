@@ -172,6 +172,48 @@ install Wx::Perl::Packager
 ```
 We can also use cpan, but the installation fails under Ubuntu 18.04.
 
+### METAL
+
+Note that at least cmake 3.1 is required
+
+```bash
+wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
+tar tvfz -
+cd METAL
+mkdir build && cd build
+cmake ..
+make
+make test
+make install
+```
+As with distribution 20110325, options CUSTOMVARIABLE uses an output format of %g, which
+is undesirable for chromsomal position and we modify meta/Main.cpp from
+```c
+for  (int j = 0; j < customVariables.Length(); j++)
+            fprintf(f, "\t%g", custom[j][marker]);
+
+```
+to
+```c
+for  (int j = 0; j < customVariables.Length(); j++)
+            fprintf(f, "\t%-.15g", custom[j][marker]);
+
+```
+which is left-aligned with 15 places with %g though largely 11 is enough. The changed can 
+be tested with adding the following lines to /examples/GlucoseExample/meta.txt.
+```
+CUSTOMVARIABLE CHR
+LABEL CHR as CHR
+CUSTOMVARIABLE POS
+LABEL POS as POS
+CUSTOMVARIABLE N
+LABEL N as N
+
+# CHROMOSOMELABEL CHR
+# POSITIONLABEL POS
+# TRACKPOSITIONS ON
+
+```
 ---
 
 ## --- Finemapping ---
