@@ -152,7 +152,7 @@ make test
 make install
 ```
 As with distribution 20110325, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
-is undesirable for and we modify meta/Main.cpp from
+is undesirable and we modify meta/Main.cpp from
 ```c
 for  (int j = 0; j < customVariables.Length(); j++)
             fprintf(f, "\t%g", custom[j][marker]);
