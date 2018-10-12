@@ -165,7 +165,7 @@ for  (int j = 0; j < customVariables.Length(); j++)
 
 ```
 which is left-aligned with 15 places with %g though largely 11 is enough. The change can 
-be tested by adding the following lines to /examples/GlucoseExample/meta.txt.
+be tested by adding the following lines to examples/GlucoseExample/meta.txt.
 ```
 CUSTOMVARIABLE CHR
 LABEL CHR as CHR
