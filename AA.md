@@ -137,41 +137,6 @@ python pylmm_GXE.py
 ```
 In general, we can see options for GxE analysis from command `pylmmGWAS.py` under bash.
 
----
-
-### mtag
-
-https://github.com/omeed-maghzian/mtag
-
-### seqMeta
-
-seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
-
-## --- HLA imputation ---
-
-### HLA*IMP:02
-
-Download source from https://oxfordhla.well.ox.ac.uk/hla/tool/main
-
-```bash
-sudo apt install libgd
-sudo apt install libgtk-3*
-```
-then start Perl,
-```bash
-sudo perl -MCPAN -e shell
-```
-followed by
-```perl
-install GD
-install Alien::wxWidgets
-install Moose
-install List::MoreUtils
-install Wx::Mini
-install Wx::Perl::Packager
-```
-We can also use cpan, but the installation fails under Ubuntu 18.04.
-
 ### METAL
 
 Note that at least cmake 3.1 is required
@@ -214,6 +179,42 @@ LABEL N as N
 # TRACKPOSITIONS ON
 
 ```
+
+---
+
+### mtag
+
+https://github.com/omeed-maghzian/mtag
+
+### seqMeta
+
+seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
+
+## --- HLA imputation ---
+
+### HLA*IMP:02
+
+Download source from https://oxfordhla.well.ox.ac.uk/hla/tool/main
+
+```bash
+sudo apt install libgd
+sudo apt install libgtk-3*
+```
+then start Perl,
+```bash
+sudo perl -MCPAN -e shell
+```
+followed by
+```perl
+install GD
+install Alien::wxWidgets
+install Moose
+install List::MoreUtils
+install Wx::Mini
+install Wx::Perl::Packager
+```
+We can also use cpan, but the installation fails under Ubuntu 18.04.
+
 ---
 
 ## --- Finemapping ---
