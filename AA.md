@@ -143,7 +143,7 @@ Note that at least cmake 3.1 is required for the latest from GitHub
 
 ```bash
 wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
-tar tvfz -
+tar xvfz -
 cd METAL
 mkdir build && cd build
 cmake ..
