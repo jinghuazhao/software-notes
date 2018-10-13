@@ -139,7 +139,7 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 ### METAL
 
-Note that at least cmake 3.1 is required for the latest from GitHub
+Note that at least cmake 3.1 is required for the latest from GitHub, https://github.com/statgen/METAL, 
 
 ```bash
 wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
@@ -151,7 +151,7 @@ make
 make test
 make install
 ```
-As with distribution 20110325, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
+As with distribution 20110325, http://csg.sph.umich.edu/abecasis/Metal/download/, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
 is undesirable and we modify metal/Main.cpp from
 ```c
 for  (int j = 0; j < customVariables.Length(); j++)
