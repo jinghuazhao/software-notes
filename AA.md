@@ -151,7 +151,7 @@ make
 make test
 make install
 ```
-As with distribution 20110325, http://csg.sph.umich.edu/abecasis/Metal/download/, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
+As with distribution 2011-03-25, http://csg.sph.umich.edu/abecasis/Metal/download/, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
 is undesirable and we modify metal/Main.cpp from
 ```c
 for  (int j = 0; j < customVariables.Length(); j++)
