@@ -56,10 +56,9 @@ https://github.com/BenLangmead/bowtie-scaling
 
 ## -- Exome sequencing analysis ---
 
-IMSGC (2018). Low-frequency and rare-coding variation contributes to multiple sclerosis risk. *Cell".
-DOI:https://doi.org/10.1016/j.cell.2018.09.049
+> IMSGC (2018). Low-frequency and rare-coding variation contributes to multiple sclerosis risk. *Cell*. DOI:https://doi.org/10.1016/j.cell.2018.09.049
 
-https://github.com/cotsapaslab/IMSGCexomechip
+has associate software, https://github.com/cotsapaslab/IMSGCexomechip.
 
 ## SNP discovery
 
