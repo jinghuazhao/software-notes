@@ -522,7 +522,9 @@ into /usr/local/lib/python3.6/dist-packages, or
 ```bash
 git clone https://bitbucket.org/nygcresearch/ldetect
 cd ldetect
-sudo python3 setup.py install
+# for super user
+# sudo python3 setup.py install
+python3 setup.py install --user
 git clone https://bitbucket.org/nygcresearch/ldetect-data
 cd ldetect-data
 for pop in AFR ASN EUR
