@@ -183,6 +183,10 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 ```
 
+## DeepVariant
+
+It is a deep neural network to call genetic variants from next-generation DNA sequencing data, https://github.com/google/deepvariant.
+
 ## Exomiser
 
 ```bash
