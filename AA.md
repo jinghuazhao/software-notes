@@ -176,13 +176,55 @@ LABEL POS as POS
 CUSTOMVARIABLE N
 LABEL N as N
 
-# CHROMOSOMELABEL CHR
-# POSITIONLABEL POS
-# TRACKPOSITIONS ON
+CHROMOSOMELABEL CHR
+POSITIONLABEL POS
+TRACKPOSITIONS ON
 ```
 Nevertheless the CHR and POS thus retained are sums of individual studies involved for particular positions so their real values
 can be recovered from these divided by the number of - and + from the Direction column. In the case of N, the sum is just what
-we want.
+we want. To wrap up, our testing code is as follows,
+```bash
+### illustration as in examples/GlucoseExample/metal.tbl of TRACKPOSITIONS and change in source
+### the results are also documented in accordance with METAL documentation
+
+cd examples/GlucoseExample
+(
+echo CUSTOMVARIABLE CHR
+echo LABEL CHR as CHR
+echo CUSTOMVARIABLE POS
+echo LABEL POS as POS
+echo CUSTOMVARIABLE N
+echo LABEL N as N
+
+echo CHROMOSOMELABEL CHR
+echo POSITIONLABEL POS
+echo TRACKPOSITIONS ON
+
+echo OUTFILE metal- .tbl
+
+awk '!/\#/' metal.txt 
+) > metal.metal
+
+metal metal.metal
+(
+head -1 metal-1.tbl
+awk 'NR>1' metal-1.tbl | \
+awk '
+{
+   FS=OFS="\t"
+   direction=$9
+   gsub(/\?/,"",direction)
+   n=length(direction)
+   $10=$10/n
+   $11=$11/n
+};1' | \
+sort -k10,10n -k11,11n
+) > metal.tbl
+rm metal-1.tbl
+mv metal-1.tbl.info metal.tbl.info
+
+cd -
+```
 
 ---
 
