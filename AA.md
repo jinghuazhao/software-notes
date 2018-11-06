@@ -185,7 +185,7 @@ can be recovered from these divided by the number of - and + from the Direction 
 we want. To wrap up, our testing code is as follows,
 ```bash
 ### illustration as in examples/GlucoseExample/metal.tbl of TRACKPOSITIONS and change in source
-### the results are also documented in accordance with METAL documentation
+### the results are also sorted in accordance with METAL documentation
 
 cd examples/GlucoseExample
 (
