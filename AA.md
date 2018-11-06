@@ -151,7 +151,7 @@ make
 make test
 make install
 ```
-One can use `ccmake .` to change the prefix for installation.
+One can use `ccmake .` to change the prefix for installation but this does not appear to work and the executable is bin/metal.
 
 As with distribution 2011-03-25, http://csg.sph.umich.edu/abecasis/Metal/download/, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
 is undesirable and we modify metal/Main.cpp from
