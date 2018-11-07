@@ -674,7 +674,7 @@ write.table(BMI,file=z,quote=FALSE,row.names=FALSE)
 close(z)
 END
 ```
-where we use [CLEAN_ZSCORES.awk](envirs/CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
+where we use [CLEAN_ZSCORES.awk](files/CLEAN_ZSCORES.awk) to align SNPs between sumstats and reference.
 
 Now the partition heritability and cell-type group analysis proceed as follows,
 ```bash
@@ -970,7 +970,7 @@ p4
 p
 dev.off()
 ```
-[ACE-APOE-CRP.R](AA/ACE-APOE-CRP.R) illustrates the use of MRInstruments, linking some established proteins.
+[ACE-APOE-CRP.R](files/ACE-APOE-CRP.R) illustrates the use of MRInstruments, linking some established proteins.
 
 **BLR**
 
