@@ -1079,3 +1079,23 @@ https://CRAN.R-project.org/package=CpGassoc
 **missMethy**
 
 http://bioconductor.org/packages/release/bioc/html/missMethyl.html
+
+**QCGWAS**
+
+It can be installed from CRAN. The sample is fairly easy to get going
+```r
+library(QCGWAS)
+path <- "/home/jhz22/R/QCGWAS/data"
+files <- file.path(path,dir(path))
+load(files[1])
+load(files[2])
+head(gwa_sample,5)
+head(header_translations,20)
+write.table(gwa_sample,file="test",row.names=FALSE,quote=FALSE)
+write.table(header_translations,file="header_translations",row.names=FALSE,quote=FALSE)
+QCresults <- QC_GWAS("test",
+                header_translations = "header_translations",
+                save_final_dataset = TRUE)
+
+
+```
