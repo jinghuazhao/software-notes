@@ -1180,7 +1180,7 @@ hapmap_ref <- read.table("hapmap_ref.txt",
                 header = TRUE, as.is = TRUE)
 alternative_ref <- read.table("alt_ref.txt",
                 header = TRUE, as.is = TRUE)
-QCresults <- QC_GWAS("data1.txt",
+QCresults <- QC_GWAS("test",
                 header_translations = "headers.txt",
                 out_header = "new_headers.txt",
                 allele_ref_std = hapmap_ref,
