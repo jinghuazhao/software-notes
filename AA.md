@@ -1116,7 +1116,7 @@ QCresults <- QC_GWAS("test",
                 QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
                 QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
                 NAfilter = TRUE)
-# HapMap allele reference -- but it does not work!
+# HapMap allele reference -- but it does not work so requires changes here onward
 create_hapmap_reference(dir = ".",
                 download_hapmap = TRUE,
                 download_subset = "CEU",
@@ -1137,5 +1137,56 @@ QCresults <- QC_GWAS("data1.txt",
                 allele_name_std = "HapMap",
                 remove_mismatches = TRUE,
                 check_ambiguous_alleles = FALSE)
+# An alternative allele reference
+QCresults <- QC_GWAS("test",
+                header_translations = header_translations,
+                save_final_dataset = TRUE,
+                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+                QQfilter_HWE = c(NA, 10^-6, 10^-4),
+                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+                NAfilter = TRUE,
+                allele_ref_std = "hapmap.Rdata",
+                allele_name_std = "HapMap",
+                remove_mismatches = TRUE,
+                allele_ref_alt = NULL,
+                allele_name_alt = "alternative",
+                update_alt = TRUE,
+                update_savename = "ref_alternative",
+                update_as_rdata = TRUE)
+# and QC with it
+QCresults <- QC_GWAS("data2.txt",
+                header_translations = header_translations,
+                save_final_dataset = TRUE,
+                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+                QQfilter_HWE = c(NA, 10^-6, 10^-4),
+                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+                NAfilter = TRUE,
+                allele_ref_std = "hapmap.Rdata",
+                allele_name_std = "HapMap",
+                remove_mismatches = TRUE,
+                allele_ref_alt = "ref_alternative.RData",
+                allele_name_alt = "alternative",
+                update_alt = TRUE,
+                update_as_rdata = TRUE,
+                backup_alt = TRUE)
+# automatic loading
+hapmap_ref <- read.table("hapmap_ref.txt",
+                header = TRUE, as.is = TRUE)
+alternative_ref <- read.table("alt_ref.txt",
+                header = TRUE, as.is = TRUE)
+QCresults <- QC_GWAS("data1.txt",
+                header_translations = "headers.txt",
+                out_header = "new_headers.txt",
+                allele_ref_std = hapmap_ref,
+                allele_ref_alt = alternative_ref,
+                update_alt = TRUE,
+                update_as_rdata = FALSE,
+                update_savename = "alt_ref")
 
 ```
