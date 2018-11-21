@@ -1084,6 +1084,8 @@ http://bioconductor.org/packages/release/bioc/html/missMethyl.html
 
 It can be installed from CRAN. The sample is fairly easy to get going
 ```r
+# 21-11-2018 JHZ
+
 library(QCGWAS)
 path <- "/home/jhz22/R/QCGWAS/data"
 files <- file.path(path,dir(path))
@@ -1092,11 +1094,15 @@ load(files[2])
 head(gwa_sample,5)
 head(header_translations,20)
 write.table(gwa_sample,file="test",row.names=FALSE,quote=FALSE)
-write.table(header_translations,file="header_translations",row.names=FALSE,quote=FALSE)
+# The QCGWAS directory contains the QQ and Manhattan plots as well as the processed data.
 QCresults <- QC_GWAS("test",
-                header_translations = "header_translations",
+                header_translations = header_translations,
                 save_final_dataset = TRUE)
-
-
+# allele-frequency threshold=0.05, HWEp=1e-4, call rate0.99, imputation quality=0.4
+QCresults <- QC_GWAS("test",
+                header_translations = header_translations,
+                save_final_dataset = TRUE,
+                HQfilter_FRQ = 0.05, HQfilter_HWE = 10^-4,
+                HQfilter_cal = 0.99, HQfilter_imp = 0.4,
+                NAfilter = TRUE)
 ```
-The QCGWAS directory contains the QQ and Manhattan plots as well as the processed data.
