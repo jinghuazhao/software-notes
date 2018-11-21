@@ -1116,5 +1116,26 @@ QCresults <- QC_GWAS("test",
                 QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
                 QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
                 NAfilter = TRUE)
+# HapMap allele reference -- but it does not work!
+create_hapmap_reference(dir = ".",
+                download_hapmap = TRUE,
+                download_subset = "CEU",
+                filename = "hapmap",
+                save_txt = FALSE, save_rdata = TRUE)
+# a new QC with hapmap                        
+QCresults <- QC_GWAS("data1.txt",
+                header_translations = h_translations,
+                save_final_dataset = TRUE,
+                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+                QQfilter_HWE = c(NA, 10^-6, 10^-4),
+                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+                NAfilter = TRUE,
+                allele_ref_std = "hapmap.Rdata",
+                allele_name_std = "HapMap",
+                remove_mismatches = TRUE,
+                check_ambiguous_alleles = FALSE)
 
 ```
