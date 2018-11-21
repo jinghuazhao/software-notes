@@ -1099,3 +1099,4 @@ QCresults <- QC_GWAS("test",
 
 
 ```
+The QCGWAS directory contains the QQ and Manhattan plots as well as the processed data.
