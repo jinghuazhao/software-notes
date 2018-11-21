@@ -1105,4 +1105,16 @@ QCresults <- QC_GWAS("test",
                 HQfilter_FRQ = 0.05, HQfilter_HWE = 10^-4,
                 HQfilter_cal = 0.99, HQfilter_imp = 0.4,
                 NAfilter = TRUE)
+# filters for the QQ-plot
+QCresults <- QC_GWAS("test",
+                header_translations = header_translations,
+                save_final_dataset = TRUE,
+                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+                QQfilter_HWE = c(NA, 10^-6, 10^-4),
+                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+                NAfilter = TRUE)
+
 ```
