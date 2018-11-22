@@ -1084,7 +1084,7 @@ http://bioconductor.org/packages/release/bioc/html/missMethyl.html
 
 It can be installed from CRAN. The sample is fairly easy to get going
 ```r
-# 21-11-2018 JHZ
+# 22-11-2018 JHZ
 
 library(QCGWAS)
 path <- "/home/jhz22/R/QCGWAS/data"
