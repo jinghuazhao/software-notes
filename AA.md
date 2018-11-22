@@ -1222,4 +1222,4 @@ download.file(url = paste0("https://ftp.hapmap.org/hapmap/frequencies/2010-08_ph
               destfile = paste0(dir, "/allele_freqs_chr", dn, 
               "_", download_subset, "_r28_nr.b36_fwd.txt.gz"))
 ```
-# ftp://ftp.ncbi.nlm.nih.gov/hapmap/frequencies/2010-08_phaseII+III/ might also work.
+ftp://ftp.ncbi.nlm.nih.gov/hapmap/frequencies/2010-08_phaseII+III/ might also work.
