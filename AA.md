@@ -1123,7 +1123,7 @@ create_hapmap_reference(dir = ".",
                 filename = "hapmap",
                 save_txt = FALSE, save_rdata = TRUE)
 # a new QC with hapmap                        
-QCresults <- QC_GWAS("data1.txt",
+QCresults <- QC_GWAS("test",
                 header_translations = h_translations,
                 save_final_dataset = TRUE,
                 HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
@@ -1138,7 +1138,7 @@ QCresults <- QC_GWAS("data1.txt",
                 remove_mismatches = TRUE,
                 check_ambiguous_alleles = FALSE)
 # An alternative allele reference
-QCresults <- QC_GWAS("test",
+QCresults <- QC_GWAS("data1.txt",
                 header_translations = header_translations,
                 save_final_dataset = TRUE,
                 HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
