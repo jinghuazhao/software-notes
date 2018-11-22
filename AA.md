@@ -1119,6 +1119,7 @@ QCresults <- QC_GWAS("test",
 # HapMap allele reference -- but it does not work and should be
 # http://ftp.hapmap.org/hapmap/frequencies/2010-08_phaseII+III/allele_freqs_chr2_CEU_r28_nr.b36_fwd.txt.gz
 # according to systemhttps://bioinformatics.mdanderson.org/Software/VariantTools/mirror/annoDB/hapmap_CEU_freq.ann
+# add options method="curl", extra="--insecure" to download.file
 create_hapmap_reference(dir = ".",
                 download_hapmap = TRUE,
                 download_subset = "CEU",
