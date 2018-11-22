@@ -1160,7 +1160,7 @@ QCresults <- QC_GWAS("test",
                 update_savename = "ref_alternative",
                 update_as_rdata = TRUE)
 # and QC with it
-QCresults <- QC_GWAS("data2.txt",
+QCresults <- QC_GWAS("test",
                 header_translations = header_translations,
                 save_final_dataset = TRUE,
                 HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
@@ -1170,7 +1170,7 @@ QCresults <- QC_GWAS("data2.txt",
                 QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
                 QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
                 NAfilter = TRUE,
-                allele_ref_std = "hapmap.Rdata",
+                allele_ref_std = "hapmap.RData",
                 allele_name_std = "HapMap",
                 remove_mismatches = TRUE,
                 allele_ref_alt = "ref_alternative.RData",
@@ -1214,3 +1214,4 @@ QC_series(
         allele_name_alt = "alternative",
         update_alt = TRUE, update_as_rdata = TRUE, backup_alt = TRUE)
 ```
+Note the changes required with the HapMap reference.
