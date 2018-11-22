@@ -1127,7 +1127,7 @@ create_hapmap_reference(dir = ".",
                 save_txt = FALSE, save_rdata = TRUE)
 # a new QC with hapmap                        
 QCresults <- QC_GWAS("test",
-                header_translations = h_translations,
+                header_translations = header_translations,
                 save_final_dataset = TRUE,
                 HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
                 HQfilter_cal = 0.95, HQfilter_imp = 0.3,
