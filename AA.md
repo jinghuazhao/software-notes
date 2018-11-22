@@ -38,7 +38,7 @@ The software is rare with its setup for GEI studies accounting for polygenic eff
 
 **pylmm**
 
-It is necessary to do the following steps to get it going,
+It is necessary to get it going with code in the quick guide,
 
 1. git clone https://github.com/nickFurlotte/pylmm
 2. make the following changes,
@@ -1141,7 +1141,7 @@ QCresults <- QC_GWAS("test",
                 remove_mismatches = TRUE,
                 check_ambiguous_alleles = FALSE)
 # An alternative allele reference
-QCresults <- QC_GWAS("data1.txt",
+QCresults <- QC_GWAS("test",
                 header_translations = header_translations,
                 save_final_dataset = TRUE,
                 HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
