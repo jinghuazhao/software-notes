@@ -1214,4 +1214,11 @@ QC_series(
         allele_name_alt = "alternative",
         update_alt = TRUE, update_as_rdata = TRUE, backup_alt = TRUE)
 ```
-Note the changes required with the HapMap reference.
+Note the changes required with the HapMap reference, i.e.,
+```r
+download.file(url = paste0("https://ftp.hapmap.org/hapmap/frequencies/2010-08_phaseII+III/", 
+              "allele_freqs_chr", dn, "_", download_subset, 
+              "_r28_nr.b36_fwd.txt.gz"), method = "curl", extra = "--insecure", 
+              destfile = paste0(dir, "/allele_freqs_chr", dn, 
+              "_", download_subset, "_r28_nr.b36_fwd.txt.gz"))
+```
