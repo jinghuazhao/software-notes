@@ -1116,7 +1116,7 @@ QCresults <- QC_GWAS("test",
                 QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
                 QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
                 NAfilter = TRUE)
-# HapMap allele reference -- but it does not work and should be
+# HapMap allele reference -- the following changes are necessary for download.file()
 # https://ftp.hapmap.org/hapmap/frequencies/2010-08_phaseII+III/allele_freqs_chr2_CEU_r28_nr.b36_fwd.txt.gz
 # based on https://bioinformatics.mdanderson.org/Software/VariantTools/mirror/annoDB/hapmap_CEU_freq.ann
 # add options method="curl", extra="--insecure" to download.file
