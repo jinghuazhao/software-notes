@@ -1084,7 +1084,7 @@ http://bioconductor.org/packages/release/bioc/html/missMethyl.html
 
 It can be installed from CRAN. The sample is fairly easy to get going
 ```r
-# 22-11-2018 JHZ
+# 23-11-2018 JHZ
 
 library(QCGWAS)
 path <- "/home/jhz22/R/QCGWAS/data"
@@ -1094,125 +1094,124 @@ load(files[2])
 head(gwa_sample,5)
 head(header_translations,20)
 write.table(gwa_sample,file="test",row.names=FALSE,quote=FALSE)
-# The QCGWAS directory contains the QQ and Manhattan plots as well as the processed data.
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE)
+		header_translations = header_translations,
+		save_final_dataset = TRUE)
 # allele-frequency threshold=0.05, HWEp=1e-4, call rate0.99, imputation quality=0.4
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE,
-                HQfilter_FRQ = 0.05, HQfilter_HWE = 10^-4,
-                HQfilter_cal = 0.99, HQfilter_imp = 0.4,
-                NAfilter = TRUE)
+		header_translations = header_translations,
+		save_final_dataset = TRUE,
+		HQfilter_FRQ = 0.05, HQfilter_HWE = 10^-4,
+		HQfilter_cal = 0.99, HQfilter_imp = 0.4,
+		NAfilter = TRUE)
 # filters for the QQ-plot
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE,
-                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
-                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
-                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
-                QQfilter_HWE = c(NA, 10^-6, 10^-4),
-                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
-                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
-                NAfilter = TRUE)
-# HapMap allele reference -- the following changes are necessary for download.file()
+		header_translations = header_translations,
+		save_final_dataset = TRUE,
+		HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+		HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+		QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+		QQfilter_HWE = c(NA, 10^-6, 10^-4),
+		QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+		QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+		NAfilter = TRUE)
+# HapMap allele reference -- but it does not work and should be
 # https://ftp.hapmap.org/hapmap/frequencies/2010-08_phaseII+III/allele_freqs_chr2_CEU_r28_nr.b36_fwd.txt.gz
 # based on https://bioinformatics.mdanderson.org/Software/VariantTools/mirror/annoDB/hapmap_CEU_freq.ann
 # add options method="curl", extra="--insecure" to download.file
 create_hapmap_reference(dir = ".",
-                download_hapmap = TRUE,
-                download_subset = "CEU",
-                filename = "hapmap",
-                save_txt = FALSE, save_rdata = TRUE)
-# a new QC with hapmap                        
+		download_hapmap = TRUE,
+		download_subset = "CEU",
+		filename = "hapmap",
+		save_txt = FALSE, save_rdata = TRUE)
+# a new QC with HapMap
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE,
-                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
-                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
-                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
-                QQfilter_HWE = c(NA, 10^-6, 10^-4),
-                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
-                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
-                NAfilter = TRUE,
-                allele_ref_std = "hapmap.RData",
-                allele_name_std = "HapMap",
-                remove_mismatches = TRUE,
-                check_ambiguous_alleles = FALSE)
+		header_translations = header_translations,
+		save_final_dataset = TRUE,
+		HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+		HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+		QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+		QQfilter_HWE = c(NA, 10^-6, 10^-4),
+		QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+		QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+		NAfilter = TRUE,
+		allele_ref_std = "hapmap.RData",
+		allele_name_std = "HapMap",
+		remove_mismatches = TRUE,
+		check_ambiguous_alleles = FALSE)
 # An alternative allele reference
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE,
-                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
-                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
-                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
-                QQfilter_HWE = c(NA, 10^-6, 10^-4),
-                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
-                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
-                NAfilter = TRUE,
-                allele_ref_std = "hapmap.RData",
-                allele_name_std = "HapMap",
-                remove_mismatches = TRUE,
-                allele_ref_alt = NULL,
-                allele_name_alt = "alternative",
-                update_alt = TRUE,
-                update_savename = "ref_alternative",
-                update_as_rdata = TRUE)
+		header_translations = header_translations,
+		save_final_dataset = TRUE,
+		HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+		HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+		QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+		QQfilter_HWE = c(NA, 10^-6, 10^-4),
+		QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+		QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+		NAfilter = TRUE,
+		allele_ref_std = "hapmap.RData",
+		allele_name_std = "HapMap",
+		remove_mismatches = TRUE,
+		allele_ref_alt = NULL,
+		allele_name_alt = "alternative",
+		update_alt = TRUE,
+		update_savename = "ref_alternative",
+		update_as_rdata = TRUE)
 # and QC with it
 QCresults <- QC_GWAS("test",
-                header_translations = header_translations,
-                save_final_dataset = TRUE,
-                HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
-                HQfilter_cal = 0.95, HQfilter_imp = 0.3,
-                QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
-                QQfilter_HWE = c(NA, 10^-6, 10^-4),
-                QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
-                QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
-                NAfilter = TRUE,
-                allele_ref_std = "hapmap.RData",
-                allele_name_std = "HapMap",
-                remove_mismatches = TRUE,
-                allele_ref_alt = "ref_alternative.RData",
-                allele_name_alt = "alternative",
-                update_alt = TRUE,
-                update_as_rdata = TRUE,
-                backup_alt = TRUE)
+		header_translations = header_translations,
+		save_final_dataset = TRUE,
+		HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+		HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+		QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+		QQfilter_HWE = c(NA, 10^-6, 10^-4),
+		QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+		QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+		NAfilter = TRUE,
+		allele_ref_std = "hapmap.RData",
+		allele_name_std = "HapMap",
+		remove_mismatches = TRUE,
+		allele_ref_alt = "ref_alternative.RData",
+		allele_name_alt = "alternative",
+		update_alt = TRUE,
+		update_as_rdata = TRUE,
+		backup_alt = TRUE)
 # automatic loading
 hapmap_ref <- read.table("hapmap_ref.txt",
-                header = TRUE, as.is = TRUE)
+		header = TRUE, as.is = TRUE)
 alternative_ref <- read.table("alt_ref.txt",
-                header = TRUE, as.is = TRUE)
+		header = TRUE, as.is = TRUE)
 QCresults <- QC_GWAS("test",
-                header_translations = "headers.txt",
-                out_header = "new_headers.txt",
-                allele_ref_std = hapmap_ref,
-                allele_ref_alt = alternative_ref,
-                update_alt = TRUE,
-                update_as_rdata = FALSE,
-                update_savename = "alt_ref")
+		header_translations = "headers.txt",
+		out_header = "new_headers.txt",
+		allele_ref_std = hapmap_ref,
+		allele_ref_alt = alternative_ref,
+		update_alt = TRUE,
+		update_as_rdata = FALSE,
+		update_savename = "alt_ref")
 # automatic QC of multiple files
 QC_series(
-        data_files= c("data1.txt","data2.txt","data3.txt"),
-        output_filenames = c("output1.txt","output2.txt","output3.txt"),
-        dir_data = "preQC",
-        dir_output = "postQC",
-        dir_references = "QC_files",
-        header_translations = header_translations,
-        save_final_dataset = TRUE,
-        HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
-        HQfilter_cal = 0.95, HQfilter_imp = 0.3,
-        QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
-        QQfilter_HWE = c(NA, 10^-6, 10^-4),
-        QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
-        QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
-        NAfilter = TRUE,
-        allele_ref_std = "ref_hapmap.Rdata",
-        allele_name_std = "HapMap",
-        remove_mismatches = TRUE,
-        allele_ref_alt = "ref_alternative.RData",
-        allele_name_alt = "alternative",
-        update_alt = TRUE, update_as_rdata = TRUE, backup_alt = TRUE)
+	data_files= c("data1.txt","data2.txt","data3.txt"),
+	output_filenames = c("output1.txt","output2.txt","output3.txt"),
+	dir_data = "preQC",
+	dir_output = "postQC",
+	dir_references = "QC_files",
+	header_translations = header_translations,
+	save_final_dataset = TRUE,
+	HQfilter_FRQ = 0.01, HQfilter_HWE = 10^-6,
+	HQfilter_cal = 0.95, HQfilter_imp = 0.3,
+	QQfilter_FRQ = c(NA, 0.01, 0.03, 0.05, 3),
+	QQfilter_HWE = c(NA, 10^-6, 10^-4),
+	QQfilter_cal = c(NA, 0.95, 0.98, 0.99),
+	QQfilter_imp = c(NA, 0.3, 0.5, 0.7, 0.9),
+	NAfilter = TRUE,
+	allele_ref_std = "ref_hapmap.RData",
+	allele_name_std = "HapMap",
+	remove_mismatches = TRUE,
+	allele_ref_alt = "ref_alternative.RData",
+	allele_name_alt = "alternative",
+	update_alt = TRUE, update_as_rdata = TRUE, backup_alt = TRUE)
 ```
 Note the changes required with the HapMap reference, i.e.,
 ```r
