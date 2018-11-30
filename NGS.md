@@ -417,7 +417,7 @@ See http://varscan.sourceforge.net/ for further information.
 
 ## vcftools
 
-Assuming that we use module, we can do the following,
+Assuming that we use zlib 1.2.8 from module/1.2.8, we can do the following,
 
 ```bash
 wget https://github.com/vcftools/vcftools/releases/download/v0.1.16/vcftools-0.1.16.tar.gz
