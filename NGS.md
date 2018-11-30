@@ -154,6 +154,7 @@ Besides notes above, this is also possible:
 ```bash
 wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
 tar jfx bcftools-1.9.tar.bz2
+cd bcftools-1.9
 ./configure --prefix=/scratch/jhz22
 make
 make install
