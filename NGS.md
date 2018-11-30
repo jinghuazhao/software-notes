@@ -414,3 +414,16 @@ git clone https://github.com/dkoboldt/varscan
 or from the repository releases.
 
 See http://varscan.sourceforge.net/ for further information.
+
+## vcftools
+
+Assuming that we use module, we can do the following,
+
+```bash
+wget https://github.com/vcftools/vcftools/releases/download/v0.1.16/vcftools-0.1.16.tar.gz
+tar xvfz vcftools-0.1.16.tar.gz
+module load zlib/1.2.8
+./configure --prefix=/scratch/jhz22 ZLIB_CFLAGS="-I/usr/local/Cluster-Apps/zlib/1.2.8/include" ZLIB_LIBS="-L/usr/local/Cluster-Apps/zlib/1.2.8/lib -lz"
+make
+make install
+```
