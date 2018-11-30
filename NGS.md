@@ -149,7 +149,17 @@ Install with ```sudo apt install```.
 
 See also https://github.com/lh3/seqtk.
 
-# bowtie2
+Besides notes above, this is also possible:
+## bcftools
+```bash
+wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
+tar jfx bcftools-1.9.tar.bz2
+./configure --prefix=/scratch/jhz22
+make
+make install
+```
+
+## bowtie2
 
 The project home is https://sourceforge.net/projects/bowtie-bio, whereby
 ```bash
