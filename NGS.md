@@ -352,7 +352,13 @@ cd samtools-1.9
 ./configure --prefix=/scratch/jhz22
 make
 make install
+cd -
+cd htslib-1.9
+./configure --prefix=/scratch/jhz22
+make
+make install
 ```
+where we install tabix as well.
 
 ## SnpEff, SnpSift, clinEff
 
