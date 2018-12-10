@@ -438,3 +438,7 @@ module load zlib/1.2.8
 make
 make install
 ```
+To use vcf-concat, it is necessary to set the PERL5LIB environment variables, e.g.,
+```bash
+export PERL5LIB=/scratch/jhz22/share/perl5
+```
