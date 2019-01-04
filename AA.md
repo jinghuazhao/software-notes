@@ -390,12 +390,13 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 ```bash
 git clone https://github.com/joepickrell/fgwas
 cd fgwas
-sed -i 's/1.14/1.15/g' configure
+# sed -i 's/1.14/1.15/g' configure
+./configure --prefix=/scratch/jhz22
 make
 sudo make install
+src/fgwas -i test_data/test_LDL.fgwas_in.gz -w ens_coding_exon
 git clone https://github.com/joepickrell/1000-genomes
 git clone https://github.com/joepickrell/1000-genomes-genetic-maps
-./src/fgwas -i test_data/test_LDL.fgwas_in.gz -w ens_coding_exon
 ```
 In case boots is unavailable or not up-to-date, it is necessary to install, e.g.,
 ```bash
