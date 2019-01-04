@@ -403,7 +403,7 @@ wget https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz
 tar xvfz boost_1_69_0.tar.gz
 cd boost_1_60_0
 ./bootstrap.sh --prefix=/scratch/jhz22 --exec-prefix=/scratch/jhz22
-./b2
+./b2 install
 ```
 Nevertheless it is also required to have other dependencies in place.
 
