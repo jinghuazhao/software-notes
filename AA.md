@@ -395,6 +395,7 @@ make
 sudo make install
 git clone https://github.com/joepickrell/1000-genomes
 git clone https://github.com/joepickrell/1000-genomes-genetic-maps
+./src/fgwas -i test_data/test_LDL.fgwas_in.gz -w ens_coding_exon
 ```
 In case boots is unavailable or not up-to-date, it is necessary to install, e.g.,
 ```bash
