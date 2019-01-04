@@ -396,6 +396,15 @@ sudo make install
 git clone https://github.com/joepickrell/1000-genomes
 git clone https://github.com/joepickrell/1000-genomes-genetic-maps
 ```
+In case boots is unavailable or not up-to-date, it is necessary to install, e.g.,
+```bash
+wget https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.gz
+tar xvfz boost_1_69_0.tar.gz
+cd boost_1_60_0
+./bootstrap.sh --prefix=/scratch/jhz22
+./b2
+```
+Nevertheless it is also required to have other dependencies in place.
 
 ### VEP
 
