@@ -585,8 +585,7 @@ wget -qO- $HEIGHT | \
 awk 'NR>1' | \
 sort -k1,1 | \
 join -13 -21 snp150.txt - | \
-awk '($9!="X" && $9!="Y" && $9!="Un"){if(NR==1) print "SNP CHR BP A1 A2 Z N"; else print $1,$2,$3,$4,$5,$7/$8,$10}' | \
-gzip -f > height.tsv.gz
+awk '($9!="X" && $9!="Y" && $9!="Un"){if(NR==1) print "SNP CHR BP A1 A2 Z N"; else print $1,$2,$3,$4,$5,$7/$8,$10}' > height.tsv.gz
 
 #  SNP - rs ID of the SNP (e.g. rs62442).
 #  CHR - Chromosome number of the SNP. This should be a number between 1 and 22.
