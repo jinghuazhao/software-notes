@@ -573,7 +573,7 @@ HESS (Heritability Estimation from Summary Statistics) is now available from htt
 
 https://huwenboshi.github.io/hess-0.5/#hess
 
-Some popular Python packages are required. It was difficult on one system to install them as well as PySnpTools but relatively smooth with `python -m pip install` and PySnpTools source at https://github.com/MicrosoftGenomics/PySnpTools.
+Some popular Python packages such as pandas as well as PySnpTools are required, e.g., `pip install pandas` or `python -m pip install pysnptools` and it is doable for the latter with source at https://github.com/MicrosoftGenomics/PySnpTools.
 
 For the GIANT height data, we had success with the following script,
 ```bash
