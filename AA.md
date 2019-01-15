@@ -567,6 +567,48 @@ See R-packages section.
 
 ## --- Polygenic modeling ---
 
+### HESS
+
+HESS (Heritability Estimation from Summary Statistics) is now available from https://github.com/huwenboshi/hess and has a web page at
+
+https://huwenboshi.github.io/hess-0.5/#hess
+
+Some popular Python packages are required. It was difficult on one system to install them as well as PySnpTools but relatively smooth with `python -m pip install pandas` and PySnpTools source at https://github.com/MicrosoftGenomics/PySnpTools.
+
+For the GIANT height data, we had success with the following script,
+```bash
+#!/bin/bash
+
+export HEIGHT=https://portals.broadinstitute.org/collaboration/giant/images/0/01/GIANT_HEIGHT_Wood_et_al_2014_publicrelease_HapMapCeuFreq.txt.gz
+
+wget -qO- $HEIGHT | \
+awk 'NR>1' | \
+sort -k1,1 | \
+join -13 -21 snp150.txt - | \
+awk '($9!="X" && $9!="Y" && $9!="Un"){if(NR==1) print "SNP CHR BP A1 A2 Z N"; else print $1,$2,$3,$4,$5,$7/$8,$10}' | \
+gzip -f > height.tsv.gz
+
+#  SNP - rs ID of the SNP (e.g. rs62442).
+#  CHR - Chromosome number of the SNP. This should be a number between 1 and 22.
+#  BP - Base pair position of the SNP.
+#  A1 - Effect allele of the SNP. The sign of the Z-score is with respect to this allele.
+#  A2 - The other allele of the SNP.
+#  Z - The Z-score of the SNP.
+#  N - Sample size of the SNP.
+
+for chrom in $(seq 22)
+do
+    python hess.py \
+        --local-hsqg height \
+        --chrom $chrom \
+        --bfile 1kg_eur_1pct/1kg_eur_1pct_chr${chrom} \
+        --partition nygcresearch-ldetect-data-ac125e47bf7f/EUR/fourier_ls-chr${chrom}.bed \
+        --out step1
+done
+python hess.py --prefix step1 --out step2
+```
+where snp150.txt from UCSC is described at the SUMSTATS repository, https://github.com/jinghuazhao/SUMSTATS.
+
 ### ldetect
 
 It can proceed as indicated
