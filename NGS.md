@@ -425,6 +425,12 @@ Note that `antlr4` is from GitHub, https://github.com/antlr/antlr4. See also htt
 
 It is available from http://subread.sourceforge.net/.
 
+## SViCT
+
+Short for Structural Variant detrction in Circulating Tumor DNA and is available from
+
+https://github.com/vpc-ccg/svict
+
 ## tagdust
 
 http://sourceforge.net/projects/tagdust/
