@@ -56,6 +56,13 @@ This is according to http://csg.sph.umich.edu/abecasis/merlin/index.html,
 sudo `which conda` install merlin
 ```
 
+## plink1.9
+This is recently available,
+```bash
+sudo apt install plink1.9
+plink1.9 --help --bfile
+```
+
 ## simwalk2
 
 This is according to http://www.genetics.ucla.edu/software/,
