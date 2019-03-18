@@ -563,6 +563,8 @@ The last line downloads and unpacks the LD reference data for European (EUR) pop
 
 ## --- Mendelian randomiszation ---
 
+Bias and Type 1 error rate for Mendelian randomization with sample overlap, https://sb452.shinyapps.io/overlap/
+
 See R-packages section.
 
 ## --- Polygenic modeling ---
