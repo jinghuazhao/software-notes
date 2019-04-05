@@ -225,6 +225,16 @@ mv metal-1.tbl.info metal.tbl.info
 
 cd -
 ```
+### METASOFT and ForestPMPlot
+
+Available from http://genetics.cs.ucla.edu/meta/
+```bash
+mkdir METASOFT
+wget -qO- http://genetics.cs.ucla.edu/meta/repository/2.0.1/Metasoft.zip | \
+unzip Metasoft.zip
+cd -
+```
+One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly.
 
 ---
 
