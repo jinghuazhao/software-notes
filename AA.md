@@ -232,8 +232,11 @@ Available from http://genetics.cs.ucla.edu/meta/
 mkdir METASOFT
 wget -qO- http://genetics.cs.ucla.edu/meta/repository/2.0.1/Metasoft.zip | \
 unzip Metasoft.zip
+java -jar Metasoft.jar -input example.txt
 cd -
 ```
+The results are in file `out`.
+
 One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly.
 
 ---
