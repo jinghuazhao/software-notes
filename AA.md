@@ -1099,6 +1099,35 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 > cutoffs and assesses them by permutation testing, while matching for minor allele frequency, distance to nearest transcription start site and number of LD 
 > proxies (r2 > 0.8).
 
+**meta**
+
+The following code, courtesy of the package developer, generates three forest plots,
+```R
+library(meta)
+
+## Generic inverse-variance meta-analysis
+## (first two arguments: treatment estimate and its standard error)
+##
+m1 <- metagen(1:10, rep(0.1, 10), sm = "MD", studlab = LETTERS[1:10])
+
+## Use update.meta() to re-run meta-analysis with additional argument
+##
+m1.subset <- update(m1, subset = 1:5)
+##
+m1.exclude <- update(m1, exclude = 6:10)
+
+pdf("forest1-all.pdf", width = 8.75, height = 4)
+forest(m1, colgap.forest.left = "1cm")
+grid::grid.text("All studies", 0.5, 0.94, gp = grid::gpar(cex = 1.5))
+
+forest(m1.subset, colgap.forest.left = "1cm")
+grid::grid.text("Subset of studies", 0.5, 0.9, gp = grid::gpar(cex = 1.5))
+
+forest(m1.exclude, colgap.forest.left = "1cm")
+grid::grid.text("Exclude studies", 0.5, 0.94, gp = grid::gpar(cex = 1.5))
+dev.off()
+```
+
 **moloc**
 
 moloc: multiple trait co-localization, available from https://github.com/clagiamba/moloc, can be installed with
