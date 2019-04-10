@@ -133,6 +133,10 @@ tophat -r 20 test_ref reads_1.fq reads_2.fq
 
 # Software
 
+## adVNTR
+
+It is a tool for genotyping Variable Number Tandem Repeats (VNTR) from sequence data, https://github.com/mehrdadbakhtiari/adVNTR.
+
 ## ANGSD
 
 ANGSD is a software for analyzing next generation sequencing data, http://www.popgen.dk/angsd/index.php/ANGSD. It is relatively straightforward with GitHub; after
