@@ -293,6 +293,12 @@ We may need to set memory size, e.g.,
 java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
 ```
 
+# Melissa
+
+https://github.com/andreaskapou/Melissa
+
+> MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.
+
 # pindel
 
 The software can be obtained from https://github.com/genome/pindel.
