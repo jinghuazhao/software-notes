@@ -1099,6 +1099,10 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 > cutoffs and assesses them by permutation testing, while matching for minor allele frequency, distance to nearest transcription start site and number of LD 
 > proxies (r2 > 0.8).
 
+**GenomicSEM**
+
+[GenomicSEM](https://github.com/MichelNivard/GenomicSEM) fits structural equation models based on the summary statistics obtained from genome wide association studies (GWAS).
+
 **meta**
 
 The following code, courtesy of the package developer, generates three forest plots,
