@@ -299,6 +299,8 @@ https://github.com/andreaskapou/Melissa
 
 > MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.
 
+Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, https://doi.org/10.1186/s13059-019-1665-8
+
 # pindel
 
 The software can be obtained from https://github.com/genome/pindel.
