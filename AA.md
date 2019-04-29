@@ -777,6 +777,14 @@ Nevertheless there is no such problem with its --make-grm-list which allows for 
 
 Note also the way to use individual's IDs in PLINK2.
 
+## PRrice-2
+
+Source https://github.com/choishingwan/PRSice
+
+and documentation, https://choishingwan.github.io/PRSice/
+
+see also https://github.com/pgormley/polygenic-risk-scores.
+
 ### R-packages
 
 See R-packages section.
