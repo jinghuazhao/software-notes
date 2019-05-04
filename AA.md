@@ -1337,12 +1337,14 @@ The address of GitHub repository is here, https://github.com/weizhouUMICH
 
 Information including installation is described here, https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE.
 
-On CSD3 facility, we therefore proceed as follows,
+Locally, we therefore check for the desired gcc and cmake and proceed as follows,
 ```bash
 module avail gcc
 module avail cmake
 module avail boost
+# gcc > 5.5 and cmake > 3.8.1
 module load gcc-6.1.0-gcc-4.8.5-jusvegv cmake-3.8.1-gcc-4.8.5-zz55m7
+# boost_1.58.0 and R 3.6.0 are described in Computationl_Statistics repository.
 export LD_LIBRARY_PATH=/rds-d4/user/jhz22/hpc-work/boost_1_58_0/stage/lib:$LD_LIBRARY_PATH
 # we actually use the binary disrtibution directly
 wget https://github.com/weizhouUMICH/SAIGE/archive/v0.35.8.2.tar.gz
@@ -1354,6 +1356,4 @@ R --no-save <<END
   library(SAIGE)
 END
 ```
-assuming that we have already installed boost_1.58.0 as with R 3.6.0 in Computationl_Statistics.
-
 The required packages Rcpp and RcppParallel are relatively easy to deal with, we then simply load the packague as usual.
