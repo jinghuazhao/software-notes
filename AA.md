@@ -1343,7 +1343,16 @@ module avail gcc
 module avail cmake
 module avail boost
 module load gcc-6.1.0-gcc-4.8.5-jusvegv cmake-3.8.1-gcc-4.8.5-zz55m7
-export LD_LIBRARY_PATH=/rds-d4/user/jhz22/hpc-work/ftp/boost_1_58_0/stage/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/rds-d4/user/jhz22/hpc-work/boost_1_58_0/stage/lib:$LD_LIBRARY_PATH
+# we actually use the binary disrtibution directly
+wget https://github.com/weizhouUMICH/SAIGE/archive/v0.35.8.2.tar.gz
+tar tvfz v0.35.8.2.tar.gz
+cd SAIGE-0.35.8.2
+tar xvfz SAIGE_0.35.8.2_R_x86_64-pc-linux-gnu.tar.gz
+mv SAIGE /rds-d4/user/jhz22/hpc-work
+R --no-save <<END
+  library(SAIGE)
+END
 ```
 assuming that we have already installed boost_1.58.0 as with R 3.6.0 in Computationl_Statistics.
 
