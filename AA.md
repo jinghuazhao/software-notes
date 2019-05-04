@@ -1356,4 +1356,4 @@ R --no-save <<END
   library(SAIGE)
 END
 ```
-The required packages Rcpp and RcppParallel are relatively easy to deal with, we then simply load the packague as usual.
+Since the required packages Rcpp and RcppParallel are relatively easy to deal with, with which we then simply load the packague as usual.
