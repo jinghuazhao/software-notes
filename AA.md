@@ -1337,7 +1337,7 @@ The address of GitHub repository is here, https://github.com/weizhouUMICH
 
 Information including installation is described here, https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE.
 
-Locally, we therefore check for the desired gcc and cmake and proceed as follows,
+Locally, we therefore check for the desired gcc, cmake and boost and proceed as follows,
 ```bash
 module avail gcc
 module avail cmake
