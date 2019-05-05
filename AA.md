@@ -1344,7 +1344,7 @@ module avail cmake
 module avail boost
 # gcc > 5.5 and cmake > 3.8.1
 module load gcc-6.1.0-gcc-4.8.5-jusvegv cmake-3.8.1-gcc-4.8.5-zz55m7
-# boost_1.58.0 and R 3.6.0 are described in Computationl_Statistics repository.
+# boost 1.58.0 and R 3.6.0 are described in Computationl_Statistics repository.
 export LD_LIBRARY_PATH=/rds-d4/user/jhz22/hpc-work/boost_1_58_0/stage/lib:$LD_LIBRARY_PATH
 # we actually use the binary disrtibution directly
 wget https://github.com/weizhouUMICH/SAIGE/archive/v0.35.8.2.tar.gz
