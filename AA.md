@@ -1351,7 +1351,7 @@ wget https://github.com/weizhouUMICH/SAIGE/archive/v0.35.8.2.tar.gz
 tar tvfz v0.35.8.2.tar.gz
 cd SAIGE-0.35.8.2
 tar xvfz SAIGE_0.35.8.2_R_x86_64-pc-linux-gnu.tar.gz
-mv SAIGE /rds-d4/user/jhz22/hpc-work
+mv SAIGE /rds-d4/user/jhz22/hpc-work/R
 R --no-save <<END
   library(SAIGE)
 END
