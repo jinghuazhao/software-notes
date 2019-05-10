@@ -953,6 +953,18 @@ and it also has a web interface, http://inferno.lisanwanglab.org/index.php.
 
 pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
 
+## Epigenomics
+
+**EpiAlign**
+
+Software, https://github.com/zzz3639/EpiAlign
+
+Web, http://shiny.stat.ucla.edu:3838/EpiAlign/
+
+Ge X, Zhang H, Xie L, Li WV, Kwon SB, Li JJ
+EpiAlign: an alignment-based bioinformatic tool for comparing chromatin state sequences.
+Nucleic Acids Res. 2019 Apr 24. doi: 10.1093/nar/gkz287.
+
 ---
 
 ## R-packages
