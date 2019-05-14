@@ -578,6 +578,12 @@ The last line downloads and unpacks the LD reference data for European (EUR) pop
 
 Bias and Type 1 error rate for Mendelian randomization with sample overlap, https://sb452.shinyapps.io/overlap/
 
+### LCV
+
+Software in Matlab and R for Latent Causal Variable model inferring genetically causal relationships using GWAS data.
+
+https://github.com/lukejoconnor/LCV
+
 See R-packages section.
 
 ## --- Polygenic modeling ---
@@ -1199,6 +1205,13 @@ https://CRAN.R-project.org/package=CpGassoc
 **missMethy**
 
 http://bioconductor.org/packages/release/bioc/html/missMethyl.html
+
+**OmnibusFisher**
+
+The p-values of SNPs, RNA expressions and DNA methylations are calculated by kernel machine (KM) regression. The correlation between different omics data are taken into account. This method can be applied to either samples with all three types of omics data or samples with two types.
+
+https://CRAN.R-project.org/package=OmnibusFisher
+
 
 **QCGWAS**
 
