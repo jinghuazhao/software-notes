@@ -987,7 +987,7 @@ This includes DCGL.
 
 **GSMR**
 
-It refers to Generalised Summary-data-based Mendelian Randomisation, http://cnsgenomics.com/software/gsmr/, available both as part of GCTa and R package.
+It refers to Generalised Summary-data-based Mendelian Randomisation, http://cnsgenomics.com/software/gsmr/, available both as part of GCTA and R package.
 ```r
 install.packages("http://cnsgenomics.com/software/gsmr/static/gsmr_1.0.6.tar.gz",repos=NULL,type="source")
 ```
