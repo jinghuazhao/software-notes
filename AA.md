@@ -1027,6 +1027,7 @@ install_github('MRCIEU/TwoSampleMR')
 The following is adapted from 
 > Dimou NL, Tsilidis KK (2018). A Primer in Mendelian Randomization Methodology with a Focus on Utilizing Published Summary Association Data in Evangelou E (ed) Genetic Epidemiology-Methods and Protocols. Springer, Chapter 13, pp211-230.
 ```r
+
 # BMI and T2D.
 
 library(TwoSampleMR)
