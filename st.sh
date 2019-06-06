@@ -1,4 +1,4 @@
-# 7-11-2018 JHZ
+# 6-6-2019 JHZ
 
 git add README.md
 git commit -m "README"
@@ -10,6 +10,8 @@ git add AI.md
 git commit -m "Artificial intelligence"
 git add NGS.md
 git commit -m "Next-generation sequencing analysis"
+git add prottrans.md
+git commit -m "Proteome and transcritome data"
 git add misc.md
 git commit -m "Miscellaneour programs"
 for d in files st.sh
