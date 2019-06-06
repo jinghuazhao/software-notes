@@ -4,6 +4,7 @@
 
 * Genetic analysis
    * [Association analysis](AA.md)
+   * [CRISPR](CRISPR.md)
    * [Next-generation sequence analysis](NGS.md)
    * [Proteome and transcriptome][prottrans.md]
    * [Miscellaneous software](misc.md)
