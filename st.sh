@@ -3,7 +3,9 @@
 git add README.md
 git commit -m "README"
 git add AA.md
-git commit -m "Specific topics"
+git commit -m "Association analysis"
+git add CRISPR.md
+git commit -m "CRISPR-related topics"
 git add SL.md
 git commit -m "Statistical learning"
 git add AI.md
