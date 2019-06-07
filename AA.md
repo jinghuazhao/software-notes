@@ -950,6 +950,10 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
+### GWAS-PW
+
+Available from  https://github.com/joepickrell/gwas-pw. The installation is straightforward after boost library is available.
+
 ### INFERNO
 
 Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it is available from https://bitbucket.org/wanglab-upenn/INFERNO 
