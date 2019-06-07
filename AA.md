@@ -8,10 +8,10 @@ TOPICS
 * [Finemapping](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#finemapping)
 * [Functional annotation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#functional-annotation)
 * [Pathway analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#pathway-analysis)
-* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomisation)
+* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomiszation)
 * [Polygenic modeling](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#polygenic-modeling)
 * [PheWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#phewas)
-* [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#Transcriptome-wide-association-analysis-(TWAS))
+* [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#transcriptome-wide-association-analysis-twas)
 
 ## Data management
 
