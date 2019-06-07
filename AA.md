@@ -8,7 +8,7 @@ TOPICS
 * [Finemapping](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#finemapping)
 * [Functional annotation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#functional-annotation)
 * [Pathway analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#pathway-analysis)
-* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomiszation)
+* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomisation)
 * [Polygenic modeling](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#polygenic-modeling)
 * [PheWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#phewas)
 * [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#transcriptome-wide-association-analysis-twas)
@@ -587,7 +587,7 @@ The last line downloads and unpacks the LD reference data for European (EUR) pop
 
 ---
 
-## Mendelian randomiszation
+## Mendelian randomisation
 
 Bias and Type 1 error rate for Mendelian randomization with sample overlap, https://sb452.shinyapps.io/overlap/
 
