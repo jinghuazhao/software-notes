@@ -2,16 +2,16 @@
 
 TOPICS
 
-*[Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#----data-management----)
-*[Single variant analysis]
-*[HLA imputation]
-*[Finemapping]()
-*[Functional annotation]
-*[Pathway analysis]
-*[Mendelian randomisation]
-*[Polygenic modeling]
-*[PheWAS]
-*[TWAS]
+* [Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#data-management)
+* [Single variant analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#single-variant-analysis)
+* [HLA imputation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#HLA-imputation)
+* [Finemapping](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#finemapping)
+* [Functional annotation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#functional-annotation)
+* [Pathway analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#pathway-analysis)
+* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomisation)
+* [Polygenic modeling](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#polygenic-modeling)
+* [PheWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#phewas)
+* [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#Transcriptome-wide-association-analysis-(TWAS))
 
 ## Data management
 
