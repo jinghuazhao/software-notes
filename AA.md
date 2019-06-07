@@ -1,7 +1,6 @@
 # Association analysis
 
-TOPICS
-
+---
 * [Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#data-management)
 * [Single variant analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#single-variant-analysis)
 * [HLA imputation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#HLA-imputation)
@@ -12,6 +11,7 @@ TOPICS
 * [Polygenic modeling](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#polygenic-modeling)
 * [PheWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#phewas)
 * [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#transcriptome-wide-association-analysis-twas)
+---
 
 ## Data management
 
