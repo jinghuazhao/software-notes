@@ -1,6 +1,19 @@
 # Association analysis
 
-## --- Data management ---
+TOPICS
+
+*[Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#----data-management----)
+*[Single variant analysis]
+*[HLA imputation]
+*[Finemapping]()
+*[Functional annotation]
+*[Pathway analysis]
+*[Mendelian randomisation]
+*[Polygenic modeling]
+*[PheWAS]
+*[TWAS]
+
+## Data management
 
 ### bgenix
 
@@ -18,7 +31,7 @@ module load gcc/4.7.2
 ```
 See https://bitbucket.org/gavinband/bgen/overview.
 
-## --- Single variant analysis ---
+## Single variant analysis
 
 ### eigensoft
 
@@ -249,7 +262,7 @@ https://github.com/omeed-maghzian/mtag
 
 seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
 
-## --- HLA imputation ---
+## HLA imputation
 
 ### HLA*IMP:02
 
@@ -276,7 +289,7 @@ We can also use cpan, but the installation fails under Ubuntu 18.04.
 
 ---
 
-## --- Finemapping ---
+## Finemapping
 
 ### CAVIAR/eCAVIAR
 
@@ -396,7 +409,7 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 
 ---
 
-## --- Functional annotation ---
+## Functional annotation
 
 ### fgwas
 
@@ -454,7 +467,7 @@ See R-packages section.
 
 ---
 
-## --- Pathway analysis ---
+## Pathway analysis
 
 ### DEPICT
 
@@ -574,7 +587,7 @@ The last line downloads and unpacks the LD reference data for European (EUR) pop
 
 ---
 
-## --- Mendelian randomiszation ---
+## Mendelian randomiszation
 
 Bias and Type 1 error rate for Mendelian randomization with sample overlap, https://sb452.shinyapps.io/overlap/
 
@@ -586,7 +599,7 @@ https://github.com/lukejoconnor/LCV
 
 See R-packages section.
 
-## --- Polygenic modeling ---
+## Polygenic modeling
 
 ### HESS
 
@@ -797,13 +810,13 @@ See R-packages section.
 
 ---
 
-## --- PheWAS ---
+## PheWAS
 
 See wiki resources section of Omics-analysis as well as implementations in R-packages section.
 
 ---
 
-## --- Transcriptome-wide association analysis (TWAS) ---
+## Transcriptome-wide association analysis (TWAS)
 
 ### MetaXcan / S-PrediXcan
 
