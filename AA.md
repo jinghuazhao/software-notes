@@ -963,6 +963,10 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
+### enloc
+
+Available from https://github.com/xqwen/integrative.
+
 ### FINEMAP colocalization pipeline
 
 This is available from https://bitbucket.org/mgloud/production_coloc_pipeline, note also https://github.com/boxiangliu/locuscomparer.
