@@ -963,6 +963,10 @@ python predict.py --coorFile example/example.vcf --geneFile example/example.vcf.
 python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output model.adipose
 ```
 
+### FINEMAP colocalization pipeline
+
+This is available from https://bitbucket.org/mgloud/production_coloc_pipeline, note also https://github.com/boxiangliu/locuscomparer.
+
 ### GWAS-PW
 
 Available from  https://github.com/joepickrell/gwas-pw. The installation is straightforward after boost library is available.
