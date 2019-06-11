@@ -13,3 +13,7 @@ https://bitbucket.org/valenlab/chopchop/src/master/
 ### CRISPR design
 
 http://crispr.dbcls.jp/
+
+### CRISPResso2
+
+https://github.com/pinellolab/CRISPResso2
