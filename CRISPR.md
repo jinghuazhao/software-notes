@@ -9,3 +9,7 @@ range of customization. We even support Cas13 for isoform targeting.
 https://chopchop.cbu.uib.no/
 
 https://bitbucket.org/valenlab/chopchop/src/master/
+
+### CRISPR design
+
+http://crispr.dbcls.jp/
