@@ -1160,6 +1160,7 @@ Currently it is archived at CRAN but can be downloaded from GitHub, https://gith
 ```R
 devtools::install_github("cran/HIBAG")
 ```
+However it is now available from Bioconductor.
 
 **meta**
 
