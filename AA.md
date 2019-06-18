@@ -1162,6 +1162,10 @@ devtools::install_github("cran/HIBAG")
 ```
 However it is now available from Bioconductor.
 
+**hyprcoloc**
+
+It is a package for hypothesis prioritisation multi-trait colocalization, available from https://github.com/jrs95/hyprcoloc.
+
 **meta**
 
 The following code, courtesy of the package developer, generates three forest plots,
