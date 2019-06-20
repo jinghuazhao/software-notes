@@ -150,6 +150,10 @@ python pylmm_GXE.py
 ```
 In general, we can see options for GxE analysis from command `pylmmGWAS.py` under bash.
 
+**SUGEN**
+
+Genetic Association Analysis Under Complex Survey Sampling, https://github.com/dragontaoran/SUGEN.
+
 ### METAL
 
 Note that at least cmake 3.1 is required for the latest from GitHub, https://github.com/statgen/METAL, 
