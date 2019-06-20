@@ -60,6 +60,14 @@ https://github.com/BenLangmead/bowtie-scaling
 
 has associate software, https://github.com/cotsapaslab/IMSGCexomechip.
 
+## CNV detection
+
+CN-Learn is a framework to integrate Copy Number Variant (CNV) predictions made by multiple algorithms using exome sequencing datasets.
+
+https://github.com/girirajanlab/CN_Learn
+
+Pounraja VK, et al. (2019) A machine-learning approach for accurate detection of copy-number variants from exome sequencing. *Genome Res*.
+
 ## SNP discovery
 
 The following reference discribes several pipelines for SNP discovery.
