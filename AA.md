@@ -438,6 +438,11 @@ cd boost_1_60_0
 ```
 Nevertheless it is also required to have other dependencies in place.
 
+
+### PolyPhen and PolyPhen-2
+
+See http://genetics.bwh.harvard.edu/pph/ and http://genetics.bwh.harvard.edu/pph2/.
+
 ### VEP
 
 The description is available from http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html.
