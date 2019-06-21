@@ -1158,6 +1158,10 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 
 [GenomicSEM](https://github.com/MichelNivard/GenomicSEM) fits structural equation models based on the summary statistics obtained from genome wide association studies (GWAS).
 
+**gtx**
+
+The version at https://github.com/tobyjohnson/gtx has more updates to its counterpart at CRAN.
+
 **HIBAG**
 
 Currently it is archived at CRAN but can be downloaded from GitHub, https://github.com/cran/HIBAG
