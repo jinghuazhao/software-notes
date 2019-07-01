@@ -486,3 +486,7 @@ To use vcf-concat, it is necessary to set the PERL5LIB environment variables, e.
 ```bash
 export PERL5LIB=/scratch/jhz22/share/perl5
 ```
+
+## WASP
+
+Allele-specific pipeline for unbiased read mapping and molecular QTL discovery, https://github.com/bmvdgeijn/WASP/.
