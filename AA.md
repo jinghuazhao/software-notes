@@ -242,7 +242,7 @@ mv metal-1.tbl.info metal.tbl.info
 
 cd -
 ```
-Another extension relates to heterogeneity analysis, e.g., I^2 > 30 we require at least three studies each attaining P <= 0.05. In this case, we extend the
+Another extension relates to heterogeneity analysis, e.g., I<sup>2</sup> > 30 we require at least three studies each attaining P <= 0.05. In this case, we extend the
 direction field as in 
 ```c
         direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
