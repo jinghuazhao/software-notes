@@ -242,6 +242,53 @@ mv metal-1.tbl.info metal.tbl.info
 
 cd -
 ```
+Another extension relates to heterogeneity analysis, e.g., I^2 > 30 we require at least three studies each attaining P <= 0.05. In this case, we extend the
+direction field as in 
+```c
+        direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
+```
+to
+```c
+        direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
+        direction[marker] = fabs(z) < 1.959964 ? direction[marker] : (z > 0.0 ? 'p' : 'n');
+```
+It is then relatively easy to filter on meta-analysis statistics,
+```bash
+cat 4E.BP1-1.tbl | \
+awk '{
+   d3=$13;
+   gsub(/?/,"",d3)
+   if (length(d3 >= 3) && $18 >= 3500)
+      if ($12 > -9.30103) print;
+      else {
+         if ($14 < 30) print;
+         else if (d3 == "nnn" || d3 == "ppp") print
+      }
+}'
+# R
+# > -log10(5e-10)
+# [1] 9.30103
+# head -1 METAL/4E.BP1-1.tbl | sed 's|\t|\n|g' | awk '{print "#" NR,$1}'
+#1 Chromosome
+#2 Position
+#3 MarkerName
+#4 Allele1
+#5 Allele2
+#6 Freq1
+#7 FreqSE
+#8 MinFreq
+#9 MaxFreq
+#10 Effect
+#11 StdErr
+#12 log(P)
+#13 Direction
+#14 HetISq
+#15 HetChiSq
+#16 HetDf
+#17 logHetP
+#18 N
+```
+
 ### METASOFT and ForestPMPlot
 
 Available from http://genetics.cs.ucla.edu/meta/
