@@ -1310,6 +1310,12 @@ The p-values of SNPs, RNA expressions and DNA methylations are calculated by ker
 https://CRAN.R-project.org/package=OmnibusFisher
 
 
+**PredictABEL**
+
+See [https://CRAN.R-project.org/package=PredictABEL](https://CRAN.R-project.org/package=PredictABEL).
+
+Kundu S, et al. (2014). Estimating the predictive ability of genetic risk models in simulated data based on published results from genome-wide association studies. [https://doi.org/10.3389/fgene.2014.00179](https://doi.org/10.3389/fgene.2014.00179).
+
 **QCGWAS**
 
 It can be installed from CRAN. The sample is fairly easy to get going
