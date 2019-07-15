@@ -1314,7 +1314,7 @@ https://CRAN.R-project.org/package=OmnibusFisher
 
 See [https://CRAN.R-project.org/package=PredictABEL](https://CRAN.R-project.org/package=PredictABEL).
 
-Kundu S, et al. (2014). Estimating the predictive ability of genetic risk models in simulated data based on published results from genome-wide association studies. [https://doi.org/10.3389/fgene.2014.00179](https://doi.org/10.3389/fgene.2014.00179).
+Kundu S, et al. (2014). Estimating the predictive ability of genetic risk models in simulated data based on published results from genome-wide association studies. *Front Genet* 2014, 5: 179, [https://doi.org/10.3389/fgene.2014.00179](https://doi.org/10.3389/fgene.2014.00179).
 
 **QCGWAS**
 
