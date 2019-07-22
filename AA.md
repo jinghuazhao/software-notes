@@ -149,7 +149,7 @@ cat 4E.BP1-1.tbl | \
 awk '{
    d3=$13;
    gsub(/?/,"",d3)
-   if (length(d3 >= 3) && $18 >= 3500)
+   if (length(d3) >= 3 && $18 >= 3500)
       if ($12 > -9.30103) print;
       else {
          if ($14 < 30) print;
