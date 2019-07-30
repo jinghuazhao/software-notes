@@ -316,6 +316,13 @@ Available from https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.
 wget http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
 tar xvfz nptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
 ```
+One would get error messages
+```
+!! Error in function: PerVariantComputationManager::get_phenotypes(), argument(s): phenotype_spec=IL.18R1___Q13478:P.
+!! Quitting.
+!! Error (HaltProgramWithReturnCode):
+```
+but they would go away with `-method em` for instance.
 
 **SUGEN**
 
