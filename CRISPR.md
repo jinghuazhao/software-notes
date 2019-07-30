@@ -17,3 +17,11 @@ http://crispr.dbcls.jp/
 ### CRISPResso2
 
 https://github.com/pinellolab/CRISPResso2
+
+### SPROUT
+
+https://zou-group.github.io/SPROUT
+
+https://github.com/amirmohan/SPROUT
+
+Leenay RT, et al. (2019). Large dataset enables prediction of repair after CRISPR–Cas9 editing in primary T cells. *Nat Biotechnol* 
