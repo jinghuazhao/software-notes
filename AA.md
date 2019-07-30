@@ -309,6 +309,14 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
 
+### SNPTEST
+
+Available from https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html#download, e.g., 
+```bash
+wget http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
+tar xvfz nptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
+```
+
 **SUGEN**
 
 Genetic Association Analysis Under Complex Survey Sampling, https://github.com/dragontaoran/SUGEN.
