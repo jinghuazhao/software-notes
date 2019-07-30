@@ -18,6 +18,20 @@ http://crispr.dbcls.jp/
 
 https://github.com/pinellolab/CRISPResso2
 
+### FORECasT
+
+https://partslab.sanger.ac.uk/FORECasT
+
+### inDelphi
+
+inDelphi is a machine learning algorithm that is aimed to assist scientists using CRISPR.
+
+http://indelphi.giffordlab.mit.edu/
+
+### SelfTarget
+
+https://github.com/felicityallen/SelfTarget
+
 ### SPROUT
 
 https://zou-group.github.io/SPROUT
