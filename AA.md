@@ -1318,6 +1318,12 @@ https://CRAN.R-project.org/package=CpGassoc
 
 http://bioconductor.org/packages/release/bioc/html/missMethyl.html
 
+**MultiABEL**
+
+Multi-Trait Genome-Wide Association Analysis
+
+https://github.com/xiashen/MultiABEL
+
 **OmnibusFisher**
 
 The p-values of SNPs, RNA expressions and DNA methylations are calculated by kernel machine (KM) regression. The correlation between different omics data are taken into account. This method can be applied to either samples with all three types of omics data or samples with two types.
