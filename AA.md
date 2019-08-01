@@ -902,6 +902,12 @@ See wiki resources section of Omics-analysis as well as implementations in R-pac
 
 ## Transcriptome-wide association analysis (TWAS)
 
+### IronThrone-GoT
+
+https://github.com/landau-lab/IronThrone-GoT
+
+Nam AS, et al. (2019). Somatic mutations and cell identity linked by Genotyping of Transcriptomes. *Nature" 571: 355–360.
+
 ### MetaXcan / S-PrediXcan
 
 **Issues with more recent version of Python 2.7**
