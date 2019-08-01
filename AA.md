@@ -3,6 +3,7 @@
 ---
 * [Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#data-management)
 * [Single variant analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#single-variant-analysis)
+* [Population structure](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#population-structure)
 * [HLA imputation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#HLA-imputation)
 * [Finemapping](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#finemapping)
 * [Functional annotation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#functional-annotation)
@@ -324,9 +325,21 @@ It is possible that one would get error messages
 ```
 but they would go away with `-method em` for instance.
 
-**SUGEN**
+### SUGEN
 
 Genetic Association Analysis Under Complex Survey Sampling, https://github.com/dragontaoran/SUGEN.
+
+### swiss
+
+Software to help identify overlap between association scan results and GWAS hit catalogs. 
+
+https://github.com/statgen/swiss
+
+## Population struction
+
+### fineSTRUCTURE
+
+https://people.maths.bris.ac.uk/~madjl/finestructure/index.html
 
 ## HLA imputation
 
@@ -1052,6 +1065,12 @@ Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it 
 and it also has a web interface, http://inferno.lisanwanglab.org/index.php.
 
 ### R packages
+
+## biMM
+
+It is a software for bivariate lineax mixed model (LMM),
+
+https://www.mv.helsinki.fi/home/mjxpirin/download.html
 
 pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
 
