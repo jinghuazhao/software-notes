@@ -48,36 +48,36 @@
   gsmr2_beta = 0     # 0 - the original HEIDI-outlier method; 1 - the new HEIDI-outlier method that is currently under development 
   gsmr_results = gsmr(bzx, bzx_se, bzx_pval, bzy, bzy_se, bzy_pval, ldrho, snp_coeff_id, n_ref, heidi_outlier_flag, gwas_thresh, single_snp_heidi_thresh, multi_snp_heidi_thresh, nsnps_thresh, ld_r2_thresh, ld_fdr_thresh, gsmr2_beta)    # GSMR analysis 
   filtered_index=gsmr_results$used_index
-  cat("The estimated effect of the exposure on outcome: ",gsmr_results$bxy, "\n")
 ## The estimated effect of the exposure on outcome:  0.4322395
-  cat("Standard error of bxy: ",gsmr_results$bxy_se, "\n")
+  cat("The estimated effect of the exposure on outcome: ",gsmr_results$bxy, "\n")
 ## Standard error of bxy:  0.02210985
-  cat("P-value for bxy: ", gsmr_results$bxy_pval, "\n")
+  cat("Standard error of bxy: ",gsmr_results$bxy_se, "\n")
 ## P-value for bxy:  4.15454e-85
-  cat("Indexes of the SNPs used in the GSMR analysis: ", gsmr_results$used_index[1:5], "...\n")
+  cat("P-value for bxy: ", gsmr_results$bxy_pval, "\n")
 ## Indexes of the SNPs used in the GSMR analysis:  1 2 3 5 6 ...
-  cat("Number of SNPs with missing estimates in the summary data: ", length(gsmr_results$na_snps), "\n")
+  cat("Indexes of the SNPs used in the GSMR analysis: ", gsmr_results$used_index[1:5], "...\n")
 ## Number of SNPs with missing estimates in the summary data:  0
-  cat("Number of non-significant SNPs: ", length(gsmr_results$weak_snps), "\n")
+  cat("Number of SNPs with missing estimates in the summary data: ", length(gsmr_results$na_snps), "\n")
 ## Number of non-significant SNPs:  39
-  cat("Number of SNPs in high LD ( LD rsq >", ld_r2_thresh, "): ", length(gsmr_results$linkage_snps), "\n")
+  cat("Number of non-significant SNPs: ", length(gsmr_results$weak_snps), "\n")
 ## Number of SNPs in high LD ( LD rsq > 0.05 ):  5
-  cat("Number of pleiotropic outliers: ", length(gsmr_results$pleio_snps), "\n")
+  cat("Number of SNPs in high LD ( LD rsq >", ld_r2_thresh, "): ", length(gsmr_results$linkage_snps), "\n")
 ## Number of pleiotropic outliers:  9
+  cat("Number of pleiotropic outliers: ", length(gsmr_results$pleio_snps), "\n")
 # 4. Bi-directional GSMR analysis
   gsmr_results = bi_gsmr(bzx, bzx_se, bzx_pval, bzy, bzy_se, bzy_pval, ldrho, snp_coeff_id, n_ref, heidi_outlier_flag, gwas_thresh, single_snp_heidi_thresh, multi_snp_heidi_thresh, nsnps_thresh, ld_r2_thresh, ld_fdr_thresh, gsmr2_beta)    # GSMR analysis 
-  cat("Effect of risk factor on disease: ",gsmr_results$forward_bxy, "\n")
 ## Effect of risk factor on disease:  0.4322395
-  cat("Standard error of bxy in the forward-GSMR analysis: ",gsmr_results$forward_bxy_se, "\n")
+  cat("Effect of risk factor on disease: ",gsmr_results$forward_bxy, "\n")
 ## Standard error of bxy in the forward-GSMR analysis:  0.02210985
-  cat("P-value of bxy in the forward-GSMR analysis: ", gsmr_results$forward_bxy_pval, "\n")
+  cat("Standard error of bxy in the forward-GSMR analysis: ",gsmr_results$forward_bxy_se, "\n")
 ## P-value of bxy in the forward-GSMR analysis:  4.15454e-85
-  cat("Effect of disease on risk factor: ",gsmr_results$reverse_bxy, "\n")
+  cat("P-value of bxy in the forward-GSMR analysis: ", gsmr_results$forward_bxy_pval, "\n")
 ## Effect of disease on risk factor:  -0.02739421
-  cat("Standard error of bxy in the reverse-GSMR analysis: ",gsmr_results$reverse_bxy_se, "\n")
+  cat("Effect of disease on risk factor: ",gsmr_results$reverse_bxy, "\n")
 ## Standard error of bxy in the reverse-GSMR analysis:  0.009551025
-  cat("P-value of bxy in the reverse-GSMR analysis: ", gsmr_results$reverse_bxy_pval)
+  cat("Standard error of bxy in the reverse-GSMR analysis: ",gsmr_results$reverse_bxy_se, "\n")
 ## P-value of bxy in the reverse-GSMR analysis:  0.004128198
+  cat("P-value of bxy in the reverse-GSMR analysis: ", gsmr_results$reverse_bxy_pval)
 # 5. Visualization
   effect_col = colors()[75]
   vals = c(bzx[filtered_index]-bzx_se[filtered_index], bzx[filtered_index]+bzx_se[filtered_index])
