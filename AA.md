@@ -1114,6 +1114,8 @@ install.packages("http://cnsgenomics.com/software/gsmr/static/gsmr_1.0.6.tar.gz"
 ```
 with test data, http://cnsgenomics.com/software/gsmr/static/test_data.zip.
 
+Script for the documentation example is tallied here as [gsmr_example.R](files/gsmr_example.R).
+
 **MendelianRandomization**
 
 The following are necessary to enable its installation,
