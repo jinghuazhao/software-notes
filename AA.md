@@ -1082,6 +1082,23 @@ pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with s
 
 ## Epigenomics
 
+**Avocado**
+
+Project page, https://noble.gs.washington.edu/proj/avocado/ and Software, https://bitbucket.org/noblelab/avocado/src/master/
+
+To install
+```bash
+python setup.py install --prefix=/rds/user/jhz22/hpc-work
+# insert this line into .bashrc
+export PYTHONPATH=$PYTHONPATH:/rds/user/jhz22/hpc-work/lib/python2.7/site-packages/
+```
+
+**ChromImpute**
+
+Website, http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/ and Source, https://github.com/jernst98/ChromImpute
+
+Ernst J, Kellis M. Large-scale imputation of epigenomic datasets for systematic annotation of diverse human tissues. Nature Biotechnology, 33:364-376, 2015
+
 **EpiAlign**
 
 Software, https://github.com/zzz3639/EpiAlign
