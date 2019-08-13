@@ -426,7 +426,7 @@ cd -
 ### gchromVar
 
 Cell type specific enrichments using finemapped variants and quantitative epigenetic data,
-https://github.com/caleblareau/gchromVAR
+https://github.com/caleblareau/gchromVAR; see https://github.com/caleblareau/singlecell_bloodtraits for examples.
 
 ### JAM
 
