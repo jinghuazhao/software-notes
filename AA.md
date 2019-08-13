@@ -423,6 +423,11 @@ cd -
 ./test.sh
 ```
 
+### gchromVar
+
+Cell type specific enrichments using finemapped variants and quantitative epigenetic data,
+https://github.com/caleblareau/gchromVAR
+
 ### JAM
 
 **Setup**
