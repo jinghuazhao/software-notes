@@ -144,6 +144,8 @@ to
         direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
         direction[marker] = fabs(z) < 1.959964 ? direction[marker] : (z > 0.0 ? 'p' : 'n');
 ```
+NOTE this has to be done twice since as it appears in both ProcessFile and ReProcessFile.
+
 It is then relatively easy to filter on meta-analysis statistics,
 ```bash
 cat 4E.BP1-1.tbl | \
@@ -154,7 +156,8 @@ awk '{
       if ($12 > -9.30103) print;
       else {
          if ($14 < 30) print;
-         else if (d3 == "nnn" || d3 == "ppp") print
+         else if (d3 == "nnn" || d3 == "ppp") print;
+         else if (d3 == "-----------" || d3 == "+++++++++++") print;
       }
 }'
 # R
