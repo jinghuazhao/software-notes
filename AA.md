@@ -144,7 +144,7 @@ to
         direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
         direction[marker] = fabs(z) < 1.959964 ? direction[marker] : (z > 0.0 ? 'p' : 'n');
 ```
-NOTE this has to be done twice since as it appears in both ProcessFile and ReProcessFile.
+Note this has to be done TWICE since as it appears in both ProcessFile() and ReProcessFile().
 
 It is then relatively easy to filter on meta-analysis statistics,
 ```bash
