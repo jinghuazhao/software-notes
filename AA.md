@@ -142,7 +142,8 @@ direction field as in
 to
 ```c
         direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
-        direction[marker] = fabs(z) < 1.959964 ? direction[marker] : (z > 0.0 ? 'p' : 'n');
+        if (z < -1.959964 ) direction[marker] = 'n';
+        if (z >  1.959964 ) direction[marker] = 'p';
 ```
 Note this has to be done TWICE since as it appears in both ProcessFile() and ReProcessFile().
 
