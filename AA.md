@@ -146,23 +146,25 @@ to
 ```
 Note this has to be done TWICE since as it appears in both ProcessFile() and ReProcessFile().
 
-It is then relatively easy to filter on meta-analysis statistics,
+It is then relatively easy to filter on meta-analysis statistics, `awk -f metal.awk 4E.BP1-1.tbl`,
+where `metal.awk` has the following lines,
 ```bash
-cat 4E.BP1-1.tbl | \
-awk '{
-   d3=$13;
-   gsub(/?/,"",d3)
+{
+   d3=$13; gsub(/?/,"",d3)
    if (length(d3) >= 3 && $18 >= 3500)
-      if ($12 > -9.30103) print;
+   if ($12 > -9.30103) print;
+   else {
+      if ($14 < 30) print;
       else {
-         if ($14 < 30) print;
-         else if (d3 == "nnn" || d3 == "ppp") print;
-         else if (d3 == "-----------" || d3 == "+++++++++++") print;
+        d3n=d3; d3p=d3;
+        gsub(/+|-|p/,"",d3n); gsub(/+|-|n/,"",d3p);
+        if (length(d3n) >= 3 || length(d3p) >= 3) print;
       }
-}'
+   }
+}
 # R
-# > -log10(5e-10)
-# [1] 9.30103
+# > log10(5e-10)
+# [1] -9.30103
 # head -1 METAL/4E.BP1-1.tbl | sed 's|\t|\n|g' | awk '{print "#" NR,$1}'
 #1 Chromosome
 #2 Position
