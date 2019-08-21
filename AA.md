@@ -48,7 +48,9 @@ To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile
 
 ### METAL
 
-Note that at least cmake 3.1 is required for the latest from GitHub, https://github.com/statgen/METAL, 
+Note METAL aligns alleles according to the first file processed.
+
+At least cmake 3.1 is required for the latest from GitHub, https://github.com/statgen/METAL, 
 
 ```bash
 wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
@@ -142,10 +144,9 @@ direction field as in
 to
 ```c
         direction[marker] = z == 0.0 ? '0' : (z > 0.0 ? '+' : '-');
-        if (z * sqrt(1.0 / w) <= -1.959964 ) direction[marker] = 'n';
-        if (z * sqrt(1.0 / w) >=  1.959964 ) direction[marker] = 'p';
+        direction[marker] = (fabs(z) * sqrt(w) >= 1.959964) ? direction[marker] : (z > 0.0 ? '+' : '-');
 ```
-Note this has to be done TWICE since as it appears in both ProcessFile() and ReProcessFile().
+Note this relates to both ProcessFile() and ReProcessFile().
 
 It is then relatively easy to filter on meta-analysis statistics, `awk -f metal.awk 4E.BP1-1.tbl`,
 where `metal.awk` has the following lines,
