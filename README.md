@@ -1,6 +1,6 @@
 # software-notes
 
-The nature of this repository is applied, esp. setup of software in several categories. This distinguishes itself from **Computational Statistics**
+The nature of this repository is applied, esp. setup of software in several categories. This distinguishes itself from [Computational-Statistics](https://github.com/jinghuazhao/Computational-Statistics)
 which is somewhat more rudimentary.
 
 * Genetic analysis
