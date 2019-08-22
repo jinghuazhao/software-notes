@@ -1,6 +1,7 @@
 # software-notes
 
-**Setup of software in several categories**
+The nature of this repository is applied, esp. setup of software in several categories. This distinguishes itself from **Computational Statistics**
+which is somewhat more rudimentary.
 
 * Genetic analysis
    * [Association analysis](AA.md)
