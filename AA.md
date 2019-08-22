@@ -527,6 +527,9 @@ cd boost_1_60_0
 ```
 Nevertheless it is also required to have other dependencies in place.
 
+### morpheus
+
+See [https://software.broadinstitute.org/morpheus/](https://software.broadinstitute.org/morpheus/).
 
 ### PolyPhen and PolyPhen-2
 
