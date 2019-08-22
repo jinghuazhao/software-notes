@@ -657,8 +657,13 @@ wget -qO- http://portals.broadinstitute.org/collaboration/giant/images/1/15/SNP_
 gunzip -c | cut -f1,7 | awk -vFS="\t" -vOFS="\t" '(NR>1)' > BMI.pval
 
 Pascal --pval=BMI.pval
-
 ```
+
+### ToppGene
+
+A portal for gene list enrichment analysis and candidate gene prioritization based on functional annotations and protein interactions network
+
+See [https://toppgene.cchmc.org/](https://toppgene.cchmc.org/).
 
 ### VEGAS2
 
