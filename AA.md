@@ -894,6 +894,10 @@ The mysterious commands shown in the wiki documentation are actually realised af
 sudo apt install python-nose
 ```
 
+### MiXeR
+
+https://github.com/precimed/mixer
+
 ### PLINK2
 
 Both [PLINK 1.90 beta](https://www.cog-genomics.org/plink2/) and [PLINK 2.00 alpha](https://www.cog-genomics.org/plink/2.0/) have issue with .grm.bin.N which is shorter than expected for GCTA. The problem is insidious but would prevent chromosome-specific GRMs to be combined.
