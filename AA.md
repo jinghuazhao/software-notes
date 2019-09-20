@@ -342,6 +342,11 @@ Software to help identify overlap between association scan results and GWAS hit 
 
 https://github.com/statgen/swiss
 
+To install as a user, try
+```bash
+pip install git+https://github.com/welchr/swiss.git@v1.0.0 --user
+```
+
 ## Population struction
 
 ### fineSTRUCTURE
