@@ -357,12 +357,12 @@ To test, follow these,
 ```bash
 git clone https://github.com/statgen/swiss
 cd swiss/test
+swiss --list-files
 swiss --list-ld-sources
 swiss --list-gwas-cats
 swiss --list-gwas-traits --gwas-cat data/gwascat_ebi_GRCh37p13.tab
-swiss --assoc data/top_hit_is_gwas.tab --build hg19 --ld-clump-source 1000G_2014-11_EUR \
-      --ld-gwas-source 1000G_2014-11_EUR --gwas-cat data/gwascat_ebi_GRCh37p13.tab \
-      --variant-col EPACTS --pval-col PVAL --dist-clump --clump-dist 250000 --clump-p 5e-08 --out test
+
+swiss --assoc data/top_hit_is_gwas.tab --variant-col EPACTS --pval-col PVAL --dist-clump --clump-dist 250000 --clump-p 5e-08 --out test
 
 swiss --assoc data/test_hg19.gz --multi-assoc --trait SM --build hg19 \
       --ld-clump-source 1000G_2014-11_EUR --ld-gwas-source 1000G_2014-11_EUR --gwas-cat data/gwascat_ebi_GRCh37p13.tab \
