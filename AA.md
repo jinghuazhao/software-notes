@@ -342,9 +342,13 @@ Software to help identify overlap between association scan results and GWAS hit 
 
 https://github.com/statgen/swiss
 
-To install as a user, try
 ```bash
-pip install git+https://github.com/welchr/swiss.git@v1.0.0 --user
+sudo apt install libz-dev
+pip install git+https://github.com/welchr/swiss.git@v1.0.0
+```
+One may try options such as --user, --install_options="--prefix="". In case the $HOME directory does not have sufficient space, one can issue `swiss --download-data` on a system do, then upload,
+```bash
+rsync -av --partial .local/share/swiss login.hpc.cam.ac.uk:$HOME/.local/share
 ```
 
 ## Population struction
