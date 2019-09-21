@@ -350,6 +350,11 @@ One may try options such as --user, --install_options="--prefix="". In case the 
 ```bash
 rsync -av --partial .local/share/swiss login.hpc.cam.ac.uk:$HOME/.local/share
 ```
+or select particular files,
+```bash
+sync -av --partial .local/share/swiss/data/ld/1000g.phase3.hg38.EUR.shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz* \
+     login.hpc.cam.ac.uk:$HOME/.local/share/swiss/data/ld
+```
 
 ## Population struction
 
