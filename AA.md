@@ -340,8 +340,6 @@ Genetic Association Analysis Under Complex Survey Sampling, https://github.com/d
 
 Software to help identify overlap between association scan results and GWAS hit catalogs. 
 
-https://github.com/statgen/swiss
-
 ```bash
 sudo apt install libz-dev
 pip install git+https://github.com/welchr/swiss.git@v1.0.0
@@ -355,6 +353,27 @@ or select particular files,
 sync -av --partial .local/share/swiss/data/ld/1000g.phase3.hg38.EUR.shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz* \
      login.hpc.cam.ac.uk:$HOME/.local/share/swiss/data/ld
 ```
+To test, follow these,
+```bash
+git clone https://github.com/statgen/swiss
+cd swiss/test
+swiss --list-ld-sources
+swiss --list-gwas-cats
+swiss --list-gwas-traits --gwas-cat data/gwascat_ebi_GRCh37p13.tab
+swiss --assoc data/top_hit_is_gwas.tab --build hg19 --ld-clump-source 1000G_2014-11_EUR \
+      --ld-gwas-source 1000G_2014-11_EUR --gwas-cat data/gwascat_ebi_GRCh37p13.tab \
+      --variant-col EPACTS --pval-col PVAL --dist-clump --clump-dist 250000 --clump-p 5e-08 --out test
+
+swiss --assoc data/test_hg19.gz --multi-assoc --trait SM --build hg19 \
+      --ld-clump-source 1000G_2014-11_EUR --ld-gwas-source 1000G_2014-11_EUR --gwas-cat data/gwascat_ebi_GRCh37p13.tab \
+      --ld-clump --clump-p 1e-10 --out test
+
+swiss --assoc data/test_hg38.gz --gwas-cat data/gwascat_ebi_GRCh38p7.tab --variant-col VARIANT \
+      --chrom-col CHROM --pos-col POS --trait BMI --build hg38 \
+      --ld-clump-source 1000G_2014-11_EUR --ld-gwas-source 1000G_2014-11_EUR \
+      --ld-clump --clump-p 5e-08 --out test
+```
+and consult the online documentation.
 
 ## Population struction
 
