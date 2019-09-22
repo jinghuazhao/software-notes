@@ -353,7 +353,7 @@ or select particular files,
 sync -av --partial .local/share/swiss/data/ld/1000g.phase3.hg38.EUR.shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz* \
      login.hpc.cam.ac.uk:$HOME/.local/share/swiss/data/ld
 ```
-but this could tricked with making $HOME/.local/share a symbolic pointing to a directory that can hold more than ~40GB data, then the `pip` command above can be called with the `--user` option.
+but this could be tricked with making $HOME/.local/share a symbolic pointing to a directory that can hold more than ~40GB data (reminscent fo VEP), then the `pip` command above can be called with the `--user` option.
 
 To test, follow these,
 ```bash
