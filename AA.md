@@ -344,7 +344,7 @@ Software to help identify overlap between association scan results and GWAS hit 
 sudo apt install libz-dev
 pip install git+https://github.com/welchr/swiss.git@v1.0.0
 ```
-One may try options such as --user, --install_options="--prefix="". In case the $HOME directory does not have sufficient space, one can issue `swiss --download-data` on a system do, then upload,
+One may try options such as --install_options="--prefix="". In case the $HOME directory does not have sufficient space, one can issue `swiss --download-data` on a system that does, then upload,
 ```bash
 rsync -av --partial .local/share/swiss login.hpc.cam.ac.uk:$HOME/.local/share
 ```
@@ -353,6 +353,8 @@ or select particular files,
 sync -av --partial .local/share/swiss/data/ld/1000g.phase3.hg38.EUR.shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz* \
      login.hpc.cam.ac.uk:$HOME/.local/share/swiss/data/ld
 ```
+but this could tricked with making $HOME/.local/share a symbolic pointing to a directory that can hold more than ~40GB data, then the `pip` command above can be called with the `--user` option.
+
 To test, follow these,
 ```bash
 git clone https://github.com/statgen/swiss
@@ -362,7 +364,8 @@ swiss --list-ld-sources
 swiss --list-gwas-cats
 swiss --list-gwas-traits --gwas-cat data/gwascat_ebi_GRCh37p13.tab
 
-swiss --assoc data/top_hit_is_gwas.tab --variant-col EPACTS --pval-col PVAL --dist-clump --clump-dist 250000 --clump-p 5e-08 --out test
+swiss --assoc data/top_hit_is_gwas.tab --variant-col EPACTS --pval-col PVAL \
+      --dist-clump --clump-dist 250000 --clump-p 5e-08 --skip-gwas --out test
 
 swiss --assoc data/test_hg19.gz --multi-assoc --trait SM --build hg19 \
       --ld-clump-source 1000G_2014-11_EUR --ld-gwas-source 1000G_2014-11_EUR --gwas-cat data/gwascat_ebi_GRCh37p13.tab \
