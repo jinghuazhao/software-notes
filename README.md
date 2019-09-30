@@ -7,6 +7,7 @@ which is somewhat more rudimentary.
    * [Association analysis](AA.md)
    * [CRISPR](CRISPR.md)
    * [Next-generation sequence analysis](NGS.md)
+   * [Pharmacogenomics](pharmacogenomics.md)
    * [Proteome and transcriptome](prottrans.md)
    * [Miscellaneous software](misc.md)
 * [Statistical learning](SL.md)
