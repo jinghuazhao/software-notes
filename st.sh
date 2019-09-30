@@ -1,4 +1,4 @@
-# 6-6-2019 JHZ
+# 30-9-2019 JHZ
 
 git add README.md
 git commit -m "README"
@@ -12,6 +12,8 @@ git add AI.md
 git commit -m "Artificial intelligence"
 git add NGS.md
 git commit -m "Next-generation sequencing analysis"
+git add pharmacogenomics.md
+git commit -m "Pharmacogenomics"
 git add prottrans.md
 git commit -m "Proteome and transcritome data"
 git add misc.md
