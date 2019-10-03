@@ -1,4 +1,4 @@
-# 30-9-2019 JHZ
+# 3-10-2019 JHZ
 
 git add README.md
 git commit -m "README"
@@ -18,6 +18,8 @@ git add prottrans.md
 git commit -m "Proteome and transcritome data"
 git add misc.md
 git commit -m "Miscellaneour programs"
+git add scRNASeq.md
+git commit -m "Single Cell RNA-Seq"
 for d in files st.sh
 do
    git add $d
