@@ -4,7 +4,7 @@
 ```r
 devtools::install_bioc("Pi",build_vignettes = TRUE)
 library(Pi)
-browseVignette("Pi")
+browseVignettes("Pi")
 ```
 Note that `S4Vectors` may conflict with the R-devel configurations.
 
