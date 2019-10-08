@@ -28,7 +28,7 @@ select * from pi_priority where trait='RA' and crosstalk_node='Y' order by rank;
 END
 ```
 
-Reference
+**Reference**
 
 Fang H; ULTRA-DD Consortium, De Wolf H, Knezevic B, Burnham KL, Osgood J, Sanniti A, Lledó Lara A, Kasela S, De Cesco S, Wegner JK, Handunnetthi L, McCann FE, Chen L, Sekine T, Brennan PE, Marsden BD, Damerell D, O'Callaghan CA, Bountra C, Bowness P, Sundström Y, Milani L, Berg L, Göhlmann HW, Peeters PJ, Fairfax BP, Sundström M, Knight JC.
 A genetics-led approach defines the drug target landscape of 30 immune-related traits.
