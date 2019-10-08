@@ -2,9 +2,31 @@
 ### R/Pi
 
 ```r
-devtools::install_bioc("Pi")
+devtools::install_bioc("Pi",build_vignettes = TRUE)
+library(Pi)
+browseVignette("Pi")
 ```
 Note that `S4Vectors` may conflict with the R-devel configurations.
+
+The figshare database as described in the paper can be examined as follows,
+
+```bash
+gunzip pi_database.sql.gz
+mysql -p -u $USER -e "create database pi;"
+mysql -p -u $USER pi < pi_database.sql
+mysql -p -u $USER pi <<END
+show tables;
+desc pi_priority;
+desc pi_trait;
+desc pi_genomic;
+desc pi_drug;
+desc pi_category;
+desc pi_domain;
+desc pi_pdb;
+select * from pi_priority where trait='RA' and rank<=150 order by rank;
+select * from pi_priority where trait='RA' and crosstalk_node='Y' order by rank;
+END
+```
 
 Reference
 
