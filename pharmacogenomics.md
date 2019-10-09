@@ -27,6 +27,23 @@ select * from pi_priority where trait='RA' and rank<=150 order by rank;
 select * from pi_priority where trait='RA' and crosstalk_node='Y' order by rank;
 END
 ```
+It is relatively easier to convert these as an [R object](files/pi_database.rda),
+```r
+library(RMySQL)
+user <- "my user name"
+password <- "mypassword"
+mydb = dbConnect(MySQL(), user=user, password=password, dbname='pi')
+tbllist <- dbListTables(mydb)
+pi_category <- dbGetQuery(mydb, paste0("select * from pi_category;"))
+pi_domain <- dbGetQuery(mydb, paste0("select * from pi_domain;"))
+pi_drug <- dbGetQuery(mydb, paste0("select * from pi_drug;"))
+pi_genomic <- dbGetQuery(mydb, paste0("select * from pi_genomic;"))
+pi_pdb <- dbGetQuery(mydb, paste0("select * from pi_pdb;"))
+pi_priority <- dbGetQuery(mydb, paste0("select * from pi_priority;"))
+pi_trait <- dbGetQuery(mydb, paste0("select * from pi_trait;"))
+
+save(pi_category,pi_domain,pi_drug,pi_genomic,pi_pdb,pi_priority,pi_trait,file="pi_database.rda")
+```
 
 **Reference**
 
