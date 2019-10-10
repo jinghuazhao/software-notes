@@ -4,3 +4,5 @@
 
 Abdelaal et al. A comparison of automatic cell identification methods for single-cell RNA sequencing data. Genome Biology (2019) 20:194,
 https://doi.org/10.1186/s13059-019-1795-z
+
+[Single cell RNA-seq data analysis bundle](https://github.com/haniffalab/FCA_liver).
