@@ -1161,6 +1161,12 @@ python setup.py install --prefix=/rds/user/jhz22/hpc-work
 export PYTHONPATH=$PYTHONPATH:/rds/user/jhz22/hpc-work/lib/python2.7/site-packages/
 ```
 
+**combined-pvalues**
+
+A library to combine, analyze, group and correct p-values in BED files. Unique tools involve correction for spatial autocorrelation. This is useful for ChIP-Seq probes and Tiling arrays, or any data with spatial correlation.
+
+Software, https://github.com/brentp/combined-pvalues
+
 **ChromImpute**
 
 Website, http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/ and Source, https://github.com/jernst98/ChromImpute
