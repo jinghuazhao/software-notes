@@ -22,6 +22,12 @@ http://crispr.dbcls.jp/
 
 https://github.com/pinellolab/CRISPResso2
 
+### DeepSpCas9
+
+http://deepcrispr.info/DeepSpCas9/
+
+Kim HK, et al. (2019). SpCas9 activity prediction by DeepSpCas9, a deep learning–based model with high generalization performance.  *Sci. Adv.* 2019;5: eaax9249.
+
 ### FORECasT
 
 Scripts for processing and predicting CRISPR/Cas9-generated mutations.
