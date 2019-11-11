@@ -958,7 +958,13 @@ See R-packages section.
 
 ## PheWAS
 
-See wiki resources section of Omics-analysis as well as implementations in R-packages section.
+### CLARITE
+
+See [https://github.com/HallLab](https://github.com/HallLab) for the R and Python packages, both linking RNHANES.
+
+Lucas AM, et al. CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits. *Fron Genet*.
+
+See also wiki resources section of Omics-analysis as well as implementations in R-packages section.
 
 ---
 
