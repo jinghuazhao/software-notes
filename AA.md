@@ -1167,6 +1167,9 @@ A library to combine, analyze, group and correct p-values in BED files. Unique t
 
 Software, https://github.com/brentp/combined-pvalues
 
+Pedersen BS, Schwartz DA, Yang IV, Kechris KJ. Comb-p: software for combining, analyzing, grouping and correcting spatially correlated P-values
+*Bioinformatics* 28(22):2986–2988, https://doi.org/10.1093/bioinformatics/bts545
+
 **ChromImpute**
 
 Website, http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/ and Source, https://github.com/jernst98/ChromImpute
