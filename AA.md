@@ -787,13 +787,13 @@ where `pr' is input file root and `sample` is the associate sample file from whi
 
 When the imputed genotyeps are MaCH-based, it is possible to use `DosageConverter`.
 ```bash
+## assuming you use hpc-work/ with a subdirectory called bin/
 cd /rds/user/$USER/hpc-work/
 git clone https://github.com/Santy-8128/DosageConvertor
 cd DosageConverter
 pip install cget --user
 module load cmake-3.8.1-gcc-4.8.5-zz55m7x
 ./install.sh
-## assuming you have hpc-work/bin/
 cd /rds/user/$USER/hpc-work/bin/
 ln -s /rds/user/$USER/hpc-work/DosageConvertor/release-build/DosageConvertor
 ## testing
