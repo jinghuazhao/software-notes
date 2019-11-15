@@ -743,6 +743,48 @@ See R-packages section.
 
 ## Polygenic modeling
 
+### GCTA
+
+It is possible to use dosage, a Bash function is as follows,
+```bash
+function INTERVAL_dosage()
+{
+  if [ ! -f nodup/${pr}.gen.gz ]; then qctool -g nodup/${pr}.bgen -og nodup/${pr}.gen.gz; fi
+
+  gunzip -c nodup/${pr}.gen.gz | \
+  awk -v sample=${sample} '
+  {
+     N=(NF-6)/3
+     for(i=1;i<=N;i++) dosage[NR,i]=$((i-1)*3+8)+2*$((i-1)*3+9)
+  } END {
+     i=0;
+     while (getline gf < sample) {
+       split(gf,a);
+       i++
+       id[i]=a[1]
+     }
+     close(sample)
+     for(i=1;i<=N;i++)
+     {
+       printf id[i+2] " ML_DOSE"; for(j=1;j<=NR;j++) printf " " dosage[j,i]; printf "\n"
+     }
+  }' | \
+  gzip -f > nodup/${pr}.dosage.gz
+  (
+    echo SNP Al1 Al2 Freq1 MAF Quality Rsq
+    qctool -g ${pr}.bgen -snp-stats -osnp - | \
+    sed '1,9d' | \
+    cut -f2,5,6,12,14,17,18 | \
+    sed 's/\t/ /g;s/NA/0/g'
+  ) | \
+  grep -v Completed | \
+  gzip -f > nodup/${pr}.info.gz
+}
+
+gcta-1.9 --dosage-mach-gz nodup/$pr.dosage.gz nodup/$pr.info.gz --make-grm-bin --out nodup/${pr}
+```
+where `pr' is input file root and `sample` is the associate sample file from which sample IDs are extracted.
+
 ### HESS
 
 HESS (Heritability Estimation from Summary Statistics) is now available from https://github.com/huwenboshi/hess and has a web page at
