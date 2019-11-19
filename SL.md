@@ -5,7 +5,8 @@
 ### Autoencoder
 
 * Four types, [https://github.com/nathanhubens/Autoencoders](https://github.com/nathanhubens/Autoencoders).
-* Credit fraud example, [https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/](https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/).
+* [The notMNIST dataset](http://yann.lecun.com/exdb/mnist/), [https://www.datacamp.com/community/tutorials/autoencoder-keras-tutorial](https://www.datacamp.com/community/tutorials/autoencoder-keras-tutorial).
+* [Credit fraud example](https://www.kaggle.com/mlg-ulb/creditcardfraud), [https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/](https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/).
 
 ## Machine learning (as it is called in computer science literature)
 
