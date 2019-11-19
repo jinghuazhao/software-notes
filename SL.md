@@ -1,5 +1,12 @@
 # Statistcal learning
 
+## Software
+
+### Autoencoder
+
+* Four types, [https://github.com/nathanhubens/Autoencoders](https://github.com/nathanhubens/Autoencoders).
+* Credit fraud example, [https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/](https://blogs.rstudio.com/tensorflow/posts/2018-01-24-keras-fraud-autoencoder/).
+
 ## Machine learning (as it is called in computer science literature)
 
 * Apress, https://github.com/apress
