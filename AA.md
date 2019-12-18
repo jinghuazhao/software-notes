@@ -1700,6 +1700,6 @@ END
 ```
 Since the required packages Rcpp and RcppParallel are relatively easy to deal with, with which we then simply load the packague as usual.
 
-**ensemlVEP**
+**ensemblVEP**
 
-There is no particular difficulty, simply use `BiocManager::install(ensemblVEP"")`.
+There is no particular difficulty, simply use `BiocManager::install("ensemblVEP")`.
