@@ -598,6 +598,8 @@ We can now execute an example,
 vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 ```
 
+Recent notes are available from here, [https://github.com/cambridge-ceu/csd3/blob/master/usage.md](https://github.com/cambridge-ceu/csd3/blob/master/usage.md).
+
 ### R-packages
 
 See R-packages section.
