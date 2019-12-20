@@ -1,5 +1,9 @@
 # CRISPR
 
+### ADAM2
+
+R package for identification of essential genes using genome-wide CRISPR-Cas9 screens, https://github.com/DepMap-Analytics/ADAM2
+
 ### CHOPCHOP
 
 CHOPCHOP is a python script that allows quick and customizable design of guide RNA.
