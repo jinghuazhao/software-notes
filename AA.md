@@ -540,6 +540,10 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 
 ## Functional annotation
 
+### ANNOVAR
+
+See https://github.com/cambridge-ceu/csd3/blob/master/usage.md.
+
 ### fgwas
 
 ```bash
@@ -598,7 +602,7 @@ We can now execute an example,
 vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 ```
 
-Recent notes are available from here, [https://github.com/cambridge-ceu/csd3/blob/master/usage.md](https://github.com/cambridge-ceu/csd3/blob/master/usage.md).
+Recent notes on ANNOVAR and VEP are available from here, [https://github.com/cambridge-ceu/csd3/blob/master/usage.md](https://github.com/cambridge-ceu/csd3/blob/master/usage.md).
 
 ### R-packages
 
