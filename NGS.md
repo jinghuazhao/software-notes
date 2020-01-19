@@ -116,6 +116,26 @@ make
 ```
 See https://github.com/sanger-pathogens/Bio-RNASeq for RNA-seq pipeline.
 
+## Mendelian RNA-seq
+
+https://github.com/komalsrathi/MendelianRNA-seq
+
+The relevant installations:
+
+```
+conda create --name mendelian-rnaseq-env
+source activate mendelian-rnaseq-env
+conda install -c bioconda snakemake
+conda install -c bioconda rna-seqc
+conda install -c bioconda gatk
+conda install -c biobuilds plink
+conda install -c bioconda star
+conda install -c bioconda picard
+conda install -c bioconda bwa
+conda install -c anaconda colorama
+conda install -c bioconda misopy
+```
+
 ## sra-toolkit, tophat
 
 These are very straightforward, e.g.,
@@ -308,26 +328,6 @@ https://github.com/andreaskapou/Melissa
 > MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.
 
 Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, https://doi.org/10.1186/s13059-019-1665-8
-
-## Mendelian RNA-seq
-
-https://github.com/komalsrathi/MendelianRNA-seq
-
-The relevant installations:
-
-```
-conda create --name mendelian-rnaseq-env
-source activate mendelian-rnaseq-env
-conda install -c bioconda snakemake
-conda install -c bioconda rna-seqc
-conda install -c bioconda gatk
-conda install -c biobuilds plink
-conda install -c bioconda star
-conda install -c bioconda picard
-conda install -c bioconda bwa
-conda install -c anaconda colorama
-conda install -c bioconda misopy
-```
 
 # pindel
 
