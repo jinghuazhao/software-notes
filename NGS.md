@@ -1,5 +1,9 @@
 # Benchmarks and pipelines
 
+## Review
+
+Pabinger S, et al. (2013). A survey of tools for variant analysis of next-generation genome sequencing data. *Brief Bioinformatics* 15(2):256-278.
+
 ## Case studies
 
 Lagana A, et al. (2018). Precision medicine for relapsed multiple myeloma on the basis of an integrative multiomics approach. *JCO Prec Oncol.* Data Suppl, 
