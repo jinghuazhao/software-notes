@@ -24,6 +24,8 @@ The home page is https://pytorch.github.io, and the repository itself https://gi
 
 ## tensorQTL
 
+AI-derived implementation.
+
 https://github.com/broadinstitute/tensorqtl, https://github.com/broadinstitute/SignatureAnalyzer-GPU
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
