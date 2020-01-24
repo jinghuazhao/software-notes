@@ -2,7 +2,7 @@
 
 ## Review
 
-Pabinger S, et al. (2013). A survey of tools for variant analysis of next-generation genome sequencing data. *Brief Bioinformatics* 15(2):256-278.
+Pabinger S, et al. (2014). A survey of tools for variant analysis of next-generation genome sequencing data. *Brief Bioinformatics* 15(2):256-278.
 
 ## Annotation
 
