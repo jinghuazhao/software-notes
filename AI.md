@@ -21,3 +21,10 @@ https://github.com/apress/pro-deep-learning-w-tensorflow
 ## pytorch
 
 The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.
+
+## tensorQTL
+
+https://github.com/broadinstitute/tensorqtl, https://github.com/broadinstitute/SignatureAnalyzer-GPU
+
+Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
+https://doi.org/10.1186/s13059-019-1836-7
