@@ -28,6 +28,10 @@ https://github.com/WeiWenqing/PIVar
 
 Teng H, et al. Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types [published online ahead of print, 2020 Jan 17]. Nucleic Acids Res. 2020;gkaa019. doi:10.1093/nar/gkaa019
 
+## QTLtools
+
+https://qtltools.github.io/qtltools/
+
 ## RNAsnp
 
 https://rth.dk/resources/rnasnp/software
