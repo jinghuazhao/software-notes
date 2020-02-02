@@ -4,6 +4,10 @@
 
 Pabinger S, et al. (2014). A survey of tools for variant analysis of next-generation genome sequencing data. *Brief Bioinformatics* 15(2):256-278.
 
+## NGS pipeline
+
+https://www.hgsc.bcm.edu/software/mercury
+
 ## Annotation
 
 https://sites.google.com/site/jpopgen/wgsa
