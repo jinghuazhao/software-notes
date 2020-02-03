@@ -567,6 +567,12 @@ cd boost_1_60_0
 ```
 Nevertheless it is also required to have other dependencies in place.
 
+### HaploReg
+
+Web: [https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php](https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php)
+
+> HaploReg is a tool for exploring annotations of the noncoding genome at variants on haplotype blocks, such as candidate regulatory SNPs at disease-associated loci. Using LD information from the 1000 Genomes Project, linked SNPs and small indels can be visualized along with chromatin state and protein binding annotation from the Roadmap Epigenomics and ENCODE projects, sequence conservation across mammals, the effect of SNPs on regulatory motifs, and the effect of SNPs on expression from eQTL studies. HaploReg is designed for researchers developing mechanistic hypotheses of the impact of non-coding variants on clinical phenotypes and normal variation.
+
 ### morpheus
 
 See [https://software.broadinstitute.org/morpheus/](https://software.broadinstitute.org/morpheus/).
