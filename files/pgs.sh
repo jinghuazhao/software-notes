@@ -125,11 +125,11 @@ for(i in p.threshold){
     # ignoring the FID and IID from our model
     model <- lm(Height~., data=pheno.prs[,!colnames(pheno.prs)%in%c("FID","IID")])
     # model R2 is obtained as 
-    model.r2 <- summary(model)$r.squared
+    model.r2 <- with(summary(model),r.squared)
     # R2 of PRS is simply calculated as the model R2 minus the null R2
     prs.r2 <- model.r2-null.r2
     # We can also obtain the coeffcient and p-value of association of PRS as follow
-    prs.coef <- summary(model)$coeff["SCORE",]
+    prs.coef <- coef(summary(model))["SCORE",]
     prs.beta <- as.numeric(prs.coef[1])
     prs.se <- as.numeric(prs.coef[2])
     prs.p <- as.numeric(prs.coef[4])
@@ -137,5 +137,5 @@ for(i in p.threshold){
     prs.result <- rbind(prs.result, data.frame(Threshold=i, R2=prs.r2, P=prs.p, BETA=prs.beta,SE=prs.se))
 }
 # Best result is:
-prs.result[which.max(prs.result$R2),]
+prs.result[which.max(with(prs.result,R2)),]
 END
