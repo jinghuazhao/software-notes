@@ -317,6 +317,11 @@ In general, we can see options for GxE analysis from command `pylmmGWAS.py` unde
 
 seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.r-project.org/web/packages/seqMeta/index.html.
 
+### QUICKTEST
+
+See https://wp.unil.ch/sgg/quicktest/ for the latest with support for bgen v1.2.
+
+
 ### SNPTEST
 
 Available from https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html#download, e.g., 
