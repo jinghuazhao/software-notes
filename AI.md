@@ -36,6 +36,19 @@ cd tensorqtl
 virtualenv venv
 source venv/bin/activate
 pip install -r install/requirements.txt .
+cd example
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.bed
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.bim
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.fam   
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.covariates.txt
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.expression.bed.gz
+# Jupyter notebook
+sed -i 's/filtered/filtered.nodup' tensorqtl_examples.ipynb
+# csd3
+jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
+# local host
+ssh -4 -L 8081:127.0.0.1:8081 -fN login-e-15.hpc.cam.ac.uk
+firefox &
 ```
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
