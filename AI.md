@@ -43,7 +43,7 @@ wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.
 wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.covariates.txt
 wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.expression.bed.gz
 # Jupyter notebook
-sed -i 's/filtered/filtered.nodup' tensorqtl_examples.ipynb
+sed -i 's/filtered/filtered.nodup/g' tensorqtl_examples.ipynb
 # csd3
 hostname
 jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
