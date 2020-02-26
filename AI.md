@@ -51,6 +51,7 @@ jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
 ssh -4 -L 8081:127.0.0.1:8081 -fN hostname.hpc.cam.ac.uk
 firefox &
 ```
+It is also possible to use command lines as described at the GitHub page.
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
 https://doi.org/10.1186/s13059-019-1836-7
