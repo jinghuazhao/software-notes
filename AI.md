@@ -32,7 +32,7 @@ https://github.com/broadinstitute/tensorqtl, https://github.com/broadinstitute/S
 module load python/3.6
 git clone git@github.com:broadinstitute/tensorqtl.git
 cd tensorqtl
-set up virtual environment and install
+# set up virtual environment and install
 virtualenv venv
 source venv/bin/activate
 pip install -r install/requirements.txt .
