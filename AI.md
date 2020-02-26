@@ -45,9 +45,10 @@ wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.
 # Jupyter notebook
 sed -i 's/filtered/filtered.nodup' tensorqtl_examples.ipynb
 # csd3
+hostname
 jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
 # local host
-ssh -4 -L 8081:127.0.0.1:8081 -fN login-e-15.hpc.cam.ac.uk
+ssh -4 -L 8081:127.0.0.1:8081 -fN hostname.hpc.cam.ac.uk
 firefox &
 ```
 
