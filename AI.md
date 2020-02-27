@@ -49,7 +49,7 @@ hostname
 jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
 # local host
 ssh -4 -L 8081:127.0.0.1:8081 -fN hostname.hpc.cam.ac.uk
-firefox &
+firefox <generated URL from jupyter notebook command above> &
 # Parquet file
 # arrow::install_arrow() to install required runtime libraries
 R -e "df <- arrow::read_parquet('GEUVADIS.445_samples.cis_qtl_pairs.chr18.parquet');head(df)"
