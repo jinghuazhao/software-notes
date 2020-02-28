@@ -80,7 +80,7 @@ to get
 ```
 An alternative is to tweak the R package `arrow`.
 
-A command-line counterpart is as follows,
+Somewhat less appealing is to use the command-line counterpart as follows,
 ```bash
 export plink_prefix_path=GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup
 export expression_bed=GEUVADIS.445_samples.expression.bed.gz
