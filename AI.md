@@ -54,7 +54,21 @@ firefox <generated URL from jupyter notebook command above> &
 # arrow::install_arrow() to install required runtime libraries
 R -e "df <- arrow::read_parquet('GEUVADIS.445_samples.cis_qtl_pairs.chr18.parquet');head(df)"
 ```
-It is also possible to use command lines as described at the GitHub page.
+A command-line counterpart is as follows,
+```bash
+export plink_prefix_path=GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup
+export expression_bed=GEUVADIS.445_samples.expression.bed.gz
+export covariates_file=GEUVADIS.445_samples.covariates.txt
+export prefix=GEUVADIS.445_samples
+
+python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
+    --covariates ${covariates_file} \
+    --mode cis
+
+python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
+    --covariates ${covariates_file} \
+    --mode trans
+```
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
 https://doi.org/10.1186/s13059-019-1836-7
