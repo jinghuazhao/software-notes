@@ -26,7 +26,9 @@ Insights into impact of DNA copy number alteration and methylation on the proteo
 
 Semi-supervised learning for peptide identification from shotgun proteomics dataset, and Single Cell Proteomics by Mass Spectrometry (SCOPE-MS).
 
-http://percolator.ms/ and https://github.com/percolator/percolator.
+http://crux.ms/, http://percolator.ms/ and https://github.com/percolator/percolator.
+
+McIlwain S, Tamura K, Kertesz-Farkas A, Grant CE, Diament B, Frewen B, Howbert JJ, Hoopmann MR, Käll L, Eng JK, MacCoss MJ, Noble WS (2014). Crux: rapid open source protein tandem mass spectrometry analysis. *J Proteome Res* 13(10):4488-4491.
 
 Fondrie WE, Noble WS (2020). Machine learning strategy that leverages large data sets to boost statistical power in small-scale experiments. *J Proteome Res*
 
