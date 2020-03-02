@@ -22,6 +22,12 @@ Song M, Ji J, Gleason KJ, Yang F, Martignetti JA, Chen LS, Wang P,
 Insights into impact of DNA copy number alteration and methylation on the proteogenomic landscape of human ovarian cancer via a multi-omics integrative analysis
 *Mol Cell Proteomics*
 
+## Percolator
+
+Semi-supervised learning for peptide identification from shotgun proteomics dataset.
+
+http://percolator.ms/ and https://github.com/percolator/percolator.
+
 ## PIVar
 
 https://github.com/WeiWenqing/PIVar
