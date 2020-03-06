@@ -80,7 +80,7 @@ to get
 ```
 An alternative is to tweak the R package `arrow`.
 
-Somewhat less appealing is to use the command-line counterpart as follows,
+The command-line counterpart is as follows,
 ```bash
 export plink_prefix_path=GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup
 export expression_bed=GEUVADIS.445_samples.expression.bed.gz
@@ -95,6 +95,7 @@ python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
     --covariates ${covariates_file} \
     --mode trans
 ```
+Again one can read the Parquet format output.
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
 https://doi.org/10.1186/s13059-019-1836-7
