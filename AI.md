@@ -52,6 +52,10 @@ ssh -4 -L 8081:127.0.0.1:8081 -fN hostname.hpc.cam.ac.uk
 firefox <generated URL from jupyter notebook command above> &
 ```
 Note that a Parquet file is generated we use SparkR,
+```bash
+module load spark/2.4.0-bin-hadoop2.7
+```
+followed by
 ```r
 library(SparkR)
 sparkR.session()
