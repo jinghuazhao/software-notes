@@ -15,6 +15,12 @@ https://bitbucket.org/weililab/scmageck/src/master/
 
 Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell CRISPR screens. Genome Biol 21, 19 (2020). https://doi.org/10.1186/s13059-020-1928-4
 
+# seurat
+
+https://satijalab.org/seurat/
+
+Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7):1888–1902.e21. doi:10.1016/j.cell.2019.05.031
+
 #DENDRO
 
 https://github.com/zhouzilu/DENDRO
