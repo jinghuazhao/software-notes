@@ -21,7 +21,7 @@ https://satijalab.org/seurat/
 
 Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7):1888–1902.e21. doi:10.1016/j.cell.2019.05.031
 
-#DENDRO
+# DENDRO
 
 https://github.com/zhouzilu/DENDRO
 
