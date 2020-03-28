@@ -1,5 +1,7 @@
 # scRNA-Seq
 
+Bioconductor branch, http://bioconductor.org/packages/release/BiocViews.html#___SingleCell.
+
 [benchmarks](https://github.com/tabdelaal/scRNAseq_Benchmark/tree/snakemake_and_docker)
 
 Abdelaal et al. A comparison of automatic cell identification methods for single-cell RNA sequencing data. Genome Biology (2019) 20:194,
