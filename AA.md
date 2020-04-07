@@ -477,6 +477,7 @@ finemap 1.4 is available from http://www.christianbenner.com/finemap_v1.4_x86_64
 ```bash
 finemap_v1.4_x86_64 --sss --in-files example/master
 ```
+We could also keep the screen output with `finemap_v1.4_x86_64 --sss --in-files example/master 2>&1 | tee test.log`.
 
 LDSTORE v2.0 is available from http://www.christianbenner.com/ldstore_v2.0_x86_64.tgz.
 
