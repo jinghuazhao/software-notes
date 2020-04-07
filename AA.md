@@ -471,6 +471,22 @@ cd -
 ./test.sh
 ```
 
+### finemap
+
+finemap 1.4 is available from http://www.christianbenner.com/finemap_v1.4_x86_64.tgz.
+```bash
+finemap_v1.4_x86_64 --sss --in-files example/master
+```
+
+LDSTORE v2.0 is available from http://www.christianbenner.com/ldstore_v2.0_x86_64.tgz.
+
+```bash
+ldstore_v2.0_x86_64 --in-files example/master --write-bdose --bdose-version 1.1
+ldstore_v2.0_x86_64 --in-files example/master --write-bcor --read-bdose
+ldstore_v2.0_x86_64 --in-files example/master --bcor-to-text
+
+```
+
 ### gchromVar
 
 Cell type specific enrichments using finemapped variants and quantitative epigenetic data,
