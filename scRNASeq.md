@@ -11,6 +11,10 @@ https://doi.org/10.1186/s13059-019-1795-z
 
 Popescu D-M et al. Decoding human fetal liver haematopoiesis. *Nature*  https://doi.org/10.1038/s41586-019-1652-y.
 
+# SCENIC
+
+https://aertslab.org/#scenic and https://pyscenic.readthedocs.io/en/latest/.
+
 # scMAGeCK
 
 https://bitbucket.org/weililab/scmageck/src/master/
