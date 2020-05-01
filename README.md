@@ -18,4 +18,4 @@ While there are multiple sources (e.g., Linux archive, Anaconda and Linuxbrew) t
 
 With the later option we can always download the latest release, make minor changes, test the documentation example(s) and give feedback to the developers.
 
-Recent usage notes is contained in [cambridge-ceu/csd3](https://cambridge-ceu.github.io/csd3/).
+Recent usage notes are given in [cambridge-ceu/csd3](https://cambridge-ceu.github.io/csd3/).
