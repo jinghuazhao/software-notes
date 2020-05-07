@@ -32,3 +32,9 @@ Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7
 https://github.com/zhouzilu/DENDRO
 
 Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing. Genome Biol 21, 10 (2020). https://doi.org/10.1186/s13059-019-1922-x
+
+# souporcell
+
+https://github.com/wheaton5/souporcell
+
+Heaton H, et al. Souporcell: robust clustering of single-cell RNA-seq data by genotype without reference genotypes. Nat Methods (2020). https://doi.org/10.1038/s41592-020-0820-1
