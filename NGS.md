@@ -199,10 +199,18 @@ Besides notes above, this is also possible:
 wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
 tar jfx bcftools-1.9.tar.bz2
 cd bcftools-1.9
-./configure --prefix=/scratch/jhz22
+./configure --prefix=$HPC_WORK
 make
 make install
 ```
+It is necessary to set the environment variables to enable plugins, so we could generate a version at $HPC_WORK/bin instead,
+```bash
+#!/usr/bin/bash
+
+export BCFTOOLS_PLUGINS=$HPC_WORK/bcftools-1.9/plugins
+$HPC_WORK/bcftools-1.9/bcftools "$@"
+```
+We invoke `bcftools +check_ploidy my.vcf.gz` Interetingly, this also save space!
 
 ## bowtie2
 
