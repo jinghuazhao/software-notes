@@ -597,6 +597,22 @@ cd boost_1_60_0
 ```
 Nevertheless it is also required to have other dependencies in place.
 
+### gnomAD
+
+Web site: [https://gnomad.broadinstitute.org/downloads](https://gnomad.broadinstitute.org/downloads).
+
+To use [gsutil](https://cloud.google.com/storage/docs/gsutil), following these steps,
+```bash
+module load python/3.7
+virtualenv py37
+source py37/bin/activate
+pip install gsutil
+gsutil ls gs://gnomad-public/release
+gsutil cp gs://gnomad-public/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz .
+gsutil cp gs://gnomad-public/release/2.1.1/constraint/gnomad.v2.1.1.lof_metrics.by_transcript.txt.bgz .
+```
+UCSC has a description [here](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&c=chrX&g=gnomadPLI).
+
 ### HaploReg
 
 Web: [https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php](https://pubs.broadinstitute.org/mammals/haploreg/haploreg.php) (data files, https://pubs.broadinstitute.org/mammals/haploreg/data/)
