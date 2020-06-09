@@ -1771,6 +1771,8 @@ END
 ```
 Since the required packages Rcpp and RcppParallel are relatively easy to deal with, with which we then simply load the packague as usual.
 
+A recent description is given here, https://github.com/cambridge-ceu/csd3/blob/master/usage.md#saige-0366.
+
 **ensemblVEP**
 
 There is no particular difficulty, simply use `BiocManager::install("ensemblVEP")`.
