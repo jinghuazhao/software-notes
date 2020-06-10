@@ -1251,7 +1251,29 @@ python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output mo
 
 ### enloc
 
-Available from https://github.com/xqwen/integrative.
+Available from https://github.com/xqwen/integrative. More recent version is [fastenloc](https://github.com/xqwen/fastenloc); also related is [dap](https://github.com/xqwen/dap/) and [torus](https://github.com/xqwen/torus/).
+
+For instance torus can be installed as follows,
+```bash 
+git clone https://github.com/xqwen/torus/
+cd torus
+module load gsl
+module load boost/1.49.0-gcc4.9.1
+module load zlib
+cd src
+make
+make static
+mv torus torus.static ${HPC_work}/bin
+cd -
+```
+and for the documentaion example on height, we have
+```bash
+torus -d Height.torus.zval.gz --load_zval -dump_pip Height.gwas.pip
+gzip Height.gwas.pip
+
+fastenloc -eqtl gtex_v8.eqtl_annot.vcf.gz -gwas Height.gwas.pip.gz -prefix Height
+sort -grk6 Height.enloc.sig.out
+```
 
 ### FINEMAP colocalization pipeline
 
