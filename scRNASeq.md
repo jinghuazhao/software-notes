@@ -17,6 +17,10 @@ https://crescent.cloud/
 
 Mohanraj, S., et al. (2020). "CReSCENT: CanceR Single Cell ExpressioN Toolkit." *Nucleic Acids Research*.
 
+# SCANPY
+
+https://github.com/theislab/Scanpy
+
 # SCENIC
 
 https://aertslab.org/#scenic and https://pyscenic.readthedocs.io/en/latest/.
