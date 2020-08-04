@@ -236,6 +236,11 @@ bcftools view eg2.raw.bcf
 ```
 Like samtools, etc. it is possible to involve `sudo apt install bowtie2`.
 
+## CNVkit
+
+Genome-wide copy number from high-throughput sequencing, available from
+https://cnvkit.readthedocs.io/en/stable/
+
 ## cutadapt, TrimGalore
 
 A prerequesite is to install cython.
