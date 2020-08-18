@@ -1274,7 +1274,7 @@ gzip Height.gwas.pip
 fastenloc -eqtl gtex_v8.eqtl_annot.vcf.gz -gwas Height.gwas.pip.gz -prefix Height
 sort -grk6 Height.enloc.sig.out
 ```
-Note that these use hg38 references provided, and it is possible to generate the hg19 counterparts via script [gtex_v8_hg18.sh](files/gtex_v8_hg18.sh).
+Note that these use hg38 references provided, and it is possible to generate the hg19 counterparts via script [gtex_v8_hg19.sh](files/gtex_v8_hg19.sh).
 
 ### FINEMAP colocalization pipeline
 
