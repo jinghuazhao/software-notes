@@ -1485,6 +1485,8 @@ abf
 
 **garfield**
 
+Web site: https://www.ebi.ac.uk/birney-srv/GARFIELD/
+
 Again it can be installed with `biocLite("garfield")` and vignette be seen similarly to `coloc`.
 
 > GWAS analysis of regulatory or functional information enrichment with LD correction. Briefly, it is a method that leverages GWAS findings with regulatory or 
