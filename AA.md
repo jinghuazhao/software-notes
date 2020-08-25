@@ -1495,6 +1495,46 @@ Again it can be installed with `biocLite("garfield")` and vignette be seen simil
 > cutoffs and assesses them by permutation testing, while matching for minor allele frequency, distance to nearest transcription start site and number of LD 
 > proxies (r2 > 0.8).
 
+The documentation example is run as follows,
+```r
+     garfield.run("tmp", data.dir=system.file("extdata",package = "garfield"),
+         trait="trait",run.option = "prep", chrs = c(22),
+         exclude = c(895, 975, 976, 977, 978, 979, 98))
+
+     garfield.run("tmp", data.dir=system.file("extdata",package = "garfield"),
+         run.option = "perm", nperm = 1000, thresh = c(0.001, 1e-04, 1e-05),
+         pt_thresh = c(1e-04, 1e-05), maf.bins = 2, tags.bins = 3, tss.bins = 3,
+         prep.file = "tmp.prep", optim_mode = TRUE, minit = 100, thresh_perm = 0.05)
+
+     if (file.exists("tmp.perm")){
+         perm = read.table("tmp.perm", header=TRUE)
+         head(perm)
+     } else { print("Error: tmp.perm does not exist!") }
+```
+
+We have the Crohn disease example,
+```r
+# download data and decompress
+system("wget https://www.ebi.ac.uk/birney-srv/GARFIELD/package/garfield-data.tar.gz")
+system("tar -zxvf garfield-data.tar.gz")
+
+# if downloaded in current working directory use the following to execute
+# garfield, otherwise please change data.dir location
+garfield.run("cd-meta.output", data.dir="garfield-data", trait="cd-meta",
+             run.option = "prep", chrs = c(1:22), exclude = c(895, 975, 976, 977, 978,
+             979, 980))
+#
+garfield.run("cd-meta.output", data.dir="garfield-data", run.option = "perm",
+             nperm = 100000, thresh = c(0.1,0.01,0.001, 1e-04, 1e-05, 1e-06, 1e-07, 1e-08),
+             pt_thresh = c(1e-05, 1e-06, 1e-07, 1e-08), maf.bins = 5, tags.bins = 5,
+             tss.bins = 5, prep.file = "cd-meta.output.prep", optim_mode = TRUE,
+             minit = 100, thresh_perm = 0.0001)
+#
+garfield.plot("cd-meta.output.perm", num_perm = 100000,
+              output_prefix = "cd-meta.output", plot_title = "Crohn's Disease",
+              filter = 10, tr = -log10(0.05/498))
+```
+
 **GenomicSEM**
 
 [GenomicSEM](https://github.com/MichelNivard/GenomicSEM) fits structural equation models based on the summary statistics obtained from genome wide association studies (GWAS).
