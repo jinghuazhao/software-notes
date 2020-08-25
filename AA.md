@@ -1512,7 +1512,7 @@ The documentation example is run as follows,
      } else { print("Error: tmp.perm does not exist!") }
 ```
 
-We have the Crohn disease example,
+We have the Crohn's disease example,
 ```r
 # download data and decompress
 system("wget https://www.ebi.ac.uk/birney-srv/GARFIELD/package/garfield-data.tar.gz")
