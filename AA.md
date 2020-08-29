@@ -1482,6 +1482,12 @@ abf <- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type="q
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type="quant"))
 abf
 ```
+Developmental version of the package is available as follows,
+```r
+if(!require("remotes"))
+   install.packages("remotes")
+remotes::install_github("chr1swallace/coloc")
+```
 
 **garfield**
 
