@@ -1567,7 +1567,7 @@ R --no-save -q <<END
    rsid <- rownames(betas)
 
    # Colocalisation analyses
-   results <- hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
+   results <- hyprcoloc::hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
 END
 ```
 **meta**
