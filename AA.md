@@ -1649,6 +1649,10 @@ The Bioconductor page is here, http://www.bioconductor.org/packages/devel/bioc/h
 
 https://CRAN.R-project.org/package=CpGassoc
 
+**fastQTL**
+
+http://fastqtl.sourceforge.net/files/FastQTL-2.165.linux.tgz
+
 **missMethy**
 
 http://bioconductor.org/packages/release/bioc/html/missMethyl.html
