@@ -441,7 +441,11 @@ cd caviar/CAVIAR-C++
 make
 cd -
 CAVIAR -l CAVIAR-C++/sample_data/50_LD.txt -z CAVIAR-C++/sample_data/50_Z.txt -o 50
-
+eCAVIAR -l CAVIAR-C++/sample_data/GWAS.ADGC.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.LD.ld \
+        -l CAVIAR-C++/sample_data/eQTL.CARDIOGENICS.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.LD.ld \
+        -z CAVIAR-C++/sample_data/GWAS.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.Z.txt \
+        -z eQTL.CARDIOGENICS.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.ILMN_1810712.NM_015313.1.ARHGEF12.Z.txt \
+        -o 75
 ```
 It may be necessary to alter Makefile to point to appropriate -I -L for lapack, for instance.
 
