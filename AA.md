@@ -441,6 +441,7 @@ cd caviar/CAVIAR-C++
 make
 cd -
 CAVIAR -l CAVIAR-C++/sample_data/50_LD.txt -z CAVIAR-C++/sample_data/50_Z.txt -o 50
+CAVIAR -l CAVIAR-C++/sample_data/DDB1.top100.sig.SNPs.ld -z CAVIAR-C++/sample_data/DDB1.top100.sig.SNPs.ZScores -o 100
 eCAVIAR -l CAVIAR-C++/sample_data/GWAS.ADGC.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.LD.ld \
         -l CAVIAR-C++/sample_data/eQTL.CARDIOGENICS.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.LD.ld \
         -z CAVIAR-C++/sample_data/GWAS.MC.AD.IGAP.stage1.hg19.chr.11.121344805.121517613.CHRPOSREFALT.Z.txt \
