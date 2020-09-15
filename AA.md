@@ -437,9 +437,11 @@ sudo apt install libgsl-dev
 
 Once this is done, one can proceed with the compiling,
 ```bash
-cd caviar
-cd CAVIAR-C++
+cd caviar/CAVIAR-C++
 make
+cd -
+CAVIAR -l CAVIAR-C++/sample_data/50_LD.txt -z CAVIAR-C++/sample_data/50_Z.txt -o 50
+
 ```
 It may be necessary to alter Makefile to point to appropriate -I -L for lapack, for instance.
 
