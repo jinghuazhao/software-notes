@@ -68,7 +68,19 @@ pi_genomic <- dbGetQuery(mydb, paste0("select * from pi_genomic;"))
 pi_pdb <- dbGetQuery(mydb, paste0("select * from pi_pdb;"))
 pi_priority <- dbGetQuery(mydb, paste0("select * from pi_priority;"))
 pi_trait <- dbGetQuery(mydb, paste0("select * from pi_trait;"))
-
+# target category
+head(pi_category)
+# target superfamily druggable
+head(pi_domain)
+# target uniprot pdb_chain pdb chain pocket
+head(pi_pdb)
+# trait target rank rating nGene cGene eGene seed fGene pGene dGene gwas crosstalk_node num_neighbor approved phased druggable_category druggable_domain num_pdb num_pdb_with_druggable_pocket magnitude direction description
+head(pi_priority)
+traits <- c("AS","CRO","IGE","MS","RA","T1D","UC")
+# trait target max_phase drug mechanism_of_action action_type source
+subset(pi_drug,trait%in%traits)
+# trait target type name snp snp_type pvalue
+subset(pi_genomic,trait%in%traits)
 save(pi_category,pi_domain,pi_drug,pi_genomic,pi_pdb,pi_priority,pi_trait,file="pi_database.rda")
 ```
 
