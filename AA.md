@@ -604,6 +604,19 @@ cd boost_1_60_0
 ```
 Nevertheless it is also required to have other dependencies in place.
 
+### GARFIELD
+
+Web: https://www.ebi.ac.uk/birney-srv/GARFIELD/
+```bash
+wget -qO- https://www.ebi.ac.uk/birney-srv/GARFIELD/package-v2/garfield-v2.tar.gz | \
+tar xvfz
+wget -qO- https://www.ebi.ac.uk/birney-srv/GARFIELD/package-v2/garfield-data.tar.gz | \
+tar xvfz
+cd garfield-v2
+bash garfield
+```
+Additional details are described in the documentation, https://www.ebi.ac.uk/birney-srv/GARFIELD/documentation-v2/GARFIELD-v2.pdf.
+
 ### gnomAD
 
 Web site: [https://gnomad.broadinstitute.org/downloads](https://gnomad.broadinstitute.org/downloads).
