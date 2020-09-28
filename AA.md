@@ -1304,6 +1304,12 @@ This is available from https://bitbucket.org/mgloud/production_coloc_pipeline, n
 
 Available from  https://github.com/joepickrell/gwas-pw. The installation is straightforward after boost library is available.
 
+We can use the following code for the documentation example,
+```bash
+gwas-pw -i example_data/aam_height_example.gz -bed ${HPC_WORK}/ldetect/ldetect-data/EUR.bed -phenos AAM HEIGHT
+```
+where EUR.bed contains the information for approximately independent LD blocks.
+
 ### INFERNO
 
 Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it is available from https://bitbucket.org/wanglab-upenn/INFERNO 
