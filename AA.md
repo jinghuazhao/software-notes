@@ -1306,7 +1306,7 @@ Available from  https://github.com/joepickrell/gwas-pw. The installation is stra
 
 We can use the following code for the documentation example,
 ```bash
-gwas-pw -i example_data/aam_height_example.gz -bed ${HPC_WORK}/ldetect/ldetect-data/EUR.bed -phenos AAM HEIGHT
+gwas-pw -i example_data/aam_height_example.gz -bed ${HPC_WORK}/ldetect/ldetect-data/EUR.bed -phenos AAM HEIGHT -o example_data/aam_height
 ```
 where EUR.bed contains the information for approximately independent LD blocks.
 
