@@ -354,6 +354,14 @@ https://github.com/andreaskapou/Melissa
 
 Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, https://doi.org/10.1186/s13059-019-1665-8
 
+# MONSTER
+
+http://galton.uchicago.edu/~mcpeek/software/MONSTER/
+http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz
+
+Jiang D, McPeek MS (2014). Robust Rare Variant Association Testing for Quantitative Traits in Samples with Related Individuals. *Genetic Epidemiology* 38(1):10-20
+
+
 # pindel
 
 The software can be obtained from https://github.com/genome/pindel.
