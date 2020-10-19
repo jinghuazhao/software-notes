@@ -20,6 +20,8 @@ git add misc.md
 git commit -m "Miscellaneour programs"
 git add scRNASeq.md
 git commit -m "Single Cell RNA-Seq"
+git add bin
+git commit -m "PDF editor 1.39, quanto 1.2.4, (un)rar 5.50"
 git add files
 git commit -m "files"
 git push
