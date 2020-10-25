@@ -103,7 +103,7 @@ Techinical aspect: https://stackoverflow.com/questions/12926779/how-to-make-a-su
 
 Example: https://bl.ocks.org/kerryrodden/7090426
 
-**Reference**
+## Reference
 
 Cotto KC, Wagner AH, Feng YY, Kiwala S, Coffman AC, Spies G, Wollam A, Spies NC, Griffith OL, Griffith M. DGIdb 3.0: a redesign and expansion of the drug-gene interaction database. *Nucleic Acids Res.* 2018 Jan 4;46(D1):D1068-D1073. doi: 10.1093/nar/gkx1143. PMID: 29156001; PMCID: PMC5888642.
 
