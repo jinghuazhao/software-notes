@@ -1515,6 +1515,30 @@ if(!require("remotes"))
 remotes::install_github("chr1swallace/coloc")
 ```
 
+**epigraphdb**
+
+> install.packages("epigraphdb")
+
+This is the documentation example,
+```r
+df <- mr(
+  exposure_trait = "Body mass index",
+  outcome_trait = "Coronary heart disease",
+  mode = "table"
+)
+df
+df <- query_epigraphdb(
+  route = "/mr",
+  params = list(
+    exposure_trait = "Body mass index",
+    outcome_trait = "Coronary heart disease"
+  ),
+  mode = "table"
+)
+df
+```
+See https://cran.r-project.org/web/packages/epigraphdb/index.html for case studies.
+
 **garfield**
 
 Web site: https://www.ebi.ac.uk/birney-srv/GARFIELD/
