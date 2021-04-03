@@ -561,7 +561,7 @@ ln -sf MyClassLibrary/src/MyClassLibrary.jar
 
 ### ANNOVAR
 
-See https://github.com/cambridge-ceu/csd3/blob/master/usage.md.
+See [https://cambridge-ceu.github.io/csd3/applications/ANNOVAR.html](https://cambridge-ceu.github.io/csd3/applications/ANNOVAR.html).
 
 ### DAVID
 
