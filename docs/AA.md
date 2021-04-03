@@ -672,7 +672,7 @@ See R-packages section.
 
 ### DEPICT
 
-See the [GIANT+Biobank BMI analysis](https://github.com/jinghuazhao/Omics-analysis/tree/master/BMI) ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+See the [GIANT+Biobank BMI analysis](https://jinghuazhao.github.io/Omics-analysis/BMI/).
 
 **Installation and documentation example**
 
