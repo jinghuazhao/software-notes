@@ -11,3 +11,14 @@ nav:
     - scRNASeq: scRNASeq.md
     - prottrans: prottrans.md
 theme: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - Bash
+        - HTML
+        - Java
+        - JavaScript
+        - Perl
+        - Python
+        - R
+        - rust
+        - yaml
