@@ -1858,7 +1858,7 @@ END
 ```
 Since the required packages Rcpp and RcppParallel are relatively easy to deal with, with which we then simply load the packague as usual.
 
-A recent description is given here, https://github.com/cambridge-ceu/csd3/blob/master/usage.md#saige-0366.
+A recent description is given here, [https://cambridge-ceu.github.io/csd3/applications/SAIGE.html](https://cambridge-ceu.github.io/csd3/applications/SAIGE.html).
 
 **ensemblVEP**
 
