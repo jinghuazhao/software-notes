@@ -1,19 +1,5 @@
 # Association analysis
 
----
-* [Data Management](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#data-management)
-* [Single variant analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#single-variant-analysis)
-* [Population structure](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#population-structure)
-* [HLA imputation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#HLA-imputation)
-* [Finemapping](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#finemapping)
-* [Functional annotation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#functional-annotation)
-* [Pathway analysis](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#pathway-analysis)
-* [Mendelian randomisation](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#mendelian-randomisation)
-* [Polygenic modeling](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#polygenic-modeling)
-* [PheWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#phewas)
-* [TWAS](https://github.com/jinghuazhao/software-notes/blob/master/AA.md#transcriptome-wide-association-analysis-twas)
----
-
 ## Data management
 
 ### bgenix
