@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>CRISPR - software notes</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "CRISPR";
+    var mkdocs_page_input_path = "CRISPR.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> software notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../index.md">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../AA/">Association</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../AI/">AI</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">CRISPR</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#adam2">ADAM2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#chopchop">CHOPCHOP</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crispor">CRISPOR</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crispr-design">CRISPR design</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#crispresso2">CRISPResso2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deepspcas9">DeepSpCas9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#forecast">FORECasT</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gpp-web-portal">GPP Web portal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#indelphi">inDelphi</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#selftarget">SelfTarget</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sprout">SPROUT</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../NGS/">NGS</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../SL/">SL</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../misc/">misc</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pharmacogenomics/">Pharmacogenomics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../scRNASeq/">scRNASeq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../prottrans/">prottrans</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">software notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>CRISPR</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="crispr">CRISPR</h1>
+<h3 id="adam2">ADAM2</h3>
+<p>R package for identification of essential genes using genome-wide CRISPR-Cas9 screens, https://github.com/DepMap-Analytics/ADAM2</p>
+<h3 id="chopchop">CHOPCHOP</h3>
+<p>CHOPCHOP is a python script that allows quick and customizable design of guide RNA.
+We support selecting target sites for CRISPR/Cas9, CRISPR/Cpf1, TALEN and NICKASE with wide
+range of customization. We even support Cas13 for isoform targeting.</p>
+<p>https://chopchop.cbu.uib.no/</p>
+<p>https://bitbucket.org/valenlab/chopchop/src/master/</p>
+<h3 id="crispor">CRISPOR</h3>
+<p>http://crispor.tefor.net/, design, evaluate and clone guide sequences for the CRISPR/Cas9 system..</p>
+<h3 id="crispr-design">CRISPR design</h3>
+<p>http://crispr.dbcls.jp/</p>
+<h3 id="crispresso2">CRISPResso2</h3>
+<p>https://github.com/pinellolab/CRISPResso2</p>
+<h3 id="deepspcas9">DeepSpCas9</h3>
+<p>http://deepcrispr.info/DeepSpCas9/</p>
+<p>Kim HK, et al. (2019). SpCas9 activity prediction by DeepSpCas9, a deep learning–based model with high generalization performance.  <em>Sci. Adv.</em> 2019;5: eaax9249.</p>
+<h3 id="forecast">FORECasT</h3>
+<p>Scripts for processing and predicting CRISPR/Cas9-generated mutations.</p>
+<p>https://partslab.sanger.ac.uk/FORECasT</p>
+<p>Allen F, et al. (2019). Predicting the mutations generated by repair of Cas9-induced double-strand breaks. <em>Nat Biotechnol</em> 37: 64–72</p>
+<h2 id="gpp-web-portal">GPP Web portal</h2>
+<p>https://portals.broadinstitute.org/gpp/public/analysis-tools/sgrna-design</p>
+<h3 id="indelphi">inDelphi</h3>
+<p>inDelphi is a machine learning algorithm that is aimed to assist scientists using CRISPR.</p>
+<p>http://indelphi.giffordlab.mit.edu/</p>
+<h3 id="selftarget">SelfTarget</h3>
+<p>https://github.com/felicityallen/SelfTarget</p>
+<h3 id="sprout">SPROUT</h3>
+<p>https://zou-group.github.io/SPROUT</p>
+<p>https://github.com/amirmohan/SPROUT</p>
+<p>Leenay RT, et al. (2019). Large dataset enables prediction of repair after CRISPR–Cas9 editing in primary T cells. <em>Nat Biotechnol</em> </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../NGS/" class="btn btn-neutral float-right" title="NGS">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../AI/" class="btn btn-neutral" title="AI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../AI/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../NGS/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

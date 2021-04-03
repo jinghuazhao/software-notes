@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>AI - software notes</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "AI";
+    var mkdocs_page_input_path = "AI.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> software notes</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../index.md">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../AA/">Association</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">AI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tensorflow">tensorflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pytorch">pytorch</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tensorqtl">tensorQTL</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../CRISPR/">CRISPR</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../NGS/">NGS</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../SL/">SL</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../misc/">misc</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../pharmacogenomics/">Pharmacogenomics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../scRNASeq/">scRNASeq</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../prottrans/">prottrans</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">software notes</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>AI</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="artificial-intelligence">Artificial intelligence</h1>
+<h2 id="tensorflow">tensorflow</h2>
+<p>The tensorflow repository is here, https://github.com/tensorflow/tensorflow, and it is relatively easy to install via pip,</p>
+<pre><code class="language-bash">pip install tensorflow
+python &lt;&lt;END
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))
+END
+</code></pre>
+<p>Follow https://github.com/aymericdamien/TensorFlow-Examples for readily adaptible examples.</p>
+<p>Also</p>
+<p>https://github.com/apress/pro-deep-learning-w-tensorflow</p>
+<h2 id="pytorch">pytorch</h2>
+<p>The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.</p>
+<h2 id="tensorqtl">tensorQTL</h2>
+<p>AI-derived implementation.</p>
+<p>https://github.com/broadinstitute/tensorqtl, https://github.com/broadinstitute/SignatureAnalyzer-GPU</p>
+<pre><code class="language-bash">module load python/3.6
+git clone git@github.com:broadinstitute/tensorqtl.git
+cd tensorqtl
+# set up virtual environment and install
+virtualenv venv
+source venv/bin/activate
+pip install -r install/requirements.txt .
+cd example
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.bed
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.bim
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup.fam   
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.covariates.txt
+wget https://personal.broadinstitute.org/francois/geuvadis/GEUVADIS.445_samples.expression.bed.gz
+# Jupyter notebook
+sed -i 's/filtered/filtered.nodup/g' tensorqtl_examples.ipynb
+# csd3
+hostname
+jupyter notebook --ip=127.0.0.1 --no-browser --port 8081
+# local host
+ssh -4 -L 8081:127.0.0.1:8081 -fN hostname.hpc.cam.ac.uk
+firefox &lt;generated URL from jupyter notebook command above&gt; &amp;
+</code></pre>
+<p>Note that a Parquet file is generated we use SparkR,</p>
+<pre><code class="language-bash">module load spark/2.4.0-bin-hadoop2.7
+</code></pre>
+<p>followed by</p>
+<pre><code class="language-r">library(SparkR)
+sparkR.session()
+df &lt;- read.parquet(&quot;GEUVADIS.445_samples.cis_qtl_pairs.chr18.parquet&quot;)
+head(df)
+</code></pre>
+<p>to get</p>
+<pre><code>&gt; dim(df)
+[1] 2927819       9
+&gt; head(df)
+       phenotype_id          variant_id tss_distance        maf ma_samples
+1 ENSG00000263006.6 chr18_10644_C_G_b38       -98421 0.01685393         15
+2 ENSG00000263006.6 chr18_10847_C_A_b38       -98218 0.01910112         17
+3 ENSG00000263006.6 chr18_11275_G_A_b38       -97790 0.02471910         22
+4 ENSG00000263006.6 chr18_11358_G_A_b38       -97707 0.02471910         22
+5 ENSG00000263006.6 chr18_11445_G_A_b38       -97620 0.02359551         21
+6 ENSG00000263006.6 chr18_13859_G_C_b38       -95206 0.02471910         22
+  ma_count pval_nominal       slope  slope_se
+1       15    0.5808729 -0.11776078 0.2131254
+2       17    0.1428839 -0.29872555 0.2035047
+3       22    0.7452308  0.05461900 0.1679810
+4       22    0.7452308  0.05461900 0.1679810
+5       21    0.6032759  0.08937798 0.1718505
+6       22    0.7452308  0.05461900 0.1679810
+</code></pre>
+<p>An alternative is to tweak the R package <code>arrow</code>.</p>
+<p>The command-line counterpart is as follows,</p>
+<pre><code class="language-bash">export plink_prefix_path=GEUVADIS.445_samples.GRCh38.20170504.maf01.filtered.nodup
+export expression_bed=GEUVADIS.445_samples.expression.bed.gz
+export covariates_file=GEUVADIS.445_samples.covariates.txt
+export prefix=GEUVADIS.445_samples
+
+python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
+    --covariates ${covariates_file} \
+    --mode cis
+
+python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
+    --covariates ${covariates_file} \
+    --mode trans
+</code></pre>
+<p>Again one can read the Parquet format output.</p>
+<p>Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. <em>Genome Biol</em> 20:228,
+https://doi.org/10.1186/s13059-019-1836-7</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../CRISPR/" class="btn btn-neutral float-right" title="CRISPR">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../AA/" class="btn btn-neutral" title="Association"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../AA/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../CRISPR/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
