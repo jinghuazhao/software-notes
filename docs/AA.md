@@ -660,7 +660,7 @@ We can now execute an example,
 vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 ```
 
-Recent notes on ANNOVAR and VEP are available from here, [https://github.com/cambridge-ceu/csd3/blob/master/usage.md](https://github.com/cambridge-ceu/csd3/blob/master/usage.md).
+Recent notes on ANNOVAR and VEP are available from here, [https://cambridge-ceu.github.io/csd3/applications/VEP.html](https://cambridge-ceu.github.io/csd3/applications/VEP.html).
 
 ### R-packages
 
