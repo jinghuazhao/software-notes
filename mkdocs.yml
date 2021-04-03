@@ -1,0 +1,13 @@
+site_name: software notes
+nav:
+    - Home: index.md
+    - Association: AA.md
+    - AI: AI.md
+    - CRISPR: CRISPR.md
+    - NGS: NGS.md
+    - SL: SL.md
+    - misc: misc.md
+    - Pharmacogenomics: pharmacogenomics.md
+    - scRNASeq: scRNASeq.md
+    - prottrans: prottrans.md
+theme: readthedocs
