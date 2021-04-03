@@ -644,7 +644,7 @@ git pull
 git checkout release/92
 perl INSTALL.pl
 ```
-The last line requires modules DBI, Build as described in the [LANGUAGES](https://github.com/jinghuazhao/Computational-Statistics/blob/master/LANGUAGES.md) section of [Computational-Statistics](https://github.com/jinghuazhao/Computational-Statistics).
+The last line requires modules DBI, Build as described in the [LANGUAGES](https://jinghuazhao.github.io/Computational-Statistics/LANGUAGES/) section of [Computational-Statistics](https://jinghuazhao.github.io/Computational-Statistics/).
 
 Lastly, VEP requires .vep directory at $HOME which can be derived from a centrally-installed VEP under Linux,
 ```bash
