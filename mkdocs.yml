@@ -10,7 +10,8 @@ nav:
     - Pharmacogenomics: pharmacogenomics.md
     - scRNASeq: scRNASeq.md
     - prottrans: prottrans.md
-theme: readthedocs
+theme:
+    name: mkdocs
     highlightjs: true
     hljs_languages:
         - Bash
