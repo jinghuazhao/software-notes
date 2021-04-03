@@ -12,6 +12,7 @@ nav:
     - prottrans: prottrans.md
 theme:
     name: mkdocs
+    nav_style: dark
     highlightjs: true
     hljs_languages:
         - Bash
