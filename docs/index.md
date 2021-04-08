@@ -3,14 +3,14 @@
 The nature of this repository is applied, esp. setup of software in several categories. This distinguishes itself from [Computational-Statistics](https://jinghuazhao.github.io/Computational-Statistics/)
 which is somewhat more rudimentary.
 
-* Genetic analysis
-   - [Association analysis](AA.md)
-   - [CRISPR](CRISPR.md)
-   - [Next-generation sequence analysis](NGS.md)
-   - [Pharmacogenomics](pharmacogenomics.md)
-   - [Proteome and transcriptome](prottrans.md)
-   - [Miscellaneous software](misc.md)
-   - [scRNA-Seq](scRNASeq.md)
+* Genetic analysis:
+   [Association analysis](AA.md),
+   [CRISPR](CRISPR.md),
+   [Next-generation sequence analysis](NGS.md),
+   [Pharmacogenomics](pharmacogenomics.md),
+   [Proteome and transcriptome](prottrans.md),
+   [Miscellaneous software](misc.md),
+   [scRNA-Seq](scRNASeq.md).
 * [Statistical learning](SL.md)
 * [Artificial intelligence](AI.md)
 
