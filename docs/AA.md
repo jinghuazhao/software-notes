@@ -797,6 +797,8 @@ The last line downloads and unpacks the LD reference data for European (EUR) pop
 
 Bias and Type 1 error rate for Mendelian randomization with sample overlap, https://sb452.shinyapps.io/overlap/
 
+Power calculation. [https://shiny.cnsgenomics.com/mRnd/](https://shiny.cnsgenomics.com/mRnd/).
+
 ### LCV
 
 Software in Matlab and R for Latent Causal Variable model inferring genetically causal relationships using GWAS data.
