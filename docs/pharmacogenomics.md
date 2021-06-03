@@ -28,6 +28,8 @@ print(response.decode('utf-8'))
 
 ### R/Pi
 
+Location for database download: [figshare](https://figshare.com/articles/dataset/Pi_database_for_drug_target_prioritizations_in_30_immune_traits/6972746).
+
 ```r
 devtools::install_bioc("Pi",build_vignettes = TRUE)
 library(Pi)
