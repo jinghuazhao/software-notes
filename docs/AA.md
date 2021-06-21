@@ -1239,6 +1239,34 @@ Rscript FUSION.assoc_test.R \
 --out PGC2.SCZ.22.dat
 ```
 
+We could simplify the recent GEUV example script as follows,
+
+```bash
+#!/usr/bin/bash
+
+PLINK="${HPC_WORK}/bin/plink-1.9 --allow-no-sex"
+GCTA=${HPC_WORK}/bin/gcta64
+
+OUT_DIR=GEUV
+for d in work $OUT_DIR; do if [ ! -d ${d} ]; then mkdir ${d}; fi; done
+
+LDREF=/rds/user/jhz22/hpc-work/fusion_twas/LDREF
+PRE_GEXP=GD462.GeneQuantRPKM.50FN.samplename.resk10.txt
+gunzip -c $PRE_GEXP.gz | awk 'NR > 1 && NR <= 10' | while read PARAM;
+do
+  CHR=`echo $PARAM | awk '{ print $3 }'`
+  P0=`echo $PARAM | awk '{ print $4 - 0.5e6 }'`
+  P1=`echo $PARAM | awk '{ print $4 + 0.5e6 }'`
+  GNAME=`echo $PARAM | awk '{ print $1 }'`
+  OUT="work/$GNAME"
+  echo $PARAM | tr ' ' '\n' | tail -n+5 | paste <(gunzip -c $PRE_GEXP.gz | head -n1 | tr '\t' '\n' | tail -n+5 | awk '{ print $1,$1 }') - > $OUT.pheno
+  $PLINK --bfile $LDREF/1000G.EUR.$CHR --pheno $OUT.pheno --make-bed --out $OUT --keep $OUT.pheno --chr $CHR --from-bp $P0 --to-bp $P1 > /dev/null
+  Rscript FUSION.compute_weights.R --bfile $OUT --tmp $OUT.tmp --out $OUT_DIR/$GNAME --save_hsq --hsq_p 0.5 --models blup,lasso,top1,enet > /dev/null
+done
+
+# https://www.ebi.ac.uk/arrayexpress/experiments/E-GEUV-1/files/analysis_results/
+```
+
 **A useful utility**
 
 ```bash
