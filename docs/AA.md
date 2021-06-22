@@ -1244,28 +1244,30 @@ We could simplify the recent GEUV example script as follows,
 ```bash
 #!/usr/bin/bash
 
-PLINK="${HPC_WORK}/bin/plink-1.9 --allow-no-sex"
-GCTA=${HPC_WORK}/bin/gcta64
+export FUSION=${HPC_WORK}/fusion_twas
+for d in work GEUV; do if [ ! -d ${FUSION}/${d} ]; then mkdir ${FUSION}/${d}; fi; done
+cd ${FUSION}/work
+rm *
+ln -sf . output
 
-OUT_DIR=GEUV
-for d in work $OUT_DIR; do if [ ! -d ${d} ]; then mkdir ${d}; fi; done
-
-LDREF=/rds/user/jhz22/hpc-work/fusion_twas/LDREF
-PRE_GEXP=GD462.GeneQuantRPKM.50FN.samplename.resk10.txt
-gunzip -c $PRE_GEXP.gz | awk 'NR > 1 && NR <= 10' | while read PARAM;
+export LDREF=/rds/user/jhz22/hpc-work/fusion_twas/LDREF
+export PRE_GEXP=${HPC_WORK}/fusion_twas/GD462.GeneQuantRPKM.50FN.samplename.resk10.txt
+gunzip -c $PRE_GEXP.gz |  awk '! ($3 ~ "X") && NR >1' | while read PARAM;
 do
-  CHR=`echo $PARAM | awk '{ print $3 }'`
-  P0=`echo $PARAM | awk '{ print $4 - 0.5e6 }'`
-  P1=`echo $PARAM | awk '{ print $4 + 0.5e6 }'`
-  GNAME=`echo $PARAM | awk '{ print $1 }'`
-  OUT="work/$GNAME"
+  export CHR=$(echo $PARAM | awk '{ print $3 }')
+  export P0=$(echo $PARAM | awk '{ print $4 - 0.5e6 }')
+  export P1=$(echo $PARAM | awk '{ print $4 + 0.5e6 }')
+  export OUT=$(echo $PARAM | awk '{ print $1 }')
+  echo $CHR $P0 $P1 $OUT
   echo $PARAM | tr ' ' '\n' | tail -n+5 | paste <(gunzip -c $PRE_GEXP.gz | head -n1 | tr '\t' '\n' | tail -n+5 | awk '{ print $1,$1 }') - > $OUT.pheno
-  $PLINK --bfile $LDREF/1000G.EUR.$CHR --pheno $OUT.pheno --make-bed --out $OUT --keep $OUT.pheno --chr $CHR --from-bp $P0 --to-bp $P1 > /dev/null
-  Rscript FUSION.compute_weights.R --bfile $OUT --tmp $OUT.tmp --out $OUT_DIR/$GNAME --save_hsq --hsq_p 0.5 --models blup,lasso,top1,enet > /dev/null
+  plink2 --bfile $LDREF/1000G.EUR.$CHR --pheno $OUT.pheno --make-bed --out $OUT --chr $CHR --from-bp $P0 --to-bp $P1 > /dev/null
+  Rscript ${FUSION}/FUSION.compute_weights.R --bfile $OUT --tmp $OUT.tmp --out $FUSION/GEUV/$OUT \
+          --save_hsq --hsq_p 0.1 --models blup,lasso,top1,enet --verbose 2
 done
 
 # https://www.ebi.ac.uk/arrayexpress/experiments/E-GEUV-1/files/analysis_results/
 ```
+Note that `gcta_nr_robust`, `plink2` and `gemma` are already in the searching path and we tricked GEMMA with `ln -sf . output` with the current working directory.
 
 **A useful utility**
 
