@@ -1,15 +1,15 @@
 site_name: software notes
 nav:
-    - Home: index.md
+    - Home: README.md
     - Association: AA.md
-    - AI: AI.md
-    - CRISPR: CRISPR.md
-    - NGS: NGS.md
+      - CRISPR: CRISPR.md
+      - NGS: NGS.md
+      - misc: misc.md
+      - Pharmacogenomics: pharmacogenomics.md
+      - scRNASeq: scRNASeq.md
+      - prottrans: prottrans.md
     - SL: SL.md
-    - misc: misc.md
-    - Pharmacogenomics: pharmacogenomics.md
-    - scRNASeq: scRNASeq.md
-    - prottrans: prottrans.md
+    - AI: AI.md
 theme:
     name: mkdocs
     nav_style: dark
