@@ -1,3 +1,11 @@
+### Clinical Trials
+
+Web: https://ClinicalTrials.gov
+
+### PharmGKB
+
+Web: https://api.pharmgkb.org 
+
 ### Python/chembl_webresource_client
 
 Web: https://github.com/chembl/chembl_webresource_client
