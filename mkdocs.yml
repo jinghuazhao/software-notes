@@ -1,7 +1,7 @@
 site_name: software notes
 nav:
     - Home: README.md
-    - Association: AA.md
+    - AA: AA.md
     - SL: SL.md
     - AI: AI.md
 theme:
