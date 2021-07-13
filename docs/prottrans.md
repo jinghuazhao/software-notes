@@ -2,7 +2,7 @@
 
 ## CCProfiler/COPF
 
-https://github.com/CCprofiler/CCprofiler
+https://github.com/CCprofiler/CCprofiler, https://sec-explorer.shinyapps.io/hela_cellcycle/
 
 Heusel M, Bludau I, Rosenberger G, Hafen R, Frank M, Banaei-Esfahani A, Collins B, Gstaiger M, Aebersold R. Complex-centric proteome profiling by SEC-SWATH-MS. *Mol Syst Biol* 2019, 15:e8438 DOI: https://doi.org/10.15252/msb.20188438
 
