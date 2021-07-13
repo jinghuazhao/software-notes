@@ -42,6 +42,10 @@ McIlwain S, Tamura K, Kertesz-Farkas A, Grant CE, Diament B, Frewen B, Howbert J
 
 Fondrie WE, Noble WS (2020). Machine learning strategy that leverages large data sets to boost statistical power in small-scale experiments. *J Proteome Res*
 
+## PeCorA
+
+https://github.com/jessegmeyerlab/PeCorA
+
 ## PIVar
 
 https://github.com/WeiWenqing/PIVar
@@ -56,7 +60,7 @@ http://proteomecentral.proteomexchange.org/cgi/GetDataset
 
 https://github.com/ibludau/ProteoformAnanlysis
 
-http://proteoformviewer.ethz.ch/ProteoformExplorer_final_classes
+http://proteoformviewer.ethz.ch/, http://proteoformviewer.ethz.ch/ProteoformExplorer_final_classes
 
 ## QTLtools
 
