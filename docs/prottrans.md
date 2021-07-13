@@ -6,6 +6,8 @@ https://github.com/CCprofiler/CCprofiler, https://sec-explorer.shinyapps.io/hela
 
 Heusel M, Bludau I, Rosenberger G, Hafen R, Frank M, Banaei-Esfahani A, Collins B, Gstaiger M, Aebersold R. Complex-centric proteome profiling by SEC-SWATH-MS. *Mol Syst Biol* 2019, 15:e8438 DOI: https://doi.org/10.15252/msb.20188438
 
+Heusel et al. A global screen for assembly state changes of the mitotic proteome by SEC-SWATH-MS. *Cell Systems* 0220, 10:1–23, https://doi.org/10.1016/j.cels.2020.01.001
+
 ## DOGMA
 
 DOGMA is a program for fast and easy quality assessment of transcriptome and proteome data based on conserved protein domains. See
