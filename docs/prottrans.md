@@ -1,5 +1,11 @@
 # Proteome and transcriptome
 
+## CCProfiler/COPF
+
+https://github.com/CCprofiler/CCprofiler
+
+Heusel M, Bludau I, Rosenberger G, Hafen R, Frank M, Banaei-Esfahani A, Collins B, Gstaiger M, Aebersold R. Complex-centric proteome profiling by SEC-SWATH-MS. *Mol Syst Biol* 2019, 15:e8438 DOI: https://doi.org/10.15252/msb.20188438
+
 ## DOGMA
 
 DOGMA is a program for fast and easy quality assessment of transcriptome and proteome data based on conserved protein domains. See
@@ -41,6 +47,16 @@ Fondrie WE, Noble WS (2020). Machine learning strategy that leverages large data
 https://github.com/WeiWenqing/PIVar
 
 Teng H, et al. Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types [published online ahead of print, 2020 Jan 17]. Nucleic Acids Res. 2020;gkaa019. doi:10.1093/nar/gkaa019
+
+## ProteomeXchange
+
+http://proteomecentral.proteomexchange.org/cgi/GetDataset
+
+## ProteoformAnalysis
+
+https://github.com/ibludau/ProteoformAnanlysis
+
+http://proteoformviewer.ethz.ch/ProteoformExplorer_final_classes
 
 ## QTLtools
 
