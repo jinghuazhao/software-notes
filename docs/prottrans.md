@@ -1,6 +1,6 @@
 # Proteome and transcriptome
 
-## CCProfiler/COPF
+## CCprofiler/COPF
 
 https://github.com/CCprofiler/CCprofiler, https://sec-explorer.shinyapps.io/hela_cellcycle/
 
