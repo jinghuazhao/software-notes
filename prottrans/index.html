@@ -171,10 +171,21 @@ Insights into impact of DNA copy number alteration and methylation on the proteo
 <p>https://github.com/WeiWenqing/PIVar</p>
 <p>Teng H, et al. Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types [published online ahead of print, 2020 Jan 17]. Nucleic Acids Res. 2020;gkaa019. doi:10.1093/nar/gkaa019</p>
 <h2 id="proteomexchange">ProteomeXchange</h2>
-<p>http://proteomecentral.proteomexchange.org/cgi/GetDataset</p>
+<p>http://proteomecentral.proteomexchange.org/cgi/GetDataset, also PRotein IDEntification databases (PRIDE): https://www.ebi.ac.uk/</p>
 <h2 id="proteoformanalysis">ProteoformAnalysis</h2>
 <p>https://github.com/ibludau/ProteoformAnanlysis</p>
 <p>http://proteoformviewer.ethz.ch/, http://proteoformviewer.ethz.ch/ProteoformExplorer_final_classes</p>
+<pre><code class="language-bash"># In silico benchmark.
+install_github(&quot;CCprofiler/CCprofiler&quot;, ref =  &quot;proteoformLocationMapping&quot;)
+R --no-save -q &lt; InterlabBenchmark_final_paper.R
+# COPF analysis of the cell cycle SEC-SWATH-MS dataset
+## E1709051521_feature_alignment.tsv
+wget -qO- http://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010288/SWATH_QueryResultGlobalAlignment_20170906213658025-1332538.zip | \
+unzip SWATH_QueryResultGlobalAlignment_20170906213658025-1332538.zip
+wget http://ftp.pride.ebi.ac.uk/pride/data/archive/2019/05/PXD010288/HeLaCCL2_SEC_annotation_full.xlsx
+...
+</code></pre>
+<p>Bludau I. et al. Systematic detection of functional proteoform groups from bottom-up proteomic datasets. <em>Nat Comm</em> 2021, 12:3810</p>
 <h2 id="qtltools">QTLtools</h2>
 <p>https://qtltools.github.io/qtltools/</p>
 <h2 id="rnasnp">RNAsnp</h2>
