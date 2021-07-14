@@ -1,3 +1,5 @@
+## Data sources
+
 ### Clinical Trials
 
 Web: https://ClinicalTrials.gov
@@ -5,6 +7,16 @@ Web: https://ClinicalTrials.gov
 ### PharmGKB
 
 Web: https://api.pharmgkb.org 
+
+### pharos
+
+Web: https://pharos.nih.gov/
+
+### The Ligandable Human Proteome
+
+Web: http://polymorph.sgc.utoronto.ca/drugged_human_proteome/
+
+## Software
 
 ### Python/chembl_webresource_client
 
@@ -103,7 +115,6 @@ https://cran.r-project.org/web/packages/dbparser/
 https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html
 
 http://www.dgidb.org/
-
 
 ### R/sunburstR
 
