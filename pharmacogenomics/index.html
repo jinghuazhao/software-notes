@@ -120,18 +120,20 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-level="1"><a href="#pharmacogenomics" class="nav-link">Pharmacogenomics</a>
+              <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#data-sources" class="nav-link">Data sources</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#software" class="nav-link">Software</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
             <li class="nav-item" data-level="2"><a href="#reference" class="nav-link">Reference</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -139,21 +141,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
+<h1 id="pharmacogenomics">Pharmacogenomics</h1>
 <h2 id="data-sources">Data sources</h2>
 <h3 id="clinical-trials">Clinical Trials</h3>
-<p>Web: https://ClinicalTrials.gov</p>
+<p>Web: <a href="https://ClinicalTrials.gov">https://ClinicalTrials.gov</a></p>
 <h3 id="pharmgkb">PharmGKB</h3>
-<p>Web: https://api.pharmgkb.org </p>
+<p>Web: <a href="https://api.pharmgkb.org">https://api.pharmgkb.org</a></p>
 <h3 id="pharos">pharos</h3>
-<p>Web: https://pharos.nih.gov/</p>
+<p>Web: <a href="https://pharos.nih.gov/">https://pharos.nih.gov/</a></p>
 <h3 id="the-ligandable-human-proteome">The Ligandable Human Proteome</h3>
-<p>Web: http://polymorph.sgc.utoronto.ca/drugged_human_proteome/</p>
+<p>Web: <a href="http://polymorph.sgc.utoronto.ca/drugged_human_proteome/">http://polymorph.sgc.utoronto.ca/drugged_human_proteome/</a></p>
 <h2 id="software">Software</h2>
 <h3 id="pythonchembl_webresource_client">Python/chembl_webresource_client</h3>
-<p>Web: https://github.com/chembl/chembl_webresource_client</p>
+<p>Web: <a href="https://github.com/chembl/chembl_webresource_client">https://github.com/chembl/chembl_webresource_client</a></p>
 <pre><code class="language-bash">pip install chembl_webresource_client
 </code></pre>
-<p>UniProtID mapping API: https://www.uniprot.org/help/api_idmapping</p>
+<p>UniProtID mapping API: <a href="https://www.uniprot.org/help/api_idmapping">https://www.uniprot.org/help/api_idmapping</a></p>
 <pre><code class="language-python3">import urllib.parse
 import urllib.request
 
@@ -226,14 +229,14 @@ subset(pi_genomic,trait%in%traits)
 save(pi_category,pi_domain,pi_drug,pi_genomic,pi_pdb,pi_priority,pi_trait,file=&quot;pi_database.rda&quot;)
 </code></pre>
 <h3 id="rdbparser">R/dbparser</h3>
-<p>https://cran.r-project.org/web/packages/dbparser/</p>
+<p><a href="https://cran.r-project.org/web/packages/dbparser/">https://cran.r-project.org/web/packages/dbparser/</a></p>
 <h3 id="rrdgidb">R/rDGIdb</h3>
-<p>https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html</p>
-<p>http://www.dgidb.org/</p>
+<p><a href="https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html">https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html</a></p>
+<p><a href="http://www.dgidb.org/">http://www.dgidb.org/</a></p>
 <h3 id="rsunburstr">R/sunburstR</h3>
-<p>https://github.com/timelyportfolio/sunburstR</p>
-<p>Techinical aspect: https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python</p>
-<p>Example: https://bl.ocks.org/kerryrodden/7090426</p>
+<p><a href="https://github.com/timelyportfolio/sunburstR">https://github.com/timelyportfolio/sunburstR</a></p>
+<p>Techinical aspect: <a href="https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python">https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python</a></p>
+<p>Example: <a href="https://bl.ocks.org/kerryrodden/7090426">https://bl.ocks.org/kerryrodden/7090426</a></p>
 <h2 id="reference">Reference</h2>
 <p>Cotto KC, Wagner AH, Feng YY, Kiwala S, Coffman AC, Spies G, Wollam A, Spies NC, Griffith OL, Griffith M. DGIdb 3.0: a redesign and expansion of the drug-gene interaction database. <em>Nucleic Acids Res.</em> 2018 Jan 4;46(D1):D1068-D1073. doi: 10.1093/nar/gkx1143. PMID: 29156001; PMCID: PMC5888642.</p>
 <p>Fang H; ULTRA-DD Consortium, De Wolf H, Knezevic B, Burnham KL, Osgood J, Sanniti A, Lledó Lara A, Kasela S, De Cesco S, Wegner JK, Handunnetthi L, McCann FE, Chen L, Sekine T, Brennan PE, Marsden BD, Damerell D, O'Callaghan CA, Bountra C, Bowness P, Sundström Y, Milani L, Berg L, Göhlmann HW, Peeters PJ, Fairfax BP, Sundström M, Knight JC.
