@@ -17,33 +17,33 @@ Popescu D-M et al. Decoding human fetal liver haematopoiesis. *Nature* [https://
 
 Mohanraj, S., et al. (2020). "CReSCENT: CanceR Single Cell ExpressioN Toolkit." *Nucleic Acids Research*.
 
-# SCANPY
+## SCANPY
 
 [https://github.com/theislab/Scanpy](https://github.com/theislab/Scanpy)
 
-# SCENIC
+## SCENIC
 
 https://aertslab.org/#scenic and https://pyscenic.readthedocs.io/en/latest/.
 
-# scMAGeCK
+## scMAGeCK
 
 [https://bitbucket.org/weililab/scmageck/src/master/](https://bitbucket.org/weililab/scmageck/src/master/)
 
 Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell CRISPR screens. Genome Biol 21, 19 (2020). https://doi.org/10.1186/s13059-020-1928-4
 
-# Seurat
+## Seurat
 
 [https://satijalab.org/seurat/](https://satijalab.org/seurat/)
 
 Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7):1888–1902.e21. doi:10.1016/j.cell.2019.05.031
 
-# DENDRO
+## DENDRO
 
 [https://github.com/zhouzilu/DENDRO](https://github.com/zhouzilu/DENDRO)
 
 Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing. Genome Biol 21, 10 (2020). https://doi.org/10.1186/s13059-019-1922-x
 
-# souporcell
+## souporcell
 
 [https://github.com/wheaton5/souporcell](https://github.com/wheaton5/souporcell)
 
