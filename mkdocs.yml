@@ -9,8 +9,8 @@ nav:
       - pharmacogenomics.md
       - prottrans.md
       - scRNASeq.md
-    - SL: SL.md
-    - AI: AI.md
+    - Statistcal learning: SL.md
+    - Artificial intelligence: AI.md
 theme:
     name: mkdocs
     nav_style: dark
