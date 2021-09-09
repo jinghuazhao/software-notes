@@ -6,9 +6,9 @@ nav:
       - CRISPR.md
       - misc.md
       - NGS.md
-      - pharmacogenomics.md*
-      - prottrans.md*
-      - scRNASeq.md*
+      - pharmacogenomics.md
+      - prottrans.md
+      - scRNASeq.md
     - SL: SL.md
     - AI: AI.md
 theme:
