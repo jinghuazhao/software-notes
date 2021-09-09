@@ -1,7 +1,14 @@
 site_name: software notes
 nav:
-    - Home: README.md
-    - AA: AA.md
+    - Overview: README.md
+    - Genetic analysis:
+      - AA.md
+      - CRISPR.md
+      - misc.md
+      - NGS.md
+      - pharmacogenomics.md*
+      - prottrans.md*
+      - scRNASeq.md*
     - SL: SL.md
     - AI: AI.md
 theme:
