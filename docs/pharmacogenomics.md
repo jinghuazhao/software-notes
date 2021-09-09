@@ -1,30 +1,32 @@
+# Pharmacogenomics
+
 ## Data sources
 
 ### Clinical Trials
 
-Web: https://ClinicalTrials.gov
+Web: [https://ClinicalTrials.gov](https://ClinicalTrials.gov)
 
 ### PharmGKB
 
-Web: https://api.pharmgkb.org 
+Web: [https://api.pharmgkb.org](https://api.pharmgkb.org)
 
 ### pharos
 
-Web: https://pharos.nih.gov/
+Web: [https://pharos.nih.gov/](https://pharos.nih.gov/)
 
 ### The Ligandable Human Proteome
 
-Web: http://polymorph.sgc.utoronto.ca/drugged_human_proteome/
+Web: [http://polymorph.sgc.utoronto.ca/drugged_human_proteome/](http://polymorph.sgc.utoronto.ca/drugged_human_proteome/)
 
 ## Software
 
 ### Python/chembl_webresource_client
 
-Web: https://github.com/chembl/chembl_webresource_client
+Web: [https://github.com/chembl/chembl_webresource_client](https://github.com/chembl/chembl_webresource_client)
 ```bash
 pip install chembl_webresource_client
 ```
-UniProtID mapping API: https://www.uniprot.org/help/api_idmapping
+UniProtID mapping API: [https://www.uniprot.org/help/api_idmapping](https://www.uniprot.org/help/api_idmapping)
 ```python3
 import urllib.parse
 import urllib.request
@@ -108,21 +110,21 @@ save(pi_category,pi_domain,pi_drug,pi_genomic,pi_pdb,pi_priority,pi_trait,file="
 
 ### R/dbparser
 
-https://cran.r-project.org/web/packages/dbparser/
+[https://cran.r-project.org/web/packages/dbparser/](https://cran.r-project.org/web/packages/dbparser/)
 
 ### R/rDGIdb
 
-https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html
+[https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html](https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html)
 
-http://www.dgidb.org/
+[http://www.dgidb.org/](http://www.dgidb.org/)
 
 ### R/sunburstR
 
-https://github.com/timelyportfolio/sunburstR
+[https://github.com/timelyportfolio/sunburstR](https://github.com/timelyportfolio/sunburstR)
 
-Techinical aspect: https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python
+Techinical aspect: [https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python](https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python)
 
-Example: https://bl.ocks.org/kerryrodden/7090426
+Example: [https://bl.ocks.org/kerryrodden/7090426](https://bl.ocks.org/kerryrodden/7090426)
 
 ## Reference
 

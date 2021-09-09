@@ -25,7 +25,7 @@ sudo `which conda` install allegro
 ```
 > Gudbjartsson DF, Thorvaldsson T, Kong A, Gunnarsson G, Ingolfsdottir A (2005). Allegro version 2. *Nature Genetics* 37:1015–1016
 
-https://www.nature.com/articles/ng1005-1015?foxtrotcallback=true
+[https://www.nature.com/articles/ng1005-1015?foxtrotcallback=true](https://www.nature.com/articles/ng1005-1015?foxtrotcallback=true)
 
 ## beast2-mcmc, beast2-mcmc-doc
 
@@ -36,14 +36,14 @@ sudo apt install beast2-mcmc
 
 ## fastlink, fastlink-doc
 
-It is the old merry fastlink 4.1P, https://www.ncbi.nlm.nih.gov/CBBresearch/Schaffer/fastlink.html.
+It is the old merry fastlink 4.1P, [https://www.ncbi.nlm.nih.gov/CBBresearch/Schaffer/fastlink.html](https://www.ncbi.nlm.nih.gov/CBBresearch/Schaffer/fastlink.html).
 ```bash
 sudo apt install fastlink
 ```
 
 ## loki, loki-doc
 
-It implements MCMC method for linkage analysis. available from https://www.stat.washington.edu/thompson/Genepi/Loki.shtml
+It implements MCMC method for linkage analysis. available from [https://www.stat.washington.edu/thompson/Genepi/Loki.shtml](https://www.stat.washington.edu/thompson/Genepi/Loki.shtml)
 ```bash
 sudo apt install loki
 ```
@@ -51,7 +51,7 @@ See usr/share/doc/loki-doc/ for documentation.
 
 ## merlin
 
-This is according to http://csg.sph.umich.edu/abecasis/merlin/index.html,
+This is according to [http://csg.sph.umich.edu/abecasis/merlin/index.html](http://csg.sph.umich.edu/abecasis/merlin/index.html),
 ```bash
 sudo `which conda` install merlin
 ```
@@ -65,7 +65,7 @@ plink1.9 --help --bfile
 
 ## simwalk2
 
-This is according to http://www.genetics.ucla.edu/software/,
+This is according to [http://www.genetics.ucla.edu/software/](http://www.genetics.ucla.edu/software/),
 ```bash
 sudo `which conda` install simwalk2
 ```
