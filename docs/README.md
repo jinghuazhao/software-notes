@@ -1,4 +1,4 @@
-# software-notes
+# Software notes
 
 The nature of this repository is applied, esp. setup of software in several categories. This distinguishes itself from [Computational-Statistics](https://jinghuazhao.github.io/Computational-Statistics/)
 which is somewhat more rudimentary.
