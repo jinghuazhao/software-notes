@@ -18,6 +18,6 @@
 
 > James G, Witten D, Hastie T, Tibshirani R (2013). [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/). Springer.
 
-> James G, Witten D, Hastie T, Tibshirani R (2021). An Introduction to Statistical Learning with Applications in R, 2e, [https://www.statlearning.com/](https://www.statlearning.com/), Springer.
+> James G, Witten D, Hastie T, Tibshirani R (2021). [An Introduction to Statistical Learning with Applications in R, 2e](https://www.statlearning.com/), Springer.
 
 > Chollet F, Allaire JJ (2017). [Deep Learning with R](https://livebook.manning.com/book/deep-learning-with-r/), Manning. [Source code](www.manning.com/books/deep-learning-with-r), [GitHub](https://github.com/jjallaire/deep-learning-with-r-notebooks).
