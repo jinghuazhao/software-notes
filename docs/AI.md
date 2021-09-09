@@ -1,5 +1,9 @@
 # Artificial intelligence
 
+## pytorch
+
+The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.
+
 ## tensorflow
 
 The tensorflow repository is here, https://github.com/tensorflow/tensorflow, and it is relatively easy to install via pip,
@@ -17,10 +21,6 @@ Follow https://github.com/aymericdamien/TensorFlow-Examples for readily adaptibl
 Also
 
 https://github.com/apress/pro-deep-learning-w-tensorflow
-
-## pytorch
-
-The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.
 
 ## tensorQTL
 
