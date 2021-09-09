@@ -2,11 +2,11 @@
 
 ## pytorch
 
-The home page is https://pytorch.github.io, and the repository itself https://github.com/pytorch/ with https://github.com/pytorch/examples.
+The home page is [https://pytorch.github.io](https://pytorch.github.io), and the repository itself [https://github.com/pytorch/](https://github.com/pytorch/) with [https://github.com/pytorch/examples](https://github.com/pytorch/examples).
 
 ## tensorflow
 
-The tensorflow repository is here, https://github.com/tensorflow/tensorflow, and it is relatively easy to install via pip,
+The tensorflow repository is here, [https://github.com/tensorflow/tensorflow](https://github.com/tensorflow/tensorflow), and it is relatively easy to install via pip,
 ```bash
 pip install tensorflow
 python <<END
@@ -16,17 +16,17 @@ sess = tf.Session()
 print(sess.run(hello))
 END
 ```
-Follow https://github.com/aymericdamien/TensorFlow-Examples for readily adaptible examples.
+Follow [https://github.com/aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) for readily adaptible examples.
 
 Also
 
-https://github.com/apress/pro-deep-learning-w-tensorflow
+[https://github.com/apress/pro-deep-learning-w-tensorflow](https://github.com/apress/pro-deep-learning-w-tensorflow)
 
 ## tensorQTL
 
 AI-derived implementation.
 
-https://github.com/broadinstitute/tensorqtl, https://github.com/broadinstitute/SignatureAnalyzer-GPU
+[https://github.com/broadinstitute/tensorqtl](https://github.com/broadinstitute/tensorqtl), [https://github.com/broadinstitute/SignatureAnalyzer-GPU](https://github.com/broadinstitute/SignatureAnalyzer-GPU)
 
 ```bash
 module load python/3.6
