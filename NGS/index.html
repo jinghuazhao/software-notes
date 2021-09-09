@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Benchmarks and pipelines - software notes</title>
+        <title>NGS - software notes</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -62,7 +62,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Benchmarks and pipelines</a>
+    <a href="./" class="dropdown-item active">NGS</a>
 </li>
                                     
 <li>
@@ -120,7 +120,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#benchmarks-and-pipelines" class="nav-link">Benchmarks and pipelines</a>
+            <li class="nav-item" data-level="1"><a href="#ngs" class="nav-link">NGS</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#review" class="nav-link">Review</a>
               <ul class="nav flex-column">
@@ -255,21 +255,18 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#melissa" class="nav-link">Melissa</a>
+            <li class="nav-item" data-level="2"><a href="#melissa" class="nav-link">Melissa</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#monster" class="nav-link">MONSTER</a>
+            <li class="nav-item" data-level="2"><a href="#monster" class="nav-link">MONSTER</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#pindel" class="nav-link">pindel</a>
+            <li class="nav-item" data-level="2"><a href="#pindel" class="nav-link">pindel</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-level="2"><a href="#rtg-tools" class="nav-link">rtg-tools</a>
               <ul class="nav flex-column">
               </ul>
@@ -321,7 +318,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="benchmarks-and-pipelines">Benchmarks and pipelines</h1>
+<h1 id="ngs">NGS</h1>
 <h2 id="review">Review</h2>
 <p>Pabinger S, et al. (2014). A survey of tools for variant analysis of next-generation genome sequencing data. <em>Brief Bioinformatics</em> 15(2):256-278.</p>
 <h2 id="ngs-pipeline">NGS pipeline</h2>
@@ -571,18 +568,17 @@ java -jar $HOME/bin/Jannovar.jar download -d hg19/refseq
 <p>We may need to set memory size, e.g., </p>
 <pre><code class="language-bash">java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
 </code></pre>
-<h1 id="melissa">Melissa</h1>
-<p>https://github.com/andreaskapou/Melissa</p>
+<h2 id="melissa">Melissa</h2>
+<p><a href="https://github.com/andreaskapou/Melissa">https://github.com/andreaskapou/Melissa</a></p>
 <blockquote>
 <p>MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.</p>
 </blockquote>
 <p>Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, <em>Genome Biology</em> 20:61, https://doi.org/10.1186/s13059-019-1665-8</p>
-<h1 id="monster">MONSTER</h1>
-<p>http://galton.uchicago.edu/~mcpeek/software/MONSTER/
-http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz</p>
+<h2 id="monster">MONSTER</h2>
+<p><a href="http://galton.uchicago.edu/~mcpeek/software/MONSTER/">http://galton.uchicago.edu/~mcpeek/software/MONSTER/</a> (<a href="http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz">http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz</a>)</p>
 <p>Jiang D, McPeek MS (2014). Robust Rare Variant Association Testing for Quantitative Traits in Samples with Related Individuals. <em>Genetic Epidemiology</em> 38(1):10-20</p>
-<h1 id="pindel">pindel</h1>
-<p>The software can be obtained from https://github.com/genome/pindel.</p>
+<h2 id="pindel">pindel</h2>
+<p>The software can be obtained from <a href="https://github.com/genome/pindel">https://github.com/genome/pindel</a>.</p>
 <p>After htslib is installed, the canonical instruction is to issue</p>
 <pre><code class="language-bash">git clone https://github.com/samtools/htslib
 cd htslib
