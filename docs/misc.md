@@ -1,6 +1,6 @@
 # Miscellaneous software
 
-The source code is also available from the Ubuntu archive. There is a variety of packages in bioconda, https://bioconda.github.io/recipes.html# and conda-forge, https://conda-forge.org/feedstocks/.
+The source code is also available from the Ubuntu archive. There is a variety of packages in bioconda, [https://bioconda.github.io/recipes.html](https://bioconda.github.io/recipes.html) and conda-forge, [https://conda-forge.org/feedstocks/](https://conda-forge.org/feedstocks/).
 
 We can trick the test even with compiling errors, e.g., 
 ```bash
@@ -19,7 +19,7 @@ make
 
 ## allegro
 
-This is according to https://www.decode.com/software/,
+This is according to [https://www.decode.com/software/](https://www.decode.com/software/),
 ```bash
 sudo `which conda` install allegro
 ```
