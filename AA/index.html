@@ -238,7 +238,7 @@ make test
 make install
 </code></pre>
 <p>One can use <code>ccmake .</code> to change the prefix for installation but this does not appear to work and the executable is bin/metal.</p>
-<p>As with distribution 2011-03-25, http://csg.sph.umich.edu/abecasis/Metal/download/, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
+<p>As with distribution 2011-03-25, <a href="http://csg.sph.umich.edu/abecasis/Metal/download/">http://csg.sph.umich.edu/abecasis/Metal/download/</a>, options CUSTOMVARIABLE uses an output format of %g, leading to scientific notation of position, which
 is undesirable and we modify metal/Main.cpp from</p>
 <pre><code class="language-c">for  (int j = 0; j &lt; customVariables.Length(); j++)
             fprintf(f, &quot;\t%g&quot;, custom[j][marker]);
