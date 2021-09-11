@@ -22,7 +22,7 @@ See [https://bitbucket.org/gavinband/bgen/overview](https://bitbucket.org/gavinb
 
 ### eigensoft
 
-The PCA software for genomewide data is available from https://www.hsph.harvard.edu/alkes-price/software/ as well as Ubuntu.
+The PCA software for genomewide data is available from [https://www.hsph.harvard.edu/alkes-price/software/](https://www.hsph.harvard.edu/alkes-price/software/) as well as Ubuntu.
 ```bash
 sudo apt install eigensoft
 ```
