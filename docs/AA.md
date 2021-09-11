@@ -1599,11 +1599,11 @@ garfield.plot("cd-meta.output.perm", num_perm = 100000,
 
 **gtx**
 
-The version at https://github.com/tobyjohnson/gtx has more updates to its counterpart at CRAN.
+The version at [https://github.com/tobyjohnson/gtx](https://github.com/tobyjohnson/gtx) has more updates to its counterpart at CRAN.
 
 **HIBAG**
 
-Currently it is archived at CRAN but can be downloaded from GitHub, https://github.com/cran/HIBAG
+Currently it is archived at CRAN but can be downloaded from GitHub, [https://github.com/cran/HIBAG](https://github.com/cran/HIBAG)
 ```R
 devtools::install_github("cran/HIBAG")
 ```
@@ -1611,7 +1611,7 @@ However it is now available from Bioconductor.
 
 **hyprcoloc**
 
-It is a package for hypothesis prioritisation multi-trait colocalization, available from https://github.com/jrs95/hyprcoloc.
+It is a package for hypothesis prioritisation multi-trait colocalization, available from [https://github.com/jrs95/hyprcoloc](https://github.com/jrs95/hyprcoloc).
 ```bash
 R --no-save -q <<END
    # Regression coefficients and standard errors from ten GWAS studies (Traits 1-5, 6-8 & 9-10 colocalize)
@@ -1659,7 +1659,7 @@ dev.off()
 
 **moloc**
 
-moloc: multiple trait co-localization, available from https://github.com/clagiamba/moloc, can be installed with
+moloc: multiple trait co-localization, available from [https://github.com/clagiamba/moloc](https://github.com/clagiamba/moloc), can be installed with
 ```r
 library(devtools)
 install_github("clagiamba/moloc")
@@ -1682,7 +1682,7 @@ where `rjags` contains files for the package. Once this is done one can proceed 
 
 **sva**
 
-The package contains function ```ComBat.R``` from https://www.bu.edu/jlab/wp-assets/ComBat/Download.html as described in the following paper.
+The package contains function ```ComBat.R``` from [https://www.bu.edu/jlab/wp-assets/ComBat/Download.html](https://www.bu.edu/jlab/wp-assets/ComBat/Download.html) as described in the following paper.
 
 > Johnson, WE, Rabinovic, A, and Li, C (2007). Adjusting batch effects in microarray expression data using Empirical Bayes methods. Biostatistics 8(1):118-127
 ```r
