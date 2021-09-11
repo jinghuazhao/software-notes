@@ -1873,9 +1873,9 @@ ftp://ftp.ncbi.nlm.nih.gov/hapmap/frequencies/2010-08_phaseII+III/ might also wo
 
 **SAIGE**
 
-The address of GitHub repository is here, https://github.com/weizhouUMICH
+The address of GitHub repository is here, [https://github.com/weizhouUMICH](https://github.com/weizhouUMICH)
 
-Information including installation is described here, https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE.
+Information including installation is described here, [https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE](https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE).
 
 Locally, we therefore check for the desired gcc, cmake and boost and proceed as follows,
 ```bash
