@@ -1320,11 +1320,11 @@ Note that these use hg38 references provided, and it is possible to generate the
 
 ### FINEMAP colocalization pipeline
 
-This is available from https://bitbucket.org/mgloud/production_coloc_pipeline, note also https://github.com/boxiangliu/locuscomparer.
+This is available from [https://bitbucket.org/mgloud/production_coloc_pipeline](https://bitbucket.org/mgloud/production_coloc_pipeline), note also https://github.com/boxiangliu/locuscomparer.
 
 ### GWAS-PW
 
-Available from  https://github.com/joepickrell/gwas-pw. The installation is straightforward after boost library is available.
+Available from [https://github.com/joepickrell/gwas-pw](https://github.com/joepickrell/gwas-pw). The installation is straightforward after boost library is available.
 
 We can use the following code for the documentation example,
 ```bash
