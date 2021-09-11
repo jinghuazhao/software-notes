@@ -922,7 +922,7 @@ do
 done
 python hess.py --prefix step1 --reinflate-lambda-gc 1 --tot-hsqg 0.8 0.2 --out step2
 ```
-where snp150.txt from UCSC is described at the SUMSTATS repository, https://github.com/jinghuazhao/SUMSTATS.
+where snp150.txt from UCSC is described at the SUMSTATS repository, [https://github.com/jinghuazhao/SUMSTATS](https://github.com/jinghuazhao/SUMSTATS).
 
 ### ldetect
 
