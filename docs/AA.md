@@ -885,9 +885,9 @@ so the MaCH dosage file is individual x genotype whereas PLINK dosage file is ge
 
 ### HESS
 
-HESS (Heritability Estimation from Summary Statistics) is now available from https://github.com/huwenboshi/hess and has a web page at
+HESS (Heritability Estimation from Summary Statistics) is now available from [https://github.com/huwenboshi/hess](https://github.com/huwenboshi/hess) and has a web page at
 
-https://huwenboshi.github.io/hess-0.5/#hess
+[https://huwenboshi.github.io/hess-0.5/#hess](https://huwenboshi.github.io/hess-0.5/#hess)
 
 Some popular Python packages such as pandas as well as PySnpTools are required, e.g., `pip install pandas` or `python -m pip install pysnptools` and it is doable for the latter with source at https://github.com/MicrosoftGenomics/PySnpTools.
 
