@@ -16,7 +16,7 @@ module load gcc/4.7.2
 ./waf install
 
 ```
-See https://bitbucket.org/gavinband/bgen/overview.
+See [https://bitbucket.org/gavinband/bgen/overview](https://bitbucket.org/gavinband/bgen/overview).
 
 ## Single variant analysis
 
@@ -30,13 +30,13 @@ The executables are eigenstrat, eigenstratQTL, smarteigenstrat, smartpca, pca, e
 
 ### GEMMA
 
-To build from source, https://github.com/genetics-statistics/GEMMA, the Makefile needs to change in places with OpenBLAS, /opt/OpenBLAS/.
+To build from source, [https://github.com/genetics-statistics/GEMMA](https://github.com/genetics-statistics/GEMMA), the Makefile needs to change in places with OpenBLAS, /opt/OpenBLAS/.
 
 ### METAL
 
 Note METAL aligns alleles according to the first file processed.
 
-At least cmake 3.1 is required for the latest from GitHub, https://github.com/statgen/METAL, 
+At least cmake 3.1 is required for the latest from GitHub, [https://github.com/statgen/METAL](https://github.com/statgen/METAL), 
 
 ```bash
 wget -qO- https://github.com/statgen/METAL/archive/2018-08-28.tar.gz | \
@@ -176,7 +176,7 @@ where `metal.awk` has the following lines,
 
 ### METASOFT and ForestPMPlot
 
-Available from http://genetics.cs.ucla.edu/meta/
+Available from [http://genetics.cs.ucla.edu/meta/](http://genetics.cs.ucla.edu/meta/)
 ```bash
 mkdir METASOFT
 wget -qO- http://genetics.cs.ucla.edu/meta/repository/2.0.1/Metasoft.zip | \
@@ -305,16 +305,16 @@ seqMeta: Meta-Analysis of Region-Based Tests of Rare DNA Variants, https://cran.
 
 ### Quanto
 
-https://preventivemedicine.usc.edu/download-quanto/
+[https://preventivemedicine.usc.edu/download-quanto/](https://preventivemedicine.usc.edu/download-quanto/)
 
 ### QUICKTEST
 
-See https://wp.unil.ch/sgg/quicktest/ for the latest with support for bgen v1.2.
+See [https://wp.unil.ch/sgg/quicktest/](https://wp.unil.ch/sgg/quicktest/) for the latest with support for bgen v1.2.
 
 
 ### SNPTEST
 
-Available from https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html#download, e.g., 
+Available from [https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html#download](https://mathgen.stats.ox.ac.uk/genetics_software/snptest/snptest.html#download), e.g., 
 ```bash
 wget http://www.well.ox.ac.uk/~gav/resources/snptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
 tar xvfz nptest_v2.5.4-beta3_CentOS6.6_x86_64_static.tgz
@@ -329,7 +329,7 @@ but they would go away with `-method em` for instance.
 
 ### SUGEN
 
-Genetic Association Analysis Under Complex Survey Sampling, https://github.com/dragontaoran/SUGEN.
+Genetic Association Analysis Under Complex Survey Sampling, [https://github.com/dragontaoran/SUGEN](https://github.com/dragontaoran/SUGEN).
 
 ### swiss
 
@@ -377,13 +377,13 @@ and consult the online documentation.
 
 ### fineSTRUCTURE
 
-https://people.maths.bris.ac.uk/~madjl/finestructure/index.html
+[https://people.maths.bris.ac.uk/~madjl/finestructure/index.html](https://people.maths.bris.ac.uk/~madjl/finestructure/index.html)
 
 ## HLA imputation
 
 ### HLA*IMP:02
 
-Download source from https://oxfordhla.well.ox.ac.uk/hla/tool/main
+Download source from [https://oxfordhla.well.ox.ac.uk/hla/tool/main](https://oxfordhla.well.ox.ac.uk/hla/tool/main)
 
 ```bash
 sudo apt install libgd
@@ -446,7 +446,7 @@ The references are
 
 > Hormozdiari F, Kostem E, Kang EY, Pasaniuc B, Eskin E (2014). Identifying causal variants at loci with multiple signals of association. *Genetics* 198(2):497-508.
 
-Both are available from https://github.com/fhormoz/caviar.
+Both are available from [https://github.com/fhormoz/caviar](https://github.com/fhormoz/caviar).
 
 ### CAVIARBF
 
@@ -470,13 +470,13 @@ cd -
 
 ### finemap
 
-finemap 1.4 is available from http://www.christianbenner.com/finemap_v1.4_x86_64.tgz.
+finemap 1.4 is available from [http://www.christianbenner.com/finemap_v1.4_x86_64.tgz](http://www.christianbenner.com/finemap_v1.4_x86_64.tgz).
 ```bash
 finemap_v1.4_x86_64 --sss --in-files example/master
 ```
 We could also keep the screen output with `finemap_v1.4_x86_64 --sss --in-files example/master 2>&1 | tee test.log`.
 
-LDSTORE v2.0 is available from http://www.christianbenner.com/ldstore_v2.0_x86_64.tgz.
+LDSTORE v2.0 is available from [http://www.christianbenner.com/ldstore_v2.0_x86_64.tgz](http://www.christianbenner.com/ldstore_v2.0_x86_64.tgz).
 
 ```bash
 ldstore_v2.0_x86_64 --in-files example/master --write-bdose --bdose-version 1.1
@@ -488,15 +488,15 @@ ldstore_v2.0_x86_64 --in-files example/master --bcor-to-text
 ### gchromVar
 
 Cell type specific enrichments using finemapped variants and quantitative epigenetic data,
-https://github.com/caleblareau/gchromVAR; see https://github.com/caleblareau/singlecell_bloodtraits for examples.
+[https://github.com/caleblareau/gchromVAR](https://github.com/caleblareau/gchromVAR); see [https://github.com/caleblareau/singlecell_bloodtraits](https://github.com/caleblareau/singlecell_bloodtraits) for examples.
 
-It requires chromVarmotifs from https://github.com/GreenleafLab/chromVARmotifs, which requires gcc 5.2.0.
+It requires chromVarmotifs from [https://github.com/GreenleafLab/chromVARmotifs](https://github.com/GreenleafLab/chromVARmotifs), which requires gcc 5.2.0.
 
 ### JAM
 
 **Setup**
 
-The package is available from https://github.com/pjnewcombe/R2BGLiMS.
+The package is available from [https://github.com/pjnewcombe/R2BGLiMS](https://github.com/pjnewcombe/R2BGLiMS).
 
 Note that JAM requires Java 1.8 so call to Java -jar inside the function needs to
 reflect this, not straightforward with `install_github()` from `devtools` but one needs to
@@ -565,7 +565,7 @@ See [https://cambridge-ceu.github.io/csd3/applications/ANNOVAR.html](https://cam
 
 ### DAVID
 
-https://david.ncifcrf.gov/
+[https://david.ncifcrf.gov/](https://david.ncifcrf.gov/)
 
 ### fgwas
 
@@ -592,7 +592,7 @@ Nevertheless it is also required to have other dependencies in place.
 
 ### GARFIELD
 
-Web: https://www.ebi.ac.uk/birney-srv/GARFIELD/
+Web: [https://www.ebi.ac.uk/birney-srv/GARFIELD/](https://www.ebi.ac.uk/birney-srv/GARFIELD/)
 ```bash
 wget -qO- https://www.ebi.ac.uk/birney-srv/GARFIELD/package-v2/garfield-v2.tar.gz | \
 tar xvfz
@@ -601,7 +601,7 @@ tar xvfz
 cd garfield-v2
 bash garfield
 ```
-Additional details are described in the documentation, https://www.ebi.ac.uk/birney-srv/GARFIELD/documentation-v2/GARFIELD-v2.pdf.
+Additional details are described in the documentation, [https://www.ebi.ac.uk/birney-srv/GARFIELD/documentation-v2/GARFIELD-v2.pdf](https://www.ebi.ac.uk/birney-srv/GARFIELD/documentation-v2/GARFIELD-v2.pdf).
 
 ### gnomAD
 
@@ -631,15 +631,15 @@ See [https://software.broadinstitute.org/morpheus/](https://software.broadinstit
 
 ### PolyPhen and PolyPhen-2
 
-See http://genetics.bwh.harvard.edu/pph/ and http://genetics.bwh.harvard.edu/pph2/.
+See [http://genetics.bwh.harvard.edu/pph/](http://genetics.bwh.harvard.edu/pph/) and [http://genetics.bwh.harvard.edu/pph2/](http://genetics.bwh.harvard.edu/pph2/).
 
 ## UNPHASED
 
-See https://sites.google.com/site/fdudbridge/software/unphased-3-1.
+See [https://sites.google.com/site/fdudbridge/software/unphased-3-1](https://sites.google.com/site/fdudbridge/software/unphased-3-1).
 
 ### VEP
 
-The description is available from http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html.
+The description is available from [http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html](http://www.ensembl.org/info/docs/tools/vep/script/vep_download.html).
 ```bash
 git clone https://github.com/Ensembl/ensembl-vep.git
 
@@ -807,7 +807,7 @@ Power calculation. [https://shiny.cnsgenomics.com/mRnd/](https://shiny.cnsgenomi
 
 Software in Matlab and R for Latent Causal Variable model inferring genetically causal relationships using GWAS data.
 
-https://github.com/lukejoconnor/LCV
+[https://github.com/lukejoconnor/LCV](https://github.com/lukejoconnor/LCV)
 
 See R-packages section.
 
@@ -1072,7 +1072,7 @@ sudo apt install python-nose
 
 ### MiXeR
 
-https://github.com/precimed/mixer
+[https://github.com/precimed/mixer](https://github.com/precimed/mixer)
 
 ### PLINK2
 
@@ -1084,11 +1084,11 @@ Note also the way to use individual's IDs in PLINK2.
 
 ## PRrice-2
 
-Source https://github.com/choishingwan/PRSice
+Source [https://github.com/choishingwan/PRSice](https://github.com/choishingwan/PRSice)
 
-and documentation, https://choishingwan.github.io/PRSice/ (scripts [pgs.sh](files/pgs.sh)).
+and documentation, [https://choishingwan.github.io/PRSice/](https://choishingwan.github.io/PRSice/) (scripts [pgs.sh](files/pgs.sh)).
 
-see also https://github.com/pgormley/polygenic-risk-scores.
+see also [https://github.com/pgormley/polygenic-risk-scores](https://github.com/pgormley/polygenic-risk-scores).
 
 ### R-packages
 
@@ -1112,7 +1112,7 @@ See also wiki resources section of Omics-analysis as well as implementations in 
 
 ### IronThrone-GoT
 
-https://github.com/landau-lab/IronThrone-GoT
+[https://github.com/landau-lab/IronThrone-GoT](https://github.com/landau-lab/IronThrone-GoT)
 
 Nam AS, et al. (2019). Somatic mutations and cell identity linked by Genotyping of Transcriptomes. *Nature" 571: 355–360.
 
@@ -1347,7 +1347,7 @@ Web [http://inferno.lisanwanglab.org/index.php](http://inferno.lisanwanglab.org/
 
 It is a software for bivariate lineax mixed model (LMM),
 
-https://www.mv.helsinki.fi/home/mjxpirin/download.html
+[https://www.mv.helsinki.fi/home/mjxpirin/download.html](https://www.mv.helsinki.fi/home/mjxpirin/download.html)
 
 pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
 
@@ -1355,7 +1355,7 @@ pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with s
 
 **Avocado**
 
-Project page, https://noble.gs.washington.edu/proj/avocado/ and Software, https://bitbucket.org/noblelab/avocado/src/master/
+Project page, [https://noble.gs.washington.edu/proj/avocado/](https://noble.gs.washington.edu/proj/avocado/ ) and Software, [https://bitbucket.org/noblelab/avocado/src/master/](https://bitbucket.org/noblelab/avocado/src/master/)
 
 To install
 ```bash
@@ -1368,22 +1368,22 @@ export PYTHONPATH=$PYTHONPATH:/rds/user/jhz22/hpc-work/lib/python2.7/site-packag
 
 A library to combine, analyze, group and correct p-values in BED files. Unique tools involve correction for spatial autocorrelation. This is useful for ChIP-Seq probes and Tiling arrays, or any data with spatial correlation.
 
-Software, https://github.com/brentp/combined-pvalues
+Software, [https://github.com/brentp/combined-pvalues](https://github.com/brentp/combined-pvalues)
 
 Pedersen BS, Schwartz DA, Yang IV, Kechris KJ. Comb-p: software for combining, analyzing, grouping and correcting spatially correlated P-values
 *Bioinformatics* 28(22):2986–2988, https://doi.org/10.1093/bioinformatics/bts545
 
 **ChromImpute**
 
-Website, http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/ and Source, https://github.com/jernst98/ChromImpute
+Website, [http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/](http://www.biolchem.ucla.edu/labs/ernst/ChromImpute/) and Source, [https://github.com/jernst98/ChromImpute](https://github.com/jernst98/ChromImpute)
 
 Ernst J, Kellis M. Large-scale imputation of epigenomic datasets for systematic annotation of diverse human tissues. Nature Biotechnology, 33:364-376, 2015
 
 **EpiAlign**
 
-Software, https://github.com/zzz3639/EpiAlign
+Software, [https://github.com/zzz3639/EpiAlign](https://github.com/zzz3639/EpiAlign)
 
-Web, http://shiny.stat.ucla.edu:3838/EpiAlign/
+Web, [http://shiny.stat.ucla.edu:3838/EpiAlign/](http://shiny.stat.ucla.edu:3838/EpiAlign/)
 
 Ge X, Zhang H, Xie L, Li WV, Kwon SB, Li JJ
 EpiAlign: an alignment-based bioinformatic tool for comparing chromatin state sequences.
@@ -1393,7 +1393,7 @@ Nucleic Acids Res. 2019 Apr 24. doi: 10.1093/nar/gkz287.
 
 ## R-packages
 
-See https://github.com/jinghuazhao/Computational-Statistics for general information.
+See [https://github.com/jinghuazhao/Computational-Statistics](https://github.com/jinghuazhao/Computational-Statistics) for general information.
 
 **Bioconductor**
 
@@ -1409,7 +1409,7 @@ It refers to Generalised Summary-data-based Mendelian Randomisation, http://cnsg
 ```r
 install.packages("http://cnsgenomics.com/software/gsmr/static/gsmr_1.0.6.tar.gz",repos=NULL,type="source")
 ```
-with test data, http://cnsgenomics.com/software/gsmr/static/test_data.zip.
+with test data, [http://cnsgenomics.com/software/gsmr/static/test_data.zip](http://cnsgenomics.com/software/gsmr/static/test_data.zip).
 
 Script for the documentation example is tallied here as [gsmr_example.R](files/gsmr_example.R).
 
@@ -1491,7 +1491,7 @@ An extensive use is reported in the JSS paper from the [Mixed-Models](https://gi
 
 **PheWAS**
 
-See https://github.com/PheWAS/
+See [https://github.com/PheWAS/](https://github.com/PheWAS/)
 
 **coloc**
 
@@ -1543,7 +1543,7 @@ remotes::install_github("chr1swallace/coloc")
 
 **garfield**
 
-Web site: https://www.ebi.ac.uk/birney-srv/GARFIELD/
+Web site: [https://www.ebi.ac.uk/birney-srv/GARFIELD/](https://www.ebi.ac.uk/birney-srv/GARFIELD/)
 
 Again it can be installed with `biocLite("garfield")` and vignette be seen similarly to `coloc`.
 
@@ -1699,27 +1699,27 @@ The Bioconductor page is here, http://www.bioconductor.org/packages/devel/bioc/h
 
 **CpGassoc**
 
-https://CRAN.R-project.org/package=CpGassoc
+[https://CRAN.R-project.org/package=CpGassoc](https://CRAN.R-project.org/package=CpGassoc)
 
 **fastQTL**
 
-http://fastqtl.sourceforge.net/files/FastQTL-2.165.linux.tgz
+[http://fastqtl.sourceforge.net/files/FastQTL-2.165.linux.tgz](http://fastqtl.sourceforge.net/files/FastQTL-2.165.linux.tgz)
 
 **missMethy**
 
-http://bioconductor.org/packages/release/bioc/html/missMethyl.html
+[http://bioconductor.org/packages/release/bioc/html/missMethyl.html](http://bioconductor.org/packages/release/bioc/html/missMethyl.html)
 
 **MultiABEL**
 
 Multi-Trait Genome-Wide Association Analysis
 
-https://github.com/xiashen/MultiABEL
+[https://github.com/xiashen/MultiABEL](https://github.com/xiashen/MultiABEL)
 
 **OmnibusFisher**
 
 The p-values of SNPs, RNA expressions and DNA methylations are calculated by kernel machine (KM) regression. The correlation between different omics data are taken into account. This method can be applied to either samples with all three types of omics data or samples with two types.
 
-https://CRAN.R-project.org/package=OmnibusFisher
+[https://CRAN.R-project.org/package=OmnibusFisher](https://CRAN.R-project.org/package=OmnibusFisher)
 
 
 **PredictABEL**

@@ -2,7 +2,7 @@
 
 ### ADAM2
 
-R package for identification of essential genes using genome-wide CRISPR-Cas9 screens, https://github.com/DepMap-Analytics/ADAM2
+R package for identification of essential genes using genome-wide CRISPR-Cas9 screens, [https://github.com/DepMap-Analytics/ADAM2]( https://github.com/DepMap-Analytics/ADAM2).
 
 ### CHOPCHOP
 
