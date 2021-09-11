@@ -1349,13 +1349,13 @@ It is a software for bivariate lineax mixed model (LMM),
 
 [https://www.mv.helsinki.fi/home/mjxpirin/download.html](https://www.mv.helsinki.fi/home/mjxpirin/download.html)
 
-pSI, available from CRAN and http://genetics.wustl.edu/jdlab/psi_package/ with supplementary data http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz.
+pSI, available from CRAN and [http://genetics.wustl.edu/jdlab/psi_package/](http://genetics.wustl.edu/jdlab/psi_package/) with supplementary data [http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz](http://genetics.wustl.edu/jdlab/files/2014/01/pSI.data_1.0.tar_.gz).
 
 ## Epigenomics
 
 **Avocado**
 
-Project page, [https://noble.gs.washington.edu/proj/avocado/](https://noble.gs.washington.edu/proj/avocado/ ) and Software, [https://bitbucket.org/noblelab/avocado/src/master/](https://bitbucket.org/noblelab/avocado/src/master/)
+Project page, [https://noble.gs.washington.edu/proj/avocado/](https://noble.gs.washington.edu/proj/avocado/) and Software, [https://bitbucket.org/noblelab/avocado/src/master/](https://bitbucket.org/noblelab/avocado/src/master/)
 
 To install
 ```bash
