@@ -1293,7 +1293,7 @@ python train.py --expFile resources/geneanno.exp.csv --targetIndex 1 --output mo
 
 ### enloc
 
-Available from https://github.com/xqwen/integrative. More recent version is [fastenloc](https://github.com/xqwen/fastenloc); also related are [dap](https://github.com/xqwen/dap/) and [torus](https://github.com/xqwen/torus/).
+Available from [https://github.com/xqwen/integrative](https://github.com/xqwen/integrative). More recent version is [fastenloc](https://github.com/xqwen/fastenloc); also related are [dap](https://github.com/xqwen/dap/) and [torus](https://github.com/xqwen/torus/).
 
 For instance torus can be installed as follows,
 ```bash 
