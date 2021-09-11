@@ -1693,9 +1693,9 @@ browseVignettes("sva")
 
 **EBSeq**
 
-The Bioconductor page is here, http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html.
+The Bioconductor page is here, [http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html](http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html).
 
-## --- eQTL, epigenome-wide association study (EWAS). ---
+## --- eQTL, epigenome-wide association study (EWAS) ---
 
 **CpGassoc**
 
