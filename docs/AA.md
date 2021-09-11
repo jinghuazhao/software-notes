@@ -1334,8 +1334,8 @@ where EUR.bed contains the information for approximately independent LD blocks.
 
 ### INFERNO / SparkINFERNO
 
-Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it is available from https://bitbucket.org/wanglab-upenn/INFERNO 
-and it also has a web interface, http://inferno.lisanwanglab.org/index.php.
+Short for (INFERring the molecular mechanisms of NOncoding genetic variants, it is available from [https://bitbucket.org/wanglab-upenn/INFERNO](https://bitbucket.org/wanglab-upenn/INFERNO)
+and it also has a web interface, [http://inferno.lisanwanglab.org/index.php](http://inferno.lisanwanglab.org/index.php).
 
 SparkINFERNO is described here, [https://bitbucket.org/wanglab-upenn/sparkinferno/](https://bitbucket.org/wanglab-upenn/sparkinferno/).
 
