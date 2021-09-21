@@ -187,13 +187,16 @@ make
 ```
 but the following change is needed on line 468 of `misc/msHOT2glf.c`: `tmppch` as in (tmppch=='\0') should be `*tmppch` as in `(*tmppch==''0')`, suggested by the compiler.
 
-## Ubuntu archive: bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, subread, tophat, trinityrnaseq, vcftool, vowpal-wabbit
+## Ubuntu archive
+
+This include bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2, fastqc, fastx-toolkit, freebayes, hmmer, hisat2, picard-tools, rsem, sambamba, samtools, seqtk, sra-toolkit, subread, tophat, trinityrnaseq, vcftool, vowpal-wabbit.
 
 Install with ```sudo apt install```.
 
 See also [https://github.com/lh3/seqtk](https://github.com/lh3/seqtk).
 
 Besides notes above, this is also possible:
+
 ## bcftools
 ```bash
 wget https://github.com/samtools/bcftools/releases/download/1.9/bcftools-1.9.tar.bz2
