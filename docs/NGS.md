@@ -321,6 +321,14 @@ The download can be seeded from http://data.broadinstitute.org/igv, e.g., http:/
 
 Again the source code is from GitHub, https://github.com/igvteam/igv/. For developers, [igv.js](https://github.com/igvteam/igv.js) is very appealing.
 
+## INSIDER
+
+Web: [https://github.com/aehrc/INSIDER](https://github.com/aehrc/INSIDER)
+
+INserted Sequence Information DEtectoR (INSIDER) analyses whole genome sequencing data and identifies segments of potentially foreign origin by their significant shift in k-mer signatures.
+
+Tay, A.P., Hosking, B., Hosking, C., Bauer, D.C. & Wilson, L.O.W. INSIDER: alignment-free detection of foreign DNA sequences. Computational and Structural Biotechnology Journal 19, 3810-3816 (2021).
+
 ## Jannovar
 
 From the GitHub repository, it is seen to use `project object model` (POM), an XML representation of a Maven project held in a file named `pom.xml`. We therefore install `maven` first,
