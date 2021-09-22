@@ -56,7 +56,7 @@ Teng H, et al. Prevalence and architecture of posttranscriptionally impaired syn
 
 ##
 
-[PROPERseqTools](https://github.com/Zhong-Lab-UCSD/PROPERseqTools/tree/v1.0.0)
+[PROPERseqTools](https://github.com/Zhong-Lab-UCSD/PROPERseqTools/tree/v1.0.0) and [database](https://genemo.ucsd.edu/proper/)
 
 Johnson, K.L. et al. Revealing protein-protein interactions at the transcriptome scale by sequencing. Molecular Cell.
 
