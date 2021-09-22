@@ -54,6 +54,12 @@ Fondrie WE, Noble WS (2020). Machine learning strategy that leverages large data
 
 Teng H, et al. Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types [published online ahead of print, 2020 Jan 17]. Nucleic Acids Res. 2020;gkaa019. doi:10.1093/nar/gkaa019
 
+##
+
+[PROPERseqTools](https://github.com/Zhong-Lab-UCSD/PROPERseqTools/tree/v1.0.0)
+
+Johnson, K.L. et al. Revealing protein-protein interactions at the transcriptome scale by sequencing. Molecular Cell.
+
 ## ProteomeXchange
 
 [http://proteomecentral.proteomexchange.org/cgi/GetDataset](http://proteomecentral.proteomexchange.org/cgi/GetDataset), also PRotein IDEntification databases (PRIDE): [https://www.ebi.ac.uk/](https://www.ebi.ac.uk/)
