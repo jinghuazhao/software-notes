@@ -533,7 +533,7 @@ install Wx::Perl::Packager
 <p>We can also use cpan, but the installation fails under Ubuntu 18.04.</p>
 <hr />
 <h2 id="finemapping">Finemapping</h2>
-<h3 id="caviarecaviar">CAVIAR/eCAVIAR</h3>
+<h3 id="caviarecaviarmscaviar">CAVIAR/eCAVIAR/MsCAVIAR</h3>
 <p>Installation is made from GitHub in the usual way,</p>
 <pre><code class="language-bash">git clone https://github.com/fhormoz/caviar.git
 </code></pre>
@@ -554,16 +554,19 @@ eCAVIAR -l CAVIAR-C++/sample_data/GWAS.ADGC.MC.AD.IGAP.stage1.hg19.chr.11.121344
         -o 75
 </code></pre>
 <p>It may be necessary to alter Makefile to point to appropriate -I -L for lapack, for instance.</p>
+<p>MsCAVIAR is available from <a href="https://github.com/nlapier2/MsCAVIAR">https://github.com/nlapier2/MsCAVIAR</a>.</p>
 <p>The references are</p>
-<p><strong>eCAVIAR</strong></p>
-<blockquote>
-<p>Hormozdiari F, van de Bunt M, Segrè AV, Li X, Joo JWJ, Bilow M, Sul JH, Sankararaman S, Pasaniuc B, Eskin E (2016). Colocalization of GWAS and eQTL Signals Detects Target Genes. <em>Am J Hum Genet</em> 99(6):1245-1260.</p>
-</blockquote>
 <p><strong>CAVIAR</strong></p>
 <blockquote>
 <p>Hormozdiari F, Kostem E, Kang EY, Pasaniuc B, Eskin E (2014). Identifying causal variants at loci with multiple signals of association. <em>Genetics</em> 198(2):497-508.</p>
 </blockquote>
+<p><strong>eCAVIAR</strong></p>
+<blockquote>
+<p>Hormozdiari F, van de Bunt M, Segrè AV, Li X, Joo JWJ, Bilow M, Sul JH, Sankararaman S, Pasaniuc B, Eskin E (2016). Colocalization of GWAS and eQTL Signals Detects Target Genes. <em>Am J Hum Genet</em> 99(6):1245-1260.</p>
+</blockquote>
 <p>Both are available from <a href="https://github.com/fhormoz/caviar">https://github.com/fhormoz/caviar</a>.</p>
+<p><strong>MsCAVIAR</strong></p>
+<p>LaPierre N, Taraszka K, Huang H, He R, Hormozdiari F,; Eskin E (2021): Additional simulations and a table of the real data results.. PLOS Genetics. Journal contribution. https://doi.org/10.1371/journal.pgen.1009733.s001.</p>
 <h3 id="caviarbf">CAVIARBF</h3>
 <pre><code class="language-bash">wget https://bitbucket.org/Wenan/caviarbf/get/7e428645be5e.zip
 unzip 7e428645be5e.zip
