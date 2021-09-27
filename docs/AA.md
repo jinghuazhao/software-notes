@@ -408,7 +408,7 @@ We can also use cpan, but the installation fails under Ubuntu 18.04.
 
 ## Finemapping
 
-### CAVIAR/eCAVIAR
+### CAVIAR/eCAVIAR/MsCAVIAR
 
 Installation is made from GitHub in the usual way,
 ```bash
@@ -436,17 +436,23 @@ eCAVIAR -l CAVIAR-C++/sample_data/GWAS.ADGC.MC.AD.IGAP.stage1.hg19.chr.11.121344
 ```
 It may be necessary to alter Makefile to point to appropriate -I -L for lapack, for instance.
 
+MsCAVIAR is available from [https://github.com/nlapier2/MsCAVIAR](https://github.com/nlapier2/MsCAVIAR).
+
 The references are
-
-**eCAVIAR**
-
-> Hormozdiari F, van de Bunt M, Segrè AV, Li X, Joo JWJ, Bilow M, Sul JH, Sankararaman S, Pasaniuc B, Eskin E (2016). Colocalization of GWAS and eQTL Signals Detects Target Genes. *Am J Hum Genet* 99(6):1245-1260.
 
 **CAVIAR**
 
 > Hormozdiari F, Kostem E, Kang EY, Pasaniuc B, Eskin E (2014). Identifying causal variants at loci with multiple signals of association. *Genetics* 198(2):497-508.
 
+**eCAVIAR**
+
+> Hormozdiari F, van de Bunt M, Segrè AV, Li X, Joo JWJ, Bilow M, Sul JH, Sankararaman S, Pasaniuc B, Eskin E (2016). Colocalization of GWAS and eQTL Signals Detects Target Genes. *Am J Hum Genet* 99(6):1245-1260.
+
 Both are available from [https://github.com/fhormoz/caviar](https://github.com/fhormoz/caviar).
+
+**MsCAVIAR**
+
+LaPierre N, Taraszka K, Huang H, He R, Hormozdiari F,; Eskin E (2021): Additional simulations and a table of the real data results.. PLOS Genetics. Journal contribution. https://doi.org/10.1371/journal.pgen.1009733.s001.
 
 ### CAVIARBF
 
