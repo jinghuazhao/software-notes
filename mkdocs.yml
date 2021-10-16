@@ -1,6 +1,6 @@
 site_name: software notes
 nav:
-    - Overview: README.md
+    - "": README.md
     - Genetic analysis:
       - AA.md
       - CRISPR.md
