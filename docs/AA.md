@@ -1620,18 +1620,21 @@ However it is now available from Bioconductor.
 It is a package for hypothesis prioritisation multi-trait colocalization, available from [https://github.com/jrs95/hyprcoloc](https://github.com/jrs95/hyprcoloc).
 ```bash
 R --no-save -q <<END
-   # Regression coefficients and standard errors from ten GWAS studies (Traits 1-5, 6-8 & 9-10 colocalize)
-   betas <- hyprcoloc::test.betas
-   head(betas)
-   ses <- hyprcoloc::test.ses
-   head(ses)
-
-   # Trait names and SNP IDs
-   traits <- paste0("T", 1:10)
-   rsid <- rownames(betas)
-
-   # Colocalisation analyses
-   results <- hyprcoloc::hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
+  library(hyprcoloc)
+  hyprcoloc_test <- function()
+  {
+  # Regression coefficients and standard errors from ten GWAS studies (Traits 1-5, 6-8 & 9-10 colocalize)
+    betas <- hyprcoloc::test.betas
+    head(betas)
+    ses <- hyprcoloc::test.ses
+    head(ses)
+  # Trait names and SNP IDs
+    traits <- paste0("T", 1:10)
+    rsid <- rownames(betas)
+  # Colocalisation analyses
+    hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
+  }
+  hyprcoloc_test()
 END
 ```
 **meta**
