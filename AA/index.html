@@ -1482,18 +1482,21 @@ garfield.plot(&quot;cd-meta.output.perm&quot;, num_perm = 100000,
 <p><strong>hyprcoloc</strong></p>
 <p>It is a package for hypothesis prioritisation multi-trait colocalization, available from <a href="https://github.com/jrs95/hyprcoloc">https://github.com/jrs95/hyprcoloc</a>.</p>
 <pre><code class="language-bash">R --no-save -q &lt;&lt;END
-   # Regression coefficients and standard errors from ten GWAS studies (Traits 1-5, 6-8 &amp; 9-10 colocalize)
-   betas &lt;- hyprcoloc::test.betas
-   head(betas)
-   ses &lt;- hyprcoloc::test.ses
-   head(ses)
-
-   # Trait names and SNP IDs
-   traits &lt;- paste0(&quot;T&quot;, 1:10)
-   rsid &lt;- rownames(betas)
-
-   # Colocalisation analyses
-   results &lt;- hyprcoloc::hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
+  library(hyprcoloc)
+  hyprcoloc_test &lt;- function()
+  {
+  # Regression coefficients and standard errors from ten GWAS studies (Traits 1-5, 6-8 &amp; 9-10 colocalize)
+    betas &lt;- hyprcoloc::test.betas
+    head(betas)
+    ses &lt;- hyprcoloc::test.ses
+    head(ses)
+  # Trait names and SNP IDs
+    traits &lt;- paste0(&quot;T&quot;, 1:10)
+    rsid &lt;- rownames(betas)
+  # Colocalisation analyses
+    hyprcoloc(betas, ses, trait.names=traits, snp.id=rsid)
+  }
+  hyprcoloc_test()
 END
 </code></pre>
 <p><strong>meta</strong></p>
