@@ -1507,8 +1507,6 @@ There is complaint about calling vignette() from Ubuntu; however it is otherwise
 
 Here we run examples modified from the documentation,
 ```r
-# coloc, large (>0.05) p.value.chisquare indicates traits are compatible with colocalisation
-# https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
 set.seed(1)
 X1 <- matrix(rbinom(1200,1,0.4),ncol=2)
 X2 <- matrix(rbinom(1000,1,0.6),ncol=2)
@@ -1517,28 +1515,32 @@ Y1 <- rnorm(600,apply(X1,1,sum),2)
 Y2 <- rnorm(500,2*apply(X2,1,sum),5)
 summary(lm1 <- lm(Y1~f1+f2,data=as.data.frame(X1)))
 summary(lm2 <- lm(Y2~f1+f2,data=as.data.frame(X2)))
-require(coloc)
-## intuitive test for proportionality
-ct <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")))
-summary(ct)
 b1 <- coef(lm1)
 b2 <- coef(lm2)
 v1 <- vcov(lm1)
 v2 <- vcov(lm2)
-coloc.test.summary(b1,b2,v1,v2)
-# some Bayesian flavour
-ct.bayes <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")),bayes=TRUE)
-ci(ct.bayes)
-par(mfrow=c(2,2))
-plot(ct)
-plot(ct.bayes)
-cc.bayes <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")),
-                       bayes=TRUE, bayes.factor=list(c(-0.1,1), c(0.9,1.1)))
-ci(cc.bayes)
+require(coloc)
 ## Bayesian approach, esp. when only p values are available
 abf <- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type="quant"),
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type="quant"))
 abf
+legacy <- function()
+## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
+{
+# coloc, large (>0.05) p.value.chisquare indicates traits are compatible with colocalisation
+  ct <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")))
+  summary(ct)
+  coloc.test.summary(b1,b2,v1,v2)
+# some Bayesian flavour
+  ct.bayes <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")),bayes=TRUE)
+  ci(ct.bayes)
+  par(mfrow=c(2,2))
+  plot(ct)
+  plot(ct.bayes)
+  cc.bayes <- coloc.test(lm1,lm2, plots.extra=list(x=c("eta","theta"), y=c("lhood","lhood")),
+                         bayes=TRUE, bayes.factor=list(c(-0.1,1), c(0.9,1.1)))
+  ci(cc.bayes)
+}
 ```
 Developmental version of the package is available as follows,
 ```r
