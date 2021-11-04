@@ -1386,9 +1386,7 @@ dev.off()
 <p>It requires <code>snpStats</code> that can be installed with biocLite().</p>
 <p>There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with <code>help.start()</code>.</p>
 <p>Here we run examples modified from the documentation,</p>
-<pre><code class="language-r"># coloc, large (&gt;0.05) p.value.chisquare indicates traits are compatible with colocalisation
-# https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
-set.seed(1)
+<pre><code class="language-r">set.seed(1)
 X1 &lt;- matrix(rbinom(1200,1,0.4),ncol=2)
 X2 &lt;- matrix(rbinom(1000,1,0.6),ncol=2)
 colnames(X1) &lt;- colnames(X2) &lt;- c(&quot;f1&quot;,&quot;f2&quot;)
@@ -1396,28 +1394,32 @@ Y1 &lt;- rnorm(600,apply(X1,1,sum),2)
 Y2 &lt;- rnorm(500,2*apply(X2,1,sum),5)
 summary(lm1 &lt;- lm(Y1~f1+f2,data=as.data.frame(X1)))
 summary(lm2 &lt;- lm(Y2~f1+f2,data=as.data.frame(X2)))
-require(coloc)
-## intuitive test for proportionality
-ct &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)))
-summary(ct)
 b1 &lt;- coef(lm1)
 b2 &lt;- coef(lm2)
 v1 &lt;- vcov(lm1)
 v2 &lt;- vcov(lm2)
-coloc.test.summary(b1,b2,v1,v2)
-# some Bayesian flavour
-ct.bayes &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)),bayes=TRUE)
-ci(ct.bayes)
-par(mfrow=c(2,2))
-plot(ct)
-plot(ct.bayes)
-cc.bayes &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)),
-                       bayes=TRUE, bayes.factor=list(c(-0.1,1), c(0.9,1.1)))
-ci(cc.bayes)
+require(coloc)
 ## Bayesian approach, esp. when only p values are available
 abf &lt;- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type=&quot;quant&quot;),
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type=&quot;quant&quot;))
 abf
+legacy &lt;- function()
+## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
+{
+# coloc, large (&gt;0.05) p.value.chisquare indicates traits are compatible with colocalisation
+  ct &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)))
+  summary(ct)
+  coloc.test.summary(b1,b2,v1,v2)
+# some Bayesian flavour
+  ct.bayes &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)),bayes=TRUE)
+  ci(ct.bayes)
+  par(mfrow=c(2,2))
+  plot(ct)
+  plot(ct.bayes)
+  cc.bayes &lt;- coloc.test(lm1,lm2, plots.extra=list(x=c(&quot;eta&quot;,&quot;theta&quot;), y=c(&quot;lhood&quot;,&quot;lhood&quot;)),
+                         bayes=TRUE, bayes.factor=list(c(-0.1,1), c(0.9,1.1)))
+  ci(cc.bayes)
+}
 </code></pre>
 <p>Developmental version of the package is available as follows,</p>
 <pre><code class="language-r">if(!require(&quot;remotes&quot;))
