@@ -1503,9 +1503,9 @@ See [https://github.com/PheWAS/](https://github.com/PheWAS/)
 
 It requires `snpStats` that can be installed with biocLite().
 
-There is complaint about calling vignette() from Ubuntu; however it is otherwise smooth with `help.start()`.
+Now it has a comprehensive site, [https://chr1swallace.github.io/coloc/](https://chr1swallace.github.io/coloc/)
 
-Here we run examples modified from the documentation,
+This is the original example from the documentation,
 ```r
 set.seed(1)
 X1 <- matrix(rbinom(1200,1,0.4),ncol=2)
