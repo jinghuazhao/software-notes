@@ -43,7 +43,9 @@ Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell 
 
 Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7):1888–1902.e21. doi:10.1016/j.cell.2019.05.031
 
-See also [Signac](https://cloud.r-project.org/web/packages/Signac/index.html) for single-cell chromatin data.
+## Signac
+
+[CRAN](https://cloud.r-project.org/web/packages/Signac/index.html)
 
 Stuart, T., Srivastava, A., Madad, S., Lareau, C.A. & Satija, R. Single-cell chromatin state analysis with Signac. Nature Methods 18, 1333-1341 (2021).
 
