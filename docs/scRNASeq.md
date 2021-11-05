@@ -17,6 +17,12 @@ Popescu D-M et al. Decoding human fetal liver haematopoiesis. *Nature* [https://
 
 Mohanraj, S., et al. (2020). "CReSCENT: CanceR Single Cell ExpressioN Toolkit." *Nucleic Acids Research*.
 
+## DENDRO
+
+[https://github.com/zhouzilu/DENDRO](https://github.com/zhouzilu/DENDRO)
+
+Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing. Genome Biol 21, 10 (2020). https://doi.org/10.1186/s13059-019-1922-x
+
 ## SCANPY
 
 [https://github.com/theislab/Scanpy](https://github.com/theislab/Scanpy)
@@ -37,11 +43,7 @@ Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell 
 
 Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7):1888–1902.e21. doi:10.1016/j.cell.2019.05.031
 
-## DENDRO
-
-[https://github.com/zhouzilu/DENDRO](https://github.com/zhouzilu/DENDRO)
-
-Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing. Genome Biol 21, 10 (2020). https://doi.org/10.1186/s13059-019-1922-x
+See also [Signac](https://cloud.r-project.org/web/packages/Signac/index.html) for single-cell chromatin data.
 
 ## souporcell
 
