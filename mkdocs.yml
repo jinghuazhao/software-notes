@@ -8,7 +8,7 @@ nav:
       - NGS.md
       - pharmacogenomics.md
       - prottrans.md
-      - scRNASeq.md
+      - single-cell.md
     - Statistcal learning: SL.md
     - Artificial intelligence: AI.md
 theme:
