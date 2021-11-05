@@ -45,7 +45,7 @@ Stuart T, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019;177(7
 
 ## Signac
 
-[CRAN](https://cloud.r-project.org/web/packages/Signac/index.html)
+[https://cloud.r-project.org/web/packages/Signac](https://cloud.r-project.org/web/packages/Signac/index.html)
 
 Stuart, T., Srivastava, A., Madad, S., Lareau, C.A. & Satija, R. Single-cell chromatin state analysis with Signac. Nature Methods 18, 1333-1341 (2021).
 
