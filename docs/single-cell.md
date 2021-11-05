@@ -29,7 +29,7 @@ Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by
 
 ## SCENIC
 
-https://aertslab.org/#scenic and https://pyscenic.readthedocs.io/en/latest/.
+[https://aertslab.org/#scenic](https://aertslab.org/#scenic) and [https://pyscenic.readthedocs.io/en/latest/](https://pyscenic.readthedocs.io/en/latest/).
 
 ## scMAGeCK
 
