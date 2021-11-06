@@ -1403,6 +1403,19 @@ require(coloc)
 abf &lt;- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type=&quot;quant&quot;),
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type=&quot;quant&quot;))
 abf
+# sdY
+cat(&quot;sd(Y)=&quot;,var(Y1),&quot;\n&quot;)
+for(k in 1:2)
+{
+  k1 &lt;- k + 1
+  cat(&quot;Based on b&quot;,k,&quot;sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;)
+}
+cat(&quot;sd(Y)=&quot;,var(Y2),&quot;\n&quot;)
+for(k in 1:2)
+{
+  k1 &lt;- k + 1
+  cat(&quot;Based on b&quot;,k,&quot;sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;)
+}
 legacy &lt;- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
 {
@@ -1420,6 +1433,28 @@ legacy &lt;- function()
                          bayes=TRUE, bayes.factor=list(c(-0.1,1), c(0.9,1.1)))
   ci(cc.bayes)
 }
+</code></pre>
+<p>where we have illustrated how to obtain sd(Y) whose outputs are as follows,</p>
+<pre><code> # sdY
+&gt; cat(&quot;sd(Y)=&quot;,var(Y1),&quot;\n&quot;)
+sd(Y)= 4.355769
+&gt; for(k in 1:2)
++ {
++   k1 &lt;- k + 1
++   cat(&quot;Based on b&quot;,k,&quot;sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;)
++ }
+Based on b 1 sd(Y1) =  4.28801
+Based on b 2 sd(Y1) =  4.165733
+&gt; cat(&quot;sd(Y)=&quot;,var(Y2),&quot;\n&quot;)
+sd(Y)= 32.42754
+&gt; for(k in 1:2)
++ {
++   k1 &lt;- k + 1
++   cat(&quot;Based on b&quot;,k,&quot;sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;)
++ }
+Based on b 1 sd(Y2) =  31.27948
+Based on b 2 sd(Y2) =  31.26566
+&gt;
 </code></pre>
 <p>Developmental version of the package is available as follows,</p>
 <pre><code class="language-r">if(!require(&quot;remotes&quot;))
