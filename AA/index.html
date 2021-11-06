@@ -1408,13 +1408,13 @@ cat(&quot;sd(Y)=&quot;,var(Y1),&quot;\n&quot;)
 for(k in 1:2)
 {
   k1 &lt;- k + 1
-  cat(&quot;Based on b&quot;,k,&quot;sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;)
+  cat(&quot;Based on b&quot;,k,&quot; sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;,sep=&quot;&quot;)
 }
 cat(&quot;sd(Y)=&quot;,var(Y2),&quot;\n&quot;)
 for(k in 1:2)
 {
   k1 &lt;- k + 1
-  cat(&quot;Based on b&quot;,k,&quot;sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;)
+  cat(&quot;Based on b&quot;,k,&quot; sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;,sep=&quot;&quot;)
 }
 legacy &lt;- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
@@ -1441,19 +1441,19 @@ sd(Y)= 4.355769
 &gt; for(k in 1:2)
 + {
 +   k1 &lt;- k + 1
-+   cat(&quot;Based on b&quot;,k,&quot;sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;)
++   cat(&quot;Based on b&quot;,k,&quot;sd(Y1) = &quot;,var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),&quot;\n&quot;,sep=&quot;&quot;)
 + }
-Based on b 1 sd(Y1) =  4.28801
-Based on b 2 sd(Y1) =  4.165733
+Based on b1 sd(Y1) =  4.28801
+Based on b2 sd(Y1) =  4.165733
 &gt; cat(&quot;sd(Y)=&quot;,var(Y2),&quot;\n&quot;)
 sd(Y)= 32.42754
 &gt; for(k in 1:2)
 + {
 +   k1 &lt;- k + 1
-+   cat(&quot;Based on b&quot;,k,&quot;sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;)
++   cat(&quot;Based on b&quot;,k,&quot;sd(Y2) = &quot;,var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),&quot;\n&quot;,sep=&quot;&quot;)
 + }
-Based on b 1 sd(Y2) =  31.27948
-Based on b 2 sd(Y2) =  31.26566
+Based on b1 sd(Y2) =  31.27948
+Based on b2 sd(Y2) =  31.26566
 &gt;
 </code></pre>
 <p>Developmental version of the package is available as follows,</p>
