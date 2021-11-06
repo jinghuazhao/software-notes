@@ -1529,13 +1529,13 @@ cat("sd(Y)=",var(Y1),"\n")
 for(k in 1:2)
 {
   k1 <- k + 1
-  cat("Based on b",k,"sd(Y1) = ",var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),"\n")
+  cat("Based on b",k," sd(Y1) = ",var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),"\n",sep="")
 }
 cat("sd(Y)=",var(Y2),"\n")
 for(k in 1:2)
 {
   k1 <- k + 1
-  cat("Based on b",k,"sd(Y2) = ",var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),"\n")
+  cat("Based on b",k," sd(Y2) = ",var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),"\n",sep="")
 }
 legacy <- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
@@ -1563,19 +1563,19 @@ sd(Y)= 4.355769
 > for(k in 1:2)
 + {
 +   k1 <- k + 1
-+   cat("Based on b",k,"sd(Y1) = ",var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),"\n")
++   cat("Based on b",k,"sd(Y1) = ",var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1]),"\n",sep="")
 + }
-Based on b 1 sd(Y1) =  4.28801
-Based on b 2 sd(Y1) =  4.165733
+Based on b1 sd(Y1) =  4.28801
+Based on b2 sd(Y1) =  4.165733
 > cat("sd(Y)=",var(Y2),"\n")
 sd(Y)= 32.42754
 > for(k in 1:2)
 + {
 +   k1 <- k + 1
-+   cat("Based on b",k,"sd(Y2) = ",var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),"\n")
++   cat("Based on b",k,"sd(Y2) = ",var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1]),"\n",sep="")
 + }
-Based on b 1 sd(Y2) =  31.27948
-Based on b 2 sd(Y2) =  31.26566
+Based on b1 sd(Y2) =  31.27948
+Based on b2 sd(Y2) =  31.26566
 >
 ```
 
