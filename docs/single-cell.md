@@ -11,9 +11,11 @@ Abdelaal et al. A comparison of automatic cell identification methods for single
 
 Popescu D-M et al. Decoding human fetal liver haematopoiesis. *Nature* [https://doi.org/10.1038/s41586-019-1652-y](https://doi.org/10.1038/s41586-019-1652-y).
 
-# CReSCENT: CanceR Single Cell ExpressioN Toolkit
+# CReSCENT
 
-[https://crescent.cloud/](https://crescent.cloud/)
+Fullname: CanceR Single Cell ExpressioN Toolkit
+
+Availability: [https://crescent.cloud/](https://crescent.cloud/)
 
 Mohanraj, S., et al. (2020). "CReSCENT: CanceR Single Cell ExpressioN Toolkit." *Nucleic Acids Research*.
 
