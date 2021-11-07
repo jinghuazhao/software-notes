@@ -1529,15 +1529,9 @@ abf <- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type="q
 abf
 # sdY
 cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1^2+var(X1)*v1*nrow(X1))),"\n")
-for(k in 1:3)
-{
-  cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
-}
+for(k in 1:3) cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
 cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2^2+var(X2)*v2*nrow(X2))),"\n")
-for(k in 1:3)
-{
-  cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
-}
+for(k in 1:3) cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
 legacy <- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
 {
