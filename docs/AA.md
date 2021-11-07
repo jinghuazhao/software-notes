@@ -1511,6 +1511,9 @@ set.seed(1)
 X1 <- matrix(rbinom(1200,1,0.4),ncol=2)
 X2 <- matrix(rbinom(1000,1,0.6),ncol=2)
 colnames(X1) <- colnames(X2) <- c("f1","f2")
+library(dplyr)
+X1 <- mutate(as.data.frame(X1),x0=1) %>% select(x0,f1,f2)
+X2 <- mutate(as.data.frame(X2),x0=1) %>% select(x0,f1,f2)
 Y1 <- rnorm(600,apply(X1,1,sum),2)
 Y2 <- rnorm(500,2*apply(X2,1,sum),5)
 summary(lm1 <- lm(Y1~f1+f2,data=as.data.frame(X1)))
@@ -1525,17 +1528,15 @@ abf <- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type="q
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type="quant"))
 abf
 # sdY
-cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1[-1]^2+var(X1)*v1[-1,-1]*nrow(X1))),"\n")
-for(k in 1:2)
+cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1^2+var(X1)*v1*nrow(X1))),"\n")
+for(k in 1:3)
 {
-  k1 <- k + 1
-  cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k1]^2+nrow(X1)*v1[k1,k1])),"\n",sep="")
+  cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
 }
-cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2[-1]^2+var(X2)*v2[-1,-1]*nrow(X2))),"\n")
-for(k in 1:2)
+cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2^2+var(X2)*v2*nrow(X2))),"\n")
+for(k in 1:3)
 {
-  k1 <- k + 1
-  cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k1]^2+nrow(X2)*v2[k1,k1])),"\n",sep="")
+  cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
 }
 legacy <- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
@@ -1558,24 +1559,24 @@ legacy <- function()
 where we have illustrated how to obtain sd(Y) whose outputs are as follows,
 ```
 > # sdY
-> cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1[-1]^2+var(X1)*v1[-1,-1]*nrow(X1))),"\n")
-sd(Y)= 2.087048 ==> Estimates: 2.070751 2.041013
-> for(k in 1:2)
+> cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1^2+var(X1)*v1*nrow(X1))),"\n")
+sd(Y)= 2.087048 ==> Estimates: 0 2.070751 2.041013
+> for(k in 1:3)
 + {
-+   k1 <- k + 1
-+   cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k1]^2+nrow(X1)*v1[k1,k1])),"\n",sep="")
++   cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
 + }
-Based on b1 sd(Y1) = 2.070751
-Based on b2 sd(Y1) = 2.041013
-> cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2[-1]^2+var(X2)*v2[-1,-1]*nrow(X2))),"\n")
-sd(Y)= 5.694518 ==> Estimates: 5.592806 5.59157
-> for(k in 1:2)
+Based on b1 sd(Y1) = 0
+Based on b2 sd(Y1) = 2.070751
+Based on b3 sd(Y1) = 2.041013
+> cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2^2+var(X2)*v2*nrow(X2))),"\n")
+sd(Y)= 5.694518 ==> Estimates: 0 5.592806 5.59157
+> for(k in 1:3)
 + {
-+   k1 <- k + 1
-+   cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k1]^2+nrow(X2)*v2[k1,k1])),"\n",sep="")
++   cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
 + }
-Based on b1 sd(Y2) = 5.592806
-Based on b2 sd(Y2) = 5.59157
+Based on b1 sd(Y2) = 0
+Based on b2 sd(Y2) = 5.592806
+Based on b3 sd(Y2) = 5.59157
 ```
 In fact, we usually only works with single regression coefficients.
 
