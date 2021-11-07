@@ -1404,17 +1404,17 @@ abf &lt;- coloc.abf(list(beta=b1, varbeta=diag(v1), N=nrow(X1), sdY=sd(Y1), type
                  list(beta=b2, varbeta=diag(v2), N=nrow(X2), sdY=sd(Y2), type=&quot;quant&quot;))
 abf
 # sdY
-cat(&quot;sd(Y)=&quot;,sd(Y1),&quot;\n&quot;)
+cat(&quot;sd(Y)=&quot;,sd(Y1),&quot;==&gt; Estimates:&quot;,sqrt(diag(var(X1)*b1[-1]^2+var(X1)*v1[-1,-1]*nrow(X1))),&quot;\n&quot;)
 for(k in 1:2)
 {
   k1 &lt;- k + 1
-  cat(&quot;Based on b&quot;,k,&quot; sd(Y1) = &quot;,sqrt(var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
+  cat(&quot;Based on b&quot;,k,&quot; sd(Y1) = &quot;,sqrt(var(X1[,k])*(b1[k1]^2+nrow(X1)*v1[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
 }
-cat(&quot;sd(Y)=&quot;,sd(Y2),&quot;\n&quot;)
+cat(&quot;sd(Y)=&quot;,sd(Y2),&quot;==&gt; Estimates:&quot;,sqrt(diag(var(X2)*b2[-1]^2+var(X2)*v2[-1,-1]*nrow(X2))),&quot;\n&quot;)
 for(k in 1:2)
 {
   k1 &lt;- k + 1
-  cat(&quot;Based on b&quot;,k,&quot; sd(Y2) = &quot;,sqrt(var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
+  cat(&quot;Based on b&quot;,k,&quot; sd(Y2) = &quot;,sqrt(var(X2[,k])*(b2[k1]^2+nrow(X2)*v2[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
 }
 legacy &lt;- function()
 ## intuitive test for proportionality from https://cran.r-project.org/web/packages/coloc/vignettes/vignette.html
@@ -1435,25 +1435,27 @@ legacy &lt;- function()
 }
 </code></pre>
 <p>where we have illustrated how to obtain sd(Y) whose outputs are as follows,</p>
-<pre><code>&gt; cat(&quot;sd(Y)=&quot;,sd(Y1),&quot;\n&quot;)
-sd(Y)= 2.087048
+<pre><code>&gt; # sdY
+&gt; cat(&quot;sd(Y)=&quot;,sd(Y1),&quot;==&gt; Estimates:&quot;,sqrt(diag(var(X1)*b1[-1]^2+var(X1)*v1[-1,-1]*nrow(X1))),&quot;\n&quot;)
+sd(Y)= 2.087048 ==&gt; Estimates: 2.070751 2.041013
 &gt; for(k in 1:2)
 + {
 +   k1 &lt;- k + 1
-+   cat(&quot;Based on b&quot;,k,&quot; sd(Y1) = &quot;,sqrt(var(X1[,k])*(coef(lm1)[k1]^2+nrow(X1)*v1[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
++   cat(&quot;Based on b&quot;,k,&quot; sd(Y1) = &quot;,sqrt(var(X1[,k])*(b1[k1]^2+nrow(X1)*v1[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
 + }
 Based on b1 sd(Y1) = 2.070751
 Based on b2 sd(Y1) = 2.041013
-&gt; cat(&quot;sd(Y)=&quot;,sd(Y2),&quot;\n&quot;)
-sd(Y)= 5.694518
+&gt; cat(&quot;sd(Y)=&quot;,sd(Y2),&quot;==&gt; Estimates:&quot;,sqrt(diag(var(X2)*b2[-1]^2+var(X2)*v2[-1,-1]*nrow(X2))),&quot;\n&quot;)
+sd(Y)= 5.694518 ==&gt; Estimates: 5.592806 5.59157
 &gt; for(k in 1:2)
 + {
 +   k1 &lt;- k + 1
-+   cat(&quot;Based on b&quot;,k,&quot; sd(Y2) = &quot;,sqrt(var(X2[,k])*(coef(lm2)[k1]^2+nrow(X2)*v2[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
++   cat(&quot;Based on b&quot;,k,&quot; sd(Y2) = &quot;,sqrt(var(X2[,k])*(b2[k1]^2+nrow(X2)*v2[k1,k1])),&quot;\n&quot;,sep=&quot;&quot;)
 + }
 Based on b1 sd(Y2) = 5.592806
 Based on b2 sd(Y2) = 5.59157
 </code></pre>
+<p>In fact, we usually only works with single regression coefficients.</p>
 <p>Developmental version of the package is available as follows,</p>
 <pre><code class="language-r">if(!require(&quot;remotes&quot;))
    install.packages(&quot;remotes&quot;)
