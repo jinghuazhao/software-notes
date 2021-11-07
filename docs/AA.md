@@ -1555,19 +1555,13 @@ where we have illustrated how to obtain sd(Y) whose outputs are as follows,
 > # sdY
 > cat("sd(Y)=",sd(Y1),"==> Estimates:",sqrt(diag(var(X1)*b1^2+var(X1)*v1*nrow(X1))),"\n")
 sd(Y)= 2.087048 ==> Estimates: 0 2.070751 2.041013
-> for(k in 1:3)
-+ {
-+   cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
-+ }
+> for(k in 1:3) cat("Based on b",k," sd(Y1) = ",sqrt(var(X1[,k])*(b1[k]^2+nrow(X1)*v1[k,k])),"\n",sep="")
 Based on b1 sd(Y1) = 0
 Based on b2 sd(Y1) = 2.070751
 Based on b3 sd(Y1) = 2.041013
 > cat("sd(Y)=",sd(Y2),"==> Estimates:",sqrt(diag(var(X2)*b2^2+var(X2)*v2*nrow(X2))),"\n")
 sd(Y)= 5.694518 ==> Estimates: 0 5.592806 5.59157
-> for(k in 1:3)
-+ {
-+   cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
-+ }
+> for(k in 1:3) cat("Based on b",k," sd(Y2) = ",sqrt(var(X2[,k])*(b2[k]^2+nrow(X2)*v2[k,k])),"\n",sep="")
 Based on b1 sd(Y2) = 0
 Based on b2 sd(Y2) = 5.592806
 Based on b3 sd(Y2) = 5.59157
