@@ -365,6 +365,14 @@ java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
 
 Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, https://doi.org/10.1186/s13059-019-1665-8
 
+
+## MINITE
+
+[https://github.com/Oshlack/MINTIE](https://github.com/Oshlack/MINTIE)
+
+Cmero, M. et al. MINTIE: identifying novel structural and splice variants in transcriptomes using RNA-seq data. Genome Biology 22, 296 (2021).
+
+
 ## MONSTER
 
 [http://galton.uchicago.edu/~mcpeek/software/MONSTER/](http://galton.uchicago.edu/~mcpeek/software/MONSTER/) ([http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz](http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz))
