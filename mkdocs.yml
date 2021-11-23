@@ -1,4 +1,6 @@
 site_name: software notes
+repo_url: https://jinghuazhao.github.io/software-notes
+edit_uri: ""
 nav:
     - "": README.md
     - Genetic analysis:
