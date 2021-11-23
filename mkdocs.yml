@@ -1,5 +1,5 @@
 site_name: software notes
-repo_url: https://jinghuazhao.github.io/software-notes
+repo_url: https://github.com/jinghuazhao/software-notes
 edit_uri: ""
 nav:
     - "": README.md
