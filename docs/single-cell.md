@@ -60,3 +60,5 @@ Heaton H, et al. Souporcell: robust clustering of single-cell RNA-seq data by ge
 ## squidpy
 
 Web: [https://squidpy.readthedocs.io/en/latest/](https://squidpy.readthedocs.io/en/latest/).
+
+Palla, G. et al. Squidpy: a scalable framework for spatial omics analysis. Nature Methods (2022).
