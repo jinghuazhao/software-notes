@@ -56,3 +56,7 @@ Stuart, T., Srivastava, A., Madad, S., Lareau, C.A. & Satija, R. Single-cell chr
 [https://github.com/wheaton5/souporcell](https://github.com/wheaton5/souporcell)
 
 Heaton H, et al. Souporcell: robust clustering of single-cell RNA-seq data by genotype without reference genotypes. Nat Methods (2020). https://doi.org/10.1038/s41592-020-0820-1
+
+## squidpy
+
+Web: [https://squidpy.readthedocs.io/en/latest/](https://squidpy.readthedocs.io/en/latest/).
