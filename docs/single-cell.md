@@ -11,7 +11,13 @@ Abdelaal et al. A comparison of automatic cell identification methods for single
 
 Popescu D-M et al. Decoding human fetal liver haematopoiesis. *Nature* [https://doi.org/10.1038/s41586-019-1652-y](https://doi.org/10.1038/s41586-019-1652-y).
 
-# CReSCENT
+## BayesPrism
+
+GitHub, [https://github.com/Danko-Lab/BayesPrism](https://github.com/Danko-Lab/BayesPrism)
+
+Chu, T., Wang, Z., Pe’er, D. & Danko, C.G. Cell type and gene expression deconvolution with BayesPrism enables Bayesian integrative analysis across bulk and single-cell RNA sequencing in oncology. *Nature Cancer* 3, 505-517 (2022).
+
+## CReSCENT
 
 Fullname: CanceR Single Cell ExpressioN Toolkit
 
