@@ -409,7 +409,7 @@ We can also use cpan, but the installation fails under Ubuntu 18.04.
 See [https://cambridge-ceu.github.io/csd3/applications/CookHLA.html](https://cambridge-ceu.github.io/csd3/applications/CookHLA.html) on SNP2HLA, HIBAG and CookHLA.
 
 * [arcasHLA](https://github.com/RabadanLab/arcasHLA)
-* [hla-genotyper](https://pypi.org/project/hla-genotyper/]
+* [hla-genotyper](https://pypi.org/project/hla-genotyper/)
 * [HLAgm](http://paed.hku.hk/genome/software/HLAgm_wes.zip)
 * [HLAreporter](http://paed.hku.hk/genome/software/HLAreporter.zip)
 
