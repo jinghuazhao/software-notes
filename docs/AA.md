@@ -381,7 +381,7 @@ and consult the online documentation.
 
 ## HLA imputation
 
-### HLA*IMP:02
+### HLA*IMP:02/03
 
 Download source from [https://oxfordhla.well.ox.ac.uk/hla/tool/main](https://oxfordhla.well.ox.ac.uk/hla/tool/main)
 
@@ -403,6 +403,8 @@ install Wx::Mini
 install Wx::Perl::Packager
 ```
 We can also use cpan, but the installation fails under Ubuntu 18.04.
+
+There appears to have a web counterpart called [HLA*IMP:03](http://imp.science.unimelb.edu.au/hla/).
 
 ### Others
 
