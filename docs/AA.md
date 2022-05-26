@@ -185,9 +185,10 @@ unzip Metasoft.zip
 java -jar Metasoft.jar -input example.txt
 java -jar Metasoft.jar -input example.txt -log example.log -output example.out
 cd -
+```
 
 Somehow the website is down on 26/5/2022, and a copy is made available from [here](files/METASOFT).
-```
+
 One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly.
 
 ---
