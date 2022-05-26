@@ -189,7 +189,7 @@ cd -
 
 Somehow the website is down on 26/5/2022, and a copy is made available from [here](https://github.com/jinghuazhao/software-notes/tree/master/docs/files/METASOFT).
 
-One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly.
+One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly [here](https://github.com/jinghuazhao/software-notes/tree/master/docs/files/ForestPMPlot).
 
 ---
 
