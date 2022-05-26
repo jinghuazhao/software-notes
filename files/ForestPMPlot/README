@@ -1,0 +1,47 @@
+forestPMPlot
+
+forestPMPlot is a free, open-source a python-interfaced R package tool for analyzing the 
+heterogeneous studies in meta-analysis by visualizing the effect size differences between 
+studies. ForestPMplot is specifically designed for facilitating the analysis of the effect 
+size differences between studies by visualizing and identifying the existence of the effects
+
+
+Package Dependency
+    R      :   library(plotrix)
+    python :   numpy 
+
+
+------------------------------------------------
+
+usage: python pmplot.py [meta_input] [meta_output] [study_name] [study_order] [rsid] [gene_name] [out_file]
+    [meta_input]                        Input file of METASOFT. 
+    [meta_output]                       Output file of METASOFT. 
+    [study_name]                        File containing studynames. One study name per line. The order of the
+                                        study names should be matched with [meta_input] and [meta_output] files.
+    [study_order]                       File containing the display index of studies. One index per line.
+    [rsid]                              Rsid of a SNP to generate ForestPMPlot.
+    [gene_name]                         Implicated gene name for the SNP.
+    [out_file]                          ForestPMPlot file. (Format : pdf)
+
+
+To run the example, 
+shell$>./run.sh 
+
+------------------------------------------------
+
+URL:
+http://http://genetics.cs.ucla.edu/meta
+
+------------------------------------------------
+
+VERSION HISTORY:
+      ForestPMPlot
+      v1.0.2 (2015-03-16) Bug fix.
+      v1.0.1 (2014-10-24) Bug fix.
+      v1.0.0 (2014-08-12) First major release.
+
+
+
+
+
+
