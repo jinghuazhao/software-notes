@@ -181,11 +181,13 @@ Available from [http://genetics.cs.ucla.edu/meta/](http://genetics.cs.ucla.edu/m
 mkdir METASOFT
 wget -qO- http://genetics.cs.ucla.edu/meta/repository/2.0.1/Metasoft.zip | \
 unzip Metasoft.zip
+# The results and log are in files `out` and `log`.
 java -jar Metasoft.jar -input example.txt
+java -jar Metasoft.jar -input example.txt -log example.log -output example.out
 cd -
-```
-The results are in file `out`.
 
+Somehow the website is down on 26/5/2022, and a copy is made available from [here](files/METASOFT).
+```
 One can also work with [ForestPMPLot](http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip) similarly.
 
 ---
