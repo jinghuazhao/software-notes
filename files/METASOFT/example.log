@@ -1,0 +1,11 @@
+Arguments:  -input example.txt -log example.log -output example.out
+ Input File: example.txt
+Output File: example.out
+Log File: example.log
+p-value Table File: HanEskinPvalueTable.txt
+Number of SNPs analyzed: 12
+Maximum number of studies: 3
+Specified lambda for   mean effect part (default = 1.0): 1.000000
+Specified lambda for heterogeneity part (default = 1.0): 1.000000
+Newly calculated inflation factor lambda for   mean effect part: 95.762873
+Newly calculated inflation factor lambda for heterogeneity part: 1.072135

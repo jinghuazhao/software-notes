@@ -1,0 +1,19 @@
+METASOFT
+
+(c) 2011-2020 Buhm Han
+
+This file may be used for your personal use.
+This file may be modified but the modified version must retain this copyright notice.
+This file or modified version must not be redistributed
+without prior permission from the author.
+This software is provided “AS IS”, without warranty of any kind.
+In no event shall the author be liable for any claim, damages or other liability
+in connection with the software or the use or other dealings in the software.
+
+Our software uses CERN in COLT package 
+(http://acs.lbl.gov/software/colt)
+which has the following license terms.
+
+Copyright (c) 1999 CERN - European Organization for Nuclear Research.
+
+Permission to use, copy, modify, distribute and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. CERN makes no representations about the suitability of this software for any purpose. It is provided "as is" without expressed or implied warranty. 

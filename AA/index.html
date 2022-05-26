@@ -356,10 +356,13 @@ where <code>metal.awk</code> has the following lines,</p>
 <pre><code class="language-bash">mkdir METASOFT
 wget -qO- http://genetics.cs.ucla.edu/meta/repository/2.0.1/Metasoft.zip | \
 unzip Metasoft.zip
+# The results and log are in files `out` and `log`.
 java -jar Metasoft.jar -input example.txt
+java -jar Metasoft.jar -input example.txt -log example.log -output example.out
 cd -
+
+Somehow the website is down on 26/5/2022, and a copy is made available from [here](files/METASOFT).
 </code></pre>
-<p>The results are in file <code>out</code>.</p>
 <p>One can also work with <a href="http://genetics.cs.ucla.edu/ForestPMPlot/repository/1.0.3/ForestPMPlot.zip">ForestPMPLot</a> similarly.</p>
 <hr />
 <h3 id="mtag">mtag</h3>

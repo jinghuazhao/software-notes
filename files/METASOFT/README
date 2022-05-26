@@ -1,0 +1,40 @@
+METASOFT
+
+Meta-analysis software tool for genome-wide association studies that provides the following methods
+
+   1.      Fixed Effects model (FE): Fixed effects model based on inverse-variance-weighted effect size.
+   2.      Random Effects model (RE): Conventional random effects model based on inverse-variance-weighted effect size. Heterogeneity is estimated using DerSimonian-Laird method.
+   3.      Han and Eskin's Random Effects model (RE2): Random effects model that increases power under heterogeneity.
+   4.      Binary Effects model (BE): Random effects model assuming that the effects either exist or not in the studies.
+
+Our software also provides the following information
+
+   1.      M-values: M-value of a study is the estimated posterior probability that the effect exists in the study. M-value helps interpretation of the association results showing high heterogeneity.
+
+------------------------------------------------
+
+
+
+
+
+------------------------------------------------
+
+URL:
+http://genetics.cs.ucla.edu/meta
+
+------------------------------------------------
+
+VERSION HISTORY:
+      v2.0.0 (2012-02-15) M-values are computed using exact calculation. Interface is changed.
+      v1.0.0 (2011-08-25) First major release. Bug fix.
+      v0.3.1 (2011-07-07) Bug fix.
+      v0.3.0 (2011-07-06) Bug fix. Binary effects model and M-values implemented.
+      v0.2.2 (2011-05-19) Bug fix.
+      v0.2.1 (2011-05-16) Small changes in output format.
+      v0.2.0 (2011-05-10) Bug fix. Genomic control method implemented.
+      v0.1.0 (2011-04-18) Initial prototype version deployed
+
+
+
+
+
