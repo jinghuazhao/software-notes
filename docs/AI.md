@@ -1,5 +1,9 @@
 # Artificial intelligence
 
+## Pyro
+
+[https://pyro.ai/examples/index.html](https://pyro.ai/examples/index.html)
+
 ## pytorch
 
 The home page is [https://pytorch.github.io](https://pytorch.github.io), and the repository itself [https://github.com/pytorch/](https://github.com/pytorch/) with [https://github.com/pytorch/examples](https://github.com/pytorch/examples).
