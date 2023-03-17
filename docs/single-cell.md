@@ -25,6 +25,10 @@ Availability: [https://crescent.cloud/](https://crescent.cloud/)
 
 Mohanraj, S., et al. (2020). "CReSCENT: CanceR Single Cell ExpressioN Toolkit." *Nucleic Acids Research*.
 
+## cytoSCAPE
+
+GitHub: <https://github.com/digitalcytometry/cytospace>; Web: <https://cytospace.stanford.edu/>
+
 ## DENDRO
 
 [https://github.com/zhouzilu/DENDRO](https://github.com/zhouzilu/DENDRO)
