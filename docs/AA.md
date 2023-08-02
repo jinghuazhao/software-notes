@@ -688,10 +688,6 @@ vep -i examples/homo_sapiens_GRCh37.vcf -o out.txt -offline
 
 Recent notes on ANNOVAR and VEP are available from here, [https://cambridge-ceu.github.io/csd3/applications/VEP.html](https://cambridge-ceu.github.io/csd3/applications/VEP.html).
 
-### R-packages
-
-See R-packages section.
-
 ---
 
 ## Pathway analysis
@@ -831,7 +827,6 @@ Software in Matlab and R for Latent Causal Variable model inferring genetically 
 
 [https://github.com/lukejoconnor/LCV](https://github.com/lukejoconnor/LCV)
 
-See R-packages section.
 
 ## Polygenic modeling
 
@@ -1112,10 +1107,6 @@ and documentation, [https://choishingwan.github.io/PRSice/](https://choishingwan
 
 see also [https://github.com/pgormley/polygenic-risk-scores](https://github.com/pgormley/polygenic-risk-scores).
 
-### R-packages
-
-See R-packages section.
-
 ---
 
 ## PheWAS
@@ -1126,7 +1117,7 @@ See [https://github.com/HallLab](https://github.com/HallLab) for the R and Pytho
 
 Lucas AM, et al. CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits. *Fron Genet*.
 
-See also wiki resources section of Omics-analysis as well as implementations in R-packages section.
+See also wiki resources section of Omics-analysis as well as implementations in R packages section.
 
 ---
 
@@ -1413,7 +1404,7 @@ Nucleic Acids Res. 2019 Apr 24. doi: 10.1093/nar/gkz287.
 
 ---
 
-## R-packages
+## R packages
 
 See [https://github.com/jinghuazhao/Computational-Statistics](https://github.com/jinghuazhao/Computational-Statistics) for general information.
 
