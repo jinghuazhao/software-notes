@@ -1354,7 +1354,7 @@ SparkINFERNO is described here, [https://bitbucket.org/wanglab-upenn/sparkinfern
 
 Web [http://inferno.lisanwanglab.org/index.php](http://inferno.lisanwanglab.org/index.php).
 
-### R packages
+### R-packages
 
 ## biMM
 
