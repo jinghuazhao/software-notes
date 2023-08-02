@@ -1354,8 +1354,6 @@ SparkINFERNO is described here, [https://bitbucket.org/wanglab-upenn/sparkinfern
 
 Web [http://inferno.lisanwanglab.org/index.php](http://inferno.lisanwanglab.org/index.php).
 
-### R-packages
-
 ## biMM
 
 It is a software for bivariate lineax mixed model (LMM),
