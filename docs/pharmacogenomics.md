@@ -4,29 +4,33 @@
 
 ### Clinical Trials
 
-Web: [https://ClinicalTrials.gov](https://ClinicalTrials.gov)
+Web: <https://ClinicalTrials.gov>
 
 ### PharmGKB
 
-Web: [https://api.pharmgkb.org](https://api.pharmgkb.org)
+Web: <https://api.pharmgkb.org>
 
 ### pharos
 
-Web: [https://pharos.nih.gov/](https://pharos.nih.gov/)
+Web: <https://pharos.nih.gov/>
 
 ### The Ligandable Human Proteome
 
-Web: [http://polymorph.sgc.utoronto.ca/drugged_human_proteome/](http://polymorph.sgc.utoronto.ca/drugged_human_proteome/)
+Web: <http://polymorph.sgc.utoronto.ca/drugged_human_proteome/>
 
 ## Software
 
+### ConPlex
+
+Web: <https://cb.csail.mit.edu/cb/conplex/>
+
 ### Python/chembl_webresource_client
 
-Web: [https://github.com/chembl/chembl_webresource_client](https://github.com/chembl/chembl_webresource_client)
+Web: <https://github.com/chembl/chembl_webresource_client>
 ```bash
 pip install chembl_webresource_client
 ```
-UniProtID mapping API: [https://www.uniprot.org/help/api_idmapping](https://www.uniprot.org/help/api_idmapping)
+UniProtID mapping API: <https://www.uniprot.org/help/api_idmapping>
 ```python3
 import urllib.parse
 import urllib.request
@@ -110,28 +114,36 @@ save(pi_category,pi_domain,pi_drug,pi_genomic,pi_pdb,pi_priority,pi_trait,file="
 
 ### R/dbparser
 
-[https://cran.r-project.org/web/packages/dbparser/](https://cran.r-project.org/web/packages/dbparser/)
+<https://cran.r-project.org/web/packages/dbparser/>
 
 ### R/rDGIdb
 
-[https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html](https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html)
+<https://www.bioconductor.org/packages/release/bioc/html/rDGIdb.html>
 
-[http://www.dgidb.org/](http://www.dgidb.org/)
+<http://www.dgidb.org/>
 
 ### R/sunburstR
 
-[https://github.com/timelyportfolio/sunburstR](https://github.com/timelyportfolio/sunburstR)
+<https://github.com/timelyportfolio/sunburstR>
 
-Techinical aspect: [https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python](https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python)
+Techinical aspect: <https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python>
 
-Example: [https://bl.ocks.org/kerryrodden/7090426](https://bl.ocks.org/kerryrodden/7090426)
+Example: <https://bl.ocks.org/kerryrodden/7090426>
 
 ## Reference
 
-Cotto KC, Wagner AH, Feng YY, Kiwala S, Coffman AC, Spies G, Wollam A, Spies NC, Griffith OL, Griffith M. DGIdb 3.0: a redesign and expansion of the drug-gene interaction database. *Nucleic Acids Res.* 2018 Jan 4;46(D1):D1068-D1073. doi: 10.1093/nar/gkx1143. PMID: 29156001; PMCID: PMC5888642.
+Cotto KC, Wagner AH, Feng YY, Kiwala S, Coffman AC, Spies G, Wollam A, Spies NC, Griffith OL, Griffith M.
+DGIdb 3.0: a redesign and expansion of the drug-gene interaction database.
+*Nucleic Acids Res.* 2018 Jan 4;46(D1):D1068-D1073. doi: 10.1093/nar/gkx1143. PMID: 29156001; PMCID: PMC5888642.
 
 Fang H; ULTRA-DD Consortium, De Wolf H, Knezevic B, Burnham KL, Osgood J, Sanniti A, Lledó Lara A, Kasela S, De Cesco S, Wegner JK, Handunnetthi L, McCann FE, Chen L, Sekine T, Brennan PE, Marsden BD, Damerell D, O'Callaghan CA, Bountra C, Bowness P, Sundström Y, Milani L, Berg L, Göhlmann HW, Peeters PJ, Fairfax BP, Sundström M, Knight JC.
 A genetics-led approach defines the drug target landscape of 30 immune-related traits.
 *Nat Genet*. 2019 Jul;51(7):1082-1091. doi: 10.1038/s41588-019-0456-1. Epub 2019 Jun 28.
 
-Wang J, Yazdani S, Han A, Schapira M. Structure-based view of the druggable genome. *Drug Discovery Today* 2020; 25:561-567.
+Singh R, Sledzieski S, Bryson B, Cowen L, Berger B (2023).
+Contrastive learning in protein language space predicts interactions between drugs and protein targets.
+*Proc Natl Acad Sci* 120, e2220778120.
+
+Wang J, Yazdani S, Han A, Schapira M.
+Structure-based view of the druggable genome.
+*Drug Discovery Today* 2020; 25:561-567.
