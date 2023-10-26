@@ -27,9 +27,11 @@
 
 ## Python Code Examples
 
-Web: Machine Learning Fundamentals Handbook – Key Concepts, Algorithms, and Python Code Examples, <https://www.freecodecamp.org/news/machine-learning-handbook/>
+From: Machine Learning Fundamentals Handbook – Key Concepts, Algorithms, and Python Code Examples, 
 
-### Linear Regression in Python
+Web: <https://www.freecodecamp.org/news/machine-learning-handbook/>
+
+### Linear Regression
 
 ```python
 import numpy as np
@@ -63,7 +65,7 @@ plt.show()
 print(f"If Alex buys {next_month_stamps} stamps next month, they will likely spend ${predicted_spend[0]:.2f}.")
 ```
 
-### Logistic Regression in Python
+### Logistic Regression
 
 ```python
 import numpy as np
@@ -99,7 +101,7 @@ plt.show()
 print(f"Jenny will {'like' if predicted_like[0] == 1 else 'not like'} a book of {predict_book_pages} pages.")
 ```
 
-### Linear Discrimant Analysis in Python
+### Linear Discrimant Analysis
 
 ```python
 import numpy as np
@@ -133,7 +135,7 @@ plt.show()
 print(f"Sarah will {'like' if predicted_like[0] == 1 else 'not like'} a fruit of size {new_fruit[0, 0]} and sweetness {new_fruit[0, 1]}.")
 ```
 
-### Naive Bayes in Python
+### Naive Bayes
 
 ```python
 import numpy as np
@@ -167,7 +169,7 @@ plt.show()
 print(f"Tom will {'like' if predicted_like[0] == 1 else 'not like'} a {new_movie[0, 0]}-min long movie of genre code {new_movie[0, 1]}.")
 ```
 
-### Decision Trees in Python
+### Decision Trees
 
 ```python
 import numpy as np
@@ -209,7 +211,7 @@ plt.show()
 print(f"Predicted test score for {new_study_hour[0, 0]} hours of study: {predicted_score[0]:.2f}.")
 ```
 
-### Bagging in Python
+### Bagging
 
 ```python
 import numpy as np
@@ -250,7 +252,7 @@ plot_tree(tree, filled=True, rounded=True, feature_names=["Calorie Intake", "Wor
 plt.show()
 ```
 
-### Random Forest in Python
+### Random Forest
 
 ```python
 import numpy as np
@@ -313,7 +315,7 @@ plt.title('Feature Importance')
 plt.show()
 ```
 
-### Boosting in Python
+### Boosting
 
 #### AdaBoost
 
@@ -376,7 +378,7 @@ plt.title('Actual vs Predicted House Prices with AdaBoost')
 plt.show()
 ```
 
-#### Gradient Boosting Model in Python
+#### Gradient Boosting Model
 
 ```python
 # Initialize and train Gradient Boosting Regressor model
