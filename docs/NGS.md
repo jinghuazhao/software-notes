@@ -6,30 +6,30 @@ Pabinger S, et al. (2014). A survey of tools for variant analysis of next-genera
 
 ## NGS pipeline
 
-[https://www.hgsc.bcm.edu/software/mercury](https://www.hgsc.bcm.edu/software/mercury)
+<https://www.hgsc.bcm.edu/software/mercury>
 
 ## Annotation
 
-[https://sites.google.com/site/jpopgen/wgsa](https://sites.google.com/site/jpopgen/wgsa)
+<https://sites.google.com/site/jpopgen/wgsa>
 
 ## Case studies
 
 Lagana A, et al. (2018). Precision medicine for relapsed multiple myeloma on the basis of an integrative multiomics approach. *JCO Prec Oncol.* Data Suppl, 
-http://ascopubs.org/doi/suppl/10.1200/PO.18.00019
+<http://ascopubs.org/doi/suppl/10.1200/PO.18.00019>
 
 Lu X-M, et al. (2018). Association of breast and ovarian cancers with predisposition genes identified by large-scale sequencing. *JAMA Oncol*, doi:10.1001/jamaoncol.2018.2956.
 
 Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehensive real-life workflow for rapid diagnosis of critically ill children. *J Med Genet*, doi:10.1136/jmedgenet-2018-105396
 
-Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.*Nat Genet*, https://doi.org/10.1038/s41588-018-0192-y.
+Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.*Nat Genet*, <https://doi.org/10.1038/s41588-018-0192-y>.
 
-Dixon JR, et al. (2018). Integrative detection and analysis of structural variation in cancer genomes. *Nat Genet*, https://www.nature.com/articles/s41588-018-0195-8
+Dixon JR, et al. (2018). Integrative detection and analysis of structural variation in cancer genomes. *Nat Genet*, <https://www.nature.com/articles/s41588-018-0195-8>
 
 Wood DE, et al. (2018). A machine learning approach for somatic mutation discovery. Sci. Transl. Med. 10, eaar7939 (2018) DOI: 10.1126/scitranslmed.aar7939
 
 ## Agotron detection
 
-The following is according to [https://github.com/ncrnalab/agotron_detector](https://github.com/ncrnalab/agotron_detector) as described in
+The following is according to <https://github.com/ncrnalab/agotron_detector> as described in
 > Hansen TB (2018). Detecting Agotrons in Ago CLIPseq Data. in Vang Ørom UA (ed) miRNA Biogenesis-Methods and Protocols, Chapter 17, 221-232. Springer.
 ```bash
 wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
@@ -56,27 +56,27 @@ Note that it is easier to implement with ```prefetch``` as shown below.
 
 ## Alignment and variant calling tutorial
 
-See [https://github.com/ekg/alignment-and-variant-calling-tutorial](https://github.com/ekg/alignment-and-variant-calling-tutorial). Note that E.coli_K12_MG1655.fa is unavailable any more, instead we have to download it directly from NCBI, 
-[https://www.ncbi.nlm.nih.gov/nuccore/556503834](https://www.ncbi.nlm.nih.gov/nuccore/556503834), choose FASTA (text), to reach https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&log$=seqview&format=text and save
+See <https://github.com/ekg/alignment-and-variant-calling-tutorial>. Note that E.coli_K12_MG1655.fa is unavailable any more, instead we have to download it directly from NCBI,
+<https://www.ncbi.nlm.nih.gov/nuccore/556503834>, choose FASTA (text), to reach <https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&log$=seqview&format=text> and save
 to a local file, whose empty lines have to be removed, see them with awk '(length($NF)==0){print NR}' E.coli_K12_MG1655.fa.
 
 The fastq-dump generates .fa files, which need to be compressed with gzip.
 
 ## bowtie-scaling
 
-[https://github.com/BenLangmead/bowtie-scaling](https://github.com/BenLangmead/bowtie-scaling)
+<https://github.com/BenLangmead/bowtie-scaling>
 
 ## Exome sequencing analysis
 
 > IMSGC (2018). Low-frequency and rare-coding variation contributes to multiple sclerosis risk. *Cell*. DOI:https://doi.org/10.1016/j.cell.2018.09.049
 
-has associate software, [https://github.com/cotsapaslab/IMSGCexomechip](https://github.com/cotsapaslab/IMSGCexomechip).
+has associate software, <https://github.com/cotsapaslab/IMSGCexomechip>.
 
 ## CNV detection
 
 CN-Learn is a framework to integrate Copy Number Variant (CNV) predictions made by multiple algorithms using exome sequencing datasets.
 
-[https://github.com/girirajanlab/CN_Learn](https://github.com/girirajanlab/CN_Learn)
+<https://github.com/girirajanlab/CN_Learn>
 
 Pounraja VK, et al. (2019) A machine-learning approach for accurate detection of copy-number variants from exome sequencing. *Genome Res*.
 
@@ -86,9 +86,9 @@ The following reference discribes several pipelines for SNP discovery.
 
 > Morin PA, Foote AD, Hill CM, Simon-Bouhet B, Lang AR, Louis M (2018). SNP Discovery from Single and Multiplex Genome Assemblies of Non-model Organisms, in Head SR, et al. (eds.), Next Generation Sequencing: Methods and Protocols, Chapter 9, 113-144, Springer.
 
-whose scripts are available from [https://github.com/PAMorin/SNPdiscovery/](https://github.com/PAMorin/SNPdiscovery/).
+whose scripts are available from <https://github.com/PAMorin/SNPdiscovery/>.
 
-See also [https://github.com/sanger-pathogens/snp-sites](https://github.com/sanger-pathogens/snp-sites) and the following references,
+See also <https://github.com/sanger-pathogens/snp-sites> and the following references,
 
 > Martin J, Schackwitz W, Lipzen A (2018). Genomic Sequence Variation Analysis by Resequencing, in de Vries RP, Tsang A, Grigoriev IV (ed) Fungal Genomics-Methods and Protocols, 2e, Chapter 18, 229-239, Springer.
 
@@ -100,7 +100,7 @@ Mejia-Guerra MK, et al. (2018). Genome-Wide TSS Identification in Maize. Chapter
 
 ## Comparison of gene expression pipelines on RNA-seq sequencing data.
 
-[http://statapps.ugent.be/tools/AppDGE/](http://statapps.ugent.be/tools/AppDGE/)
+<http://statapps.ugent.be/tools/AppDGE/>
 
 ## GSNAP, MapSplice, RUM, STAR, RNA-seq pipeline
 
@@ -126,11 +126,11 @@ git clone https://github.com/alexdobin/STAR
 cd STAR/source
 make
 ```
-See [https://github.com/sanger-pathogens/Bio-RNASeq](https://github.com/sanger-pathogens/Bio-RNASeq) for RNA-seq pipeline.
+See <https://github.com/sanger-pathogens/Bio-RNASeq> for RNA-seq pipeline.
 
 ## Mendelian RNA-seq
 
-[https://github.com/komalsrathi/MendelianRNA-seq](https://github.com/komalsrathi/MendelianRNA-seq)
+<https://github.com/komalsrathi/MendelianRNA-seq>
 
 The relevant installations:
 
@@ -163,7 +163,7 @@ ln -sf /home/jhz22/D/work/ncbi
 ```
 where D is actually a shared folder at Windows.
 
-To run ```tophat```, see [https://ccb.jhu.edu/software/tophat/tutorial.shtml](https://ccb.jhu.edu/software/tophat/tutorial.shtml)
+To run ```tophat```, see <https://ccb.jhu.edu/software/tophat/tutorial.shtml>
 ```bash
 wget https://ccb.jhu.edu/software/tophat/downloads/test_data.tar.gz
 tar xvfz test_data.tar.gz
@@ -175,11 +175,11 @@ tophat -r 20 test_ref reads_1.fq reads_2.fq
 
 ## adVNTR
 
-It is a tool for genotyping Variable Number Tandem Repeats (VNTR) from sequence data, https://github.com/mehrdadbakhtiari/adVNTR.
+It is a tool for genotyping Variable Number Tandem Repeats (VNTR) from sequence data, <https://github.com/mehrdadbakhtiari/adVNTR>.
 
 ## ANGSD
 
-ANGSD is a software for analyzing next generation sequencing data, http://www.popgen.dk/angsd/index.php/ANGSD. It is relatively straightforward with GitHub; after
+ANGSD is a software for analyzing next generation sequencing data, <http://www.popgen.dk/angsd/index.php/ANGSD>. It is relatively straightforward with GitHub; after
 ```bash
 git clone https://github.com/ANGSD/angsd
 cd angsd
@@ -193,7 +193,7 @@ This include bamtools, bcftools, bedops, bedtools, blast (ncbi-blast+), bowtie2,
 
 Install with ```sudo apt install```.
 
-See also [https://github.com/lh3/seqtk](https://github.com/lh3/seqtk).
+See also <https://github.com/lh3/seqtk>.
 
 Besides notes above, this is also possible:
 
@@ -217,7 +217,7 @@ We invoke `bcftools +check_ploidy my.vcf.gz` Interestingly, this also save space
 
 ## bowtie2
 
-The project home is [https://sourceforge.net/projects/bowtie-bio](https://sourceforge.net/projects/bowtie-bio), whereby
+The project home is <https://sourceforge.net/projects/bowtie-bio>, whereby
 ```bash
 wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.1/bowtie2-2.3.4.1-linux-x86_64.zip
 wget https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.4.1/bowtie2-2.3.4.1-source.zip
@@ -242,7 +242,7 @@ Like samtools, etc. it is possible to involve `sudo apt install bowtie2`.
 ## CNVkit
 
 Genome-wide copy number from high-throughput sequencing, available from
-[https://cnvkit.readthedocs.io/en/stable/](https://cnvkit.readthedocs.io/en/stable/)
+<https://cnvkit.readthedocs.io/en/stable/>
 
 ## cutadapt, TrimGalore
 
@@ -256,11 +256,11 @@ git clone https://github.com/FelixKrueger/TrimGalore
 
 ## DeepVariant
 
-It is a deep neural network to call genetic variants from next-generation DNA sequencing data, https://github.com/google/deepvariant.
+It is a deep neural network to call genetic variants from next-generation DNA sequencing data, <https://github.com/google/deepvariant>.
 
 ## EasyQC
 
-[http://www.niot.res.in/EasyQC/](http://www.niot.res.in/EasyQC/)
+<http://www.niot.res.in/EasyQC/>
 
 ## Exomiser
 
@@ -269,19 +269,19 @@ git clone https://github.com/exomiser/Exomiser
 cd Exomiser
 mvn package
 ```
-See also [https://github.com/exomiser/exomiser-demo](https://github.com/exomiser/exomiser-demo).
+See also <https://github.com/exomiser/exomiser-demo>.
 
 ## fastq-splitter
 
-The scripts divides a large FASTQ file into a set of smaller equally sized files, [http://kirill-kryukov.com/study/tools/fastq-splitter/](http://kirill-kryukov.com/study/tools/fastq-splitter/).
+The scripts divides a large FASTQ file into a set of smaller equally sized files, <http://kirill-kryukov.com/study/tools/fastq-splitter/>.
 
 ## fastx_toolkit, RSEM
 
-It is also available from [https://github.com/agordon/fastx_toolkit](https://github.com/agordon/fastx_toolkit) along with [https://github.com/agordon/libgtextutils](https://github.com/agordon/libgtextutils), and do away with the notorious automake-1.14 problem associated with sources at http://hannonlab.cshl.edu/fastx_toolkit/download.html.
+It is also available from <https://github.com/agordon/fastx_toolkit> along with <https://github.com/agordon/libgtextutils>, and do away with the notorious automake-1.14 problem associated with sources at <http://hannonlab.cshl.edu/fastx_toolkit/download.html>.
 
 However, line 105 of ```src/fasta_formatter/fasta_formatter.cpp``` requires ```usage()``` followed by ```exit(0);``` as suggested in the `issue` section. More oever, usage() is a void function so its own `exit(0)` is unnecessary.
 
-The GitHub pages for RSEM are [https://github.com/deweylab/RSEM](https://github.com/deweylab/RSEM) and [https://deweylab.github.io/RSEM/](https://deweylab.github.io/RSEM/). It is also recommended that the Bioconductor package EBSeq be installed.
+The GitHub pages for RSEM are <https://github.com/deweylab/RSEM> and <https://deweylab.github.io/RSEM/>. It is also recommended that the Bioconductor package EBSeq be installed.
 
 ## freebayes
 
@@ -294,7 +294,7 @@ sudo make install
 
 ## GATK
 
-The source is available from https://github.com/broadinstitute/gatk/ but it is more convenient to use https://github.com/broadinstitute/gatk/releases/.
+The source is available from <https://github.com/broadinstitute/gatk/> but it is more convenient to use <https://github.com/broadinstitute/gatk/releases/>.
 ```bash
 ln -s `pwd`/gatk $HOME/bin/gatk
 gatk --help
@@ -320,13 +320,13 @@ Nevertheless it may be slower, e.g., tophat, compared to ```sudo apt install```.
 
 ## IGV
 
-The download can be seeded from http://data.broadinstitute.org/igv, e.g., http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip.
+The download can be seeded from <http://data.broadinstitute.org/igv>, e.g., <http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip>.
 
-Again the source code is from GitHub, https://github.com/igvteam/igv/. For developers, [igv.js](https://github.com/igvteam/igv.js) is very appealing.
+Again the source code is from GitHub, <https://github.com/igvteam/igv/>. For developers, [igv.js](https://github.com/igvteam/igv.js) is very appealing.
 
 ## INSIDER
 
-Web: [https://github.com/aehrc/INSIDER](https://github.com/aehrc/INSIDER)
+Web: <https://github.com/aehrc/INSIDER>
 
 INserted Sequence Information DEtectoR (INSIDER) analyses whole genome sequencing data and identifies segments of potentially foreign origin by their significant shift in k-mer signatures.
 
@@ -359,30 +359,30 @@ java -Xms2G -Xmx4G -jar $HOME/bin/Jannovar.jar
 
 ## Melissa
 
-[https://github.com/andreaskapou/Melissa](https://github.com/andreaskapou/Melissa)
+<https://github.com/andreaskapou/Melissa>
 
 > MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.
 
-Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, https://doi.org/10.1186/s13059-019-1665-8
+Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, *Genome Biology* 20:61, <https://doi.org/10.1186/s13059-019-1665-8>
 
 
 ## MINITE
 
-[https://github.com/Oshlack/MINTIE](https://github.com/Oshlack/MINTIE)
+<https://github.com/Oshlack/MINTIE>
 
 Cmero, M. et al. MINTIE: identifying novel structural and splice variants in transcriptomes using RNA-seq data. Genome Biology 22, 296 (2021).
 
 
 ## MONSTER
 
-[http://galton.uchicago.edu/~mcpeek/software/MONSTER/](http://galton.uchicago.edu/~mcpeek/software/MONSTER/) ([http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz](http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz))
+<http://galton.uchicago.edu/~mcpeek/software/MONSTER/> (<http://galton.uchicago.edu/~mcpeek/software/MONSTER/MONSTER_v1.3.tar.gz>)
 
 Jiang D, McPeek MS (2014). Robust Rare Variant Association Testing for Quantitative Traits in Samples with Related Individuals. *Genetic Epidemiology* 38(1):10-20
 
 
 ## pindel
 
-The software can be obtained from [https://github.com/genome/pindel](https://github.com/genome/pindel).
+The software can be obtained from <https://github.com/genome/pindel>.
 
 After htslib is installed, the canonical instruction is to issue
 ```bash
@@ -405,7 +405,7 @@ it is also necessary to invoke the header, i.e.,
 
 ## rtg-tools
 
-It is available from https://www.realtimegenomics.com/products/rtg-tools and GitHub,
+It is available from <https://www.realtimegenomics.com/products/rtg-tools> and GitHub,
 ```bash
 git clone https://github.com/RealTimeGenomics/rtg-tools.git
 ant
@@ -510,36 +510,36 @@ mvn install
 ```
 which gives `target/SnpEff-4.3.jar` and `target/SnpSift-4.3.jar`, respectively.
 
-Note that `antlr4` is from GitHub, [https://github.com/antlr/antlr4](https://github.com/antlr/antlr4). See also [https://github.com/sanger-pathogens/SnpEffWrapper](https://github.com/sanger-pathogens/SnpEffWrapper).
+Note that `antlr4` is from GitHub, <https://github.com/antlr/antlr4>. See also <https://github.com/sanger-pathogens/SnpEffWrapper>.
 
 ## subread
 
-It is available from [http://subread.sourceforge.net/](http://subread.sourceforge.net/).
+It is available from <http://subread.sourceforge.net/>.
 
 ## SViCT
 
 Short for Structural Variant detrction in Circulating Tumor DNA and is available from
 
-[https://github.com/vpc-ccg/svict](https://github.com/vpc-ccg/svict)
+<https://github.com/vpc-ccg/svict>
 
 ## tagdust
 
-[http://sourceforge.net/projects/tagdust/](http://sourceforge.net/projects/tagdust/)
+<http://sourceforge.net/projects/tagdust/>
 
 ## Trinity
 
-RNA-Seq De novo Assembly Using Trinity, [https://github.com/trinityrnaseq/trinityrnaseq/wiki](https://github.com/trinityrnaseq/trinityrnaseq/wiki).
+RNA-Seq De novo Assembly Using Trinity, <https://github.com/trinityrnaseq/trinityrnaseq/wiki>.
 
 ## VarScan
 
-Hosted at [https://github.com/dkoboldt/varscan](https://github.com/dkoboldt/varscan), the .jar files are ready to use with
+Hosted at <https://github.com/dkoboldt/varscan>, the .jar files are ready to use with
 
 ```bash
 git clone https://github.com/dkoboldt/varscan
 ```
 or from the repository releases.
 
-See [http://varscan.sourceforge.net/](http://varscan.sourceforge.net/) for further information.
+See <http://varscan.sourceforge.net/> for further information.
 
 ## vcftools
 
@@ -560,4 +560,4 @@ export PERL5LIB=/scratch/jhz22/share/perl5
 
 ## WASP
 
-Allele-specific pipeline for unbiased read mapping and molecular QTL discovery, [https://github.com/bmvdgeijn/WASP/](https://github.com/bmvdgeijn/WASP/).
+Allele-specific pipeline for unbiased read mapping and molecular QTL discovery, <https://github.com/bmvdgeijn/WASP/>.
