@@ -29,7 +29,7 @@ function old()
   git push
 }
 
-module load python/3.7
+module load python/3.7 ceuadmin/krb5
 source ~/COVID-19/py37/bin/activate
 mkdocs build
 mkdocs gh-deploy
