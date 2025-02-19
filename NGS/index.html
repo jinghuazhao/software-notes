@@ -12,21 +12,18 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Bash.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/HTML.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Java.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/JavaScript.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Perl.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/Bash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/HTML.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/Java.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/JavaScript.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/Perl.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/Python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/R.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body>
@@ -338,11 +335,11 @@
 <p><a href="https://sites.google.com/site/jpopgen/wgsa">https://sites.google.com/site/jpopgen/wgsa</a></p>
 <h2 id="case-studies">Case studies</h2>
 <p>Lagana A, et al. (2018). Precision medicine for relapsed multiple myeloma on the basis of an integrative multiomics approach. <em>JCO Prec Oncol.</em> Data Suppl, 
-http://ascopubs.org/doi/suppl/10.1200/PO.18.00019</p>
+<a href="http://ascopubs.org/doi/suppl/10.1200/PO.18.00019">http://ascopubs.org/doi/suppl/10.1200/PO.18.00019</a></p>
 <p>Lu X-M, et al. (2018). Association of breast and ovarian cancers with predisposition genes identified by large-scale sequencing. <em>JAMA Oncol</em>, doi:10.1001/jamaoncol.2018.2956.</p>
 <p>Mestek-Boukhibar L, et al. (2018). Rapid Paediatric Sequencing (RaPS): comprehensive real-life workflow for rapid diagnosis of critically ill children. <em>J Med Genet</em>, doi:10.1136/jmedgenet-2018-105396</p>
-<p>Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.<em>Nat Genet</em>, https://doi.org/10.1038/s41588-018-0192-y.</p>
-<p>Dixon JR, et al. (2018). Integrative detection and analysis of structural variation in cancer genomes. <em>Nat Genet</em>, https://www.nature.com/articles/s41588-018-0195-8</p>
+<p>Castel SE, et al. (2018). Modified penetrance of coding variants by cis-regulatory variation contributes to disease risk.<em>Nat Genet</em>, <a href="https://doi.org/10.1038/s41588-018-0192-y">https://doi.org/10.1038/s41588-018-0192-y</a>.</p>
+<p>Dixon JR, et al. (2018). Integrative detection and analysis of structural variation in cancer genomes. <em>Nat Genet</em>, <a href="https://www.nature.com/articles/s41588-018-0195-8">https://www.nature.com/articles/s41588-018-0195-8</a></p>
 <p>Wood DE, et al. (2018). A machine learning approach for somatic mutation discovery. Sci. Transl. Med. 10, eaar7939 (2018) DOI: 10.1126/scitranslmed.aar7939</p>
 <h2 id="agotron-detection">Agotron detection</h2>
 <p>The following is according to <a href="https://github.com/ncrnalab/agotron_detector">https://github.com/ncrnalab/agotron_detector</a> as described in</p>
@@ -371,8 +368,8 @@ python UCSC_intron_retriever.py | python analyzer.py -g hg19.fa | Rscript annota
 </code></pre>
 <p>Note that it is easier to implement with <code>prefetch</code> as shown below.</p>
 <h2 id="alignment-and-variant-calling-tutorial">Alignment and variant calling tutorial</h2>
-<p>See <a href="https://github.com/ekg/alignment-and-variant-calling-tutorial">https://github.com/ekg/alignment-and-variant-calling-tutorial</a>. Note that E.coli_K12_MG1655.fa is unavailable any more, instead we have to download it directly from NCBI, 
-<a href="https://www.ncbi.nlm.nih.gov/nuccore/556503834">https://www.ncbi.nlm.nih.gov/nuccore/556503834</a>, choose FASTA (text), to reach https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&amp;log$=seqview&amp;format=text and save
+<p>See <a href="https://github.com/ekg/alignment-and-variant-calling-tutorial">https://github.com/ekg/alignment-and-variant-calling-tutorial</a>. Note that E.coli_K12_MG1655.fa is unavailable any more, instead we have to download it directly from NCBI,
+<a href="https://www.ncbi.nlm.nih.gov/nuccore/556503834">https://www.ncbi.nlm.nih.gov/nuccore/556503834</a>, choose FASTA (text), to reach <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&amp;log$=seqview&amp;format=text">https://www.ncbi.nlm.nih.gov/nuccore/NC_000913.3?report=fasta&amp;log$=seqview&amp;format=text</a> and save
 to a local file, whose empty lines have to be removed, see them with awk '(length($NF)==0){print NR}' E.coli_K12_MG1655.fa.</p>
 <p>The fastq-dump generates .fa files, which need to be compressed with gzip.</p>
 <h2 id="bowtie-scaling">bowtie-scaling</h2>
@@ -458,9 +455,9 @@ tophat -r 20 test_ref reads_1.fq reads_2.fq
 </code></pre>
 <h1 id="software">Software</h1>
 <h2 id="advntr">adVNTR</h2>
-<p>It is a tool for genotyping Variable Number Tandem Repeats (VNTR) from sequence data, https://github.com/mehrdadbakhtiari/adVNTR.</p>
+<p>It is a tool for genotyping Variable Number Tandem Repeats (VNTR) from sequence data, <a href="https://github.com/mehrdadbakhtiari/adVNTR">https://github.com/mehrdadbakhtiari/adVNTR</a>.</p>
 <h2 id="angsd">ANGSD</h2>
-<p>ANGSD is a software for analyzing next generation sequencing data, http://www.popgen.dk/angsd/index.php/ANGSD. It is relatively straightforward with GitHub; after</p>
+<p>ANGSD is a software for analyzing next generation sequencing data, <a href="http://www.popgen.dk/angsd/index.php/ANGSD">http://www.popgen.dk/angsd/index.php/ANGSD</a>. It is relatively straightforward with GitHub; after</p>
 <pre><code class="language-bash">git clone https://github.com/ANGSD/angsd
 cd angsd
 make
@@ -517,7 +514,7 @@ sudo python setup.py install
 git clone https://github.com/FelixKrueger/TrimGalore
 </code></pre>
 <h2 id="deepvariant">DeepVariant</h2>
-<p>It is a deep neural network to call genetic variants from next-generation DNA sequencing data, https://github.com/google/deepvariant.</p>
+<p>It is a deep neural network to call genetic variants from next-generation DNA sequencing data, <a href="https://github.com/google/deepvariant">https://github.com/google/deepvariant</a>.</p>
 <h2 id="easyqc">EasyQC</h2>
 <p><a href="http://www.niot.res.in/EasyQC/">http://www.niot.res.in/EasyQC/</a></p>
 <h2 id="exomiser">Exomiser</h2>
@@ -529,7 +526,7 @@ mvn package
 <h2 id="fastq-splitter">fastq-splitter</h2>
 <p>The scripts divides a large FASTQ file into a set of smaller equally sized files, <a href="http://kirill-kryukov.com/study/tools/fastq-splitter/">http://kirill-kryukov.com/study/tools/fastq-splitter/</a>.</p>
 <h2 id="fastx_toolkit-rsem">fastx_toolkit, RSEM</h2>
-<p>It is also available from <a href="https://github.com/agordon/fastx_toolkit">https://github.com/agordon/fastx_toolkit</a> along with <a href="https://github.com/agordon/libgtextutils">https://github.com/agordon/libgtextutils</a>, and do away with the notorious automake-1.14 problem associated with sources at http://hannonlab.cshl.edu/fastx_toolkit/download.html.</p>
+<p>It is also available from <a href="https://github.com/agordon/fastx_toolkit">https://github.com/agordon/fastx_toolkit</a> along with <a href="https://github.com/agordon/libgtextutils">https://github.com/agordon/libgtextutils</a>, and do away with the notorious automake-1.14 problem associated with sources at <a href="http://hannonlab.cshl.edu/fastx_toolkit/download.html">http://hannonlab.cshl.edu/fastx_toolkit/download.html</a>.</p>
 <p>However, line 105 of <code>src/fasta_formatter/fasta_formatter.cpp</code> requires <code>usage()</code> followed by <code>exit(0);</code> as suggested in the <code>issue</code> section. More oever, usage() is a void function so its own <code>exit(0)</code> is unnecessary.</p>
 <p>The GitHub pages for RSEM are <a href="https://github.com/deweylab/RSEM">https://github.com/deweylab/RSEM</a> and <a href="https://deweylab.github.io/RSEM/">https://deweylab.github.io/RSEM/</a>. It is also recommended that the Bioconductor package EBSeq be installed.</p>
 <h2 id="freebayes">freebayes</h2>
@@ -539,7 +536,7 @@ make
 sudo make install
 </code></pre>
 <h2 id="gatk">GATK</h2>
-<p>The source is available from https://github.com/broadinstitute/gatk/ but it is more convenient to use https://github.com/broadinstitute/gatk/releases/.</p>
+<p>The source is available from <a href="https://github.com/broadinstitute/gatk/">https://github.com/broadinstitute/gatk/</a> but it is more convenient to use <a href="https://github.com/broadinstitute/gatk/releases/">https://github.com/broadinstitute/gatk/releases/</a>.</p>
 <pre><code class="language-bash">ln -s `pwd`/gatk $HOME/bin/gatk
 gatk --help
 gatk --list
@@ -560,8 +557,8 @@ brew install stringtie
 </blockquote>
 <p>Nevertheless it may be slower, e.g., tophat, compared to <code>sudo apt install</code>.</p>
 <h2 id="igv">IGV</h2>
-<p>The download can be seeded from http://data.broadinstitute.org/igv, e.g., http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip.</p>
-<p>Again the source code is from GitHub, https://github.com/igvteam/igv/. For developers, <a href="https://github.com/igvteam/igv.js">igv.js</a> is very appealing.</p>
+<p>The download can be seeded from <a href="http://data.broadinstitute.org/igv">http://data.broadinstitute.org/igv</a>, e.g., <a href="http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip">http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.10.zip</a>.</p>
+<p>Again the source code is from GitHub, <a href="https://github.com/igvteam/igv/">https://github.com/igvteam/igv/</a>. For developers, <a href="https://github.com/igvteam/igv.js">igv.js</a> is very appealing.</p>
 <h2 id="insider">INSIDER</h2>
 <p>Web: <a href="https://github.com/aehrc/INSIDER">https://github.com/aehrc/INSIDER</a></p>
 <p>INserted Sequence Information DEtectoR (INSIDER) analyses whole genome sequencing data and identifies segments of potentially foreign origin by their significant shift in k-mer signatures.</p>
@@ -589,7 +586,7 @@ java -jar $HOME/bin/Jannovar.jar download -d hg19/refseq
 <blockquote>
 <p>MEthyLation Inference for Single cell Analysis (Melissa), is a Bayesian hierarchical method to quantify spatially-varying methylation profiles across genomic regions from single-cell bisulfite sequencing data (scBS-seq). Melissa clusters individual cells based on local methylation patterns, enabling the discovery of epigenetic diversities and commonalities among individual cells. The clustering also acts as an effective regularisation method for imputation of methylation on unassayed CpG sites, enabling transfer of information between individual cells.</p>
 </blockquote>
-<p>Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, <em>Genome Biology</em> 20:61, https://doi.org/10.1186/s13059-019-1665-8</p>
+<p>Kapourani C-A, Sanguinetti G (2019). Melissa: Bayesian clustering and imputation of single-cell methylomes, <em>Genome Biology</em> 20:61, <a href="https://doi.org/10.1186/s13059-019-1665-8">https://doi.org/10.1186/s13059-019-1665-8</a></p>
 <h2 id="minite">MINITE</h2>
 <p><a href="https://github.com/Oshlack/MINTIE">https://github.com/Oshlack/MINTIE</a></p>
 <p>Cmero, M. et al. MINTIE: identifying novel structural and splice variants in transcriptomes using RNA-seq data. Genome Biology 22, 296 (2021).</p>
@@ -615,7 +612,7 @@ it is also necessary to invoke the header, i.e.,</p>
 <pre><code class="language-cpp">#include &lt;cmath&gt;
 </code></pre>
 <h2 id="rtg-tools">rtg-tools</h2>
-<p>It is available from https://www.realtimegenomics.com/products/rtg-tools and GitHub,</p>
+<p>It is available from <a href="https://www.realtimegenomics.com/products/rtg-tools">https://www.realtimegenomics.com/products/rtg-tools</a> and GitHub,</p>
 <pre><code class="language-bash">git clone https://github.com/RealTimeGenomics/rtg-tools.git
 ant
 dir dist
@@ -743,12 +740,14 @@ make install
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script>
             var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -758,16 +757,13 @@ make install
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
+                <p>From here you can search these documents. Enter your search terms below.</p>
                 <form>
                     <div class="form-group">
                         <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
-                <div id="mkdocs-search-results"></div>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
             <div class="modal-footer">
             </div>
