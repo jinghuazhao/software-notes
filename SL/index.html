@@ -138,6 +138,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#r-code-example" class="nav-link">R code example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -165,7 +169,7 @@
 <p>Hastie T, Tibshirani R, Friedman J (2009). <a href="https://www.springer.com/gb/book/9780387848570">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</a>. Springer.</p>
 <p>James G, Witten D, Hastie T, Tibshirani R (2013). <a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning with Applications in R</a>. Springer.</p>
 <p>James G, Witten D, Hastie T, Tibshirani R (2021). <a href="https://www.statlearning.com/">An Introduction to Statistical Learning with Applications in R, 2e</a>, Springer.</p>
-<p>Chollet F, Allaire JJ (2017). <a href="https://livebook.manning.com/book/deep-learning-with-r/">Deep Learning with R</a>, Manning. <a href="www.manning.com/books/deep-learning-with-r">Source code</a>, <a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">GitHub</a>.</p>
+<p>Chollet F, Allaire JJ (2017). <a href="https://livebook.manning.com/book/deep-learning-with-r/">Deep Learning with R</a>, Manning. <a href="https://www.manning.com/books/deep-learning-with-r">Source code</a>, <a href="https://github.com/jjallaire/deep-learning-with-r-notebooks">GitHub</a>.</p>
 </blockquote>
 <h2 id="python-code-examples">Python Code Examples</h2>
 <p>From: Machine Learning Fundamentals Handbook – Key Concepts, Algorithms, and Python Code Examples, </p>
@@ -537,6 +541,21 @@ plt.xlabel('Actual Prices')
 plt.ylabel('Predicted Prices')
 plt.title('Actual vs Predicted House Prices with XGBoost')
 plt.show()
+</code></pre>
+<h2 id="r-code-example">R code example</h2>
+<h3 id="confusion-matrix">Confusion matrix</h3>
+<pre><code class="language-r">library(caret)
+
+# Example data
+set.seed(123)
+data &lt;- data.frame(
+  Actual = sample(c(&quot;True&quot;, &quot;False&quot;), 100, replace = TRUE),
+  Prediction = sample(c(&quot;True&quot;, &quot;False&quot;), 100, replace = TRUE)
+)
+
+# Create confusion matrix
+cm &lt;- confusionMatrix(as.factor(data$Prediction), as.factor(data$Actual), positive = &quot;True&quot;)
+print(cm)
 </code></pre></div>
             </div>
         </div>
