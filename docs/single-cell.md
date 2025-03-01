@@ -43,6 +43,12 @@ Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by
 
 [https://aertslab.org/#scenic](https://aertslab.org/#scenic) and [https://pyscenic.readthedocs.io/en/latest/](https://pyscenic.readthedocs.io/en/latest/).
 
+## scGPT
+
+<https://github.com/bowang-lab/scGPT>
+
+Cui, H., Wang, C., Maan, H. et al. scGPT: toward building a foundation model for single-cell multi-omics using generative AI. Nat Methods 21, 1470–1480 (2024). <https://doi.org/10.1038/s41592-024-02201-0>
+
 ## scMAGeCK
 
 [https://bitbucket.org/weililab/scmageck/src/master/](https://bitbucket.org/weililab/scmageck/src/master/)
