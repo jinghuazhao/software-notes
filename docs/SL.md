@@ -23,7 +23,7 @@
 
 > James G, Witten D, Hastie T, Tibshirani R (2021). [An Introduction to Statistical Learning with Applications in R, 2e](https://www.statlearning.com/), Springer.
 
-> Chollet F, Allaire JJ (2017). [Deep Learning with R](https://livebook.manning.com/book/deep-learning-with-r/), Manning. [Source code](www.manning.com/books/deep-learning-with-r), [GitHub](https://github.com/jjallaire/deep-learning-with-r-notebooks).
+> Chollet F, Allaire JJ (2017). [Deep Learning with R](https://livebook.manning.com/book/deep-learning-with-r/), Manning. [Source code](https://www.manning.com/books/deep-learning-with-r), [GitHub](https://github.com/jjallaire/deep-learning-with-r-notebooks).
 
 ## Python Code Examples
 
@@ -428,4 +428,23 @@ plt.xlabel('Actual Prices')
 plt.ylabel('Predicted Prices')
 plt.title('Actual vs Predicted House Prices with XGBoost')
 plt.show()
+```
+
+## R code example
+
+### Confusion matrix
+
+```r
+library(caret)
+
+# Example data
+set.seed(123)
+data <- data.frame(
+  Actual = sample(c("True", "False"), 100, replace = TRUE),
+  Prediction = sample(c("True", "False"), 100, replace = TRUE)
+)
+
+# Create confusion matrix
+cm <- confusionMatrix(as.factor(data$Prediction), as.factor(data$Actual), positive = "True")
+print(cm)
 ```
