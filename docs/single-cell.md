@@ -43,6 +43,14 @@ Web: <https://github.com/theislab/Scanpy>
 
 Web: <https://aertslab.org/#scenic> and <https://pyscenic.readthedocs.io/en/latest/>.
 
+## scGLUE
+
+Web: <https://scglue.readthedocs.io/en/latest/index.html>
+
+GitHub: <https://github.com/gao-lab/GLUE>
+
+Cao ZJ, Gao G. Multi-omics single-cell data integration and regulatory inference with graph-linked embedding. *Nat Biotechnol* 40, 1458–1466 (2022). <https://doi.org/10.1038/s41587-022-01284-4>
+
 ## scGPT
 
 Web: <https://github.com/bowang-lab/scGPT>
