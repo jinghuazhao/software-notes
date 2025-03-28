@@ -39,6 +39,8 @@ Zhou Z, et al. DENDRO: genetic heterogeneity profiling and subclone detection by
 
 Web: <https://github.com/theislab/Scanpy>
 
+Updates: <https://github.com/scverse/scanpy>, <https://scanpy.readthedocs.io/en/stable/>
+
 ## SCENIC
 
 Web: <https://aertslab.org/#scenic> and <https://pyscenic.readthedocs.io/en/latest/>.
@@ -62,6 +64,10 @@ Cui, H., Wang, C., Maan, H. et al. scGPT: toward building a foundation model for
 Web: <https://bitbucket.org/weililab/scmageck/src/master/>
 
 Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell CRISPR screens. *Genome Biol* 21, 19 (2020). <https://doi.org/10.1186/s13059-020-1928-4>
+
+## scvi-tools
+
+Web: <https://scvi-tools.org/>
 
 ## Seurat
 
