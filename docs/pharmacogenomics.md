@@ -24,6 +24,10 @@ Web: <http://polymorph.sgc.utoronto.ca/drugged_human_proteome/>
 
 Web: <https://cb.csail.mit.edu/cb/conplex/>
 
+### DrugAssist
+
+GitHub: <https://github.com/blazerye/DrugAssist>
+
 ### Python/chembl_webresource_client
 
 Web: <https://github.com/chembl/chembl_webresource_client>
@@ -147,3 +151,7 @@ Contrastive learning in protein language space predicts interactions between dru
 Wang J, Yazdani S, Han A, Schapira M.
 Structure-based view of the druggable genome.
 *Drug Discovery Today* 2020; 25:561-567.
+
+​Ye G, Cai X, Lai H, Wang X, Huang J, Wang L, Liu W, Zeng X.
+DrugAssist: a large language model for molecule optimization.
+*Brief Bioinform*. 2025 Jan 3;26(1):bbae693. doi: 10.1093/bib/bbae693.
