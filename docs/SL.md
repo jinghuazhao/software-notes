@@ -31,6 +31,11 @@ From: Machine Learning Fundamentals Handbook – Key Concepts, Algorithms, and P
 
 Web: <https://www.freecodecamp.org/news/machine-learning-handbook/>
 
+Changes are made a couple of places, e.g., Bagging, where option `base_estimator` is replaced with `estimator` as in
+`BaggingRegressor(estimator=base_estimator, n_estimators=10, random_state=42)`, AdaBoost, the missing line is added:
+`from sklearn.ensemble import GradientBoostingRegressor`. Now it is also possible to convert the MarkDown document
+into a Jupyter notebook (.ipynb).
+
 ### Linear Regression
 
 ```python
@@ -230,7 +235,7 @@ X_train, X_test, y_train, y_test = train_test_split(clients_data, weight_loss, t
 
 # Creating a Bagging Model
 base_estimator = DecisionTreeRegressor(max_depth=4)
-model = BaggingRegressor(base_estimator=base_estimator, n_estimators=10, random_state=42)
+model = BaggingRegressor(estimator=base_estimator, n_estimators=10, random_state=42)
 
 # Training the Model
 model.fit(X_train, y_train)
@@ -290,13 +295,13 @@ classification_rep = classification_report(y_test, y_pred)
 print("Classification Report:")
 print(classification_rep)
 
-
 # Scatter Plot Visualizing Classes
 plt.figure(figsize=(8, 4))
 for species, marker, color in zip([0, 1], ['o', 's'], ['forestgreen', 'darkred']):
     plt.scatter(plants_features[plants_species == species, 0],
                 plants_features[plants_species == species, 1],
                 marker=marker, color=color, label=f'Species {species}')
+
 plt.xlabel('Leaf Size')
 plt.ylabel('Flower Color (coded)')
 plt.title('Scatter Plot of Species')
@@ -325,6 +330,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import AdaBoostRegressor
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error
 
 # Seed for reproducibility
