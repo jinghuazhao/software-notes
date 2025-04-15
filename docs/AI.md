@@ -1,16 +1,22 @@
 # Artificial intelligence
 
+## DrugAssist
+
+Ye, Geyan, et al. "DrugAssist: A Large Language Model for Molecule Optimization." Briefings in Bioinformatics, vol. 26, no. 1, 2025, p. bbae693. Oxford University Press.
+
+<https://github.com/blazerye/DrugAssist> & <https://huggingface.co/blazerye/DrugAssist-7B>
+
 ## Pyro
 
-[https://pyro.ai/examples/index.html](https://pyro.ai/examples/index.html)
+<https://pyro.ai/examples/index.html>
 
 ## pytorch
 
-The home page is [https://pytorch.github.io](https://pytorch.github.io), and the repository itself [https://github.com/pytorch/](https://github.com/pytorch/) with [https://github.com/pytorch/examples](https://github.com/pytorch/examples).
+The home page is <https://pytorch.github.io>, and the repository itself <https://github.com/pytorch/> with <https://github.com/pytorch/examples>.
 
 ## tensorflow
 
-The tensorflow repository is here, [https://github.com/tensorflow/tensorflow](https://github.com/tensorflow/tensorflow), and it is relatively easy to install via pip,
+The tensorflow repository is here, <https://github.com/tensorflow/tensorflow>, and it is relatively easy to install via pip,
 ```bash
 pip install tensorflow
 python <<END
@@ -20,17 +26,17 @@ sess = tf.Session()
 print(sess.run(hello))
 END
 ```
-Follow [https://github.com/aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples) for readily adaptible examples.
+Follow <https://github.com/aymericdamien/TensorFlow-Examples> for readily adaptible examples.
 
 Also
 
-[https://github.com/apress/pro-deep-learning-w-tensorflow](https://github.com/apress/pro-deep-learning-w-tensorflow)
+<https://github.com/apress/pro-deep-learning-w-tensorflow>
 
 ## tensorQTL
 
 AI-derived implementation.
 
-[https://github.com/broadinstitute/tensorqtl](https://github.com/broadinstitute/tensorqtl), [https://github.com/broadinstitute/SignatureAnalyzer-GPU](https://github.com/broadinstitute/SignatureAnalyzer-GPU)
+<https://github.com/broadinstitute/tensorqtl>, <https://github.com/broadinstitute/SignatureAnalyzer-GPU>
 
 ```bash
 module load python/3.6
@@ -106,4 +112,4 @@ python3 -m tensorqtl ${plink_prefix_path} ${expression_bed} ${prefix} \
 Again one can read the Parquet format output.
 
 Taylor-Weiner et al (2019). Scaling computational genomics to millions of individuals with GPUs. *Genome Biol* 20:228,
-https://doi.org/10.1186/s13059-019-1836-7
+<https://doi.org/10.1186/s13059-019-1836-7>
