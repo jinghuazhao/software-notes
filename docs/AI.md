@@ -6,6 +6,10 @@ Ye, Geyan, et al. "DrugAssist: A Large Language Model for Molecule Optimization.
 
 <https://github.com/blazerye/DrugAssist> & <https://huggingface.co/blazerye/DrugAssist-7B>
 
+## nucleotide-transformer
+
+<https://github.com/instadeepai/nucleotide-transformer>
+
 ## Pyro
 
 <https://pyro.ai/examples/index.html>
