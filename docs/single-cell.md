@@ -17,6 +17,10 @@ GitHub: <https://github.com/Danko-Lab/BayesPrism>
 
 Chu, T., Wang, Z., Pe’er, D. & Danko, C.G. Cell type and gene expression deconvolution with BayesPrism enables Bayesian integrative analysis across bulk and single-cell RNA sequencing in oncology. *Nature Cancer* 3, 505-517 (2022).
 
+## C2S-Scale
+
+GitHub, <https://github.com/vandijklab/cell2sentence> ([Hugging Face](https://huggingface.co/collections/vandijklab/cell2sentence-models-66d71f690a7b77558a36b9ef))
+
 ## CReSCENT
 
 Fullname: CanceR Single Cell ExpressioN Toolkit
