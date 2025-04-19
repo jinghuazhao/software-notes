@@ -54,11 +54,17 @@ Fondrie WE, Noble WS (2020). Machine learning strategy that leverages large data
 
 Teng H, et al. Prevalence and architecture of posttranscriptionally impaired synonymous mutations in 8,320 genomes across 22 cancer types [published online ahead of print, 2020 Jan 17]. Nucleic Acids Res. 2020;gkaa019. doi:10.1093/nar/gkaa019
 
-##
+## PROPERseqTools
 
 [PROPERseqTools](https://github.com/Zhong-Lab-UCSD/PROPERseqTools/tree/v1.0.0) and [database](https://genemo.ucsd.edu/proper/)
 
 Johnson, K.L. et al. Revealing protein-protein interactions at the transcriptome scale by sequencing. Molecular Cell.
+
+## ProGEN3
+
+<https://github.com/Profluent-AI/progen3>
+
+Bhatnagar, A., Jain, S., Beazer, J., Curran, S. C., Hoffnagle, A. M., Ching, K., Martyn, M., Nayfach, S., Ruffolo, J. A., & Madani, A. (2025). Scaling unlocks broader generation and deeper functional understanding of proteins. bioRxiv. <https://doi.org/10.1101/2025.04.15.649055>
 
 ## ProteomeXchange
 
