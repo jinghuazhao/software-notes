@@ -18,6 +18,10 @@ Web: <https://pharos.nih.gov/>
 
 Web: <http://polymorph.sgc.utoronto.ca/drugged_human_proteome/>
 
+## txgemma
+
+Web, <https://huggingface.co/Triangle104/txgemma-9b-chat-Q8_0-GGUF>
+
 ## Software
 
 ### ConPlex
