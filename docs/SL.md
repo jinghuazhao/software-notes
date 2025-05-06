@@ -15,6 +15,8 @@
 * Apress, [https://github.com/apress](https://github.com/apress)
 * Packt, [https://github.com/PacktPublishing](https://github.com/PacktPublishing)
 
+> Lantz B (2023) Machine Learning with R, 4e, Packt, <https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition>.
+
 ## Statistical learning and [ISLR](https://CRAN.R-project.org/package=ISLR)
 
 > Hastie T, Tibshirani R, Friedman J (2009). [The Elements of Statistical Learning: Data Mining, Inference, and Prediction](https://www.springer.com/gb/book/9780387848570). Springer.
