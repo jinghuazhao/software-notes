@@ -27,6 +27,10 @@
 
 > Chollet F, Allaire JJ (2017). [Deep Learning with R](https://livebook.manning.com/book/deep-learning-with-r/), Manning. [Source code](https://www.manning.com/books/deep-learning-with-r), [GitHub](https://github.com/jjallaire/deep-learning-with-r-notebooks).
 
+## Data repository
+
+* UC Irvine Machine Learning Repository, <https://archive.ics.uci.edu/>
+
 ## Python Code Examples
 
 From: Machine Learning Fundamentals Handbook – Key Concepts, Algorithms, and Python Code Examples, 
