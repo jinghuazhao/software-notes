@@ -40,12 +40,14 @@ Also
 
 ### 2.x
 
+```bash
 python <<END
 import tensorflow as tf
 
 hello = tf.constant('Hello, TensorFlow!')
 print(hello.numpy().decode('utf-8'))
 END
+```
 
 ## tensorQTL
 
