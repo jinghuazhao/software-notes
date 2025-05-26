@@ -79,7 +79,6 @@ plt.ylabel('Loss')
 plt.show()
 ```
 
-
 ## tensorQTL
 
 AI-derived implementation.
