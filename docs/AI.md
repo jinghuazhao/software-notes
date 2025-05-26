@@ -2,7 +2,7 @@
 
 ## DrugAssist
 
-Ye, Geyan, et al. "DrugAssist: A Large Language Model for Molecule Optimization." Briefings in Bioinformatics, vol. 26, no. 1, 2025, p. bbae693. Oxford University Press.
+Ye, Geyan, et al. DrugAssist: A Large Language Model for Molecule Optimization. *Briefings in Bioinformatics*, vol. 26, no. 1, 2025, p. bbae693. Oxford University Press.
 
 <https://github.com/blazerye/DrugAssist> & <https://huggingface.co/blazerye/DrugAssist-7B>
 
