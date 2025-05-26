@@ -49,7 +49,7 @@ print(hello.numpy().decode('utf-8'))
 END
 ```
 
-### Adam algorithm
+### Adam optimizer
 
 ```python
 import tensorflow as tf
