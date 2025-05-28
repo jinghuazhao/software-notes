@@ -164,6 +164,14 @@
 <h2 id="pytorch">pytorch</h2>
 <p>The home page is <a href="https://pytorch.github.io">https://pytorch.github.io</a>, and the repository itself <a href="https://github.com/pytorch/">https://github.com/pytorch/</a> with <a href="https://github.com/pytorch/examples">https://github.com/pytorch/examples</a>.</p>
 <h2 id="tensorflow">tensorflow</h2>
+<h3 id="cpu-only">CPU only</h3>
+<pre><code class="language-bash">pip install tensorflow==2.17.0
+export TF_ENABLE_ONEDNN_OPTS=0
+python &lt;&lt;END
+import tensorflow as tf
+print(tf.__version__)
+END
+</code></pre>
 <h3 id="1x">1.x</h3>
 <p>The tensorflow repository is here, <a href="https://github.com/tensorflow/tensorflow">https://github.com/tensorflow/tensorflow</a>, and it is relatively easy to install via pip,</p>
 <pre><code class="language-bash">pip install tensorflow
