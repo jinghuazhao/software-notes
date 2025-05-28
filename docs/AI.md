@@ -20,6 +20,17 @@ The home page is <https://pytorch.github.io>, and the repository itself <https:/
 
 ## tensorflow
 
+### CPU only
+
+```bash
+pip install tensorflow==2.17.0
+export TF_ENABLE_ONEDNN_OPTS=0
+python <<END
+import tensorflow as tf
+print(tf.__version__)
+END
+```
+
 ### 1.x
 
 The tensorflow repository is here, <https://github.com/tensorflow/tensorflow>, and it is relatively easy to install via pip,
