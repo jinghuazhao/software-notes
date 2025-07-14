@@ -6,6 +6,7 @@ which is somewhat more rudimentary.
 * Genetic analysis:
    [Association analysis](AA.md),
    [CRISPR](CRISPR.md),
+   [Long-read sequencing](LRS.md),
    [Next-generation sequence analysis](NGS.md),
    [Pharmacogenomics](pharmacogenomics.md),
    [Proteome and transcriptome](prottrans.md),
