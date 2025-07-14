@@ -1,4 +1,4 @@
-# Long-read squencing
+# Long-read sequencing
 
 ## Software
 
