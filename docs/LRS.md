@@ -56,3 +56,9 @@ Xia LC, et al. SVEngine: an efficient and versatile simulator of genome structur
 Yuan N, Jia P. Comprehensive assessment of long-read sequencing platforms and calling algorithms for detection of copy number variation, ***Briefings in Bioinformatics***, Volume 25, Issue 5, September 2024, bbae441, <https://doi.org/10.1093/bib/bbae441>. The paper includes an overview of software.
 
 Zook JM, et al. A robust benchmark for detection of germline large deletions and insertions. ***Nat Biotechnol*** 38, 1347–1355 (2020). <https://doi.org/10.1038/s41587-020-0538-8>
+
+## URLs
+
+ONT, <https://nanoporetech.com/>
+
+PacBio, <https://www.pacb.com/>
