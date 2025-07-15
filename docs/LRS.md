@@ -45,6 +45,8 @@ Web: <https://www.internationalgenome.org/>
 
 ## References
 
+***Genome Res*** 2024, <https://genome.cshlp.org/content/34/11.toc>
+
 Bolognini D, et al. VISOR: a versatile haplotype-aware structural variant simulator for short- and long-read sequencing, ***Bioinformatics***, 36(4), 1267–1269 (2020), <https://doi.org/10.1093/bioinformatics/btz719>
 
 Jiang T, et al. Long-read-based human genomic structural variation detection with cuteSV. ***Genome Biol*** 21, 189 (2020). <https://doi.org/10.1186/s13059-020-02107-y>. The paper has scripts for various software.
