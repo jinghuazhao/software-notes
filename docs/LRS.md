@@ -2,7 +2,7 @@
 
 ## Company sites
 
-- Amazon Web Service, <https://github.com/aws>
+- AWS, <https://github.com/aws>
 - ONT, <https://nanoporetech.com/>
 - PacBio, <https://www.pacb.com/>
 
