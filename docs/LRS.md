@@ -2,19 +2,13 @@
 
 ## Company sites
 
-Amazon Web Service
-
-- AWS CLI Command Reference, <https://docs.aws.amazon.com/cli/latest/>
-- GitHub, <https://github.com/aws>
-
-ONT, <https://nanoporetech.com/>
-
-- EPI2ME, <https://epi2me.nanoporetech.com/dataindex/>
-
-PacBio, <https://www.pacb.com/>
+- Amazon Web Service, <https://github.com/aws>
+- ONT, <https://nanoporetech.com/>
+- PacBio, <https://www.pacb.com/>
 
 ## Software
 
+- AWS CLI Command Reference, <https://docs.aws.amazon.com/cli/latest/>
 - cuteFC, <https://github.com/Meltpinkg/cuteFC>
 - cuteSV, <https://github.com/tjiangHIT/cuteSV>
 - GAS power calculator, <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
@@ -26,6 +20,7 @@ PacBio, <https://www.pacb.com/>
 
 ## Data sources
 
+- EPI2ME, <https://epi2me.nanoporetech.com/dataindex/>
 - GIAB, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>. The ONT PromethION dataset of the HG002 sample is here,
 <https://ftp.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/UCSC_Ultralong_OxfordNanopore_Promethion/>
 - IGSR, <https://www.internationalgenome.org/>
