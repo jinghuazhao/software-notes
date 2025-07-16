@@ -15,50 +15,20 @@ PacBio, <https://www.pacb.com/>
 
 ## Software
 
-### cuteFC
-
-GitHub: <https://github.com/Meltpinkg/cuteFC>
-
-### cuteSV
-
-GitHub: <https://github.com/tjiangHIT/cuteSV>
-
-### GAS power calculator
-
-Web: <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
-
-### pbmm2
-
-GitHub: <https://github.com/PacificBiosciences/pbmm2>
-
-### pbsv
-
-GitHub: <https://github.com/PacificBiosciences/pbsv>
-
-### RTG tools
-
-GitHub: <https://github.com/RealTimeGenomics/rtg-tools>
-
-### Sniffles
-
-GitHub, <https://github.com/fritzsedlazeck/Sniffles>
-
-### Truvari
-
-GitHub: <https://github.com/ACEnglish/truvari>
+- cuteFC, <https://github.com/Meltpinkg/cuteFC>
+- cuteSV, <https://github.com/tjiangHIT/cuteSV>
+- GAS power calculator, <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
+- pbmm2, <https://github.com/PacificBiosciences/pbmm2>
+- pbsv, <https://github.com/PacificBiosciences/pbsv>
+- RTG tools, <https://github.com/RealTimeGenomics/rtg-tools>
+- Sniffles, <https://github.com/fritzsedlazeck/Sniffles>
+- Truvari, <https://github.com/ACEnglish/truvari>
 
 ## Data sources
 
-### GIAB
-
-Web: <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>
-
-The ONT PromethION dataset of the HG002 sample is here,
+- GIAB, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>. The ONT PromethION dataset of the HG002 sample is here,
 <https://ftp.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/UCSC_Ultralong_OxfordNanopore_Promethion/>
-
-### IGSR
-
-Web: <https://www.internationalgenome.org/>
+- IGSR, <https://www.internationalgenome.org/>
 
 ## References
 
