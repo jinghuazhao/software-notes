@@ -10,6 +10,10 @@ GitHub: <https://github.com/Meltpinkg/cuteFC>
 
 GitHub: <https://github.com/tjiangHIT/cuteSV>
 
+### GAS power calculator
+
+Web: <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
+
 ### pbmm2
 
 GitHub: <https://github.com/PacificBiosciences/pbmm2>
