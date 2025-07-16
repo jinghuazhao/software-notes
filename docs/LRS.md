@@ -12,10 +12,13 @@
 - cuteFC, <https://github.com/Meltpinkg/cuteFC>
 - cuteSV, <https://github.com/tjiangHIT/cuteSV>
 - GAS power calculator, <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
+- minimap2, <https://github.com/lh3/minimap2>
+- ONT, <https://github.com/nanoporetech>
 - pbmm2, <https://github.com/PacificBiosciences/pbmm2>
 - pbsv, <https://github.com/PacificBiosciences/pbsv>
 - RTG tools, <https://github.com/RealTimeGenomics/rtg-tools>
 - Sniffles, <https://github.com/fritzsedlazeck/Sniffles>
+- Stragli, <https://github.com/philres/straglr>
 - Truvari, <https://github.com/ACEnglish/truvari>
 
 ## Data sources
