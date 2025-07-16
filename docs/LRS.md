@@ -36,6 +36,8 @@ Bolognini D, et al. VISOR: a versatile haplotype-aware structural variant simula
 
 Jiang T, et al. Long-read-based human genomic structural variation detection with cuteSV. ***Genome Biol*** 21, 189 (2020). <https://doi.org/10.1186/s13059-020-02107-y>. The paper has scripts for various software.
 
+Kirsche M, et al. Jasmine and Iris: population-scale structural variant comparison and analysis. ***Nat Methods*** 20, 408–417 (2023). <https://doi.org/10.1038/s41592-022-01753-3>
+
 Smolka M, et al. Detection of mosaic and population-level structural variants with Sniffles2. ***Nat Biotechnol*** 42, 1571–1580 (2024). <https://doi.org/10.1038/s41587-023-02024-y>
 
 Xia LC, et al. SVEngine: an efficient and versatile simulator of genome structural variations with features of cancer clonal evolution, ***GigaScience***, 7(7), giy081 (2018), <https://doi.org/10.1093/gigascience/giy081>
