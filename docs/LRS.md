@@ -23,6 +23,7 @@
 
 ## Data sources
 
+- ONT at AWS, <https://registry.opendata.aws/ont-open-data/>
 - EPI2ME, <https://epi2me.nanoporetech.com/dataindex/>
 - GIAB, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>. The ONT PromethION dataset of the HG002 sample is here,
 <https://ftp.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/UCSC_Ultralong_OxfordNanopore_Promethion/>
