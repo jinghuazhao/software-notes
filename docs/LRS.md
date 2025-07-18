@@ -12,6 +12,7 @@
 - cuteFC, <https://github.com/Meltpinkg/cuteFC>
 - cuteSV, <https://github.com/tjiangHIT/cuteSV>
 - GAS power calculator, <https://csg.sph.umich.edu/abecasis/gas_power_calculator/index.html>
+- Illumina, <https://github.com/Illumina> (hap.py)
 - minimap2, <https://github.com/lh3/minimap2>
 - ONT, <https://github.com/nanoporetech>
 - pbmm2, <https://github.com/PacificBiosciences/pbmm2>
