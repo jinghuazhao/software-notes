@@ -33,7 +33,7 @@
 
 ## References
 
-***Genome Res*** 2024, <https://genome.cshlp.org/content/34/11.toc>
+***Genome Res*** special issues: [2024](https://genome.cshlp.org/content/34/11.toc), [2025](https://genome.cshlp.org/content/35/4.toc).
 
 Bolognini D, et al. VISOR: a versatile haplotype-aware structural variant simulator for short- and long-read sequencing, ***Bioinformatics***, 36(4), 1267–1269 (2020), <https://doi.org/10.1093/bioinformatics/btz719>
 
