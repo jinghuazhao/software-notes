@@ -27,8 +27,10 @@
 - ONT at AWS, <https://registry.opendata.aws/ont-open-data/>
 - EPI2ME at ONT, <https://epi2me.nanoporetech.com/dataindex/>
 - EPI2ME at GitHub, <https://github.com/epi2me-labs>
-- GIAB, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>. The ONT PromethION dataset of the HG002 sample is here,
-<https://ftp.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/UCSC_Ultralong_OxfordNanopore_Promethion/>
+- GIAB, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/>
+    * ONT PromethION HG002 sample, <https://ftp.ncbi.nlm.nih.gov/giab/ftp/data/AshkenazimTrio/HG002_NA24385_son/UCSC_Ultralong_OxfordNanopore_Promethion/>
+    * Reference sample, <https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/AshkenazimTrio/HG002_NA24385_son/PacBio_HiFi-Revio_20231031/>
+    * GRCh38_v3 Reference, <https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/release/references/GRCh38/>
 - IGSR, <https://www.internationalgenome.org/>
 
 ## References
