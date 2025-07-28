@@ -7,10 +7,10 @@ which is somewhat more rudimentary.
     - [Association analysis](AA.md),
     - [CRISPR](CRISPR.md),
     - [Long-read sequencing](LRS.md),
+    - [Miscellaneous software](misc.md),
     - [Next-generation sequence analysis](NGS.md),
     - [Pharmacogenomics](pharmacogenomics.md),
     - [Proteome and transcriptome](prottrans.md),
-    - [Miscellaneous software](misc.md),
     - [Single-cell analysis](single-cell.md).
 * [Statistical learning](SL.md)
 * [Artificial intelligence](AI.md)
