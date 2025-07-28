@@ -11,7 +11,7 @@ which is somewhat more rudimentary.
    [Pharmacogenomics](pharmacogenomics.md),
    [Proteome and transcriptome](prottrans.md),
    [Miscellaneous software](misc.md),
-   [single-cell analysis](single-cell.md).
+   [Single-cell analysis](single-cell.md).
 * [Statistical learning](SL.md)
 * [Artificial intelligence](AI.md)
 

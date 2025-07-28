@@ -6,8 +6,8 @@ nav:
     - Genetic analysis:
       - AA.md
       - CRISPR.md
-      - misc.md
       - LRS.md
+      - misc.md
       - NGS.md
       - pharmacogenomics.md
       - prottrans.md
