@@ -4,14 +4,14 @@ The nature of this repository is applied, esp. setup of software in several cate
 which is somewhat more rudimentary.
 
 * Genetic analysis:
-   [Association analysis](AA.md),
-   [CRISPR](CRISPR.md),
-   [Long-read sequencing](LRS.md),
-   [Next-generation sequence analysis](NGS.md),
-   [Pharmacogenomics](pharmacogenomics.md),
-   [Proteome and transcriptome](prottrans.md),
-   [Miscellaneous software](misc.md),
-   [Single-cell analysis](single-cell.md).
+   - [Association analysis](AA.md),
+   - [CRISPR](CRISPR.md),
+   - [Long-read sequencing](LRS.md),
+   - [Next-generation sequence analysis](NGS.md),
+   - [Pharmacogenomics](pharmacogenomics.md),
+   - [Proteome and transcriptome](prottrans.md),
+   - [Miscellaneous software](misc.md),
+   - [Single-cell analysis](single-cell.md).
 * [Statistical learning](SL.md)
 * [Artificial intelligence](AI.md)
 
