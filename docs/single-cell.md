@@ -69,6 +69,12 @@ Web: <https://bitbucket.org/weililab/scmageck/src/master/>
 
 Yang L, et al. scMAGeCK links genotypes with multiple phenotypes in single-cell CRISPR screens. *Genome Biol* 21, 19 (2020). <https://doi.org/10.1186/s13059-020-1928-4>
 
+## scProtVelo
+
+GitHub, <https://github.com/theislab/scProtVelo>
+
+Furtwängler B, et al. Mapping early human blood cell differentiation using single-cell proteomics and transcriptomics. *Science* 390, eadr8785 (2025). DOI:10.1126/science.adr8785.
+
 ## scvi-tools
 
 Web: <https://scvi-tools.org/>
